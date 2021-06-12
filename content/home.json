@@ -4,20 +4,27 @@
   "sections": [
     {
       "type": "banner-slider",
-      "autoplay": 9000,
+      "autoplay": 6000,
       "slides": [
         {
           "start": "",
           "end": "",
-          "img": "https://res.cloudinary.com/customic/image/upload/v1620068043/banners2021/ezgif.com-gif-maker_txuo62.webp",
-          "mobile_img": "https://res.cloudinary.com/customic/image/upload/v1620069805/banners2021/ezgif_sirgls.webp",
-          "alt": "#VivaOMovimento",
-          "link": "https://customic.com.br/vivaomovimento"
+          "img": "https://res.cloudinary.com/customic/image/upload/v1623150514/banners2021/1200x466-banner-02_zroj8l.png",
+          "link": "https://www.lab.customic.com.br/",
+          "alt": "valentine'sDay2021",
+          "mobile_img": "https://res.cloudinary.com/customic/image/upload/v1623150514/banners2021/Customic-lab-02_rdls3s.png"
         },
         {
           "start": "",
           "end": "",
-          "img": "/img/uploads/banner-desk-pynw.jpg",
+          "img": "https://res.cloudinary.com/customic/image/upload/v1623166172/banners2021/2500x970-banner-_150dpi_tief3g.png",
+          "mobile_img": "https://res.cloudinary.com/customic/image/upload/v1623150514/banners2021/Customic-lab-01_xc91gl.png",
+          "link": "https://www.lab.customic.com.br/"
+        },
+        {
+          "start": "",
+          "end": "",
+          "img": "https://i.imgur.com/892Rdxt.png",
           "mobile_img": "/img/uploads/banner-mobile-pynw.jpg",
           "link": "https://customic.com.br/capas-antibacteria",
           "alt": "PYNW2021"
@@ -27,7 +34,8 @@
           "end": "",
           "img": "/img/uploads/asset-1_ok.jpg",
           "link": "https://customic.com.br/impactor-flex-antibacteria-all",
-          "mobile_img": "/img/uploads/asset-1_mobile.jpg"
+          "mobile_img": "https://i.imgur.com/R1PJGki.png",
+          "alt": "flexantibac2021"
         },
         {
           "img": "/img/uploads/banner-desk-seed.jpg",
@@ -49,7 +57,7 @@
           "start": "",
           "end": "",
           "img": "/img/uploads/banner-siteii-c-compressed3.jpg",
-          "mobile_img": "/img/uploads/Banners-Mobile-II-C.png",
+          "mobile_img": "https://i.imgur.com/IoxE3pC.png",
           "link": "/impactor-ultra-fabric-all"
         },
         {
@@ -57,7 +65,7 @@
           "end": "",
           "img": "/img/uploads/banner-siteii-e-compressed5.jpg",
           "link": "/impactor-flex-all",
-          "mobile_img": "/img/uploads/banners-mobile-ii-e.png"
+          "mobile_img": "https://i.imgur.com/8WZSm3b.png"
         }
       ]
     },
@@ -104,8 +112,8 @@
       "link": ""
     },
     {
-      "type": "page-title",
-      "title": "Veja mais em nosso instagram:"
+      "type": "custom-content",
+      "markdown": "## **Veja mais em nosso Instagram: [@customic](https://www.instagram.com/customic/)**"
     },
     {
       "type": "responsive-banner",
