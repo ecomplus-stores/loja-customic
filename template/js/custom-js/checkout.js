@@ -30,6 +30,20 @@
     // Textos para o fechamento
     let $twoDays = false;
     let $finishingText = "";
+    var $quandoentrega = "Até Amanhã";
+    // Texto do fim de semana
+    function weekendText() {
+      let textPrazo = "";
+      if (now.getDay() === 5 && now.getHours() > 14 || now.getDay() === 6 || now.getDay() === 0) {
+        textPrazo = "Segunda-feira"
+      }else if(now.getHours() > 14){
+        textPrazo = "Até 2 dia úteis"
+      }else{
+        textPrazo = "Até Amanhã"
+      }
+      $finishingText = textPrazo
+      $quandoentrega = textPrazo;
+    }
 
     if (now.getHours() > 14 && now.getMinutes() > 0) {
       let tomorrow = new Date()
@@ -39,22 +53,17 @@
       $remainingHours = diff_hours(tomorrow,now)
       if ($remainingHours == 24) $remainingHours -= 1;
       $string = $remainingHours +"h "+$remaining.getMinutes()+"min";
-      $html = "Até 2 dia úteis<br class='imutable'><span>Se pedir dentro de <br><b class='green'>"+$string+"</b></span>";
-
       $twoDays = true;
       $finishingText = "Até 2 dia úteis"
+      weekendText();
+      $html = $quandoentrega +"<br class='imutable'><span>Se pedir dentro de <br><b class='green'>"+$string+"</b></span>";
     }else{
-      
       $string = $hourConnector+"<br><b class='green'>"+ $remainingHours +"h "+$remainingMinutes+"min</b>";
-      var $quandoentrega = "Até Amanhã";
-      if (now.getDay() === 5) {
-        $quandoentrega = "Segunda-feira";
-      }
-      $html = $quandoentrega+"<br class='imutable'><span>Se pedir "+$string+"</span>";
-      $untilTomorrow = true;
-
       $twoDays = false;
       $finishingText = $quandoentrega;
+      $untilTomorrow = true;
+      weekendText();
+      $html = $quandoentrega+"<br class='imutable'><span>Se pedir "+$string+"</span>";
     }
 
     function setCookie(name, value, days) {
@@ -87,9 +96,7 @@
           });
         }
       }, 250);
-
   }
-
 
   // Mutation para observar as mudanças na tabela
   function MutationSedex() {
