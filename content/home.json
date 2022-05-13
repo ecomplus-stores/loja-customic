@@ -54,11 +54,11 @@
       "limit": 12,
       "page": "",
       "sort": "sales",
-      "title": "Mais vendidos"
+      "title": "Mais vendidos da Loja de Capa de Celular"
     },
     {
       "page": "",
-      "title": "Linha Impactor com Proteção Militar",
+      "title": "Linha Impactor com Proteção Militar da Customic",
       "shuffle": true,
       "headless": false,
       "type": "collection-shelf",
@@ -69,7 +69,7 @@
     },
     {
       "type": "custom-content",
-      "markdown": "<div class=\"collectionID\"><h2 class=\"my-0\"><div style=\"text-align:center\">Coleções em Destaque</h2></div>"
+      "markdown": "<div class=\"collectionID\"><h2 class=\"my-0\"><div style=\"text-align:center\">Coleções em Destaque da Loja de Capa de Celular</h2></div>"
     },
     {
       "type": "banners-grid",
@@ -122,7 +122,7 @@
       "page": "",
       "collection_id": "60871b81e875b03a408daf0c:categories:PopSockets:/popsockets",
       "sort": "views",
-      "title": "PopSockets®, o Original chegou!"
+      "title": "PopSockets® Originais Customic!"
     },
     {
       "type": "collection-shelf",
