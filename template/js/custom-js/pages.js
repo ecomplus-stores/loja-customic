@@ -35,7 +35,7 @@ $(document).ready(function () {
 storefront.on('widget:@ecomplus/widget-minicart', function () {
     setTimeout(function () {
       if (storefront && storefront.context && storefront.context.body.name.indexOf('PRÉ-VENDA') > -1) {
-        document.querySelector('.product__prices').insertAdjacentHTML('afterend', '<div id="lancamento" style="color: #4ca512">Lançamento em 2023...</div>')
+        document.querySelector('.product__prices').insertAdjacentHTML('afterend', '<div id="lancamento" style="color: #4ca512"> Envio Outubro 2022...</div>')
       }
     }, 800);
   });
