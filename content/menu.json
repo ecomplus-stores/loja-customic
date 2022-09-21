@@ -1,11 +1,11 @@
 {
   "sort_categories": [
-    "combos",
-    "popsockets",
     "capas",
-    "peliculas",
     "colecoes",
-    "acessorios"
+    "peliculas",
+    "popsockets",
+    "acessorios",
+    "combos"
   ],
   "phone_wpp": true,
   "socials": true,
