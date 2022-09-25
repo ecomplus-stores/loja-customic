@@ -1,6 +1,21 @@
 {
   "hosting": {
     "redirects": [
+	{
+        "source": "/extensao-eletrica-cabo-pp-2x40mm-20a-20-metros",
+        "destination": "/index",
+        "type": 301
+      },
+      {
+        "source": "/2-x-400-mm/",
+        "destination": "/index",
+        "type": 301
+      },
+      {
+        "source": "/extensao-eletrica-cabo-pp-2x25mm-10a-30-metros",
+        "destination": "/index",
+        "type": 301
+      },
       {
         "source": "/u_10009",
         "destination": "/peliculas",
