@@ -1166,6 +1166,7 @@
         "destination":  "/impactor-ultra-fabric-apple",
         "type": 301
       }
+	    
     ],
     "public": "dist",
     "ignore": [
@@ -1194,6 +1195,211 @@
         "source": "/checkout.?*.css",
         "destination": "/checkout.css"
       }
+	{
+        "source":  "/pelicula-gel-7-camadas-customic",
+        "destination":  "/pelicula-gel-7-camadas",
+        "type": 301
+      },
+      {
+        "source":  "/seed-eco-case-iphone-11-pro-white",
+        "destination":  "/seed-eco-case-apple",
+        "type": 301
+      },
+      {
+        "source":  "/seed-eco-case-iphone-11-pro-red",
+        "destination":  "/seed-eco-case-apple",
+        "type": 301
+      },
+      {
+        "source":  "/seed-eco-case-iphone-11-pro-white",
+        "destination":  "/seed-eco-case-apple",
+        "type": 301
+      },
+      {
+        "source":  "/seed-eco-case-iphone-11-green",
+        "destination":  "/seed-eco-case-apple",
+        "type": 301
+      },
+      {
+        "source":  "/seed-eco-case-iphone-11",
+        "destination":  "/seed-eco-case-apple",
+        "type": 301
+      },
+      {
+        "source":  "/seed-eco-case-iphone-11-purple",
+        "destination":  "/seed-eco-case-apple",
+        "type": 301
+      },
+      {
+        "source":  "/seed-eco-case-iphone-11-red",
+        "destination":  "/seed-eco-case-apple",
+        "type": 301
+      },
+      {
+        "source":  "/seed-eco-case-iphone-11-white",
+        "destination":  "/seed-eco-case-apple",
+        "type": 301
+      },
+      {
+        "source":  "/seed-eco-case-iphone-xs-max-green",
+        "destination":  "/seed-eco-case-apple",
+        "type": 301
+      },
+      {
+        "source":  "/seed-eco-case-iphone-xs-max",
+        "destination":  "/seed-eco-case-apple",
+        "type": 301
+      },
+      {
+        "source":  "/seed-eco-case-iphone-xs-max-purple",
+        "destination":  "/seed-eco-case-apple",
+        "type": 301
+      },
+      {
+        "source":  "/seed-eco-case-iphone-xs-max-red",
+        "destination":  "/seed-eco-case-apple",
+        "type": 301
+      },
+      {
+        "source":  "/seed-eco-case-iphone-xr-green",
+        "destination":  "/seed-eco-case-apple",
+        "type": 301
+      },
+      {
+        "source":  "/seed-eco-case-iphone-xr",
+        "destination":  "/seed-eco-case-apple",
+        "type": 301
+      },
+      {
+        "source":  "/seed-eco-case-iphone-xr-purple",
+        "destination":  "/seed-eco-case-apple",
+        "type": 301
+      },
+      {
+        "source":  "/seed-eco-case-iphone-xr-red",
+        "destination":  "/seed-eco-case-apple",
+        "type": 301
+      },
+      {
+        "source":  "/seed-eco-case-iphone-xr-white",
+        "destination":  "/seed-eco-case-apple",
+        "type": 301
+      },
+      {
+        "source":  "/seed-eco-case-iphone-x-xs-green",
+        "destination":  "/seed-eco-case-apple",
+        "type": 301
+      },
+      {
+        "source":  "/seed-eco-case-iphone-x-xs",
+        "destination":  "/seed-eco-case-apple",
+        "type": 301
+      },
+      {
+        "source":  "/seed-eco-case-iphone-x-xs-purple",
+        "destination":  "/seed-eco-case-apple",
+        "type": 301
+      },
+      {
+        "source":  "/impactor-ultra-fabric-purple-iphone-11-pro-max",
+        "destination":  "/impactor-ultra-fabric-apple",
+        "type": 301
+      },
+      {
+        "source":  "/impactor-ultra-fabric-purple-iphone-11-pro",
+        "destination":  "/impactor-ultra-fabric-apple",
+        "type": 301
+      },
+      {
+        "source":  "/impactor-ultra-fabric-grey-iphone-11-pro",
+        "destination":  "/impactor-ultra-fabric-apple",
+        "type": 301
+      },
+      {
+        "source":  "/impactor-ultra-fabric-black-iphone-11-pro",
+        "destination":  "/impactor-ultra-fabric-apple",
+        "type": 301
+      },
+      {
+        "source":  "/impactor-ultra-fabric-purple-iphone-11",
+        "destination":  "/impactor-ultra-fabric-apple",
+        "type": 301
+      },
+      {
+        "source":  "/impactor-ultra-fabric-grey-iphone-11",
+        "destination":  "/impactor-ultra-fabric-apple",
+        "type": 301
+      },
+      {
+        "source":  "/impactor-ultra-fabric-black-iphone-11",
+        "destination":  "/impactor-ultra-fabric-apple",
+        "type": 301
+      },
+      {
+        "source":  "/impactor-ultra-fabric-purple-iphone-xs-max",
+        "destination":  "/impactor-ultra-fabric-apple",
+        "type": 301
+      },
+      {
+        "source":  "/impactor-ultra-fabric-grey-iphone-xs-max",
+        "destination":  "/impactor-ultra-fabric-apple",
+        "type": 301
+      },
+      {
+        "source":  "/impactor-ultra-fabric-blue-iphone-xs-max",
+        "destination":  "/impactor-ultra-fabric-apple",
+        "type": 301
+      },
+      {
+        "source":  "/impactor-ultra-fabric-black-iphone-xs-max",
+        "destination":  "/impactor-ultra-fabric-apple",
+        "type": 301
+      },
+      {
+        "source":  "/impactor-ultra-fabric-purple-iphone-xr",
+        "destination":  "/impactor-ultra-fabric-apple",
+        "type": 301
+      },
+      {
+        "source":  "/impactor-ultra-fabric-grey-iphone-xr",
+        "destination":  "/impactor-ultra-fabric-apple",
+        "type": 301
+      },
+      {
+        "source":  "/impactor-ultra-fabric-blue-iphone-xr",
+        "destination":  "/impactor-ultra-fabric-apple",
+        "type": 301
+      },
+      {
+        "source":  "/impactor-ultra-fabric-black-iphone-xr",
+        "destination":  "/impactor-ultra-fabric-apple",
+        "type": 301
+      },
+      {
+        "source":  "/impactor-ultra-fabric-grey-iphone-x-xs",
+        "destination":  "/impactor-ultra-fabric-apple",
+        "type": 301
+      },
+      {
+        "source":  "/impactor-ultra-fabric-purple-iphone-x-xs",
+        "destination":  "/impactor-ultra-fabric-apple",
+        "type": 301
+      },
+      {
+        "source":  "/impactor-ultra-fabric-blue-iphone-x-xs",
+        "destination":  "/impactor-ultra-fabric-apple",
+        "type": 301
+      },
+      {
+        "source":  "/impactor-ultra-fabric-grey-iphone-x-xs",
+        "destination":  "/impactor-ultra-fabric-apple",
+        "type": 301
+      },
+      {
+        "source":  "/impactor-ultra-fabric-black-iphone-x-xs",
+        "destination":  "/impactor-ultra-fabric-apple",
+        "type": 301
+      },    
     ],
     "headers": [
       {
