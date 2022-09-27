@@ -1162,6 +1162,11 @@
 "type":301
 },
 {
+"source":"/seed-eco-case-iphone-xr-petroleum",
+"destination":"/seed-eco-case-apple",
+"type":301
+},
+{
 "source":"/soft-white-com-furo",
 "destination":"/soft-all",
 "type":301
