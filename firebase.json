@@ -1399,7 +1399,12 @@
         "source":  "/impactor-ultra-fabric-black-iphone-x-xs",
         "destination":  "/impactor-ultra-fabric-apple",
         "type": 301
-      },    
+      },
+      {
+        "source":  "/seed-eco-case-iphone-xr-petroleum",
+        "destination":  "/seed-eco-case-apple",
+        "type": 301
+      },
     ],
     "headers": [
       {
