@@ -6,7 +6,12 @@
         "destination":  "/pelicula-gel-7-camadas",
         "type": 301
       },
-      {
+       {
+        "source":  "/seed-eco-case-iphone-11-petroleum",
+        "destination":  "/seed-eco-case-apple",
+        "type": 301
+      },
+     {
         "source":  "/seed-eco-case-iphone-11-pro-white",
         "destination":  "/seed-eco-case-apple",
         "type": 301
