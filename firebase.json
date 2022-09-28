@@ -1375,37 +1375,8 @@
         "source":  "/impactor-ultra-fabric-black-iphone-x-xs",
         "destination":  "/impactor-ultra-fabric-apple",
         "type": 301
-      }
-	    
-    ],
-    "public": "dist",
-    "ignore": [
-      "firebase.json",
-      "**/.*",
-      "**/node_modules/**"
-    ],
-    "rewrites": [
-      {
-        "source": "**/!(*(*.)js|*(*.)css|*(*.)ico|*(*.)png|*(*.)gif|*(*.)jpg|*(*.)jpeg|*(*.)webp|*(*.)svg|*(*.)woff|*(*.)woff2|*(*.)otf|*(*.)ttf|*(*.)eot)",
-        "function": "ssr"
       },
       {
-        "source": "/storefront.?*.js",
-        "destination": "/storefront.js"
-      },
-      {
-        "source": "/storefront.?*.css",
-        "destination": "/storefront.css"
-      },
-      {
-        "source": "/checkout.?*.js",
-        "destination": "/checkout.js"
-      },
-      {
-        "source": "/checkout.?*.css",
-        "destination": "/checkout.css"
-      }
-	{
         "source":  "/pelicula-gel-7-camadas-customic",
         "destination":  "/pelicula-gel-7-camadas",
         "type": 301
@@ -1594,6 +1565,36 @@
         "source":  "/impactor-ultra-fabric-purple-iphone-x-xs",
         "destination":  "/impactor-ultra-fabric-apple",
         "type": 301
+      }
+	    
+    ],
+    "public": "dist",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**/!(*(*.)js|*(*.)css|*(*.)ico|*(*.)png|*(*.)gif|*(*.)jpg|*(*.)jpeg|*(*.)webp|*(*.)svg|*(*.)woff|*(*.)woff2|*(*.)otf|*(*.)ttf|*(*.)eot)",
+        "function": "ssr"
+      },
+      {
+        "source": "/storefront.?*.js",
+        "destination": "/storefront.js"
+      },
+      {
+        "source": "/storefront.?*.css",
+        "destination": "/storefront.css"
+      },
+      {
+        "source": "/checkout.?*.js",
+        "destination": "/checkout.js"
+      },
+      {
+        "source": "/checkout.?*.css",
+        "destination": "/checkout.css"
+      }
     ],
     "headers": [
       {
