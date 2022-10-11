@@ -52,7 +52,7 @@
     {
       "type": "collection-shelf",
       "shuffle": true,
-      "limit": "",
+      "limit": 24,
       "page": 1,
       "collection_id": "5fc4ef3b69274c73fcde90e1:categories:Licenciados:/licenciados",
       "sort": "sales"
