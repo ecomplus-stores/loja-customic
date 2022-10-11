@@ -50,6 +50,13 @@
       "title": "Mais vendidos"
     },
     {
+      "type": "collection-shelf",
+      "shuffle": false,
+      "limit": "",
+      "page": 1,
+      "collection_id": "5fc4ef3b69274c73fcde90e1:categories:Licenciados:/licenciados"
+    },
+    {
       "page": "",
       "title": "Linha Impactor com Proteção Militar",
       "shuffle": true,
