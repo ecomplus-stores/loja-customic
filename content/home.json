@@ -9,17 +9,17 @@
         {
           "start": "",
           "end": "",
-          "img": "/img/uploads/banner-desk-10anos.webp",
-          "mobile_img": "/img/uploads/banner-mobile-10anos.png.webp",
-          "alt": "Customic 10 anos",
-          "link": "https://customic.com.br/new-iphone-14"
+          "img": "/img/uploads/iphone14-desk.webp",
+          "link": "https://customic.com.br/new-iphone-14",
+          "mobile_img": "/img/uploads/iphone-14-mobile-3-2-.webp"
         },
         {
           "start": "",
           "end": "",
-          "img": "/img/uploads/iphone14-desk.webp",
-          "link": "https://customic.com.br/new-iphone-14",
-          "mobile_img": "/img/uploads/iphone-14-mobile-3-2-.webp"
+          "img": "/img/uploads/banner-desk-10anos.webp",
+          "mobile_img": "/img/uploads/banner-mobile-10anos.png.webp",
+          "alt": "Customic 10 anos",
+          "link": "https://customic.com.br/new-iphone-14"
         },
         {
           "start": "",
