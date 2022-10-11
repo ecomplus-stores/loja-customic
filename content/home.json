@@ -50,17 +50,6 @@
       "title": "Mais vendidos"
     },
     {
-      "page": "",
-      "title": "Linha Impactor com Proteção Militar",
-      "shuffle": true,
-      "headless": false,
-      "type": "collection-shelf",
-      "link": "",
-      "limit": "",
-      "collection_id": "606c9f9333554a7d2d3cd8a3:collections:Linha Impactor de Proteção Militar:/linha-impactor-de-protecao-militar",
-      "sort": "views"
-    },
-    {
       "type": "collection-shelf",
       "shuffle": true,
       "limit": 24,
