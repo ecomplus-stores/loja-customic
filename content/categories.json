@@ -18,7 +18,7 @@
     },
     {
       "type": "document-banner",
-      "enabled": false
+      "enabled": true
     },
     {
       "type": "custom-html",
