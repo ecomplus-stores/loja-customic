@@ -61,7 +61,25 @@ export default {
     i19selectVariation: () => i18n(i19selectVariation),
 
     variationsGrids() {
-      return getVariationsGrids(this.product);
+      const variations = getVariationsGrids(this.product)
+      if (variations) {
+        const variationModified = {}
+        const keys = Object.keys(variations)
+        keys.forEach(key => {
+          variationModified[key] = []
+          variations[key].forEach(variation => {
+            const totalVariation = this.product.variations.find(item => item.name.indexOf(variation) > -1)
+            if (Array.isArray(totalVariation.flags)) {
+              variationModified[key].push(
+                `${variation} (${totalVariation.flags[0]})`  
+              )
+            } else {
+              variationModified[key].push(variation)
+            }
+          })
+        })
+        return variationModified
+      }
     },
 
     orderedGrids() {
@@ -107,34 +125,38 @@ export default {
 
     setVariationFromURL() {
       let paramsURL = window.location.search;
-      let getParam = new URLSearchParams(paramsURL);
-      let gridType = "marca_do_aparelho";
-      let index = 0;
-      let marcaParam = getParam.get("marca");
-
-      if (marcaParam !== null) {
-        this.selectOption(marcaParam, gridType, index);
+      if (paramsURL) {
+        let getParam = new URLSearchParams(paramsURL);
+        let gridType = "marca_do_aparelho";
+        let index = 0;
+        let marcaParam = getParam.get("marca");
+        console.log(marcaParam)
+  
+        if (marcaParam !== null) {
+          this.selectOption(marcaParam, gridType, index);
+        }
+  
+        let modeloParam = getParam.get("modelo");
+        console.log(modeloParam)
+        let gridTypeModelo = "modelo";
+        let indexModelo = 1;
+  
+        modeloParam = modeloParam.replaceAll("-", " ");
+  
+        this.$nextTick(() =>
+          this.selectOption(modeloParam, gridTypeModelo, indexModelo)
+        );
+  
+        let corParam = getParam.get("cor");
+        let gridTypeCor = "colors";
+        let indexCor = 2;
+  
+        corParam = corParam.replaceAll("-", " ");
+  
+        this.$nextTick(() => this.selectOption(corParam, gridTypeCor, indexCor));
+  
+        this.changeVariationURL(marcaParam); 
       }
-
-      let modeloParam = getParam.get("modelo");
-      let gridTypeModelo = "modelo";
-      let indexModelo = 1;
-
-      modeloParam = modeloParam.replaceAll("-", " ");
-
-      this.$nextTick(() =>
-        this.selectOption(modeloParam, gridTypeModelo, indexModelo)
-      );
-
-      let corParam = getParam.get("cor");
-      let gridTypeCor = "colors";
-      let indexCor = 2;
-
-      corParam = corParam.replaceAll("-", " ");
-
-      this.$nextTick(() => this.selectOption(corParam, gridTypeCor, indexCor));
-
-      this.changeVariationURL(marcaParam);
     },
 
     getColorOptionBg(optionText) {
