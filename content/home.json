@@ -150,23 +150,12 @@
       "title": "Linha AntiBactéria Customic"
     },
     {
-      "type": "custom-content",
-      "markdown": "## **Veja mais em nosso Instagram: [@customic](https://www.instagram.com/customic/)**"
-    },
-    {
-      "type": "responsive-banner",
-      "img": "/img/uploads/anyconv.com__banner-insta-desk.webp",
-      "link": "https://www.instagram.com/customic/",
-      "mobile_img": "/img/uploads/anyconv.com__banner-insta-mobile.webp",
-      "alt": "VivaOMovimentoCustomic2022"
+      "type": "custom-html",
+      "html": "    <script src=\"https://apps.elfsight.com/p/platform.js\" defer></script>\n    <div class=\"elfsight-app-60875489-b5bc-49de-b0a8-dc0471cf4d9b\"></div>"
     },
     {
       "type": "custom-html",
       "html": "<div role=\"main\" id=\"b2c-newsletter-site-28eb1cb7f1fd2326ac39\"></div><script type=\"text/javascript\" src=\"https://d335luupugsy2.cloudfront.net/js/rdstation-forms/stable/rdstation-forms.min.js\"></script><script type=\"text/javascript\"> new RDStationForms('b2c-newsletter-site-28eb1cb7f1fd2326ac39', 'UA-28628232-1').createForm();</script>"
-    },
-    {
-      "type": "custom-html",
-      "html": "    <script src=\"https://apps.elfsight.com/p/platform.js\" defer></script>\n    <div class=\"elfsight-app-60875489-b5bc-49de-b0a8-dc0471cf4d9b\"></div>"
     }
   ]
 }
