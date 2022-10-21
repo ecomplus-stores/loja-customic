@@ -49,6 +49,16 @@
       "full_width": true
     },
     {
+      "type": "banners-grid",
+      "banners": [
+        {
+          "img": "/img/uploads/banner-meio-desk.webp",
+          "link": "https://customic.com.br/combos",
+          "mobile_img": "/img/uploads/banner-meio-desk.webp"
+        }
+      ]
+    },
+    {
       "type": "collection-shelf",
       "shuffle": true,
       "limit": 12,
