@@ -106,10 +106,6 @@
     {
       "src": "https://i.imgur.com/l7i8Aqh.png",
       "link": "https://www.ssllabs.com/ssltest/analyze.html?d=customic.com.br"
-    },
-    {
-      "link": "https://transparencyreport.google.com/safe-browsing/search?url=customic.com.br",
-      "src": "https://i.imgur.com/RxVM87b.png"
     }
   ],
   "payment_methods": {
