@@ -42,13 +42,7 @@
     },
     {
       "type": "banners-grid",
-      "banners": [
-        {
-          "img": "/img/uploads/banner-frete-gra-tis-desk-1-1-.png",
-          "link": "https://customic.com.br/combos",
-          "mobile_img": "/img/uploads/banner-frete-gra-tis-mobile-2-.png"
-        }
-      ]
+      "banners": []
     },
     {
       "type": "collection-shelf",
