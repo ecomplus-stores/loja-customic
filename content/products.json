@@ -9,6 +9,10 @@
       "enabled": true
     },
     {
+      "type": "related-products",
+      "title": "Produtos relacionados"
+    },
+    {
       "type": "collection-shelf",
       "shuffle": false,
       "limit": 24,
