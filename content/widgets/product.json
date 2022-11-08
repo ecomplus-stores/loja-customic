@@ -6,8 +6,8 @@
     "buyText": "Adicionar ao carrinho",
     "buy": "",
     "strHasQuantitySelector": "_",
+    "strHasPromotionTimer": "true",
     "lowQuantityToWarn": 12,
-    "maxVariationOptionsBtns": 11,
-    "strHasPromotionTimer": "true"
+    "maxVariationOptionsBtns": 11
   }
 }
