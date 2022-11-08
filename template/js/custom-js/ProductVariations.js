@@ -193,11 +193,12 @@ export default {
 
     selectOption(optionText, grid, gridIndex) {
       const { product, selectedOptions, orderedGrids } = this;
-      this.$set(selectedOptions, grid, optionText);
+      const variationText = optionText.replace('(novo)', '').trim()
+      this.$set(selectedOptions, grid, variationText);
       this.$emit("select-option", {
         gridId: grid,
         gridIndex,
-        optionText
+        variationText
       });
       const filterGrids = {};
       for (let i = 0; i <= gridIndex; i++) {
