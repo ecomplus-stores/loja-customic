@@ -9,6 +9,10 @@
       "enabled": true
     },
     {
+      "type": "buy-together",
+      "enabled": true
+    },
+    {
       "type": "collection-shelf",
       "shuffle": false,
       "limit": 24,
