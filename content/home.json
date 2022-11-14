@@ -180,10 +180,6 @@
     },
     {
       "type": "custom-html",
-      "html": "    <script src=\"https://apps.elfsight.com/p/platform.js\" defer></script>\n    <div class=\"elfsight-app-d375a349-e49e-41f6-852f-ff284ac96fef\"></div>"
-    },
-    {
-      "type": "custom-html",
       "html": "    <script src=\"https://apps.elfsight.com/p/platform.js\" defer></script>\n    <div class=\"elfsight-app-ed77facd-0db9-4174-b4b5-9a779d756da0\"></div>"
     }
   ]
