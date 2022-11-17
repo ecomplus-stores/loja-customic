@@ -171,13 +171,8 @@
       "title": "Linha AntiBactéria® Customic"
     },
     {
-      "type": "banners-grid",
-      "banners": [
-        {
-          "img": "/img/uploads/captura-de-tela-2022-11-17-111634.png",
-          "link": "https://www.instagram.com/customic/"
-        }
-      ]
+      "type": "custom-content",
+      "markdown": "<div class=\"collectionID\"><h2 class=\"my-0\"><div style=\"text-align:center\">Siga a @customic no Instagram</h2></div>"
     },
     {
       "type": "banners-grid",
