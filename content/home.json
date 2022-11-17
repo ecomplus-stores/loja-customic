@@ -174,6 +174,14 @@
       "type": "banners-grid",
       "banners": [
         {
+          "img": "/img/uploads/captura-de-tela-2022-11-17-100309.png"
+        }
+      ]
+    },
+    {
+      "type": "banners-grid",
+      "banners": [
+        {
           "img": "/img/uploads/anyconv.com__banner-insta-desk.webp",
           "link": "https://www.instagram.com/customic/",
           "mobile_img": "/img/uploads/anyconv.com__banner-insta-mobile.webp"
