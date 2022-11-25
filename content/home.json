@@ -54,7 +54,7 @@
     {
       "type": "collection-shelf",
       "shuffle": false,
-      "limit": 12,
+      "limit": 16,
       "page": "",
       "sort": "sales",
       "title": "Mais vendidos 🏆"
