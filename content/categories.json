@@ -17,7 +17,7 @@
     },
     {
       "type": "category-retail",
-      "enabled": true,
+      "enabled": false,
       "sort": "views"
     },
     {
