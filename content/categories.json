@@ -17,8 +17,8 @@
     },
     {
       "type": "category-retail",
-      "enabled": false,
-      "sort": "views"
+      "enabled": true,
+      "sort": "sales"
     },
     {
       "type": "custom-html",
