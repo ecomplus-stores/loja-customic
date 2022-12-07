@@ -41,16 +41,25 @@
       "full_width": true
     },
     {
-      "type": "banners-grid",
-      "banners": []
-    },
-    {
       "type": "collection-shelf",
       "shuffle": false,
       "limit": 16,
       "page": "",
       "sort": "sales",
       "title": "Mais vendidos 🏆"
+    },
+    {
+      "type": "collection-shelf",
+      "shuffle": true,
+      "limit": 12,
+      "page": 1,
+      "collection_id": "6345882073321213f8a6a9a6:categories:Capas para todos modelos de iPhone 14:/new-iphone-14",
+      "sort": "sales",
+      "title": "Capas para iPhone 14 "
+    },
+    {
+      "type": "banners-grid",
+      "banners": []
     },
     {
       "type": "banners-grid",
