@@ -1,6 +1,21 @@
 {
   "hosting": {
      "redirects": [
+      {
+        "source": "/airpod-silicon-black",
+        "destination": "/airpod-silicon",
+        "type": 301
+      },
+      {
+        "source": "/impactor-clear",
+        "destination":  "/impactor-clear-all",
+        "type": 301
+      },
+      {
+        "source":  "/soft-touch",
+        "destination":  "/soft-touch-all",
+        "type": 301
+      },
 {
         "source":  "/pelicula-gel-7-camadas-customic",
         "destination":  "/pelicula-gel-7-camadas",
