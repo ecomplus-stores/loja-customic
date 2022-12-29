@@ -287,3 +287,27 @@ color: #fff !important;
         left: 45%;
     }   
 }
+@font-face {
+    font-family: "Flama-Basic";
+    font-style: normal;
+    font-weight: 400;
+    src: url("https://fonts.animaapp.com/Flama-Basic") format("opentype");
+  }
+  @font-face {
+    font-family: "Flama-Medium";
+    font-style: normal;
+    font-weight: 500;
+    src: url("https://fonts.animaapp.com/Flama-Medium") format("opentype");
+  }
+  @font-face {
+    font-family: "Flama-Light";
+    font-style: normal;
+    font-weight: 300;
+    src: url("https://fonts.animaapp.com/Flama-Light") format("opentype");
+  }
+  @font-face {
+    font-family: "Flama-BasicItalic";
+    font-style: italic;
+    font-weight: 400;
+    src: url("https://fonts.animaapp.com/Flama-BasicItalic") format("opentype");
+  }
