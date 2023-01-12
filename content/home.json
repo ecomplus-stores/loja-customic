@@ -9,13 +9,6 @@
         {
           "start": "",
           "end": "",
-          "img": "/img/uploads/iphone14-desk.webp",
-          "link": "https://customic.com.br/new-iphone-14",
-          "mobile_img": "/img/uploads/iphone-14-mobile-3-2-.webp"
-        },
-        {
-          "start": "",
-          "end": "",
           "img": "/img/uploads/seed-desk.webp",
           "link": "https://customic.com.br/seed-eco-case-all",
           "alt": "Seed Eco Case Biodegradável 2023",
@@ -28,6 +21,13 @@
           "link": "https://customic.com.br/popsockets-popgrip-plant-eco-grip-light-jade",
           "alt": "PopSockets Plant Eco Grip Mais Sustentável 2023",
           "mobile_img": "/img/uploads/plant-mobile.webp"
+        },
+        {
+          "start": "",
+          "end": "",
+          "img": "/img/uploads/iphone14-desk.webp",
+          "link": "https://customic.com.br/new-iphone-14",
+          "mobile_img": "/img/uploads/iphone-14-mobile-3-2-.webp"
         },
         {
           "start": "",
