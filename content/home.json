@@ -9,7 +9,7 @@
         {
           "start": "",
           "end": "",
-          "img": "/img/uploads/seed-desk.webp",
+          "img": "/img/uploads/banner-seed-desk.webp",
           "link": "https://customic.com.br/seed-eco-case-all",
           "alt": "Seed Eco Case Biodegradável 2023",
           "mobile_img": "/img/uploads/seed-mobile.webp"
@@ -17,7 +17,7 @@
         {
           "start": "",
           "end": "",
-          "img": "/img/uploads/plant-desk.webp",
+          "img": "/img/uploads/banner-plant-desk.webp",
           "link": "https://customic.com.br/popsockets-popgrip-plant-eco-grip-light-jade",
           "alt": "PopSockets Plant Eco Grip Mais Sustentável 2023",
           "mobile_img": "/img/uploads/plant-mobile.webp"
@@ -25,32 +25,32 @@
         {
           "start": "",
           "end": "",
-          "img": "/img/uploads/iphone14-desk.webp",
+          "img": "/img/uploads/banner-iphone14-desk-1-.webp",
           "link": "https://customic.com.br/new-iphone-14",
-          "mobile_img": "/img/uploads/iphone-14-mobile-3-2-.webp"
+          "mobile_img": "/img/uploads/iphone-14-mobile-3-2-1-.webp"
         },
         {
           "start": "",
           "end": "",
           "img": "/img/uploads/banner-desk-10anos.webp",
-          "mobile_img": "/img/uploads/banner-mobile-10anos.png.webp",
+          "mobile_img": "/img/uploads/mobile-10anos.png-1-.webp",
           "alt": "Customic 10 anos",
           "link": "https://customic.com.br/new-iphone-14"
         },
         {
           "start": "",
           "end": "",
-          "img": "/img/uploads/atualizados-2400x932-purple.webp",
+          "img": "/img/uploads/banner-atualizados-2400x932-purple.webp",
           "link": "https://customic.com.br/impactor-flex-antibacteria-all",
           "alt": "Capa Impactor Flex Proteção Militar Certificada Customic ",
-          "mobile_img": "/img/uploads/banner-mobile-2022_copiar.webp"
+          "mobile_img": "/img/uploads/mobile-2022_copiar.webp"
         },
         {
           "start": "",
           "end": "",
-          "img": "/img/uploads/atualizados-2400x932-atiblue.webp",
+          "img": "/img/uploads/banner-atualizados-2400x932-antiblue.webp",
           "link": "https://customic.com.br/pelicula-antiblue-vidro-3d-customic",
-          "mobile_img": "/img/uploads/banner-mobile-2022-antiblue-2.webp",
+          "mobile_img": "/img/uploads/mobile-2022-antiblue-2.webp",
           "alt": "Película AntiBlue Vidro 3D Customic"
         }
       ],
