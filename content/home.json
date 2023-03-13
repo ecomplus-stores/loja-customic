@@ -18,7 +18,8 @@
           "start": "",
           "end": "",
           "img": "/img/uploads/bannermodghostmarbledesk.png",
-          "mobile_img": "/img/uploads/bannermodghostmarblemobile-1-.png"
+          "mobile_img": "/img/uploads/bannermodghostmarblemobile-1-.png",
+          "alt": " "
         },
         {
           "start": "",
