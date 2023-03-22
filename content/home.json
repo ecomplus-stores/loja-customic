@@ -90,14 +90,6 @@
       "title": "Mais vendidos 🏆"
     },
     {
-      "type": "collection-shelf",
-      "shuffle": false,
-      "limit": 12,
-      "page": 1,
-      "collection_id": "61167e3fcfbcd970597cfb1b:categories:Compatíveis com Carregamento MagSafe:/linha-magsafe",
-      "sort": "sales"
-    },
-    {
       "type": "banners-grid",
       "banners": [
         {
@@ -115,15 +107,6 @@
       "collection_id": "60ccf877d24de4526fa8aa4e:collections:Capas Biodegradáveis Seed® Eco Case:/capas-especiais-e-eco-cases-biodegradaveis",
       "title": "🌱Capas Biodegradáveis Seed® Eco Case",
       "sort": "sales"
-    },
-    {
-      "type": "collection-shelf",
-      "shuffle": false,
-      "limit": 12,
-      "page": 1,
-      "collection_id": "6352b5d373321213f8b6dd56:collections:Acessórios Eco:/acessorios-eco",
-      "sort": "sales",
-      "title": "Acessórios Eco🎍"
     },
     {
       "type": "collection-shelf",
