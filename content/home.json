@@ -157,7 +157,7 @@
     },
     {
       "type": "collection-shelf",
-      "shuffle": false,
+      "shuffle": true,
       "limit": "",
       "page": "",
       "collection_id": "60871b81e875b03a408daf0c:categories:PopSockets:/popsockets",
