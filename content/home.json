@@ -17,13 +17,6 @@
         {
           "start": "",
           "end": "",
-          "img": "/img/uploads/bannermodghostmarbledesk.webp",
-          "mobile_img": "/img/uploads/bannermodghostmarblemobile-_1_.webp",
-          "alt": " "
-        },
-        {
-          "start": "",
-          "end": "",
           "img": "/img/uploads/banner-seed-desk.webp",
           "link": "https://customic.com.br/seed-eco-case-all",
           "alt": "Seed Eco Case Biodegradável 2023",
@@ -70,6 +63,16 @@
         }
       ],
       "full_width": true
+    },
+    {
+      "type": "banners-grid",
+      "banners": [
+        {
+          "img": "/img/uploads/banner-meio-deskcherrycustomic.png",
+          "mobile_img": "/img/uploads/banner-meio-mobilecherrypopsockets.png",
+          "link": "https://customic.com.br/search?term=popsockets"
+        }
+      ]
     },
     {
       "type": "collection-shelf",
