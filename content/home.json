@@ -194,6 +194,10 @@
       "html": "<div role=\"main\" id=\"b2c-newsletter-site-28eb1cb7f1fd2326ac39\"></div><script type=\"text/javascript\" src=\"https://d335luupugsy2.cloudfront.net/js/rdstation-forms/stable/rdstation-forms.min.js\"></script><script type=\"text/javascript\"> new RDStationForms('b2c-newsletter-site-28eb1cb7f1fd2326ac39', 'UA-28628232-1').createForm();</script>"
     },
     {
+      "type": "custom-content",
+      "markdown": "<div class=\"collectionID\"><h2 class=\"my-0\"><div style=\"text-align:center\">Siga-nos também no Insta [@customic](https://www.instagram.com/customic/) </h2></div>"
+    },
+    {
       "type": "banners-grid",
       "banners": [
         {
