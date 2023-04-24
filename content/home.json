@@ -77,6 +77,15 @@
     {
       "type": "collection-shelf",
       "shuffle": false,
+      "limit": 24,
+      "page": 1,
+      "collection_id": "60871b81e875b03a408daf0c:categories:PopSockets:/popsockets",
+      "title": "Últimos Lançamentos",
+      "sort": "news"
+    },
+    {
+      "type": "collection-shelf",
+      "shuffle": false,
       "limit": 12,
       "page": 1,
       "collection_id": "6345882073321213f8a6a9a6:categories:Capas para todos modelos de iPhone 14:/new-iphone-14",
@@ -93,6 +102,12 @@
       "title": "Mais vendidos 🏆"
     },
     {
+      "type": "collection-shelf",
+      "shuffle": false,
+      "limit": 12,
+      "page": 1
+    },
+    {
       "type": "banners-grid",
       "banners": [
         {
@@ -101,15 +116,6 @@
           "mobile_img": "/img/uploads/mobile.webp"
         }
       ]
-    },
-    {
-      "type": "collection-shelf",
-      "shuffle": false,
-      "limit": 12,
-      "page": 1,
-      "collection_id": "60ccf877d24de4526fa8aa4e:collections:Capas Biodegradáveis Seed® Eco Case:/capas-especiais-e-eco-cases-biodegradaveis",
-      "title": "🌱Capas Biodegradáveis Seed® Eco Case",
-      "sort": "sales"
     },
     {
       "type": "collection-shelf",
