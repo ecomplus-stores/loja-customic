@@ -204,16 +204,6 @@
     {
       "type": "custom-content",
       "markdown": "<div class=\"collectionID\"><h2 class=\"my-0\"><div style=\"text-align:center\">Siga-nos também no Instagram @customic </h2></div>"
-    },
-    {
-      "type": "banners-grid",
-      "banners": [
-        {
-          "img": "/img/uploads/template-6-.png",
-          "mobile_img": "/img/uploads/template-_5_.webp",
-          "link": "www.instagram.com/customic/"
-        }
-      ]
     }
   ]
 }
