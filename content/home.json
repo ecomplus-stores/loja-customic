@@ -4,8 +4,16 @@
   "sections": [
     {
       "type": "banner-slider",
-      "autoplay": 10000,
+      "autoplay": 3000,
       "slides": [
+        {
+          "start": "",
+          "end": "",
+          "img": "/img/uploads/pop-lancamentos-desk-min.webp",
+          "mobile_img": "/img/uploads/pop-lancamentos-mobile-min.webp",
+          "link": "https://customic.com.br/popsockets",
+          "alt": "Lançamaneto Popscoekts 2023"
+        },
         {
           "start": "",
           "end": "",
