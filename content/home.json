@@ -4,16 +4,8 @@
   "sections": [
     {
       "type": "banner-slider",
-      "autoplay": 3000,
+      "autoplay": 4000,
       "slides": [
-        {
-          "start": "",
-          "end": "",
-          "img": "/img/uploads/pop-lancamentos-desk-min.webp",
-          "mobile_img": "/img/uploads/pop-lancamentos-mobile-min.webp",
-          "link": "https://customic.com.br/popsockets",
-          "alt": "Lançamaneto Popscoekts 2023"
-        },
         {
           "start": "",
           "end": "",
@@ -21,6 +13,14 @@
           "mobile_img": "/img/uploads/galaxy-s23-mobile.webp",
           "link": "https://customic.com.br/galaxy-s23",
           "alt": "Capas Customic para Galaxy S23, garanta a sua!"
+        },
+        {
+          "start": "",
+          "end": "",
+          "img": "/img/uploads/pop-lancamentos-desk-min.webp",
+          "mobile_img": "/img/uploads/pop-lancamentos-mobile-min.webp",
+          "link": "https://customic.com.br/popsockets",
+          "alt": "Lançamaneto Popscoekts 2023"
         },
         {
           "start": "",
