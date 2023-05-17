@@ -227,6 +227,10 @@
     {
       "type": "custom-html",
       "html": "<div role=\"main\" id=\"b2c-newsletter-site-28eb1cb7f1fd2326ac39\"></div><script type=\"text/javascript\" src=\"https://d335luupugsy2.cloudfront.net/js/rdstation-forms/stable/rdstation-forms.min.js\"></script><script type=\"text/javascript\"> new RDStationForms('b2c-newsletter-site-28eb1cb7f1fd2326ac39', 'UA-28628232-1').createForm();</script>"
+    },
+    {
+      "type": "custom-html",
+      "html": "    <script src=\"https://apps.elfsight.com/p/platform.js\" defer></script>\n    <div class=\"elfsight-app-ed77facd-0db9-4174-b4b5-9a779d756da0\"></div>"
     }
   ]
 }
