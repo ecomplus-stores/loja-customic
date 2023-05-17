@@ -210,6 +210,17 @@
       "collection_id": "60ccf877d24de4526fa8aa4e:collections:Capas Biodegradáveis Seed® Eco Case:/capas-especiais-e-eco-cases-biodegradaveis"
     },
     {
+      "type": "banners-grid",
+      "banners": [
+        {
+          "img": "/img/uploads/banner-insta-desk.png",
+          "mobile_img": "/img/uploads/anyconv.com__banner-insta-mobile.webp",
+          "link": "https://www.instagram.com/customic/",
+          "alt": "Insta Customic 2023 "
+        }
+      ]
+    },
+    {
       "type": "custom-html",
       "html": "<script src=\"https://apps.elfsight.com/p/platform.js\" async defer></script>\n<div class=\"elfsight-app-14b72718-8137-4776-902d-4349efb17d51\"></div>"
     },
