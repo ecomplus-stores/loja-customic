@@ -293,7 +293,7 @@ const isCentralizedLogo = header.centralized_logo
                     %>
                     <nav class="header__submenu<%= fullWidthSubmenu ? ' header__submenu--full' : '' %>" id="<%= `s-${slug.replace(/\//g, '_')}` %>">
                       <% subcategories.forEach(subcategory => { %>
-                        <div>               
+                        <div id="sub-<%= subcategory._id %>">               
                           <a class="subcategory" id="cd-<%= subcategory._id %>" href="/<%= subcategory.slug %>"><%= subcategory.name %></a>
                           <% const thirdCategories = _.categories.filter(({ parent }) => parent && parent.slug === subcategory.slug) %>
                           <%
