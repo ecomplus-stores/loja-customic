@@ -5,6 +5,10 @@
       "enabled": true
     },
     {
+      "type": "product-block",
+      "enabled": true
+    },
+    {
       "type": "collection-shelf",
       "shuffle": false,
       "limit": 24,
@@ -30,10 +34,6 @@
     },
     {
       "type": "product-specifications",
-      "enabled": true
-    },
-    {
-      "type": "product-block",
       "enabled": true
     },
     {
