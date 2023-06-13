@@ -9,16 +9,16 @@
       "enabled": true
     },
     {
+      "type": "document-description",
+      "enabled": true
+    },
+    {
       "type": "page-title"
     },
     {
       "type": "category-retail",
       "enabled": true,
       "sort": "views"
-    },
-    {
-      "type": "document-description",
-      "enabled": true
     },
     {
       "type": "custom-html",
