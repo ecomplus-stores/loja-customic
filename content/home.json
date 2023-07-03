@@ -89,16 +89,6 @@
       "full_width": true
     },
     {
-      "type": "banners-grid",
-      "banners": [
-        {
-          "img": "/img/uploads/banner-meio-deskbrush.png",
-          "mobile_img": "/img/uploads/banner-meio-mobilbrush.png",
-          "link": "https://customic.com.br/search?term=popsockets"
-        }
-      ]
-    },
-    {
       "type": "collection-shelf",
       "shuffle": false,
       "limit": 24,
