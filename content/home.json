@@ -89,6 +89,15 @@
       "full_width": true
     },
     {
+      "type": "banners-grid",
+      "banners": [
+        {
+          "img": "/img/uploads/banner-meio-deskbrilhocustomic-1-.png",
+          "mobile_img": "/img/uploads/banner-meio-mobilellhamapopsockets-7-.png"
+        }
+      ]
+    },
+    {
       "type": "collection-shelf",
       "shuffle": false,
       "limit": 24,
