@@ -60,12 +60,12 @@ const themeCustom = _.settings.theme.custom || ''
 
           <% if (footer.contacts.socials) { %>
             <p class="footer__social">
+              <div class="footer__title">
+                Redes Sociais
+              </div>
               <%- await include('@/layout/inc/networks', { _, contacts }) %>
             </p>
           <% } %>
-          <div id="fb-root"></div>
-          <script async defer crossorigin="anonymous" src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v13.0&appId=167752976907076&autoLogAppEvents=1" nonce="oc5AFq9K"></script>
-          <div class="fb-page" data-href="https://www.facebook.com/Customic/" data-tabs="" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/Customic/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/Customic/">Customic</a></blockquote></div>
         </div>
       </div>
 
