@@ -41,25 +41,25 @@
         {
           "start": "",
           "end": "",
-          "img": "/img/uploads/banner-desk-10anos.webp",
-          "mobile_img": "/img/uploads/mobile-10anos.png-1-.webp",
+          "img": "/img/uploads/5-banner-desk-10anos.webp",
+          "mobile_img": "/img/uploads/5-banner-desk-10anos-mobile.webp",
           "alt": "Customic 10 anos",
           "link": "https://customic.pages.pro.br/sobre-a-customic-2023"
         },
         {
           "start": "",
           "end": "",
-          "img": "/img/uploads/banner-atualizados-2400x932-purple.webp",
+          "img": "/img/uploads/7-banner-flex-purple.webp",
           "link": "https://customic.com.br/impactor-flex-antibacteria-all",
           "alt": "Capa Impactor Flex Proteção Militar Certificada Customic ",
-          "mobile_img": "/img/uploads/mobile-2022_copiar.webp"
+          "mobile_img": "/img/uploads/7-banner-flex-purple.webp"
         },
         {
           "start": "",
           "end": "",
-          "img": "/img/uploads/banner-atualizados-2400x932-antiblue.webp",
+          "img": "/img/uploads/6-banner-antiblue.webp",
           "link": "https://customic.com.br/pelicula-antiblue-vidro-3d-customic",
-          "mobile_img": "/img/uploads/mobile-2022-antiblue-2.webp",
+          "mobile_img": "/img/uploads/7-banner-flex-purple.webp",
           "alt": "Película AntiBlue Vidro 3D Customic"
         }
       ],
