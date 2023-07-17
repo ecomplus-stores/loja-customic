@@ -171,10 +171,6 @@
     },
     {
       "type": "custom-html",
-      "html": "    <!-- LightWidget WIDGET --><script src=\"https://cdn.lightwidget.com/widgets/lightwidget.js\"></script><iframe src=\"//lightwidget.com/widgets/b1dcd77c120b5ec7b710877a9b0f381f.html\" scrolling=\"no\" allowtransparency=\"true\" class=\"lightwidget-widget\" style=\"width:100%;border:0;overflow:hidden;\"></iframe>"
-    },
-    {
-      "type": "custom-html",
       "html": "<div role=\"main\" id=\"b2c-newsletter-site-28eb1cb7f1fd2326ac39\"></div><script type=\"text/javascript\" src=\"https://d335luupugsy2.cloudfront.net/js/rdstation-forms/stable/rdstation-forms.min.js\"></script><script type=\"text/javascript\"> new RDStationForms('b2c-newsletter-site-28eb1cb7f1fd2326ac39', 'UA-28628232-1').createForm();</script>"
     }
   ]
