@@ -4,7 +4,7 @@
   "sections": [
     {
       "type": "banner-slider",
-      "autoplay": 10000,
+      "autoplay": 8000,
       "slides": [
         {
           "start": "",
@@ -70,7 +70,7 @@
       "banners": [
         {
           "img": "/img/uploads/banner-meio-deskbrilhocustomic-1-.webp",
-          "mobile_img": "/img/uploads/banner-meio-mobilellhamapopsockets-7-.webp"
+          "mobile_img": "/img/uploads/banner-meio-mobilellhamapopsockets-7-1-.webp"
         }
       ]
     },
