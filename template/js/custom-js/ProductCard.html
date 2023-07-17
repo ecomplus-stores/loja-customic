@@ -1,4 +1,5 @@
 <div
+  v-if="isInStock"
   class="product-card"
   :class="{
     'product-card--inactive': body._id && !isActive,
