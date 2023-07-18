@@ -1,0 +1,52 @@
+<%
+if (opt.img) {
+  const { width, height } = _.tryImageSize(opt.img, opt)
+  const sources = [{ src: opt.img }]
+  if (opt.mobile_img) {
+    sources[0].media = '(min-width: 576px)'
+    const { width, height } = _.tryImageSize(opt.mobile_img)
+    sources.push({
+      src: opt.mobile_img,
+      media: '(min-width: 100px)',
+      width,
+      height
+    })
+  }
+  sources.forEach(source => {
+    if (source.src.endsWith('.webp')) {
+      source.type = 'image/webp'
+      sources.push({
+        src: source.src.replace('.webp', '.png'),
+        media: source.media,
+        type: 'image/png'
+      })
+    }
+  })
+  %>
+
+  <div class="banner">
+    <a
+      href="<%= opt.link || 'javascript:;' %>"
+      aria-label="<%= opt.alt %>"
+    >
+    <video autoplay loop style="max-width: 100%; width: 100%;">
+      <source class="desktop" media="(min-width: 576px)" src="<%= opt.img.replace('.webm', '') %>.webm" type="video/webm">
+      <source class="desktop1" media="(min-width: 576px)" src="<%= opt.img.replace('.webm', '') %>.mp4" type="video/mp4">
+      <source class="mobile" media="(min-width: 100px)" src="<%= opt.mobile_img.replace('.webm', '') %>.webm" type="video/webm">
+      <source class="mobile1" media="(min-width: 100px)" src="<%= opt.mobile_img.replace('.webm', '') %>.mp4" type="video/mp4">
+      <p>Your browser cannot play the provided video file.</p>
+    </video>
+    <script type="text/javascript">
+      if (window.screen.width < 576) {
+        document.querySelector('video .desktop1').remove()
+        document.querySelector('video .desktop').remove()
+      } else {
+        document.querySelector('video .mobile1').remove()
+        document.querySelector('video .mobile').remove()
+      }
+    </script>
+    </a>
+  </div>
+  <%
+}
+%>
