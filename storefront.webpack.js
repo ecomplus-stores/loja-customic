@@ -17,6 +17,7 @@ module.exports = () => ({
       './html/SearchEngine.html': path.resolve(__dirname, 'template/js/custom-js/SearchEngine.html'),
       './html/ProductCard.html': path.resolve(__dirname, 'template/js/custom-js/ProductCard.html'),
       './html/ShippingCalculator.html': path.resolve(__dirname, 'template/js/custom-js/ShippingCalculator.html')
+      //'./html/ProductGallery.html': path.resolve(__dirname, 'template/js/custom-js/ProductGallery.html')
     }
   }
 })
