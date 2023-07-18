@@ -41,7 +41,7 @@ if (slides && slides.length) {
         <ul class="glide__slides banner-slider__slides">
           <% for (let i = 0; i < slides.length; i++) { %>
             <% if (slides[i].img.endsWith('webm')) { %>
-              <li class="glide__slide">
+              <li class="glide__slide video">
                 <%- await include('@/sections/inc/video', {
                   _, opt: { ...slides[i], height_auto: true, sync_load: i === 0 }
                 }) %>

@@ -315,3 +315,10 @@ color: #fff !important;
     font-weight: 400;
     src: url("https://fonts.animaapp.com/Flama-BasicItalic") format("opentype");
   }
+
+  @media(min-width: 990px) {
+    .glide__slide.video video {
+      height: 427px;
+      width: 100%;
+    }
+  }
