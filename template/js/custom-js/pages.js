@@ -42,4 +42,8 @@ storefront.on('widget:@ecomplus/widget-minicart', function () {
     }, 2400);
   });
 
-  
+  $(window).one('scroll', () => {
+    if (!localStorage.getItem('cookieconsent')) {
+      document.getElementById('cookieconsent').classList.remove("d-none");
+    }
+  })
