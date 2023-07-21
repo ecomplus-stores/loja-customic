@@ -19,5 +19,18 @@ async function loadAsync () {
     })
     observer.observe()
   }
+
+    //popup
+   lozad(document.getElementById('popup-rd'), {
+    rootMargin: '350px 0px',
+    threshold: 0,
+    load () {
+      const script = document.createElement('script')
+      script.src = 'https://d335luupugsy2.cloudfront.net/js/loader-scripts/f31e0d37-3ae8-4b64-b234-2c6283bfd88d-loader.js'
+      script.id = 'rd-popup'
+      script.async = true
+      document.getElementById('popup-rd').appendChild(script)
+    }
+  }).observe()
 }
 loadAsync()
