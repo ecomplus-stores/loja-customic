@@ -32,5 +32,18 @@ async function loadAsync () {
       document.getElementById('popup-rd').appendChild(script)
     }
   }).observe()
+
+  // direct
+  lozad(document.getElementById('chat-direct'), {
+    rootMargin: '350px 0px',
+    threshold: 0,
+    load () {
+      const script = document.createElement('script')
+      script.src = 'https://www5.directtalk.com.br/clientes/custom/Customic/widget.min.js'
+      script.id = 'dt-widget'
+      script.async = true
+      document.getElementById('chat-direct').appendChild(script)
+    }
+  }).observe()
 }
 loadAsync()
