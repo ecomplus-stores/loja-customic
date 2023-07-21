@@ -12,7 +12,7 @@
           "img": "/img/uploads/2-banner-spot_desk.webp",
           "link": "https://customic.com.br/capa-customic-spot-silicone-reciclado-apple",
           "alt": "https://customic.com.br/capa-customic-spot-silicone-reciclado-apple",
-          "mobile_img": "/img/uploads/2-banner-spot-mobile-ajustado-ok.webp"
+          "mobile_img": "/img/uploads/2-banner-spot-mobile-ajustado.webp"
         },
         {
           "start": "",
@@ -28,7 +28,7 @@
           "img": "/img/uploads/3-banner-seed-desk.webp",
           "link": "https://customic.com.br/search?term=Seed+Eco+Biodegrad%C3%A1vel",
           "alt": "Seed Eco Case Biodegradável 2023",
-          "mobile_img": "/img/uploads/3-banner-seed-mobile.webp"
+          "mobile_img": "/img/uploads/4-banner-plant-mobile-ajustado.webp"
         },
         {
           "start": "",
@@ -42,7 +42,7 @@
           "start": "",
           "end": "",
           "img": "/img/uploads/5-banner-desk-10anos.webp",
-          "mobile_img": "/img/uploads/5-banner-desk-10anos-mobile.webp",
+          "mobile_img": "/img/uploads/5-banner-desk-10anos-mobile-ajustado.webp",
           "alt": "Customic 10 anos",
           "link": "https://customic.pages.pro.br/sobre-a-customic-2023"
         },
@@ -50,7 +50,7 @@
           "start": "",
           "end": "",
           "img": "/img/uploads/7-banner-flex-purple.webp",
-          "mobile_img": "/img/uploads/7-banner-flex-purple-mobile.webp",
+          "mobile_img": "/img/uploads/7-banner-flex-purple-mobile-ajustado.webp",
           "link": "https://customic.com.br/impactor-flex-apple",
           "alt": "Capa Customic Impactor Flex Purple"
         },
@@ -59,7 +59,7 @@
           "end": "",
           "img": "/img/uploads/6-banner-antiblue.webp",
           "link": "https://customic.com.br/pelicula-antiblue-vidro-3d-customic",
-          "mobile_img": "/img/uploads/6-banner-antiblue-mobile.webp",
+          "mobile_img": "/img/uploads/6-banner-antiblue-mobile-ajustado.webp",
           "alt": "Película AntiBlue Vidro 3D Customic"
         }
       ],
