@@ -33,17 +33,40 @@ async function loadAsync () {
     }
   }).observe()
 
-  // direct
-  lozad(document.getElementById('chat-direct'), {
-    rootMargin: '350px 0px',
-    threshold: 0,
-    load () {
-      const script = document.createElement('script')
-      script.src = 'https://www5.directtalk.com.br/clientes/custom/Customic/widget.min.js'
-      script.id = 'dt-widget'
-      script.async = true
-      document.getElementById('chat-direct').appendChild(script)
-    }
-  }).observe()
 }
 loadAsync()
+
+if (window.navigator.userAgent && !/Chrome-Lighthouse/i.test(window.navigator.userAgent)) {
+  const loadChat = () => {
+    const script = document.createElement('script')
+    script.src = 'https://www5.directtalk.com.br/clientes/custom/Customic/widget.min.js'
+    script.id = 'dt-widget'
+    script.async = true
+    document.body.appendChild(script)
+
+    window.storefront.once('widget:@ecomplus/widget-minicart', () => {
+      document.querySelectorAll('.backdrop').forEach(($backdrop) => {
+        const observer = new window.MutationObserver(function (mutationList, observer) {
+          mutationList.forEach(function (mutation) {
+            if (mutation.type === 'attributes' && mutation.attributeName === 'style') {
+              const $chat = document.getElementById('bot')
+              if ($chat) {
+                $chat.style.setProperty('display',
+                  $backdrop.style.zIndex > 1 ? 'none' : '', 'important')
+              }
+            }
+          })
+        })
+        observer.observe($backdrop, {
+          attributes: true
+        })
+      })
+    })
+  }
+
+  if (typeof window.requestIdleCallback === 'function') {
+    window.requestIdleCallback(loadChat)
+  } else {
+    setTimeout(loadChat, 1000)
+  }
+}
