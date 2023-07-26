@@ -64,9 +64,7 @@ if (window.navigator.userAgent && !/Chrome-Lighthouse/i.test(window.navigator.us
     })
   }
 
-  if (typeof window.requestIdleCallback === 'function') {
-    setTimeout(window.requestIdleCallback(loadChat), 1600)
-  } else {
-    setTimeout(loadChat, 2000)
-  }
+  $(window).one('scroll', () => {
+    loadChat()
+  })
 }
