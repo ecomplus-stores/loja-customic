@@ -12,6 +12,12 @@
         ).replace(
           /<img class="lozad" data-src="([^'"]+)"([^>]+)class=['"]([^'"]+)['"]([^/>]+)?>/g,
           '<img class="lozad $3" data-src="$1" $2 $4>'
+        ).replace(
+          /<iframe src="([^"]+)"([^>]+)>/g,
+          '<iframe class="lozad" data-src="$1"$2>'
+        ).replace(
+          /<video class=['"]([^'"]+)['"]([^/>]+)? ([^/>]+)?src="([^"]+)"([^>]+)>/g,
+          '<video class="lozad $1" data-src="$4"$2 $3>'
         ) %>
       </div>
     </div>
