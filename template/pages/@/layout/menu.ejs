@@ -20,11 +20,8 @@ const allCategories = menu.alphabetical_order
   ? _.lodash.sortBy(_.categories, ['name'])
   : _.categories
 
-const filteredCategories = allCategories.filter(cat => {
-  return categoriesHeader.indexOf(`/${cat.slug}`) > -1
-})
 
-const categoryParents = _.lodash.groupBy(filteredCategories, ({ parent }) => {
+const categoryParents = _.lodash.groupBy(allCategories, ({ parent }) => {
   return !parent || !parent.slug ? '_' : parent.slug
 })
 const getSubmenuId = slug => `a-${slug.replace(/\//g, '_')}`
@@ -59,6 +56,7 @@ if (mainCategories) {
     </button>
 
     <% for (const slug in categoryParents) { %>
+      
       <% if (categoryParents.hasOwnProperty(slug)) { %>
         <% let category, parent %>
         <div
@@ -133,7 +131,7 @@ if (mainCategories) {
             <a id="personalize" targe="_blank" class="menu__item" href="https://www.lab.customic.com.br/">Personalize</a>
           </div>
 
-          <% if (category && category.slug) { %>
+          <% if (category && category.slug && categoriesHeader.indexOf('/' + category.slug)) { %>
             <a href="/<%= category.slug %>" class="menu__link">
               <%= _.dictionary('seeAll$1Category').replace('$1', category.name) %>
             </a>
