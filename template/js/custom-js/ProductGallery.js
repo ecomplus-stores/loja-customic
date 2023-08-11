@@ -1,174 +1,255 @@
-<section class="gallery">
-    <div class="gallery__thumbs">
-      <div
-        v-if="videoSrc"
-        class="gallery__item gallery__item--video"
-        :class="{ 'gallery__item--selected': localPictures.length === activeIndex }"
-        @click="activeIndex = localPictures.length"
-      >
-        <i class="i-play"></i>
-        <span>{{ i19video }}</span>
-      </div>
-  
-      <div
-        v-for="(picture, i) in localPictures"
-        :key="'img-' + i"
-        class="gallery__item"
-        :class="{ 'gallery__item--selected': i === activeIndex }"
-        @click="activeIndex = i"
-      >
-        <a-picture
-          v-if="i < 4"
-          class="gallery__thumb"
-          :src="getImg(picture, null, 'small')"
-        />
-      </div>
-  
-      <button
-        v-if="localPictures.length > 4"
-        type="button"
-        class="gallery__open btn btn-dark"
-        :style="zoomLinkStyle"
-        :title="i19openGallery"
-        @click.prevent="openZoom(4)"
-      >
-        +{{ localPictures.length - 4 }}
-      </button>
-    </div>
-  
-    <div class="gallery__stage">
-      <div
-        class="glide"
-        ref="glide"
-      >
-        <div
-          class="glide__track"
-          data-glide-el="track"
-        >
-          <ul class="glide__slides">
-            <li
-              v-for="(picture, i) in localPictures"
-              class="glide__slide"
-              :key="'slide-' + i"
-            >
-              <div @click="openZoom(i)">
-                <slot v-if="i === 0 && !isSliderMoved">
-                  <a-picture
-                    v-if="!elFirstPicture"
-                    class="gallery__big-image"
-                    :style="zoomLinkStyle"
-                    :src="getImg(picture, null, 'big')"
-                  />
-                  <div
-                    v-else
-                    ref="firstPicture"
-                    class="gallery__big-image"
-                    :style="zoomLinkStyle"
-                  ></div>
-                </slot>
-  
-                <a-picture
-                  v-else
-                  class="gallery__big-image"
-                  :src="getImg(picture, null, 'big')"
-                />
-              </div>
-            </li>
-  
-            <li
-              v-if="videoSrc"
-              class="glide__slide"
-              :key="'slide-' + localPictures.length"
-            >
-              <div
-                class="embed-responsive"
-                :class="`embed-responsive-${videoAspectRatio}`"
-              >
-                <iframe
-                  class="embed-responsive-item lozad"
-                  :src="videoSrc"
-                  allowfullscreen
-                  loading="lazy"
-                ></iframe>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  
-    <div
-      v-once
-      ref="pswp"
-      class="pswp"
-      tabindex="-1"
-      role="dialog"
-      aria-hidden="true"
-    >
-      <div class="pswp__bg"></div>
-      <div class="pswp__scroll-wrap">
-        <div class="pswp__container">
-          <div class="pswp__item"></div>
-          <div class="pswp__item"></div>
-          <div class="pswp__item"></div>
-        </div>
-  
-        <div class="pswp__ui pswp__ui--hidden">
-          <div class="pswp__top-bar">
-            <div class="pswp__counter"></div>
-            <button
-              class="pswp__button pswp__button--close"
-              :title="`${i19close} (Esc)`"
-            ></button>
-            <button
-              class="pswp__button pswp__button--share"
-              :title="i19share"
-            ></button>
-            <button
-              class="pswp__button pswp__button--fs"
-              :title="i19fullscreen"
-            ></button>
-            <button
-              class="pswp__button pswp__button--zoom"
-              title="Zoom in/out"
-            ></button>
-            <div class="pswp__preloader">
-              <div class="pswp__preloader__icn">
-                <div class="pswp__preloader__cut">
-                  <div class="pswp__preloader__donut"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-            <div class="pswp__share-tooltip"></div>
-          </div>
-  
-          <button
-            class="pswp__button pswp__button--arrow--left"
-            :title="i19previous"
-          ></button>
-          <button
-            class="pswp__button pswp__button--arrow--right"
-            :title="i19next"
-          ></button>
-          <div class="pswp__caption">
-            <div class="pswp__caption__center"></div>
-          </div>
-  
-          <button
-            v-if="canAddToCart"
-            type="button"
-            class="btn btn-success"
-            @click="buy"
-          >
-            <i class="i-shopping-cart"></i>
-            <span class="d-none d-md-inline ml-1">
-              {{ i19addToCart }}
-            </span>
-          </button>
-        </div>
-      </div>
-    </div>
-  </section>
-  
+import {
+  i19addToCart,
+  i19close,
+  i19fullscreen,
+  i19openGallery,
+  i19next,
+  i19previous,
+  i19share,
+  i19shareOnFacebook,
+  i19video
+} from '@ecomplus/i18n'
+
+import {
+  i18n,
+  name as getName,
+  img as getImg
+} from '@ecomplus/utils'
+
+import ecomCart from '@ecomplus/shopping-cart'
+import Glide from '@glidejs/glide'
+import APicture from '@ecomplus/storefront-components/src/APicture.vue'
+
+export default {
+  name: 'ProductGallery',
+
+  components: {
+    APicture
+  },
+
+  props: {
+    product: {
+      type: Object,
+      default () {
+        return {
+          pictures: [],
+          videos: []
+        }
+      }
+    },
+    pictures: Array,
+    video: Object,
+    videoAspectRatio: {
+      type: String,
+      default: '16by9'
+    },
+    canAddToCart: {
+      type: Boolean,
+      default: true
+    },
+    currentSlide: {
+      type: Number,
+      default: 1
+    },
+    glideOptions: {
+      type: Object,
+      default () {
+        return {
+          type: 'slider',
+          autoplay: false,
+          rewind: false
+        }
+      }
+    },
+    isSSR: Boolean
+  },
+
+  data () {
+    return {
+      glide: null,
+      pswp: null,
+      activeIndex: null,
+      isSliderMoved: false,
+      elFirstPicture: null,
+      zoomLinkStyle: null,
+      videoSrcLoad: null
+    }
+  },
+
+  computed: {
+    i19addToCart: () => i18n(i19addToCart),
+    i19close: () => i18n(i19close),
+    i19fullscreen: () => i18n(i19fullscreen),
+    i19next: () => i18n(i19next),
+    i19previous: () => i18n(i19previous),
+    i19openGallery: () => i18n(i19openGallery),
+    i19share: () => i18n(i19share),
+    i19video: () => i18n(i19video),
+
+    localPictures () {
+      return this.pictures && this.pictures.length
+        ? this.pictures
+        : (this.product.pictures || [])
+    },
+
+    videoSrc () {
+      const video = this.video || (this.product.videos && this.product.videos[0])
+      console.log(video)
+      if (video && video.url) {
+        return video.url.replace(/watch\?v=(V7XQvAde51w)/i, 'embed/$1?rel=0')
+      }
+      return null
+    },
+
+   imgVideo () {
+      const video = this.video || (this.product.videos && this.product.videos[0])
+      if (video && video.url) {
+        return video.url.replace(/.*embed/i, 'https://img.youtube.com/vi') + '/sddefault.jpg' 
+      }
+      return null
+    },
+
+    pswpItems () {
+      const pswpItems = []
+      this.localPictures.forEach(({ zoom }) => {
+        if (zoom) {
+          let w, h
+          if (zoom.size) {
+            const sizes = zoom.size.split('x')
+            if (sizes.length === 2) {
+              w = parseInt(sizes[0], 10)
+              h = parseInt(sizes[1], 10)
+            }
+          }
+          if (!w || !h) {
+            w = h = 1000
+          }
+          pswpItems.push({
+            src: zoom.url,
+            title: getName(this.product) || zoom.alt,
+            w,
+            h
+          })
+        }
+      })
+      return pswpItems
+    },
+
+    pswpOptions () {
+      return {
+        shareButtons: [
+          {
+            id: 'facebook',
+            label: i18n(i19shareOnFacebook),
+            url: 'https://www.facebook.com/sharer/sharer.php?u={{url}}'
+          },
+          {
+            id: 'twitter',
+            label: 'Tweet',
+            url: 'https://twitter.com/intent/tweet?text={{text}}&url={{url}}'
+          },
+          {
+            id: 'pinterest',
+            label: 'Pin it',
+            url: 'http://www.pinterest.com/pin/create/button/' +
+              '?url={{url}}&media={{image_url}}&description={{text}}'
+          }
+        ]
+      }
+    }
+  },
+
+  methods: {
+    getImg,
+
+    moveSlider (index) {
+      this.activeIndex = index
+      this.$emit('update:current-slide', index + 1)
+      if (this.glide) {
+        this.glide.go('=' + index)
+      }
+      if (!this.isSliderMoved) {
+        this.isSliderMoved = true
+      }
+    },
+
+    openZoom (index) {
+      this.zoomLinkStyle = 'cursor: wait'
+      return import(/* webpackPrefetch: true */ 'photoswipe')
+        .then(pack => {
+          const PhotoSwipe = pack.default
+          return import(/* webpackPrefetch: true */ 'photoswipe/dist/photoswipe-ui-default').then(pack => {
+            const psUi = pack.default
+            this.pswp = new PhotoSwipe(this.$refs.pswp, psUi, this.pswpItems, {
+              ...this.pswpOptions,
+              index
+            })
+            this.pswp.init()
+          })
+        })
+        .catch(console.error)
+        .finally(() => {
+          this.zoomLinkStyle = null
+        })
+    },
+
+    buy () {
+      const { product } = this
+      this.$emit('buy', { product })
+      if (product.variations && product.variations.length) {
+        if (window.location.pathname !== `/${product.slug}`) {
+          window.location = `/${product.slug}`
+        } else {
+          window.location = '#variations'
+        }
+      } else {
+        ecomCart.addProduct(product)
+      }
+      if (this.pswp) {
+        this.pswp.close()
+      }
+    }
+  },
+
+  watch: {
+    currentSlide: {
+      handler (currentSlide) {
+        this.activeIndex = currentSlide - 1
+      },
+      immediate: true
+    },
+
+    activeIndex (index) {
+      this.moveSlider(index)
+      if (this.videoSrc && index === this.pswpItems.length) {
+        this.videoSrcLoad = this.videoSrc
+      } 
+    }
+  },
+
+  mounted () {
+    if (this.isSSR) {
+      this.elFirstPicture = document.querySelector('#product-gallery .product__picture')
+      if (this.elFirstPicture) {
+        this.$nextTick(() => {
+          this.$refs.firstPicture[0].appendChild(this.elFirstPicture)
+        })
+      }
+    }
+    const glide = new Glide(this.$refs.glide, this.glideOptions)
+    glide.on('run', () => {
+      this.moveSlider(glide.index)
+    })
+    glide.mount()
+    this.glide = glide
+  },
+
+  beforeDestroy () {
+    if (this.glide) {
+      this.glide.destroy()
+    }
+    if (this.pswp) {
+      this.pswp.destroy()
+    }
+  }
+}

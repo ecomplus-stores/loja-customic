@@ -2,6 +2,10 @@
 // load menu options and contacts from content
 const menu = _.cms('menu') || {}
 const contacts = _.cms('contacts') || {}
+const header = _.cms('header') || {}
+const categoriesHeader = header.categories_list.featured.map(item => {
+  return item.substring(0, item.indexOf('?'))
+})
 
 // some social networks handled by contacts
 const networksWithColors = [
@@ -15,7 +19,12 @@ const networksWithColors = [
 const allCategories = menu.alphabetical_order
   ? _.lodash.sortBy(_.categories, ['name'])
   : _.categories
-const categoryParents = _.lodash.groupBy(allCategories, ({ parent }) => {
+
+const filteredCategories = allCategories.filter(cat => {
+  return categoriesHeader.indexOf(`/${cat.slug}`) > -1
+})
+
+const categoryParents = _.lodash.groupBy(filteredCategories, ({ parent }) => {
   return !parent || !parent.slug ? '_' : parent.slug
 })
 const getSubmenuId = slug => `a-${slug.replace(/\//g, '_')}`
@@ -35,6 +44,7 @@ if (mainCategories) {
     }
   }
 }
+
 %>
 
 <aside id="menu" class="menu shadow">
