@@ -1597,7 +1597,7 @@
     "rewrites": [
       {
         "source": "**/!(*(*.)js|*(*.)css|*(*.)ico|*(*.)png|*(*.)gif|*(*.)jpg|*(*.)jpeg|*(*.)webp|*(*.)svg|*(*.)woff|*(*.)woff2|*(*.)otf|*(*.)ttf|*(*.)eot)",
-        "function": "ssr"
+        "function": "ssr2"
       },
       {
         "source": "/storefront.?*.js",
@@ -1622,7 +1622,7 @@
         "headers": [
           {
             "key": "cache-control",
-            "value": "public, max-age=30, must-revalidate"
+            "value": "public, max-age=30, s-maxage=240, stale-while-revalidate=2592000"
           }
         ]
       },
