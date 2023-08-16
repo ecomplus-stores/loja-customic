@@ -5,7 +5,6 @@ import {
 
 import {
   i18n,
-  inStock as checkStock,
   specValueByText as getSpecValueByText,
   specTextValue as getSpecTextValue,
   variationsGrids as getVariationsGrids,
@@ -13,7 +12,7 @@ import {
 } from '@ecomplus/utils'
 
 export default {
-  name: "ProductVariations",
+  name: 'ProductVariations',
 
   props: {
     product: {
@@ -27,53 +26,31 @@ export default {
     },
     gridsData: {
       type: Array,
-      default() {
-        if (
-          typeof window === "object" &&
-          window.storefront &&
-          window.storefront.data
-        ) {
-          return window.storefront.data.grids;
+      default () {
+        if (typeof window === 'object' && window.storefront && window.storefront.data) {
+          return window.storefront.data.grids
         }
       }
     }
   },
 
-  data() {
+  data () {
     return {
       selectedOptions: {},
       filteredGrids: {}
-    };
-  },
-
-  updated() {
-    this.changeVariationURL();
+    }
   },
 
   computed: {
     i19select: () => i18n(i19select),
     i19selectVariation: () => i18n(i19selectVariation),
 
-    variationsGrids() {
-      const variations = getVariationsGrids(this.product)
-      if (variations) {
-        const variationModified = {}
-        const keys = Object.keys(variations)
-        keys.forEach(key => {
-          variationModified[key] = []
-          variations[key].forEach(variation => {
-            const totalVariation = this.product.variations.find(item => item.name.indexOf(variation) > -1)
-            if (Array.isArray(totalVariation.flags)) {
-              variationModified[key].push(
-                `${variation} (${totalVariation.flags[0]})`  
-              )
-            } else {
-              variationModified[key].push(variation)
-            }
-          })
-        })
-        return variationModified
-      }
+    variationsGrids () {
+      return getVariationsGrids(this.product)
+    },
+
+    orderedGrids () {
+      return Object.keys(this.variationsGrids)
     },
 
     variationFromUrl () {
@@ -85,165 +62,82 @@ export default {
         }
       }
       return null
-    },
-
-    orderedGrids() {
-      return Object.keys(this.variationsGrids);
     }
   },
 
   methods: {
-    changeVariationURL(marcaParam) {
-      let marcaSelected = this.selectedOptions.marca_do_aparelho;
-      let modeloSelected = this.selectedOptions.modelo;
-      let corSelected = this.selectedOptions.colors;
-      let url = "";
-
-
-      if (marcaParam === null && modeloSelected !== undefined) {
-        modeloSelected = modeloSelected.replaceAll(" ", "-");
-
-        if (corSelected !== undefined) {
-          corSelected = corSelected.replaceAll(" ", "-");
-
-          url = `?modelo=${modeloSelected}&cor=${corSelected}`;
-        } else {
-          url = `?modelo=${modeloSelected}`;
-        }
-
-        window.history.pushState("object or string", "", `${url}`);
-
-      } else if (marcaSelected !== undefined && modeloSelected !== undefined) {
-        modeloSelected = modeloSelected.replaceAll(" ", "-");
-
-        if (corSelected !== undefined) {
-          corSelected = corSelected.replaceAll(" ", "-");
-
-          url = `?marca=${marcaSelected}&modelo=${modeloSelected}&cor=${corSelected}`;
-        } else {
-          url = `?marca=${marcaSelected}&modelo=${modeloSelected}`;
-        }
-
-        window.history.pushState("object or string", "", `${url}`);
-      }
-    },
-
-    setVariationFromURL() {
-      let paramsURL = window.location.search;
-      if (paramsURL) {
-        let getParam = new URLSearchParams(paramsURL);
-        let gridType = "marca_do_aparelho";
-        let index = 0;
-        let marcaParam = getParam.get("marca");
-        console.log(marcaParam)
-  
-        if (marcaParam !== null) {
-          this.selectOption(marcaParam, gridType, index);
-        }
-  
-        let modeloParam = getParam.get("modelo");
-        console.log(modeloParam)
-        let gridTypeModelo = "modelo";
-        let indexModelo = 1;
-  
-        modeloParam = modeloParam.replaceAll("-", " ");
-  
-        this.$nextTick(() =>
-          this.selectOption(modeloParam, gridTypeModelo, indexModelo)
-        );
-  
-        let corParam = getParam.get("cor");
-        let gridTypeCor = "colors";
-        let indexCor = 2;
-  
-        corParam = corParam.replaceAll("-", " ");
-  
-        this.$nextTick(() => this.selectOption(corParam, gridTypeCor, indexCor));
-  
-        this.changeVariationURL(marcaParam); 
-      }
-    },
-
-    getColorOptionBg(optionText) {
-      const rgbs = optionText.split(",").map(colorName => {
-        return getSpecValueByText(
-          this.product.variations,
-          colorName.trim(),
-          "colors"
-        );
-      });
+    getColorOptionBg (optionText) {
+      const rgbs = optionText.split(',').map(colorName => {
+        return getSpecValueByText(this.product.variations, colorName.trim(), 'colors')
+      })
       return rgbs.length > 1
         ? `background:linear-gradient(to right bottom, ${rgbs[0]} 50%, ${rgbs[1]} 50%)`
-        : `background:${rgbs[0]}`;
+        : `background:${rgbs[0]}`
     },
 
-    getSpecValue(optionText, grid) {
-      const { variations } = this.product;
-      let values;
-      if (grid === "colors") {
-        const colorNames = optionText.split(",");
+    getSpecValue (optionText, grid) {
+      const { variations } = this.product
+      let values
+      if (grid === 'colors') {
+        const colorNames = optionText.split(',')
         if (colorNames.length > 1) {
-          values = [];
+          values = []
           colorNames.forEach(color => {
-            values.push(getSpecValueByText(variations, color.trim(), grid));
-          });
+            values.push(getSpecValueByText(variations, color.trim(), grid))
+          })
         }
       }
-      return values || getSpecValueByText(variations, optionText, grid);
+      return values || getSpecValueByText(variations, optionText, grid)
     },
 
-    getGridTitle(grid) {
-      return getGridTitle(grid, this.gridsData);
+    getGridTitle (grid) {
+      return getGridTitle(grid, this.gridsData)
     },
 
-    selectOption(optionText, grid, gridIndex) {
-      const { product, selectedOptions, orderedGrids } = this;
-      const variationText = optionText.replace('(novo)', '').trim()
-      this.$set(selectedOptions, grid, variationText);
-      this.$emit("select-option", {
+    selectOption (optionText, grid, gridIndex) {
+      const { product, selectedOptions, orderedGrids } = this
+      this.$set(selectedOptions, grid, optionText)
+      this.$emit('select-option', {
         gridId: grid,
         gridIndex,
-        variationText
-      });
-      const filterGrids = {};
+        optionText
+      })
+      const filterGrids = {}
       for (let i = 0; i <= gridIndex; i++) {
-        const grid = orderedGrids[i];
+        const grid = orderedGrids[i]
         if (selectedOptions[grid]) {
-          filterGrids[grid] = selectedOptions[grid];
+          filterGrids[grid] = selectedOptions[grid]
         }
       }
-      const nextFilteredGrids = getVariationsGrids(product, filterGrids, true);
+      const nextFilteredGrids = getVariationsGrids(product, filterGrids, true)
       for (let i = gridIndex + 1; i < orderedGrids.length; i++) {
-        const grid = orderedGrids[i];
-        const options = nextFilteredGrids[grid];
-        this.filteredGrids[grid] = options;
+        const grid = orderedGrids[i]
+        const options = nextFilteredGrids[grid]
+        this.filteredGrids[grid] = options
         if (selectedOptions[grid] && !options.includes(selectedOptions[grid])) {
-          this.$set(selectedOptions, grid, undefined);
+          this.$set(selectedOptions, grid, undefined)
         }
       }
-      const variations = product.variations.slice(0);
+      const variations = product.variations.slice(0)
       for (let i = 0; i < variations.length; i++) {
-        const variation = variations[i];
-        const { specifications } = variation;
+        const variation = variations[i]
+        const { specifications } = variation
         for (const grid in specifications) {
           if (selectedOptions[grid] !== getSpecTextValue(variation, grid)) {
-            variations.splice(i, 1);
-            i--;
-            break;
+            variations.splice(i, 1)
+            i--
+            break
           }
         }
       }
-      this.$emit(
-        "update:selected-id",
-        variations.length ? variations[0]._id : null
-      );
+      this.$emit('update:selected-id', variations.length ? variations[0]._id : null)
     }
   },
 
   watch: {
-    "product.variations": {
-      handler() {
-        this.filteredGrids = getVariationsGrids(this.product, null, true);
+    'product.variations': {
+      handler () {
+        this.filteredGrids = getVariationsGrids(this.product, null, true)
       },
       deep: true,
       immediate: true
@@ -270,10 +164,6 @@ export default {
         }
         nextSpec()
       }
-    } else {
-      setTimeout(() => {
-        this.setVariationFromURL();
-      }, 2000);
     }
   }
-};
+}
