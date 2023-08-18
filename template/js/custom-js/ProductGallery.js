@@ -19,6 +19,7 @@ import {
 import ecomCart from '@ecomplus/shopping-cart'
 import Glide from '@glidejs/glide'
 import APicture from '@ecomplus/storefront-components/src/APicture.vue'
+import { isMobile } from '@ecomplus/storefront-twbs'
 
 export default {
   name: 'ProductGallery',
@@ -103,8 +104,8 @@ export default {
 
    imgVideo () {
       const video = this.video || (this.product.videos && this.product.videos[0])
-      if (video && video.url) {
-        return video.url.replace(/.*embed/i, 'https://img.youtube.com/vi') + '/sddefault.jpg' 
+      if (video && video.url && !isMobile) {
+        return video.url.replace(/.*embed/i, 'https://img.youtube.com/vi') + '/default.jpg?width=50&height=50&aspect=true' 
       }
       return null
     },

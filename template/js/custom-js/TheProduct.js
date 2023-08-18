@@ -425,7 +425,7 @@ import {
           const { pathname } = window.location
           const searchParams = new URLSearchParams(window.location.search)
           searchParams.set('variation_id', variationId)
-          history.pushState(null, '', searchParams.toString());
+          history.pushState(null, '', `?${searchParams.toString()}`);
           this.showVariationPicture(this.selectedVariation)
         }
       },

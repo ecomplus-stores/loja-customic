@@ -6,8 +6,8 @@
         :class="{ 'gallery__item--selected': localPictures.length === activeIndex }"
         @click="activeIndex = localPictures.length"
       >
-        <i class="i-play"></i>
-        <span>{{ i19video }}</span>
+        <img v-if="imgVideo" :src="imgVideo" alt="Thumb video" style="max-width: 100%;">
+        <i id="video-play" class="i-play"></i>
       </div>
   
       <div

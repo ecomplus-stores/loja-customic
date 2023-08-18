@@ -316,17 +316,30 @@ color: #fff !important;
     src: url("https://fonts.animaapp.com/Flama-BasicItalic") format("opentype");
   }
 
+
   @media(min-width: 990px) {
     .glide__slide.video video {
       height: 427px;
       width: 100%;
     }
+    #video-play {
+      position: absolute;
+      top: 35px;
+      left: 40px;
+      color: #fff;
+    }
+    .gallery__item--video {
+      opacity: 1;
+    }
   }
-  .gallery__item--video {
-    background-color: #f8312f;
-    padding: 10px;
-    border-radius: 10px;
-    * {
-      color: #fff !important;
+
+  @media(max-width: 576px) {
+    .gallery__item--video {
+      visibility: visible !important;
+      font-size: unset !important;
+      margin-top: unset !important;
+      position: absolute;
+      left: 30%;
+      top: 5px;
     }
   }
