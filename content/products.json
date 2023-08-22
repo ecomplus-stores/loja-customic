@@ -30,7 +30,7 @@
     },
     {
       "type": "custom-html",
-      "html": "<div id=\"capas\" class=\"/capas\">\n  Conteudo categoria capas\n</div>"
+      "html": "<div id=\"capas\" class=\"slug-categoria\">\n  Conteudo categoria capas\n</div>"
     },
     {
       "type": "custom-html",
