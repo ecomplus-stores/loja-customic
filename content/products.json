@@ -5,10 +5,6 @@
       "enabled": true
     },
     {
-      "type": "custom-html",
-      "html": "<div id=\"capas\" class=\"/capas\">\n  Conteudo categoria capas\n</div>"
-    },
-    {
       "type": "product-block",
       "enabled": true
     },
@@ -31,6 +27,10 @@
     {
       "type": "product-specifications",
       "enabled": true
+    },
+    {
+      "type": "custom-html",
+      "html": "<div id=\"capas\" class=\"/capas\">\n  Conteudo categoria capas\n</div>"
     },
     {
       "type": "custom-html",
