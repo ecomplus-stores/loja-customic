@@ -16,6 +16,16 @@
         "destination":  "/soft-touch-all",
         "type": 301
       },
+      {
+        "source":  "/blog",
+        "destination":  "/",
+        "type": 301
+      },
+      {
+        "source":  "/posts/esta-loja-e-um-pwa",
+        "destination":  "/",
+        "type": 301
+      },
 {
         "source":  "/pelicula-gel-7-camadas-customic",
         "destination":  "/pelicula-gel-7-camadas",
