@@ -144,7 +144,7 @@ export default {
 
               
               //se array nao for vazio 
-              if( variation.specifications.modelo.length > 0){
+              if (variation && variation.specifications && variation.specifications.modelo && variation.specifications.modelo.length > 0){
                 modeloVariation = variation.specifications.modelo[0].text;
                 modeloVariationInitial = variation.specifications.modelo[0].text;
                 modeloVariation = modeloVariation.toLowerCase();
