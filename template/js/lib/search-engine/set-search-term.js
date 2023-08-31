@@ -62,7 +62,7 @@ export default (self, term) => {
   const findMatchingModel = (searchTerm) => {
     const lowerSearchTerm = searchTerm.toLowerCase();
     for (const model of modelList) {
-        if (model.toLowerCase() === lowerSearchTerm) {
+        if (model.toLowerCase() === lowerSearchTerm || lowerSearchTerm.includes(model.toLowerCase())) {
             return model;
         }
     }
