@@ -63,7 +63,7 @@ export default {
           variationModified[key] = []
           variations[key].forEach(variation => {
             const totalVariation = this.product.variations.find(item => item.name.indexOf(variation) > -1)
-            if (Array.isArray(totalVariation.flags) && totalVariation.flags.length) {
+            if (totalVariation && Array.isArray(totalVariation.flags) && totalVariation.flags.length) {
               variationModified[key].push(
                 `${variation} (${totalVariation.flags[0]})`  
               )
