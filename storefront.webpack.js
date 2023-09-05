@@ -10,6 +10,7 @@ module.exports = () => ({
       './../lib/dsl': pathDslAlias,
       '../lib/dsl': pathDslAlias,
       './methods/set-search-term': path.resolve(dirSearchAlias, 'set-search-term'),
+      './base-config': path.resolve(__dirname, 'template/js/netlify-cms/base-config'),
       './js/ProductCard.js': path.resolve(__dirname, 'template/js/custom-js/ProductCard.js'),
       './js/ProductVariations.js': path.resolve(__dirname, 'template/js/custom-js/ProductVariations.js'),
       './js/ShippingCalculator.js': path.resolve(__dirname, 'template/js/custom-js/ShippingCalculator.js'),
