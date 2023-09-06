@@ -16,42 +16,37 @@ import {
   import ecomCart from '@ecomplus/shopping-cart'
   import ecomPassport from '@ecomplus/passport-client'
   import AAlert from '@ecomplus/storefront-components/src/AAlert.vue'
-
-  const sumTotal = (ecomCart) => {
-    let total = 0
-    ecomCart.data.items.forEach(item => {
-        if (!item.flags || !(item.flags && item.flags.length && item.flags.includes('freebie'))) {
-            total += (item.quantity * price(item))
-        }
-    })
-    return total
-  }
   
   const addFreebieItems = (ecomCart, productIds) => {
     if (Array.isArray(productIds)) {
-      productIds.forEach(productId => {
-        const canAddFreebie = !ecomCart.data.items.find(item => {
-          return item.product_id === productId && item.flags && item.flags.includes('freebie')
+        ecomCart.data.items.forEach(({ _id, product_id, flags }) => {
+            if (flags && flags.includes('freebie') && !productIds.includes(product_id)) {
+              ecomCart.removeItem(_id)
+            }
         })
-        if (canAddFreebie) {
-          store({ url: `/products/${productId}.json` })
-            .then(({ data }) => {
-              if (data.quantity > 0 && (!data.variations || !data.variations.length)) {
-                ecomCart.addProduct(
-                  {
-                    ...data,
-                    flags: ['freebie', '__tmp']
-                  },
-                  null,
-                  productIds.reduce((qnt, _id) => {
-                    return _id === productId ? qnt + 1 : qnt
-                  }, 0)
-                )
-              }
+        productIds.forEach(productId => {
+            const canAddFreebie = !ecomCart.data.items.find(item => {
+            return item.product_id === productId && item.flags && item.flags.includes('freebie')
             })
-            .catch(console.error)
-        }
-      })
+            if (canAddFreebie) {
+            store({ url: `/products/${productId}.json` })
+                .then(({ data }) => {
+                if (data.quantity > 0 && (!data.variations || !data.variations.length)) {
+                    ecomCart.addProduct(
+                    {
+                        ...data,
+                        flags: ['freebie', '__tmp']
+                    },
+                    null,
+                    productIds.reduce((qnt, _id) => {
+                        return _id === productId ? qnt + 1 : qnt
+                    }, 0)
+                    )
+                }
+                })
+                .catch(console.error)
+            }
+        })
     }
   }
   
@@ -100,7 +95,6 @@ import {
         isLoading: false,
         localCouponCode: this.couponCode,
         localAmountTotal: null,
-        localSubtotal: null,
         isUpdateSheduled: false
       }
     },
@@ -131,7 +125,6 @@ import {
           subtotal: this.ecomCart.data.subtotal
         }
         this.localAmountTotal = (amount.subtotal || 0) + (amount.freight || 0)
-        this.localSubtotal = sumTotal(this.ecomCart) || amount.subtotal
       },
   
       parseDiscountOptions (listResult = []) {
@@ -212,8 +205,8 @@ import {
           data: {
             ...this.modulesPayload,
             amount: {
+              subtotal: this.localAmountTotal,
               ...this.amount,
-              subtotal: this.localSubtotal,
               total: this.localAmountTotal,
               discount: 0
             },
