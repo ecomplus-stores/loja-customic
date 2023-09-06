@@ -66,6 +66,16 @@
       "full_width": true
     },
     {
+      "type": "banners-grid",
+      "banners": [
+        {
+          "img": "/img/uploads/independencia-banner-02-1-.webp",
+          "mobile_img": "/img/uploads/independencia-banner-01-1-.webp",
+          "link": "https://customic.com.br/colecoes"
+        }
+      ]
+    },
+    {
       "type": "collection-shelf",
       "shuffle": false,
       "limit": 12,
