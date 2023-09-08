@@ -21,6 +21,15 @@
       "title": "Produtos relacionados"
     },
     {
+      "type": "faq",
+      "faq-list": [
+        {
+          "text": "\n\nFAQs Úteis 💡😄\n\n* O que significa capa com proteção militar?\n  As capas para celular da Customic que possuem a certificação de proteção militar, foram testadas inúmeras vezes e foram selecionadas as que atendem e até superam certos padrões frequentemente utilizados em testes militares para determinar eficiência em proteção. Capas que recebem o selo de Proteção Militar foram testadas utilizando-se o padrão MIL-STD-810G do Exército Americano para testes de proteção anti-quedas, sendo submetidas a múltiplas quedas, de diversas alturas, mantendo o aparelho em funcionamento. Isso não significa dizer que o smartphone nunca irá quebrar; se sofrer uma queda muito forte de uma altura grande, ou se cair de um certo ângulo, seu aparelho pode sofrer algum dano. Por isso não nos responsabilizamos por qualquer dano ou destruição do smartphone.\n* A capa permite Carregamento Wireless?\n  Sim, todas as capas Customic permitem o carregamento Wireless, ou seja, não é necessário retirá-la do aparelho para realizar o carregamento sem fio. Basta colocar o celular em um carregador compatível com a tecnologia e aproveitar a conveniência de um carregamento fácil e rápido. Alguns modelos de capinha de celular Customic são ainda compatíveis com a tecnologia magsafe, consulte na descrição.\n* Como fazer a limpeza da capa?\n  O cuidado e limpeza devem fazer parte da sua rotina para garantir o aspecto novo e limpo das capas. Sujeiras / manchas suaves devem sair com apenas uma esponja ou escova de dente macia, água morna e sabão. Por favor, sem imersão na água, sem água fervente e sem alvejante! 😉",
+          "slug": "https://customic.com.br/colecoes"
+        }
+      ]
+    },
+    {
       "type": "product-specifications",
       "enabled": true
     },
