@@ -1,0 +1,15 @@
+<%
+const faqList = opt['faq-list']
+if (Array.isArray(faqList) && faqList.length) { 
+    const filteredCategory = faqList.find(category => {
+        return faqList.some(faq => category.slug === faq.slug)
+    });
+    if (filteredCategory && filteredCategory.text) {
+    %>
+        <section class="md-content mb-5 pt-1 pt-sm-2 pt-lg-3">
+            <div class="container">
+            <%- _.md.render(filteredCategory.text) %>
+            </div>
+        </section>
+    <%    }
+} %>
