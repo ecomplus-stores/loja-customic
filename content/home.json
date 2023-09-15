@@ -17,6 +17,14 @@
         {
           "start": "",
           "end": "",
+          "img": "/img/uploads/banner-desk-spot._4_11zon.webp",
+          "mobile_img": "/img/uploads/banners-home-customic_v-copy-2_6_11zon.webp",
+          "link": "/capa-spot-silicone-reciclado",
+          "alt": "Capa Customic Spot Reciclado Customic"
+        },
+        {
+          "start": "",
+          "end": "",
           "img": "/img/uploads/banner-desk-holo_1_11zon.webp",
           "link": "https://customic.com.br/capa-customic-impactor-clear-holo-apple",
           "alt": "A capa Clear que você já conhece agora com o efeito holográfico único que você vai querer conhecer. ",
@@ -33,14 +41,6 @@
         {
           "start": "",
           "end": "",
-          "img": "/img/uploads/banner-desk-pop_3_11zon.webp",
-          "link": "https://customic.com.br/popsockets-plant-ecogrip",
-          "alt": "PopSockets Plant Eco Grip Mais Sustentável 2023",
-          "mobile_img": "/img/uploads/banner-mobile-pop_4_11zon.webp"
-        },
-        {
-          "start": "",
-          "end": "",
           "img": "/img/uploads/banner-desk-peliculas_2_11zon.webp",
           "mobile_img": "/img/uploads/banner-mobile-peliculas_3_11zon.webp",
           "alt": "Peliculas Customic Proteção apra seus Olhos e pele",
@@ -49,10 +49,10 @@
         {
           "start": "",
           "end": "",
-          "img": "/img/uploads/banner-desk-spot._4_11zon.webp",
-          "mobile_img": "/img/uploads/banners-home-customic_v-copy-2_6_11zon.webp",
-          "link": "/capa-spot-silicone-reciclado",
-          "alt": "Capa Customic Spot Reciclado Customic"
+          "img": "/img/uploads/banner-desk-pop_3_11zon.webp",
+          "link": "https://customic.com.br/popsockets-plant-ecogrip",
+          "alt": "PopSockets Plant Eco Grip Mais Sustentável 2023",
+          "mobile_img": "/img/uploads/banner-mobile-pop_4_11zon.webp"
         }
       ],
       "full_width": true
