@@ -58,17 +58,6 @@
       "full_width": true
     },
     {
-      "type": "banners-grid",
-      "banners": [
-        {
-          "img": "/img/uploads/dia_do_cliente_banner-02.webp",
-          "mobile_img": "/img/uploads/dia_do_cliente_banner_v.webp",
-          "alt": "Promo Dia do Cliente Customic ",
-          "link": "https://customic.com.br/colecoes"
-        }
-      ]
-    },
-    {
       "type": "collection-shelf",
       "shuffle": false,
       "limit": 12,
