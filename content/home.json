@@ -77,15 +77,6 @@
       "link": "https://customic.com.br/new-iphone-14"
     },
     {
-      "type": "collection-shelf",
-      "shuffle": false,
-      "limit": 12,
-      "page": "",
-      "sort": "sales",
-      "title": "Mais vendidos 🏆",
-      "collection_id": "5f1f3f3cf023684cdbd4a1b1:categories:Capinha de celular:/capas"
-    },
-    {
       "type": "banners-grid",
       "banners": [
         {
@@ -94,6 +85,15 @@
           "mobile_img": "/img/uploads/mobile.webp"
         }
       ]
+    },
+    {
+      "type": "collection-shelf",
+      "shuffle": false,
+      "limit": 12,
+      "page": "",
+      "sort": "sales",
+      "title": "Mais vendidos 🏆",
+      "collection_id": "5f1f3f3cf023684cdbd4a1b1:categories:Capinha de celular:/capas"
     },
     {
       "type": "custom-content",
