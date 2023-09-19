@@ -62,6 +62,15 @@
       "shuffle": false,
       "limit": 12,
       "page": 1,
+      "collection_id": "6501b1552cd6b659594a0fd3:categories:Capas e acessórios para todos modelos de iPhone 15:/new-iphone-15",
+      "sort": "lowest_price",
+      "link": "/new-iphone-15"
+    },
+    {
+      "type": "collection-shelf",
+      "shuffle": false,
+      "limit": 12,
+      "page": 1,
       "collection_id": "60871b81e875b03a408daf0c:categories:PopSockets:/popsockets",
       "title": "Últimos Lançamentos",
       "sort": "views"
