@@ -343,3 +343,10 @@ color: #fff !important;
       top: 5px;
     }
   }
+
+  @media(min-width: 990px) and (max-width: 1400px) {
+    .header__submenu {
+      max-height: 500px;
+      overflow-y: scroll;
+    }
+  }
