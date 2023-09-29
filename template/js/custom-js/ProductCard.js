@@ -11,7 +11,9 @@ import {
   name as getName,
   inStock as checkInStock,
   onPromotion as checkOnPromotion,
-  price as getPrice
+  price as getPrice,
+  specValueByText as getSpecValueByText,
+  variationsGrids as getVariationsGrids
 } from '@ecomplus/utils'
 
 import Vue from 'vue'
@@ -99,6 +101,11 @@ export default {
     i19addToFavorites: () => i18n(i19addToFavorites),
     i19outOfStock: () => i18n(i19outOfStock),
     i19unavailable: () => i18n(i19unavailable),
+
+    colorOptions () {
+      const variationGrids = getVariationsGrids(this.body)
+      return variationGrids.colors && variationGrids.colors.slice(0, 6)
+    },
 
     isSearchingPhoneModel (){
       let body = this.body;
@@ -281,7 +288,7 @@ export default {
       //console.log("listNomeProduto", listNomeProduto);
 
       if(listNomeProduto.cor !== "" && listNomeProduto.modelo !== ""){
-        listNomeProduto.specifictions = ` / ${listNomeProduto.marca} / ${listNomeProduto.modelo} / ${listNomeProduto.cor}`;
+        listNomeProduto.specifictions = `${listNomeProduto.marca} / ${listNomeProduto.modelo} / ${listNomeProduto.cor}`;
 
         this.marcaSearch = `?marca=${listNomeProduto.marca}`;
 
@@ -291,11 +298,11 @@ export default {
 
       }
       else if(listNomeProduto.cor !== ""){
-        listNomeProduto.specifictions = ` / ${listNomeProduto.cor}`;
+        listNomeProduto.specifictions = `${listNomeProduto.cor}`;
         this.corSearch = `&cor=${listNomeProduto.cor}`;
 
       }else if(listNomeProduto.modelo !== "" && listNomeProduto.marca !== ""){
-        listNomeProduto.specifictions = ` / ${listNomeProduto.marca} / ${listNomeProduto.modelo}`;
+        listNomeProduto.specifictions = `${listNomeProduto.marca} / ${listNomeProduto.modelo}`;
         this.marcaSearch = `?marca=${listNomeProduto.marca}`;
 
         let listNomeProdutoModelo = listNomeProduto.modelo.replaceAll(' ','-');
@@ -303,10 +310,10 @@ export default {
         this.modeloSearch = `&modelo=${listNomeProdutoModelo}`;
 
       }else if(listNomeProduto.marca !== ""){
-        listNomeProduto.specifictions = ` / ${listNomeProduto.marca}`; 
+        listNomeProduto.specifictions = listNomeProduto.marca; 
         this.marcaSearch = `?marca=${listNomeProduto.marca}`;
       }else if(listNomeProduto.modelo !== "" && listNomeProduto.marca === ""){
-        listNomeProduto.specifictions = ` / ${listNomeProduto.modelo}`;
+        listNomeProduto.specifictions = listNomeProduto.modelo;
 
         let listNomeProdutoModelo = listNomeProduto.modelo.replaceAll(' ','-');
         this.modeloSearch = `?modelo=${listNomeProdutoModelo}`;
@@ -366,6 +373,13 @@ export default {
       delete this.body.inventory_records
       delete this.body.price_change_records
       this.isFavorite = checkFavorite(this.body._id, this.ecomPassport)
+    },
+
+    getColorOptionBg (optionText) {
+      const rgbs = optionText.split(',').map(colorName => {
+        return getSpecValueByText(this.body.variations, colorName.trim(), 'colors')
+      })
+      return `background:${rgbs[0]}`
     },
 
     fetchItem () {

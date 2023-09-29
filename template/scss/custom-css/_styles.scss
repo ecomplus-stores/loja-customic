@@ -34,16 +34,15 @@ color: #fff !important;
 
 .product-card__pictures{
   width: 100%!important;
-  height: auto!important;
+  //height: auto!important;
 
   img{
     width: 100%!important;
-    height: auto!important;
+    //height: auto!important;
     max-height: unset!important;
+    //content: url(https://customic.com.br/img/uploads/logo.png);
   } 
 }
-
-
 
 .footer {
   &__title, & a, & i, &__credits, & address {
@@ -99,8 +98,8 @@ color: #fff !important;
   max-width: 100% !important;
   width: 100%
 }
-.variations__grid--modelo option:disabled {
-  display: none;
+.variations__grid--modelo option:disabled::after {
+  content: ' (Esgotado)'
 }
 .top-bar {
   & a, & i {
@@ -350,3 +349,63 @@ color: #fff !important;
       overflow-y: scroll;
     }
   }
+
+  
+.product-card {
+  &__colors {
+    line-height: 0;
+    margin-top: var(--spacer-1);
+    justify-content: center;
+    bottom: 1rem;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 0.25rem;
+    width: 100%;
+    overflow-x: auto;
+    @media (min-width: 1024px) {
+      overflow-x: hidden;
+    }
+  }
+  &__color-option {
+    display: inline-block;
+    border-radius: 50%;
+    font-size: 0;
+    border: 1px solid;
+    width: 20px;
+    flex: 0 0 20px;
+    height: 20px;
+    &--plus {
+      border-color: #111;
+      background: #111;
+      color: #fff;
+      font-size: 13px;
+      line-height: 18px;
+      text-align: center;
+    }
+  }
+  &__buy {
+    z-index: 1;
+  }
+
+  &__pictures {
+    aspect-ratio: 0.95;
+    width: 100%;
+    height: auto;
+    .picture {
+      width: 100%;
+      height: 100%;
+      img {
+        object-fit: cover;
+        height: 100%;
+        max-height: none;
+        width: auto;
+      }
+    }
+  }
+
+  &--small {
+    .product-card__pictures {
+      min-height: 250px
+    }
+  }
+}

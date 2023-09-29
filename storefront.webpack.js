@@ -21,7 +21,7 @@ module.exports = () => ({
       './html/ShippingCalculator.html': path.resolve(__dirname, 'template/js/custom-js/ShippingCalculator.html'),
       './html/ProductGallery.html': path.resolve(__dirname, 'template/js/custom-js/ProductGallery.html'),
       './js/ProductGallery.js': path.resolve(__dirname, 'template/js/custom-js/ProductGallery.js'),
-      './js/TheProduct.js': path.resolve(__dirname, 'template/js/custom-js/TheProduct.js')
+      './js/TheProduct.js': path.resolve(__dirname, 'template/js/custom-js/TheProduct.js'),
     }
   }
 })
