@@ -4,6 +4,9 @@ export default (self, term) => {
   console.log(self)
   console.log(term)
   const modelList = [
+    "iPhone 15 Pro Max",
+    "iPhone 15 Pro",
+    "iPhone 15",
     "iPhone 13 Pro Max",
     "iPhone 12 Pro Max",
     "iPhone 13 Pro",
