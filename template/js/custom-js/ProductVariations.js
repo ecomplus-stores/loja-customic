@@ -79,6 +79,7 @@ export default {
     variationFromUrl () {
       if (typeof window === 'object') {
         const urlParams = new URLSearchParams(window.location.search)
+        console.log(urlParams)
         const variationId = urlParams.get('variation_id')
         if (variationId) {
           return variationId
@@ -139,7 +140,10 @@ export default {
         console.log(marcaParam)
   
         if (marcaParam !== null) {
-          this.selectOption(marcaParam, gridType, index);
+          index = this.orderedGrids.findIndex(option => option === gridType)
+          this.$nextTick(() => {
+            this.selectOption(marcaParam, gridType, index);
+          })
         }
   
         let modeloParam = getParam.get("modelo");
@@ -148,21 +152,31 @@ export default {
         let indexModelo = 1;
   
         modeloParam = modeloParam.replaceAll("-", " ");
-  
-        this.$nextTick(() =>
+        if (modeloParam) {
+          indexModelo = this.orderedGrids.findIndex(option => option === gridTypeModelo)
+          this.$nextTick(() =>
           this.selectOption(modeloParam, gridTypeModelo, indexModelo)
         );
+        }
+        
   
         let corParam = getParam.get("cor");
         let gridTypeCor = "colors";
         let indexCor = 2;
   
-        corParam = corParam.replaceAll("-", " ");
+        
+        if (corParam) {
+          corParam = corParam.replaceAll("-", " ");
+          indexCor = this.orderedGrids.findIndex(option => option === gridTypeCor)
+          this.$nextTick(() => this.selectOption(corParam, gridTypeCor, indexCor));
+        }
   
-        this.$nextTick(() => this.selectOption(corParam, gridTypeCor, indexCor));
+        
         console.log('---------------')
         console.log(marcaParam)
-        this.changeVariationURL(marcaParam); 
+        if (marcaParam) {
+          this.changeVariationURL(marcaParam); 
+        }
       }
     },
 
@@ -199,13 +213,18 @@ export default {
     },
 
     selectOption(optionText, grid, gridIndex) {
+      console.log(optionText, grid, gridIndex)
       const { product, selectedOptions, orderedGrids } = this;
-      const variationText = optionText.replace('(novo)', '').trim()
-      this.$set(selectedOptions, grid, variationText);
+      let variationText
+      if (optionText.includes('novo')) {
+        variationText = optionText.replace('(novo)', '').trim()
+      }
+      
+      this.$set(selectedOptions, grid, optionText);
       this.$emit("select-option", {
         gridId: grid,
         gridIndex,
-        variationText
+        optionText
       });
       const filterGrids = {};
       for (let i = 0; i <= gridIndex; i++) {
@@ -274,7 +293,9 @@ export default {
       }
     } else {
       setTimeout(() => {
-        this.setVariationFromURL();
+        this.$nextTick(() => {
+          this.setVariationFromURL();
+        })  
       }, 2000);
     }
   }

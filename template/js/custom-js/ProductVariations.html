@@ -58,9 +58,10 @@
         v-for="optionText in options"
         :value="optionText"
         :selected="selectedOptions[grid] === optionText"
-        :disabled="!filteredGrids[grid].includes(optionText.replace('(novo)', '').trim())"
+        :disabled="!filteredGrids[grid].includes(optionText)"
       >
-        {{ optionText }}
+        {{ optionText }} 
+        <span style="color: red" v-if="!filteredGrids[grid].includes(optionText)">(Esgotado)</span>
       </option>
     </select>
   </div>
