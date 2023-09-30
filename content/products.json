@@ -5,16 +5,16 @@
       "enabled": true
     },
     {
+      "type": "recommended-products",
+      "title": "Quem comprou este produto, também comprou:"
+    },
+    {
       "type": "product-block",
       "enabled": true
     },
     {
       "type": "product-description",
       "enabled": true
-    },
-    {
-      "type": "recommended-products",
-      "title": "Quem comprou este produto, também comprou:"
     },
     {
       "type": "related-products",
