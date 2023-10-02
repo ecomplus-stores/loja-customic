@@ -71,10 +71,10 @@
       "type": "collection-shelf",
       "shuffle": false,
       "limit": 12,
-      "page": 1,
-      "collection_id": "6447d5464bd2e929c1df12bd:collections:Últimos Lançamentos:/ultimos-lancamentos",
-      "title": "Últimos Lançamentos 🔥",
-      "sort": "news"
+      "page": "",
+      "sort": "sales",
+      "title": "Mais vendidos 🏆",
+      "collection_id": "5f1f3f3cf023684cdbd4a1b1:categories:Capinha de celular:/capas"
     },
     {
       "type": "banners-grid",
@@ -90,20 +90,20 @@
       "type": "collection-shelf",
       "shuffle": false,
       "limit": 12,
-      "page": "",
+      "page": 1,
       "sort": "sales",
-      "title": "Mais vendidos 🏆",
-      "collection_id": "5f1f3f3cf023684cdbd4a1b1:categories:Capinha de celular:/capas"
+      "collection_id": "5f1f3f37f023684cdbd4a1a6:categories:Películas para Celular:/peliculas",
+      "title": "Películas Especiais Customic 💜",
+      "link": "/peliculas"
     },
     {
       "type": "collection-shelf",
       "shuffle": false,
       "limit": 12,
       "page": 1,
-      "sort": "sales",
-      "collection_id": "5f1f3f37f023684cdbd4a1a6:categories:Películas para Celular:/peliculas",
-      "title": "Películas Especiais Customic 💜",
-      "link": "/peliculas"
+      "collection_id": "6447d5464bd2e929c1df12bd:collections:Últimos Lançamentos:/ultimos-lancamentos",
+      "title": "Últimos Lançamentos 🔥",
+      "sort": "news"
     },
     {
       "type": "custom-content",
