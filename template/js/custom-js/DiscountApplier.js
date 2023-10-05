@@ -19,34 +19,34 @@ import {
   
   const addFreebieItems = (ecomCart, productIds) => {
     if (Array.isArray(productIds)) {
-        ecomCart.data.items.forEach(({ _id, product_id, flags }) => {
-            if (flags && flags.includes('freebie') && !productIds.includes(product_id)) {
-              ecomCart.removeItem(_id)
-            }
+      ecomCart.data.items.forEach(({ _id, product_id: productId, flags }) => {
+        if (flags && flags.includes('freebie') && !productIds.includes(productId)) {
+          ecomCart.removeItem(_id)
+        }
+      })
+      productIds.forEach(productId => {
+        const canAddFreebie = !ecomCart.data.items.find(item => {
+          return item.product_id === productId && item.flags && item.flags.includes('freebie')
         })
-        productIds.forEach(productId => {
-            const canAddFreebie = !ecomCart.data.items.find(item => {
-            return item.product_id === productId && item.flags && item.flags.includes('freebie')
+        if (canAddFreebie) {
+          store({ url: `/products/${productId}.json` })
+            .then(({ data }) => {
+              if (data.quantity > 0 && (!data.variations || !data.variations.length)) {
+                ecomCart.addProduct(
+                  {
+                    ...data,
+                    flags: ['freebie', '__tmp']
+                  },
+                  null,
+                  productIds.reduce((qnt, _id) => {
+                    return _id === productId ? qnt + 1 : qnt
+                  }, 0)
+                )
+              }
             })
-            if (canAddFreebie) {
-            store({ url: `/products/${productId}.json` })
-                .then(({ data }) => {
-                if (data.quantity > 0 && (!data.variations || !data.variations.length)) {
-                    ecomCart.addProduct(
-                    {
-                        ...data,
-                        flags: ['freebie', '__tmp']
-                    },
-                    null,
-                    productIds.reduce((qnt, _id) => {
-                        return _id === productId ? qnt + 1 : qnt
-                    }, 0)
-                    )
-                }
-                })
-                .catch(console.error)
-            }
-        })
+            .catch(console.error)
+        }
+      })
     }
   }
   
@@ -112,10 +112,35 @@ import {
       i19hasCouponOrVoucherQn: () => i18n(i19hasCouponOrVoucherQn),
       i19invalidCouponMsg: () => i18n(i19invalidCouponMsg),
       i19campaignAppliedMsg: () => i18n(i19campaignAppliedMsg),
+
+      canAddDiscountUtm () {
+        if (this.modulesPayload && this.modulesPayload.utm && this.modulesPayload.utm.campaign && this.modulesPayload.utm.campaign.includes('modelo_')) {
+          const modelArray = this.modulesPayload.utm.campaign.match(/modelo_([^@]+)/)
+          const model = modelArray[1].replace('_', ' ')
+          const searchedModel = window.modelList.find(option => option.toLowerCase() === model)
+          if (this.ecomCart.data && this.ecomCart.data.items && this.ecomCart.data.items.length >= 2) {
+            let hasCase = false
+            let hasPelicula = false
+            hasCase = ecomCart.data.items.some(item => item.name.toLowerCase().includes('capa') && item.name.includes(searchedModel))
+            hasPelicula = ecomCart.data.items.some(item => item.name.replaceAll('í', 'i').toLowerCase().includes('pelicula') && item.name.includes(searchedModel))
+            return Boolean(hasCase && hasPelicula)
+          }
+          return false
+        }
+        return true
+      },
   
       canAddCoupon () {
         return !this.couponCode || !this.isCouponApplied ||
           this.couponCode !== this.localCouponCode
+      },
+
+      modulesDiscount () {
+        let discount = this.modulesPayload
+        if (!this.canAddDiscountUtm) {
+          delete discount.utm
+        }
+        return discount
       }
     },
   
@@ -136,14 +161,16 @@ import {
             if (validated && !error) {
               const appDiscountRule = response.discount_rule
               if (appDiscountRule) {
-                const discountRuleValue = appDiscountRule.extra_discount.value
-                if (!(extraDiscountValue > discountRuleValue)) {
-                  extraDiscountValue = discountRuleValue
+                if (extraDiscountValue) {
+                  appDiscountRule.extra_discount.value += extraDiscountValue
+                  discountRule = appDiscountRule
+                } else {
                   discountRule = {
                     app_id: appResult.app_id,
                     ...appDiscountRule
                   }
                 }
+                extraDiscountValue = appDiscountRule.extra_discount.value
               } else if (response.available_extra_discount && response.available_extra_discount.min_amount) {
                 invalidCouponMsg = this.i19add$1ToGetDiscountMsg
                   .replace('$1', formatMoney(response.available_extra_discount.min_amount - this.amount.subtotal))
@@ -203,14 +230,14 @@ import {
           url: '/apply_discount.json',
           method: 'POST',
           data: {
-            ...this.modulesPayload,
+            ...this.modulesDiscount,
             amount: {
               subtotal: this.localAmountTotal,
               ...this.amount,
               total: this.localAmountTotal,
               discount: 0
             },
-            items: this.ecomCart.data.items.filter(item => !item.flags || !(item.flags && item.flags.length && item.flags.includes('freebie'))),
+            items: this.ecomCart.data.items,
             ...data
           }
         })
@@ -272,8 +299,6 @@ import {
           })
         }
       },
-
-
   
       localAmountTotal (total, oldTotal) {
         if (oldTotal !== null && Math.abs(total - oldTotal) > 0.01 && !this.isUpdateSheduled) {
@@ -300,4 +325,5 @@ import {
       this.updateDiscount(false)
     }
   }
+  
   

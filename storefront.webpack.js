@@ -12,7 +12,7 @@ module.exports = () => ({
       './methods/set-search-term': path.resolve(dirSearchAlias, 'set-search-term'),
       './base-config': path.resolve(__dirname, 'template/js/netlify-cms/base-config'),
       './js/ProductCard.js': path.resolve(__dirname, 'template/js/custom-js/ProductCard.js'),
-      //'./js/DiscountApplier.js': path.resolve(__dirname, 'template/js/custom-js/DiscountApplier.js'),
+      './js/DiscountApplier.js': path.resolve(__dirname, 'template/js/custom-js/DiscountApplier.js'),
       './js/ProductVariations.js': path.resolve(__dirname, 'template/js/custom-js/ProductVariations.js'),
       './js/ShippingCalculator.js': path.resolve(__dirname, 'template/js/custom-js/ShippingCalculator.js'),
       './html/ProductVariations.html': path.resolve(__dirname, 'template/js/custom-js/ProductVariations.html'),
@@ -22,6 +22,7 @@ module.exports = () => ({
       './html/ProductGallery.html': path.resolve(__dirname, 'template/js/custom-js/ProductGallery.html'),
       './js/ProductGallery.js': path.resolve(__dirname, 'template/js/custom-js/ProductGallery.js'),
       './js/TheProduct.js': path.resolve(__dirname, 'template/js/custom-js/TheProduct.js'),
+      './js/APrices.js': path.resolve(__dirname, 'template/js/custom-js/APrices.js'),
     }
   }
 })
