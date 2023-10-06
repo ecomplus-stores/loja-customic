@@ -64,7 +64,10 @@ if (opt.sort || opt.collection_id) {
   const offset = opt.page >= 2 ? (opt.page - 1) * size : 0
   items = _.items.slice(offset, offset + size)
 }
-items = items.filter(item => item.quantity > 0)
+if (items && items.length) {
+  items = items.filter(item => item.quantity > 0)
+}
+
 
 %>
 

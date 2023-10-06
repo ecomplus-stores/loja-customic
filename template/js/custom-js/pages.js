@@ -25,10 +25,11 @@ document.querySelector('#c-5f1f3f37f023684cdbd4a1a6 span').innerText = 'Películ
 
 function setTitleCategoryProductCard() {
   let categoryTitle = $(".breadcrumb-item:nth-of-type(3)").text().trim();
-  
-  $(".search-engine__retail .row > div").map(function () {
-    $(this).find(".product-card__name").append(` / ${categoryTitle}`);
-  })
+  if (categoryTitle) {
+    $(".search-engine__retail .row > div").map(function () {
+      $(this).find(".product-card__name").append(` / ${categoryTitle}`);
+    })
+  }
 }
 
 

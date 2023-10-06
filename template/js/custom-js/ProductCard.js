@@ -288,7 +288,7 @@ export default {
       //console.log("listNomeProduto", listNomeProduto);
 
       if(listNomeProduto.cor !== "" && listNomeProduto.modelo !== ""){
-        listNomeProduto.specifictions = `${listNomeProduto.marca} / ${listNomeProduto.modelo} / ${listNomeProduto.cor}`;
+        //listNomeProduto.specifictions = `${listNomeProduto.marca} / ${listNomeProduto.modelo} / ${listNomeProduto.cor}`;
 
         this.marcaSearch = `?marca=${listNomeProduto.marca}`;
 
@@ -302,7 +302,7 @@ export default {
         this.corSearch = `&cor=${listNomeProduto.cor}`;
 
       }else if(listNomeProduto.modelo !== "" && listNomeProduto.marca !== ""){
-        listNomeProduto.specifictions = `${listNomeProduto.marca} / ${listNomeProduto.modelo}`;
+        //listNomeProduto.specifictions = `${listNomeProduto.marca} / ${listNomeProduto.modelo}`;
         this.marcaSearch = `?marca=${listNomeProduto.marca}`;
 
         let listNomeProdutoModelo = listNomeProduto.modelo.replaceAll(' ','-');
