@@ -98,7 +98,7 @@
     },
     {
       "type": "collection-shelf",
-      "shuffle": false,
+      "shuffle": true,
       "limit": 12,
       "page": 1,
       "collection_id": "6447d5464bd2e929c1df12bd:collections:Últimos Lançamentos:/ultimos-lancamentos",
