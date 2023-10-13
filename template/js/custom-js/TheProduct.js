@@ -52,6 +52,7 @@ import {
   import APrices from '@ecomplus/storefront-components/src/APrices.vue'
   import AShare from '@ecomplus/storefront-components/src/AShare.vue'
   import ProductVariations from '@ecomplus/storefront-components/src/ProductVariations.vue'
+  import BuyTogether from '@ecomplus/storefront-components/src/BuyTogether.vue'
   import ProductGallery from '@ecomplus/storefront-components/src/ProductGallery.vue'
   import QuantitySelector from '@ecomplus/storefront-components/src/QuantitySelector.vue'
   import ShippingCalculator from '@ecomplus/storefront-components/src/ShippingCalculator.vue'
@@ -83,6 +84,7 @@ import {
       APicture,
       APrices,
       AShare,
+      BuyTogether,
       ProductVariations,
       ProductGallery,
       QuantitySelector,
@@ -152,6 +154,8 @@ import {
         body: {},
         fixedPrice: null,
         selectedVariationId: null,
+        buyTogetherProducts: [],
+        selectedModel: {},
         currentGalleyImg: 1,
         isOnCart: false,
         qntToBuy: 1,
@@ -403,6 +407,19 @@ import {
         this.$emit('buy', { product, variationId, customizations })
         if (this.canAddToCart) {
           ecomCart.addProduct({ ...product, customizations }, variationId, this.qntToBuy)
+        }
+        if (this.buyTogetherProducts && this.buyTogetherProducts.length) {
+          this.buyTogetherProducts.forEach(item => {
+            if (item.variationSelectedId) {
+              const idVariation = item.variationSelectedId
+              delete item.variationSelectedId
+              this.$emit('buy', { product: item, variationId: idVariation })
+              ecomCart.addProduct({ ...item }, idVariation, 1)
+            } else {
+              this.$emit('buy', { product: item })
+              ecomCart.addProduct({ ...item }, undefined, 1)
+            }
+          })
         }
         this.isOnCart = true
       },

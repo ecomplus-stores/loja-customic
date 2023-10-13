@@ -22,7 +22,11 @@ module.exports = () => ({
       './html/ProductGallery.html': path.resolve(__dirname, 'template/js/custom-js/ProductGallery.html'),
       './js/ProductGallery.js': path.resolve(__dirname, 'template/js/custom-js/ProductGallery.js'),
       './js/TheProduct.js': path.resolve(__dirname, 'template/js/custom-js/TheProduct.js'),
+      './html/TheProduct.html': path.resolve(__dirname, 'template/js/custom-js/TheProduct.html'),
       './js/APrices.js': path.resolve(__dirname, 'template/js/custom-js/APrices.js'),
+      './html/APrices.html': path.resolve(__dirname, 'template/js/custom-js/APrices.html'),
+      './js/BuyTogether.js': path.resolve(__dirname, 'template/js/custom-js/BuyTogether.js'),
+      './html/BuyTogether.html': path.resolve(__dirname, 'template/js/custom-js/BuyTogether.html')
     }
   }
 })

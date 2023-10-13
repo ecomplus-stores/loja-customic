@@ -56,6 +56,7 @@ export default {
 
     variationsGrids() {
       const variations = getVariationsGrids(this.product)
+      console.log(variations)
       if (variations) {
         const variationModified = {}
         const keys = Object.keys(variations)
@@ -226,6 +227,8 @@ export default {
         gridIndex,
         optionText
       });
+      window.selectedOption = selectedOptions
+      this.$emit('update:selected-model', selectedOptions)
       const filterGrids = {};
       for (let i = 0; i <= gridIndex; i++) {
         const grid = orderedGrids[i];

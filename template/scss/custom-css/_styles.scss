@@ -409,3 +409,54 @@ color: #fff !important;
 .product-card__buy.fade {
   opacity: 1;
 }
+
+.buy-together__discount {
+  text-align: left;
+}
+
+.buy-together__item__link {
+  width: 90%;
+}
+
+.buy-together__item__checkbox {
+  width: 10%;
+}
+
+.buy-together__list--new {
+  li {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+  }
+  padding-left: 0;
+}
+
+.buy-together__item__thumbnail--new {
+  min-height: 60px;
+  min-width: 70px;
+  img {
+    width: 60px;
+    height: auto;
+  }
+}
+
+.buy-together__item__price--new {
+  min-width: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buy-together__item__checkbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  input {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.buy-together__item__name--new {
+  flex-grow: 1;
+}

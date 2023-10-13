@@ -51,6 +51,10 @@ import utm from '@ecomplus/storefront-template/template/js/lib/persist-utm'
       canShowPriceOptions: {
         type: Boolean,
         default: true
+      },
+      showPriceOptions: {
+        type: Boolean,
+        default: false
       }
     },
   
