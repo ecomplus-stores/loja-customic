@@ -140,6 +140,7 @@ export default {
         console.log(items)
         return items
       }
+      return []
     },
 
     productIds () {
@@ -154,7 +155,11 @@ export default {
     },
 
     subtotal () {
-      return this.items.reduce((acc, item) => {
+      const newItems = [
+        ...this.items,
+        this.baseProduct
+      ]
+      return newItems.reduce((acc, item) => {
         return acc + (this.productQnts[item._id] || 1) * getPrice(item)
       }, 0)
     },
