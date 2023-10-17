@@ -117,7 +117,7 @@ export default {
       ]
       const filterItems = items.filter(item => {
         const grids = getVariationsGrids(item)
-        return Object.keys(grids).length < 2 
+        return Object.keys(grids).length < 2 && this.baseProduct._id !== item._id
       })
       return filterItems || items
     },
@@ -130,8 +130,10 @@ export default {
           } else if (item.variations && item.variations.length) {
             const variationSelected = item.variations.find(variation => {
               const { specifications } = variation
-              if (specifications['modelo'] && specifications['modelo'][0]) {
+              if (specifications['modelo'] && specifications['modelo'][0].text === ('iPhone 13' || 'iPhone 13 Pro')) {
                 return specifications['modelo'][0].text === this.variationSelected
+              } else if (specifications['modelo'] && specifications['modelo'][0]) {
+                return  specifications['modelo'][0].text === 'iPhone 13/13 Pro'
               }
             })
             return variationSelected && variationSelected.quantity > 0
@@ -253,8 +255,10 @@ export default {
             if (item.variations && item.variations.length) {
               const variationSelected = item.variations.find(variation => {
                 const { specifications } = variation
-                if (specifications['modelo'] && specifications['modelo'][0]) {
+                if (specifications['modelo'] && specifications['modelo'][0].text === ('iPhone 13' || 'iPhone 13 Pro')) {
                   return specifications['modelo'][0].text === this.variationSelected
+                } else if (specifications['modelo'] && specifications['modelo'][0]) {
+                  return  specifications['modelo'][0].text === 'iPhone 13/13 Pro'
                 }
               })
               console.log(variationSelected)
@@ -281,8 +285,10 @@ export default {
               if (prod.variations && prod.variations.length) {
                 const selectVar = prod.variations.find(variation => {
                   const { specifications } = variation
-                  if (specifications['modelo'] && specifications['modelo'][0]) {
-                    return specifications['modelo'][0].text === newModel
+                  if (specifications['modelo'] && specifications['modelo'][0].text === ('iPhone 13' || 'iPhone 13 Pro')) {
+                    return specifications['modelo'][0].text === this.variationSelected
+                  } else if (specifications['modelo'] && specifications['modelo'][0]) {
+                    return  specifications['modelo'][0].text === 'iPhone 13/13 Pro'
                   }
                 })
                 if (selectVar) {
