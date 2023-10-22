@@ -27,7 +27,7 @@ function setTitleCategoryProductCard() {
   let categoryTitle = $(".breadcrumb-item:nth-of-type(3)").text().trim();
   if (categoryTitle) {
     $(".search-engine__retail .row > div").map(function () {
-      $(this).find(".product-card__name").append(` / ${categoryTitle}`);
+      $(this).find(".product-card__name").append(`<p>${categoryTitle}</p>`);
     })
   }
 }

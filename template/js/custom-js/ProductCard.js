@@ -103,7 +103,9 @@ export default {
     i19unavailable: () => i18n(i19unavailable),
 
     colorOptions () {
-      const variationGrids = getVariationsGrids(this.body)
+      const body = { ...this.body }
+      body.variations = this.specModel
+      const variationGrids = getVariationsGrids(body)
       return variationGrids.colors && variationGrids.colors.slice(0, 6)
     },
 
@@ -321,6 +323,14 @@ export default {
 
       return listNomeProduto;
 
+    },
+
+    specModel () {
+      if (this.isSearchingPhoneModel.specifictions) {
+        return this.body.variations.filter(variation => variation.specifications['modelo'][0].text === this.isSearchingPhoneModel.specifictions && variation.quantity > 0)
+      }
+      return this.body.variations
+      
     },
 
     ratingHtml () {
