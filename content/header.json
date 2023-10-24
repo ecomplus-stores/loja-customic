@@ -10,6 +10,10 @@
       {
         "title": "Atendimento",
         "link": "/pages/contato"
+      },
+      {
+        "link": "https://novidades.customic.com.br/contato-artistas-e-influenciadores",
+        "title": "Artistas e infuenciadores"
       }
     ],
     "phone_wpp": true,
