@@ -4,7 +4,7 @@
   :class="{
     'product-card--inactive': body._id && !isActive,
     'product-card--small': isSmall,
-    'product-card--out-of-stock-variation' : !specModel.length
+    'product-card--out-of-stock-variation' : !specModel.length && this.isSearchingPhoneModel.specifictions
   }"
   @mouseover="isHovered = true"
   :data-product-id="body._id"
