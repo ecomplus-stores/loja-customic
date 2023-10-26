@@ -170,6 +170,20 @@ export default {
       return this.countOpenRequests > 0
     },
 
+    filteredItems () {
+      const filtered = this.resultItems.filter(item => {
+        if (item.variations && item.variations.length) {
+          return item.variations.find(variation => variation.specifications['modelo'][0].text === this.modelSpec && variation.quantity > 0)
+        }
+        return item.quantity > 0
+      })
+      const diff = this.resultItems.filter(({ _id: id1 }) => !filtered.some(({ _id: id2 }) => id2 === id1))
+      return [
+        ...filtered,
+        ...diff
+      ]
+    },
+
     hasEmptyResult () {
       return this.hasSearched && !this.resultItems.length
     },

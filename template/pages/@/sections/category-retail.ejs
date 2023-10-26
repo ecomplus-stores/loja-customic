@@ -33,14 +33,15 @@ if (items && !items.length) {
   }
 }
 const model = _.state.name.replace('Capas para ', '')
-console.log('before', items.length)
-items = items.filter(item => {
+const itemQuantity = items.filter(item => {
   if (Array.isArray(item.variations) && item.variations.length) {
     return item.variations.some(variation => variation.specifications['modelo'][0].text === model && variation.quantity > 0)
   }
   return item
 })
-console.log('after', items.length)
+const diff = items.filter(({ _id: id1 }) => !itemQuantity.some(({ _id: id2 }) => id2 === id1))
+
+items = [...itemQuantity, ...diff]
 %>
 
 <div class="category-retail">
