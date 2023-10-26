@@ -8,7 +8,8 @@ if (_.state.products && _.state.products.length) {
       _, opt: {
         search,
         sort: opt.sort,
-        page_size: 100
+        page_size: 100,
+        productIds: _.state.products
       }
     }) %>
   </div>

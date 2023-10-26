@@ -162,6 +162,10 @@ export default {
 
     ecomSearch: () => new EcomSearch(),
 
+    modelSpec () {
+      return this.categories && this.categories.length && this.categories[0].replace('Capas para ', '') 
+    },
+
     isSearching () {
       return this.countOpenRequests > 0
     },
