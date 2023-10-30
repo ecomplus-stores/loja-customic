@@ -163,7 +163,7 @@ export default {
     ecomSearch: () => new EcomSearch(),
 
     modelSpec () {
-      return this.categories && this.categories.length && this.categories[0].replace('Capas para ', '') 
+      return this.categories && this.categories.length && this.categories[0].replace('Capas para ', '').replace('New! ', '').replace(' (todos modelos)', '')
     },
 
     isSearching () {
@@ -177,11 +177,25 @@ export default {
         }
         return item.quantity > 0
       })
+      console.log(filtered)
       const diff = this.resultItems.filter(({ _id: id1 }) => !filtered.some(({ _id: id2 }) => id2 === id1))
       return [
         ...filtered,
         ...diff
       ]
+      /* const items = [ ...this.resultItems ]
+      const lengthItems = this.resultItems.length
+      this.resultItems.forEach((item, i) => {
+        if (item.variations && item.variations.length) {
+          const hasProduct = item.variations.find(variation => variation.specifications['modelo'][0].text === this.modelSpec && !variation.quantity)
+          if (hasProduct) {
+            console.log(i)
+            const removedItem = items.splice(i, 1)[0]
+            items.splice(lengthItems, 0, removedItem)
+          }
+        }
+      })
+      return items */
     },
 
     hasEmptyResult () {
