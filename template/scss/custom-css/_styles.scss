@@ -17,11 +17,9 @@ color: #fff !important;
 }
 
 .product-card__prices{
-  @media (max-width: 1024px){
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .product-card__pictures img{
@@ -466,3 +464,20 @@ color: #fff !important;
 .product-card--out-of-stock-variation {
   opacity: .5;
 }
+
+.product-card--small {
+  .prices__value, .prices__value + span {
+    width: 100%;
+  }
+  .product-card__buy {
+    width: 100%;
+    text-align: center;
+    button {
+      width: 100%;
+    }
+    i {
+      color: #fff;
+    }
+  }
+}
+ 

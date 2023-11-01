@@ -170,19 +170,34 @@ export default {
       return this.countOpenRequests > 0
     },
 
+    hasCapa () {
+      return this.term.toLowerCase().indexOf('cap') > -1
+    },
+
+    hasPelicula () {
+      return this.term.toLowerCase().indexOf('pel') > -1
+    },
+
     filteredItems () {
-      const filtered = this.resultItems.filter(item => {
+      let resultItems = this.resultItems
+      /* if (this.hasCapa) {
+        resultItems = resultItems.filter(item => item.name.toLowerCase().includes('cap'))
+      } else if (this.hasPelicula) {
+        resultItems = resultItems.filter(item => item.name.toLowerCase().includes('pel'))
+      } */
+      const filtered = resultItems.filter(item => {
         if (item.variations && item.variations.length) {
           return item.variations.find(variation => variation.specifications['modelo'][0].text === this.modelSpec && variation.quantity > 0)
         }
         return item.quantity > 0
       })
-      console.log(filtered)
-      const diff = this.resultItems.filter(({ _id: id1 }) => !filtered.some(({ _id: id2 }) => id2 === id1))
-      return [
+      const diff = resultItems.filter(({ _id: id1 }) => !filtered.some(({ _id: id2 }) => id2 === id1))
+      let allProducts = [
         ...filtered,
         ...diff
       ]
+      
+      return allProducts
       /* const items = [ ...this.resultItems ]
       const lengthItems = this.resultItems.length
       this.resultItems.forEach((item, i) => {
