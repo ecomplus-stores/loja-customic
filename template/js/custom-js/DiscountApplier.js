@@ -18,8 +18,19 @@ import {
   import AAlert from '@ecomplus/storefront-components/src/AAlert.vue'
   
   const addFreebieItems = (ecomCart, productIds) => {
+    const hasSpecialGift = productIds.includes('6544ed9e2cd6b6595995bbf1')
     if (Array.isArray(productIds)) {
-      ecomCart.data.items.forEach(({ _id, product_id: productId, flags }) => {
+      let capaIndex, model, variationBrinde
+      let isblackOffer = false
+      ecomCart.data.items.forEach(({ _id, product_id: productId, flags, name, categories }) => {
+        capaIndex = name.toLowerCase().indexOf('capa')
+        if (capaIndex >= 0) {
+          const splitName = name.split('/')
+          model = splitName[1].trim()
+          if (categories && categories.length) {
+            isblackOffer = categories.some(({ _id }) => _id === '6541418d2cd6b65959922d5c')
+          }
+        }
         if (flags && flags.includes('freebie') && !productIds.includes(productId)) {
           ecomCart.removeItem(_id)
         }
@@ -28,16 +39,32 @@ import {
         const canAddFreebie = !ecomCart.data.items.find(item => {
           return item.product_id === productId && item.flags && item.flags.includes('freebie')
         })
-        if (canAddFreebie) {
+        if (canAddFreebie && (!hasSpecialGift || isblackOffer)) {
           store({ url: `/products/${productId}.json` })
             .then(({ data }) => {
-              if (data.quantity > 0 && (!data.variations || !data.variations.length)) {
+              if (data.variations && model) {
+                if (model === 'iPhone 13 Pro' || model === 'iPhone 13') {
+                  model = 'iPhone 13/13 Pro'
+                } else if (model === 'iPhone 11' || model === 'iPhone XR') {
+                  model = 'iPhone 11/XR'
+                } else if (model === 'iPhone X' || model === 'iPhone XS') {
+                  model = 'iPhone X/XS'
+                } else if (model === 'iPhone 12' || model === 'iPhone 12 Pro') {
+                  model = 'iPhone 12/12 Pro'
+                } else if (model === 'Galaxy S22' || model === 'Galaxy S23') {
+                  model = 'Galaxy S22 5G/S23'
+                } else if (model === 'Galaxy S22 Plus' || model === 'Galaxy S23 Plus') {
+                  model = 'Galaxy S22 Plus/S23 Plus'
+                }
+                variationBrinde = data.variations.find(variation => variation.specifications['modelo'][0].text === model.trim())
+              }
+              if (data.quantity > 0 && (!data.variations || !data.variations.length || variationBrinde)) {
                 ecomCart.addProduct(
                   {
                     ...data,
                     flags: ['freebie', '__tmp']
                   },
-                  null,
+                  variationBrinde._id,
                   productIds.reduce((qnt, _id) => {
                     return _id === productId ? qnt + 1 : qnt
                   }, 0)

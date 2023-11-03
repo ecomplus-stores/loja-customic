@@ -171,20 +171,20 @@ export default {
     },
 
     hasCapa () {
-      return this.term.toLowerCase().indexOf('cap') > -1
+      return this.term && this.term.toLowerCase().indexOf('cap') > -1
     },
 
     hasPelicula () {
-      return this.term.toLowerCase().indexOf('pel') > -1
+      return this.term && this.term.toLowerCase().indexOf('pel') > -1
     },
 
     filteredItems () {
       let resultItems = this.resultItems
-      /* if (this.hasCapa) {
+      if (this.hasCapa) {
         resultItems = resultItems.filter(item => item.name.toLowerCase().includes('cap'))
       } else if (this.hasPelicula) {
         resultItems = resultItems.filter(item => item.name.toLowerCase().includes('pel'))
-      } */
+      }
       const filtered = resultItems.filter(item => {
         if (item.variations && item.variations.length) {
           return item.variations.find(variation => variation.specifications['modelo'][0].text === this.modelSpec && variation.quantity > 0)
