@@ -7,6 +7,14 @@
       "autoplay": 10000,
       "slides": [
         {
+          "start": "2023-11-06T03:00:00.000Z",
+          "end": "2023-11-24T02:58:00.000Z",
+          "img": "/img/uploads/banner_principal-1920x480px.webp",
+          "mobile_img": "/img/uploads/banner_principal_mobile-576x834px.webp",
+          "link": "https://customic.com.br/aquece-black-friday-customic-2023",
+          "alt": "Aquece Black Friday Customic 2023"
+        },
+        {
           "start": "",
           "end": "",
           "img": "/img/uploads/bannerip15-desk.webp",
@@ -55,7 +63,7 @@
           "mobile_img": "/img/uploads/banner_mobile_pop_4_11zon.webp"
         }
       ],
-      "full_width": true
+      "full_width": false
     },
     {
       "type": "collection-shelf",
