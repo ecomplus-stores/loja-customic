@@ -15,7 +15,11 @@ if (!productIds && showcaseType) {
     const { data } = await _.ecomClient.graphs({ url })
     productIds = _.ecomUtils.recommendedIds(data)
   } catch (err) {
-    console.error(err)
+    if (_.state.name.toLowerCase().includes('black friday')) {
+      productIds = ['62979b6bac0cb4200ffa4a88', '62960512ac0cb4200ff69db7', '62960878ac0cb4200ff6a554', '629df524ac0cb4200f05c200', '6287ccb7df4d8071c9189558', '62a0deddac0cb4200f0c1f44']
+    } else {
+      console.error(err)
+    }
   }
 }
 if (Array.isArray(productIds) && productIds.length) {

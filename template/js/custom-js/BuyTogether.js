@@ -1,6 +1,7 @@
 // import { i19buyTogetherWith } from '@ecomplus/i18n'
 import { 
-  formatMoney, 
+  formatMoney,
+  onPromotion,
   price as getPrice, 
   recommendedIds,
   name as getName,
@@ -116,8 +117,7 @@ export default {
         ...this.recommendedItems
       ]
       const filterItems = items.filter(item => {
-        const grids = getVariationsGrids(item)
-        return Object.keys(grids).length < 2 && this.baseProduct._id !== item._id
+        return this.baseProduct._id !== item._id && !item.name.toLowerCase().includes('capa')
       })
       return filterItems || items
     },
@@ -130,23 +130,37 @@ export default {
           } else if (item.variations && item.variations.length) {
             const variationSelected = item.variations.find(variation => {
               const { specifications } = variation
-              if (specifications['modelo'] && specifications['modelo'][0].text === ('iPhone 13' || 'iPhone 13 Pro')) {
-                return specifications['modelo'][0].text === this.variationSelected
-              } else if (specifications['modelo'] && specifications['modelo'][0]) {
-                return  specifications['modelo'][0].text === 'iPhone 13/13 Pro'
+              const selectedVar = specifications['modelo'] && specifications['modelo'][0].text
+              if (selectedVar === ('iPhone 13' || 'iPhone 13 Pro' || 'iPhone 13/13 Pro')) {
+                return 'iPhone 13/13 Pro' === this.variationSelected
+              } else if (selectedVar) {
+                return selectedVar === this.variationSelected
               }
             })
             return variationSelected && variationSelected.quantity > 0
           }
         })
-        console.log(items)
         return items
       }
       return []
     },
 
     productIds () {
-      return Object.keys(this.productQnts)
+      const products = [
+        ...Object.keys(this.productQnts),
+        
+      ]
+      if (this.baseProduct.categories && this.baseProduct.categories.length) {
+        const isblackOffer = this.baseProduct.categories.some(({ _id }) => _id === '5f1f3f3cf023684cdbd4a1b1')
+        if (isblackOffer) {
+          products.push('654138362cd6b659599215d9')
+          products.push('65426a3b2cd6b659599396bd')
+          products.push('65426afa2cd6b659599397df')
+          products.push('65426b492cd6b6595993983e')
+        }
+      }
+      
+      return products
     },
 
     relatedProducts () {
@@ -226,6 +240,7 @@ export default {
       }
       this.ecomSearch.setProductIds(this.productIds)
       delete this.ecomSearch.dsl.aggs
+      this.ecomSearch.dsl.query.bool.filter = this.ecomSearch.dsl.query.bool.filter.slice(1, 4)
       this.ecomSearch.fetch().then(() => {
         console.log(this.ecomSearch.getItems())
         this.recommendedItems = this.recommendedItems.concat(this.ecomSearch.getItems())
@@ -235,7 +250,8 @@ export default {
     },
     getPrice,
     getName,
-    getImg: item => getImg(item, null, 'small')
+    getImg: item => getImg(item, null, 'small'),
+    onPromotion
   },
 
   watch: {
@@ -255,13 +271,13 @@ export default {
             if (item.variations && item.variations.length) {
               const variationSelected = item.variations.find(variation => {
                 const { specifications } = variation
-                if (specifications['modelo'] && specifications['modelo'][0].text === ('iPhone 13' || 'iPhone 13 Pro')) {
-                  return specifications['modelo'][0].text === this.variationSelected
-                } else if (specifications['modelo'] && specifications['modelo'][0]) {
-                  return  specifications['modelo'][0].text === 'iPhone 13/13 Pro'
+                const selectedVar = specifications['modelo'] && specifications['modelo'][0].text
+                if (selectedVar === ('iPhone 13' || 'iPhone 13 Pro' || 'iPhone 13/13 Pro')) {
+                  return 'iPhone 13/13 Pro' === this.variationSelected
+                } else if (selectedVar) {
+                  return selectedVar === this.variationSelected
                 }
               })
-              console.log(variationSelected)
               if (variationSelected && variationSelected.quantity > 0) {
                 item['variationSelectedId'] = variationSelected._id
                 return item
@@ -285,10 +301,11 @@ export default {
               if (prod.variations && prod.variations.length) {
                 const selectVar = prod.variations.find(variation => {
                   const { specifications } = variation
-                  if (specifications['modelo'] && specifications['modelo'][0].text === ('iPhone 13' || 'iPhone 13 Pro')) {
-                    return specifications['modelo'][0].text === this.variationSelected
-                  } else if (specifications['modelo'] && specifications['modelo'][0]) {
-                    return  specifications['modelo'][0].text === 'iPhone 13/13 Pro'
+                  const selectedVar = specifications['modelo'] && specifications['modelo'][0].text
+                  if (selectedVar === ('iPhone 13' || 'iPhone 13 Pro' || 'iPhone 13/13 Pro')) {
+                    return 'iPhone 13/13 Pro' === this.variationSelected
+                  } else if (selectedVar) {
+                    return selectedVar === this.variationSelected
                   }
                 })
                 if (selectVar) {

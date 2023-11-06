@@ -28,8 +28,8 @@
                   class="buy-together__item--new col-12 d-flex"
                 >
                 <a-link
-                  v-if="item.slug"
-                  :href="`/${item.slug}`"
+                  v-if="item._id"
+                  :href="item.slug ? `/${item.slug}` : '/black-friday-customic-2023'"
                   target="_blank"
                   class="d-flex flex-grow buy-together__item__link"
                 >
@@ -42,10 +42,25 @@
                   </div>
                   <div class="buy-together__item__name--new">
                     <small>{{ getName(item) }}</small>
+                    <br>
+                    <span
+                      v-if="onPromotion(item)"
+                      class="buy-together__item__offer-stamp"
+                    >
+                      <i class="i-arrow-down"></i> <b>{{ Math.round(((item.base_price - getPrice(item)) * 100) / item.base_price) }}</b>%
+                    </span>
                   </div>
                   <div class="buy-together__item__price--new">
                     <a-prices
+                      v-if="item.price"
                       :product="item"
+                      :is-literal="false"
+                      :is-big="false"
+                      :show-price-options="true"
+                    />
+                    <a-prices
+                      v-else
+                      :product="{...item, price: 0}"
                       :is-literal="false"
                       :is-big="false"
                       :show-price-options="true"
