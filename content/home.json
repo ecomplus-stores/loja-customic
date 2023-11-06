@@ -70,19 +70,18 @@
       "shuffle": true,
       "limit": 12,
       "page": 1,
-      "collection_id": "6529484d2cd6b6595978d842:collections:tudo para proteger seu iPhone 15 ✨📲:/tudo-para-proteger-seu-iphone-15",
-      "sort": "highest_price",
-      "link": "/new-iphone-15",
-      "title": "tudo para proteger seu iPhone 15 ✨📲"
+      "collection_id": "6541126e2cd6b6595991cff7:collections:Aquece Black Friday Customic 2023 🔥😍:/aquece-black-friday-customic-2023",
+      "sort": "views"
     },
     {
       "type": "collection-shelf",
       "shuffle": true,
       "limit": 12,
-      "page": "",
-      "sort": "sales",
-      "title": "Mais vendidos 🏆",
-      "collection_id": "5f1f3f3cf023684cdbd4a1b1:categories:Capinha de celular:/capas"
+      "page": 1,
+      "collection_id": "6529484d2cd6b6595978d842:collections:tudo para proteger seu iPhone 15 ✨📲:/tudo-para-proteger-seu-iphone-15",
+      "sort": "highest_price",
+      "link": "/new-iphone-15",
+      "title": "tudo para proteger seu iPhone 15 ✨📲"
     },
     {
       "type": "banners-grid",
@@ -150,6 +149,15 @@
           "mobile_img": "/img/uploads/anyconv.com__banner-categoria-customicpopsockets.webp"
         }
       ]
+    },
+    {
+      "type": "collection-shelf",
+      "shuffle": true,
+      "limit": 12,
+      "page": "",
+      "sort": "sales",
+      "title": "Mais vendidos 🏆",
+      "collection_id": "5f1f3f3cf023684cdbd4a1b1:categories:Capinha de celular:/capas"
     },
     {
       "type": "collection-shelf",
