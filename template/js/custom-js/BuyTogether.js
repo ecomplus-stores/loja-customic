@@ -146,9 +146,10 @@ export default {
     },
 
     productIds () {
+      const productsFromCategory = window.idsBuyTogether = []
       const products = [
         ...Object.keys(this.productQnts),
-        
+        ...productsFromCategory
       ]
       if (this.baseProduct.categories && this.baseProduct.categories.length) {
         const isblackOffer = this.baseProduct.categories.some(({ _id }) => _id === '5f1f3f3cf023684cdbd4a1b1')

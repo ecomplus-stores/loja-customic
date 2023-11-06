@@ -1,0 +1,13 @@
+<%
+const buyList = opt.buy_list
+if (Array.isArray(buyList) && buyList.length) { 
+    const filteredCategory = buyList.find(category => {
+        return _.state.categories.some(faq => category.slug === faq.slug)
+    });
+    if (filteredCategory && filteredCategory.products && filteredCategory.products.length) {
+    %>
+        <script>
+            window.idsBuyTogether = <%= filteredCategory.products %>
+        </script>
+    <%    }
+} %>
