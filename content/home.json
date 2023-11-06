@@ -87,9 +87,10 @@
       "type": "banners-grid",
       "banners": [
         {
-          "img": "/img/uploads/desk.png",
-          "link": "/combos",
-          "mobile_img": "/img/uploads/mobile.webp"
+          "img": "/img/uploads/banner_combos-1500x200px-2-.webp",
+          "mobile_img": "/img/uploads/banner_combos-mobile.webp",
+          "link": "/aquece-black-friday-customic-2023",
+          "alt": "Aquece Black Friday Customic 2023"
         }
       ]
     },
@@ -111,6 +112,16 @@
       "collection_id": "6447d5464bd2e929c1df12bd:collections:Últimos Lançamentos:/ultimos-lancamentos",
       "title": "Últimos Lançamentos 🔥",
       "sort": "news"
+    },
+    {
+      "type": "banners-grid",
+      "banners": [
+        {
+          "img": "/img/uploads/desk.png",
+          "link": "/combos",
+          "mobile_img": "/img/uploads/mobile.webp"
+        }
+      ]
     },
     {
       "type": "custom-content",
