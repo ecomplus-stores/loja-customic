@@ -146,20 +146,11 @@ export default {
     },
 
     productIds () {
-      const productsFromCategory = window.idsBuyTogether = []
+      const productsFromCategory = window.idsBuyTogether || []
       const products = [
         ...Object.keys(this.productQnts),
         ...productsFromCategory
       ]
-      if (this.baseProduct.categories && this.baseProduct.categories.length) {
-        const isblackOffer = this.baseProduct.categories.some(({ _id }) => _id === '5f1f3f3cf023684cdbd4a1b1')
-        if (isblackOffer) {
-          products.push('654138362cd6b659599215d9')
-          products.push('65426a3b2cd6b659599396bd')
-          products.push('65426afa2cd6b659599397df')
-          products.push('65426b492cd6b6595993983e')
-        }
-      }
       
       return products
     },

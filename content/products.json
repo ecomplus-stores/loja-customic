@@ -12,7 +12,7 @@
       "type": "buy_together_list",
       "buy_list": [
         {
-          "slug": "/capas",
+          "slug": "capas",
           "products": [
             "654138362cd6b659599215d9",
             "65413a342cd6b65959921bb6"
