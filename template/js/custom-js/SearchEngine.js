@@ -163,7 +163,223 @@ export default {
     ecomSearch: () => new EcomSearch(),
 
     modelSpec () {
-      return this.categories && this.categories.length && this.categories[0].replace('Capas para ', '').replace('New! ', '').replace(' (todos modelos)', '')
+      return this.isSearchingPhoneModel && this.isSearchingPhoneModel.modelo || this.categories && this.categories.length && this.categories[0].replace('Capas para ', '').replace('New! ', '').replace(' (todos modelos)', '')
+    },
+
+    isSearchingPhoneModel (){
+      let body = this.resultItems[0];
+      let nameProduct = body.name;
+      let getListModels = body.variations;
+      let term = this.searchTerm;
+      let listNomeProduto = {nome: "", modelo: "", marca: "", cor: "", foto: [], specifictions: ""};
+
+      //setando foto defaut e hover 
+      body.pictures.map(function(product, index) {
+        if (index === 0) {
+          let foto = (product.normal || product.zoom).url;
+          listNomeProduto.foto.push(foto);
+        }
+        if (index === 1) {
+          let foto = (product.normal || product.zoom).url;
+          listNomeProduto.foto.push(foto);
+        }
+      });
+
+      //setando term em paginas de categoria
+      if (term === undefined || term === null) {
+        if ($(".page-title__head h1").length > 0) { 
+          term = $(".page-title__head h1").text();
+        }
+      }      
+
+      if(term !== undefined && term !== null){
+        term = term.toLowerCase();
+        nameProduct = nameProduct.toLowerCase();
+
+        if(getListModels !== undefined){
+
+          getListModels.map( (variation) => {    
+
+          
+            if(variation !== undefined){
+              let modeloVariation = "";
+              let marcaVariation = "";
+              let variationColor = "";
+              let modeloVariationInitial = "";
+              let pictureId = variation.picture_id;
+
+              
+              //se array nao for vazio 
+              if (variation && variation.specifications && variation.specifications.modelo && variation.specifications.modelo.length > 0){
+                modeloVariation = variation.specifications.modelo[0].text;
+                modeloVariationInitial = variation.specifications.modelo[0].text;
+                modeloVariation = modeloVariation.toLowerCase();
+              }
+
+              //console.log(modeloVariationInitial)
+              //console.log(variation.name)
+              //console.log(variation)
+              //console.log(body.pictures)
+
+
+              if (variation.specifications.marca_do_aparelho !== "" && variation.specifications.marca_do_aparelho !== undefined && variation.specifications.marca_do_aparelho !== null) {
+                
+                if(variation.specifications.marca_do_aparelho.length > 0){
+                  marcaVariation = variation.specifications.marca_do_aparelho[0].text;
+                  modeloVariation = modeloVariation.toLowerCase();
+                }
+              }
+
+              if(variation.specifications.colors !== undefined){
+                
+                if(variation.specifications.colors.length > 0){
+                  variationColor = variation.specifications.colors[0].text;
+                  variationColor = variationColor.toLowerCase(); 
+                }
+              }
+
+              //se tem o nome do produto 
+              if(term.indexOf(nameProduct) !== -1 ){
+                nameProduct = nameProduct.charAt(0).toUpperCase() + nameProduct.slice(1)
+                listNomeProduto.nome = nameProduct;
+              }
+
+              //console.log("nameProduct", nameProduct);
+              //console.log("marcaVariation", marcaVariation);
+              //console.log("modeloVariation", modeloVariation);
+
+              //se tem o modelo ja seta a marca 
+              if (term.indexOf(modeloVariation) !== -1 && marcaVariation !== "") {
+                modeloVariation =
+                  modeloVariation.charAt(0).toUpperCase() +
+                  modeloVariation.slice(1);
+
+                if (modeloVariation.indexOf("Iphone") !== -1) {
+                  modeloVariation = modeloVariation.replaceAll(
+                    "Iphone",
+                    "iPhone"
+                  );
+                }
+
+                listNomeProduto.modelo = modeloVariationInitial;
+                listNomeProduto.marca = marcaVariation;
+
+                switch (marcaVariation) {
+                  case "Samsung":
+                    body.pictures.map(function(product, index) {
+                      if (product._id == pictureId) {
+                        let foto = (product.normal || product.zoom).url;
+                        listNomeProduto.foto = [];
+                        listNomeProduto.foto.unshift(foto);
+                      }
+                    });
+                    break;
+                  case "Apple":
+                    body.pictures.map(function(product, index) {
+                      if (product._id == pictureId) {
+                        let foto = (product.normal || product.zoom).url;
+                        listNomeProduto.foto = [];
+                        listNomeProduto.foto.unshift(foto);
+                      }
+                    });
+                    break;
+                  case "Motorola":
+                    body.pictures.map(function(product, index) {
+                      if (product._id == pictureId) {
+                        let foto = (product.normal || product.zoom).url;
+                        listNomeProduto.foto = [];
+                        listNomeProduto.foto.unshift(foto);
+                      }
+                    });
+                    break;
+                  case "LG":
+                    body.pictures.map(function(product, index) {
+                      if (product._id == pictureId) {
+                        let foto = (product.normal || product.zoom).url;
+                        listNomeProduto.foto = [];
+                        listNomeProduto.foto.unshift(foto);
+                      }
+                    });
+                    break;
+                  case "Huawei":
+                    body.pictures.map(function(product, index) {
+                      if (product._id == pictureId) {
+                        let foto = (product.normal || product.zoom).url;
+                        listNomeProduto.foto = [];
+                        listNomeProduto.foto.unshift(foto);
+                      }
+                    });
+                    break;
+                  case "Xiaomi":
+                    body.pictures.map(function(product, index) {
+                      if (product._id == pictureId) {
+                        let foto = (product.normal || product.zoom).url;
+                        listNomeProduto.foto = [];
+                        listNomeProduto.foto.unshift(foto);
+                      }
+                    });
+                    break;
+                }
+              }
+
+              //se nao tem a variacao de marca
+              if (term.indexOf(modeloVariation) !== -1) {
+                listNomeProduto.modelo = modeloVariationInitial;
+
+                body.pictures.map(function(product, index) {
+                  if (product._id == pictureId) {
+                    let foto = (product.normal || product.zoom).url;
+                    listNomeProduto.foto = [];
+                    listNomeProduto.foto.push(foto);
+                  }
+                });
+              }              
+            }
+          })
+          
+        }
+      }   
+      
+      //console.log("nameProduct", nameProduct);
+      //console.log("marcaVariation", marcaVariation);
+      //console.log("modeloVariation", modeloVariation);
+      //console.log("nameProduct", nameProduct);
+      //console.log("listNomeProduto", listNomeProduto);
+
+      if(listNomeProduto.cor !== "" && listNomeProduto.modelo !== ""){
+        //listNomeProduto.specifictions = `${listNomeProduto.marca} / ${listNomeProduto.modelo} / ${listNomeProduto.cor}`;
+
+        this.marcaSearch = `?marca=${listNomeProduto.marca}`;
+
+        let listNomeProdutoModelo = listNomeProduto.modelo.replaceAll(' ','-');
+        this.modeloSearch = `&modelo=${listNomeProdutoModelo}`;
+        this.corSearch = `&cor=${listNomeProduto.cor}`;
+
+      }
+      else if(listNomeProduto.cor !== ""){
+        listNomeProduto.specifictions = `${listNomeProduto.cor}`;
+        this.corSearch = `&cor=${listNomeProduto.cor}`;
+
+      }else if(listNomeProduto.modelo !== "" && listNomeProduto.marca !== ""){
+        //listNomeProduto.specifictions = `${listNomeProduto.marca} / ${listNomeProduto.modelo}`;
+        this.marcaSearch = `?marca=${listNomeProduto.marca}`;
+
+        let listNomeProdutoModelo = listNomeProduto.modelo.replaceAll(' ','-');
+
+        this.modeloSearch = `&modelo=${listNomeProdutoModelo}`;
+
+      }else if(listNomeProduto.marca !== ""){
+        listNomeProduto.specifictions = listNomeProduto.marca; 
+        this.marcaSearch = `?marca=${listNomeProduto.marca}`;
+      }else if(listNomeProduto.modelo !== "" && listNomeProduto.marca === ""){
+        listNomeProduto.specifictions = listNomeProduto.modelo;
+
+        let listNomeProdutoModelo = listNomeProduto.modelo.replaceAll(' ','-');
+        this.modeloSearch = `?modelo=${listNomeProdutoModelo}`;
+      }
+
+      return listNomeProduto;
+
     },
 
     isSearching () {
