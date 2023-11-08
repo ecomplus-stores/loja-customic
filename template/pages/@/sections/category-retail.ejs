@@ -36,7 +36,12 @@ if (items && !items.length) {
 const model = _.state.name.replace('Capas para ', '').replace('New! ', '').replace(' (todos modelos)', '')
 const itemQuantity = items.filter(item => {
   if (Array.isArray(item.variations) && item.variations.length) {
-    return item.variations.some(variation => variation.specifications['modelo'][0].text === model && variation.quantity > 0)
+    return item.variations.some(variation => {
+      return variation.specifications['modelo'] &&
+        variation.specifications['modelo'][0] &&
+        variation.specifications['modelo'][0].text === model &&
+        variation.quantity > 0
+    })
   }
   return item
 })
