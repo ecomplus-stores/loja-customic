@@ -137,7 +137,8 @@ export default {
       popularItems: [],
       hasSetPopularItems: false,
       isAsideVisible: false,
-      searchFilterId: 0
+      searchFilterId: 0,
+      itemsLength: this.resultItems.length
     }
   },
 
@@ -407,6 +408,7 @@ export default {
         }
         return item.quantity > 0
       })
+      this.itemsLength = filtered && filtered.length
       const diff = resultItems.filter(({ _id: id1 }) => !filtered.some(({ _id: id2 }) => id2 === id1))
       let allProducts = [
         ...filtered,

@@ -203,7 +203,7 @@
           v-bind="{ totalSearchResults, toggleFilters }"
         >
           <div class="search-engine__count">
-            <strong>{{ totalSearchResults }}</strong>
+            <strong>{{ itemsLength || totalSearchResults }}</strong>
             {{ i19itemsFound }}
             <div
               v-if="isSearching"
