@@ -403,7 +403,7 @@ export default {
       }
       const filtered = resultItems.filter(item => {
         if (item.variations && item.variations.length) {
-          return item.variations.find(variation => variation.specifications['modelo'][0].text === this.modelSpec && variation.quantity > 0)
+          return item.variations.find(variation => variation.specifications['modelo'] && variation.specifications['modelo'][0] && variation.specifications['modelo'][0].text === this.modelSpec && variation.quantity > 0)
         }
         return item.quantity > 0
       })
