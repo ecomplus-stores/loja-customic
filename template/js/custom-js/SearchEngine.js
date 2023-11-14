@@ -138,7 +138,7 @@ export default {
       hasSetPopularItems: false,
       isAsideVisible: false,
       searchFilterId: 0,
-      itemsLength: this.resultItems.length
+      itemsLength: this.resultItems && this.resultItems.length 
     }
   },
 
