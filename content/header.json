@@ -1,7 +1,16 @@
 {
   "marketing_stripe": {
-    "text": "🚀 Frete Grátis acima de R$ 120 ❤️ ",
-    "link": "https://customic.com.br/colecoes",
+    "market_list": [
+      {
+        "texto": "🚀 Frete Grátis acima de R$ 120 ❤️ ",
+        "link": "https://customic.com.br/colecoes"
+      },
+      {
+        "texto": "Black November",
+        "link": "https://customic.com.br/black-friday-customic-2023"
+      }
+    ],
+    "autoplay": 4000,
     "background": "#2b2938",
     "color": "#ffffff"
   },

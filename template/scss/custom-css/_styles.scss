@@ -489,3 +489,29 @@ color: #fff !important;
 .buy-together__item__offer-stamp {
   padding: 3px;
 }
+
+#topSlide  li,
+#topSlide a{
+  text-align:center;
+}
+
+.product-card__offer-stamp {
+  position: inherit !important;
+  color: rgb(255, 255, 255) !important;
+  background: rgb(204, 12, 57) !important;
+  border-radius: 2px;
+  padding: 4px 6px;
+  margin-right: 6px;
+}
+
+.product-card__link {
+  text-decoration: none !important;
+}
+
+.product-card__offer {
+  margin-top: 10px !important;
+}
+
+.product-card__offer-text {
+  color: rgb(204, 12, 57) !important;
+}

@@ -325,6 +325,10 @@ export default {
 
     },
 
+    isBlack () {
+      return window.promoName || "Oferta Black Friday"
+    },
+
     specModel () {
       if (this.isSearchingPhoneModel.specifictions) {
         return this.body.variations.filter(variation => variation.specifications['modelo'][0].text === this.isSearchingPhoneModel.specifictions && variation.quantity > 0)
