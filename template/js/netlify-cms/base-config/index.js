@@ -74,6 +74,61 @@ export default options => {
       ]
   }
   ])
+  console.log(options)
+  options.layout = getLayout(options)
+  if (options.layout && options.layout.files && options.layout.files.length) {
+    options.layout.files.map(file => {
+      if (file && file.name === 'header') {
+        const stripe = file.fields.find(field => field.name === 'marketing_stripe')
+        if (stripe) {
+          stripe.fields = [{
+            "label": "Market header list",
+            "name": "market_list",
+            "widget": "list",
+            "fields": [
+              {
+                "label": "Texto",
+                "name": "texto",
+                "widget": "string",
+                "required": false
+              },
+              {
+                "label": "Link",
+                "required": false,
+                "name": "link",
+                "widget": "string"
+              }
+            ]
+          },
+          {
+            "label": "Slider autoplay",
+            "name": "autoplay",
+            "hint": "Exibição de cada slide em milisegundos, defina 0 para desabilitar autoplay",
+            "min": 0,
+            "step": 1000,
+            "default": 9000,
+            "widget": "number"
+          },
+          {
+            "label": "Cor de fundo",
+            "name": "background",
+            "required": false,
+            "widget": "color",
+            "hint": "A cor primária da loja é usada por padrão"
+          },
+          {
+            "label": "Cor da fonte",
+            "name": "color",
+            "required": false,
+            "widget": "color"
+          }
+          ] 
+        }
+      }
+      return file
+    })
+  }
+
 
   return {
     backend: {
@@ -100,7 +155,6 @@ export default options => {
     },
     collections: [
       getSettings(options),
-      getLayout(options),
       getPages(options),
       getBlogPosts(options),
       getExtraPages(options),
