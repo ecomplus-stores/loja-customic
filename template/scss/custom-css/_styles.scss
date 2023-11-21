@@ -515,3 +515,56 @@ color: #fff !important;
 .product-card__offer-text {
   color: rgb(204, 12, 57) !important;
 }
+
+.shelfs-nav__title {
+  font-weight: Bold;
+  letter-spacing: -1px;
+  font-size: 26px;
+  margin: var(--spacer-4) auto;
+  padding: 0 4rem;
+  max-width: var(--content-max-width);
+}
+
+.shelfs-nav__tab {
+  text-align: center;
+}
+.shelfs-nav__tabs li {
+  min-width: unset !important;
+}
+
+#title-site {
+  letter-spacing: -1px;
+  font-size: 2.34375rem;
+  text-align: left;
+  display: block;
+  line-height: 32px;
+  &::before {
+    height: 0;
+  }
+}
+
+.shelfs-nav__title {
+  text-align: left;
+}
+
+.shelfs-nav__tab {
+  border-bottom: none;
+  padding: 20px;
+  border: 1px solid #181818;
+  border-radius: 100px;
+  opacity: 1;
+  h4 {
+    margin-bottom: 0;
+    color: #181818;
+  }
+  &.active {
+    background-color: #181818;
+    h4 {
+      color: #fff !important;
+    }
+  }
+}
+
+.shelfs-nav__tab:not(.active) {
+  opacity: 1;
+}

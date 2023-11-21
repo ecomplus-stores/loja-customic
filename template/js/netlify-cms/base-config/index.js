@@ -72,6 +72,52 @@ export default options => {
               ]
           }
       ]
+  },
+  {
+    "label": "Grid de categorias",
+    "name": "categories-carousel",
+    "widget": "object",
+    "fields": [
+        {
+            "label": "Banners",
+            "name": "banners",
+            "widget": "list",
+            "fields": [
+                {
+                    "label": "Imagem",
+                    "name": "img",
+                    "widget": "image"
+                },
+                {
+                    "label": "Link",
+                    "required": false,
+                    "name": "link",
+                    "widget": "string"
+                },
+                {
+                    "label": "Alt",
+                    "required": false,
+                    "name": "alt",
+                    "widget": "string"
+                }
+            ]
+        },
+        {
+            "label": "Carousel autoplay",
+            "required": false,
+            "name": "autoplay",
+            "hint": "Exibição de cada página em milisegundos, 0 desativa o autoplay",
+            "min": 0,
+            "step": 1000,
+            "widget": "number"
+        },
+        {
+          "label": "Título da estante de banner",
+          "required": false,
+          "name": "title",
+          "widget": "string"
+      }
+    ]
   }
   ])
   console.log(options)
