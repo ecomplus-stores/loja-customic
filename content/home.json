@@ -4,8 +4,16 @@
   "sections": [
     {
       "type": "banner-slider",
-      "autoplay": 10000,
+      "autoplay": 4000,
       "slides": [
+        {
+          "start": "2023-11-24T03:01:00.000Z",
+          "end": "",
+          "img": "/img/uploads/banner_principal-1920x480px-black-friday.webp",
+          "link": " h/black-night-customic",
+          "alt": "Black Night Customic 2023",
+          "mobile_img": "/img/uploads/banner_principal-mobile-576x834px-black-friday.webp"
+        },
         {
           "start": "",
           "end": "",
