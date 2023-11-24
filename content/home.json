@@ -87,10 +87,10 @@
       "type": "banners-grid",
       "banners": [
         {
-          "img": "/img/uploads/banner_combos-1500x200px-2-.webp",
-          "mobile_img": "/img/uploads/banner_combos-mobile.webp",
-          "link": "/aquece-black-friday-customic-2023",
-          "alt": "Aquece Black Friday Customic 2023"
+          "img": "/img/uploads/banner_black-friday-1500x200px.png",
+          "mobile_img": "/img/uploads/banner_black-friday-1500x200px.png",
+          "link": "/black-friday-customic",
+          "alt": "Black Friday Customic 2023"
         }
       ]
     },
