@@ -70,6 +70,14 @@
       "shuffle": false,
       "limit": 12,
       "page": 1,
+      "collection_id": "5fc025a269274c73fcdcdb0c:collections:Black Friday Customic 2023 🤳💜:/black-friday-customic",
+      "sort": "offers"
+    },
+    {
+      "type": "collection-shelf",
+      "shuffle": false,
+      "limit": 12,
+      "page": 1,
       "collection_id": "6541126e2cd6b6595991cff7:collections:Aquece Black Friday Customic 2023 🔥😍:/aquece-black-friday-customic-2023",
       "sort": "views",
       "title": "Aquece Black Friday Customic 🔥😍"
