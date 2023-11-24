@@ -569,7 +569,7 @@ color: #fff !important;
   opacity: 1;
 }
 
-.header, #categories-nav {
+.header, #categories-nav, .header__submenu, .minicart__aside .card-header {
   background: #000 !important;
   border-bottom: 1px solid #000 !important;
   color: #fff !important;
@@ -579,10 +579,10 @@ color: #fff !important;
   color: #fff !important;
 }
 
-.header__search-btn i {
+.header__search-btn i, .cart-item *, .cart-item__name a, a.minicart__btn-cart {
   color: #000 !important;
 }
 
-#categories-nav a, #categories-nav i, #accordion-menu i {
+#categories-nav a, #categories-nav i, #accordion-menu i, .minicart__aside .close {
   color: #fff !important;
 }
