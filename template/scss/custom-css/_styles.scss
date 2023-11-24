@@ -568,3 +568,21 @@ color: #fff !important;
 .shelfs-nav__tab:not(.active) {
   opacity: 1;
 }
+
+.header, #categories-nav {
+  background: #000 !important;
+  border-bottom: 1px solid #000 !important;
+  color: #fff !important;
+}
+
+.header a, .header i {
+  color: #fff !important;
+}
+
+.header__search-btn i {
+  color: #000 !important;
+}
+
+#categories-nav a, #categories-nav i, #accordion-menu i {
+  color: #fff !important;
+}
