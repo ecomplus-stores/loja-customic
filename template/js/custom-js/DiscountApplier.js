@@ -18,19 +18,19 @@ import {
   import AAlert from '@ecomplus/storefront-components/src/AAlert.vue'
   
   const addFreebieItems = (ecomCart, productIds) => {
-    const hasSpecialGift = productIds.includes('6544ed9e2cd6b6595995bbf1')
+    const hasSpecialGift = productIds.includes('6544ed9e2cd6b6595995bb00')
     if (Array.isArray(productIds)) {
       let capaIndex, model, variationBrinde
       let isblackOffer = false
       ecomCart.data.items.forEach(({ _id, product_id: productId, flags, name, categories }) => {
-        capaIndex = name.toLowerCase().indexOf('capa')
-        if (capaIndex >= 0) {
+        capaIndex = name.toLowerCase().indexOf('popsocket')
+        /* if (capaIndex >= 0) {
           const splitName = name.split('/')
           model = splitName[1].trim()
           if (categories && categories.length) {
             isblackOffer = categories.some(({ _id }) => _id === '6541418d2cd6b65959922d5c')
           }
-        }
+        } */
         if (flags && flags.includes('freebie') && !productIds.includes(productId)) {
           ecomCart.removeItem(_id)
         }
@@ -58,7 +58,7 @@ import {
                 }
                 variationBrinde = data.variations.find(variation => variation.specifications['modelo'][0].text === model.trim())
               }
-              if (data.quantity > 0 && (!data.variations || !data.variations.length || variationBrinde)) {
+              if (data.quantity > 0 && (capaIndex >= 0 || (!data.variations || !data.variations.length || variationBrinde))) {
                 ecomCart.addProduct(
                   {
                     ...data,
