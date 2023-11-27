@@ -326,7 +326,7 @@ export default {
     },
 
     isBlack () {
-      return window.promoName || "Oferta Black Friday"
+      return window.promoName || ""
     },
 
     specModel () {
