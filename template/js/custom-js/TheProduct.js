@@ -254,14 +254,13 @@ import {
         const tomorrow = new Date(new Date().getTime() + 86400000).setHours(0, 0, 0, 0)
         newPromoDate.price_effective_date = {}
         newPromoDate.price_effective_date.end = new Date(tomorrow).toISOString()
-        console.log(newPromoDate)
-        console.log(checkOnPromotion(newPromoDate))
         return newPromoDate
       },
   
       isOnSale () {
         const { mockNewPromoDate } = this
         return this.hasPromotionTimer &&
+          checkOnPromotion(this.body) &&
           (checkOnPromotion(mockNewPromoDate) || this.body.price > this.fixedPrice) &&
           mockNewPromoDate.price_effective_date &&
           mockNewPromoDate.price_effective_date.end &&
