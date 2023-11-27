@@ -81,9 +81,10 @@
       "type": "banners-grid",
       "banners": [
         {
-          "img": "/img/uploads/desk.png",
-          "link": "/combos",
-          "mobile_img": "/img/uploads/mobile.webp"
+          "img": "/img/uploads/customic-banner-combo_spot-reciclado-magsafe-desk.webp",
+          "mobile_img": "/img/uploads/customic-banner-combo_spot-reciclado-magsafe-mmobile.webp",
+          "link": "/capa-customic-spot-silicone-reciclado-magsafe-apple",
+          "alt": "Spot Silicone Reciclado MagSafe"
         }
       ]
     },
@@ -95,6 +96,16 @@
       "sort": "sales",
       "title": "Mais vendidos 🏆",
       "collection_id": "5f1f3f3cf023684cdbd4a1b1:categories:Capinha de celular:/capas"
+    },
+    {
+      "type": "banners-grid",
+      "banners": [
+        {
+          "img": "/img/uploads/desk.png",
+          "link": "/combos",
+          "mobile_img": "/img/uploads/mobile.webp"
+        }
+      ]
     },
     {
       "type": "custom-content",
