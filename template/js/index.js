@@ -26,7 +26,7 @@ async function loadAsync () {
     threshold: 0,
     load () {
       const script = document.createElement('script')
-      script.src = 'https://d335luupugsy2.cloudfront.net/js/loader-scripts/f31e0d37-3ae8-4b64-b234-2c6283bfd88d-loader.js'
+      script.src = 'https://d335luupugsy2.cloudfront.net/js/loader-scripts/c09c327f-2daf-4048-b58e-6f791d990f97-loader.js'
       script.id = 'rd-popup'
       script.async = true
       document.getElementById('popup-rd').appendChild(script)
