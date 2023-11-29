@@ -5,7 +5,7 @@ import lozad from 'lozad'
 async function loadAsync () {
     // Hubspot form
   if (typeof window.setupRd === 'function') {
-    const observer = lozad(document.getElementById('b2c-newsletter-site-28eb1cb7f1fd2326ac39'), {
+    const observer = lozad(document.getElementById('b2c-newsletter-customic-rodape-39ad5e81aa9d388e913c'), {
       rootMargin: '350px 0px',
       threshold: 0,
       load () {
@@ -14,7 +14,7 @@ async function loadAsync () {
         script.id = 'hs-script-loader'
         script.async = true
         script.onload = window.setupRd
-        document.getElementById('b2c-newsletter-site-28eb1cb7f1fd2326ac39').appendChild(script)
+        document.getElementById('b2c-newsletter-customic-rodape-39ad5e81aa9d388e913c').appendChild(script)
       }
     })
     observer.observe()

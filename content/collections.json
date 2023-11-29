@@ -21,7 +21,7 @@
     },
     {
       "type": "custom-html",
-      "html": "<div role=\"main\" id=\"b2c-newsletter-site-28eb1cb7f1fd2326ac39\"></div><script type=\"text/javascript\">window.setupRd = function () {setTimeout(function () { new RDStationForms('b2c-newsletter-site-28eb1cb7f1fd2326ac39', 'UA-28628232-1').createForm(); }, 200)} </script>"
+      "html": "<div role=\"main\" id=\"b2c-newsletter-customic-rodape-39ad5e81aa9d388e913c\"></div><script type=\"text/javascript\">window.setupRd = function () {setTimeout(function () { new RDStationForms('b2c-newsletter-customic-rodape-39ad5e81aa9d388e913c', 'UA-28628232-1').createForm(); }, 200)} </script>"
     }
   ]
 }
