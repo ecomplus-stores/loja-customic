@@ -18,7 +18,7 @@ import {
   import AAlert from '@ecomplus/storefront-components/src/AAlert.vue'
   
   const addFreebieItems = (ecomCart, productIds) => {
-    const hasSpecialGift = productIds.includes('6544ed9e2cd6b6595995bb00')
+    const hasSpecialGift = productIds && productIds.length ? productIds.includes('6544ed9e2cd6b6595995bb00') : false
     if (Array.isArray(productIds)) {
       let capaIndex, model, variationBrinde
       let isblackOffer = false

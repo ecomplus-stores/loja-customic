@@ -115,23 +115,6 @@ import {
           ? { blocks: [5, 3], delimiter: '-' }
           : { blocks: [30] }
       },
-
-      infoDelay () {
-        if (window.adiar) {
-            return window.adiar
-        } else {
-            return false
-        }
-      },
-
-      testDelayShipping () {
-        const delayItems = window.ids_adiamento
-        return Boolean(delayItems.find(id => {
-            return this.shippedItems.find(item => {
-               return item._id == id
-            })
-        }))
-      },
   
       freeFromPercentage () {
         return this.hasPaidOption && this.amountSubtotal < this.freeFromValue
