@@ -58,6 +58,17 @@
       "full_width": false
     },
     {
+      "type": "banners-grid",
+      "banners": [
+        {
+          "img": "/img/uploads/customic-banner-combo_spot-reciclado-magsafe-desk-confira.png",
+          "mobile_img": "/img/uploads/customic-banner-combo_spot-reciclado-magsafe-mobile-confira.png",
+          "link": "/capa-customic-spot-silicone-reciclado-magsafe-apple",
+          "alt": "Spot Silicone Reciclado MagSafe"
+        }
+      ]
+    },
+    {
       "type": "collection-shelf",
       "shuffle": true,
       "limit": 12,
@@ -76,17 +87,6 @@
       "collection_id": "5f1f3f37f023684cdbd4a1a6:categories:Películas para Celular:/peliculas",
       "title": "Películas Especiais Customic 💜",
       "link": "/peliculas"
-    },
-    {
-      "type": "banners-grid",
-      "banners": [
-        {
-          "img": "/img/uploads/customic-banner-combo_spot-reciclado-magsafe-desk.webp",
-          "mobile_img": "/img/uploads/customic-banner-combo_spot-reciclado-magsafe-mmobile.webp",
-          "link": "/capa-customic-spot-silicone-reciclado-magsafe-apple",
-          "alt": "Spot Silicone Reciclado MagSafe"
-        }
-      ]
     },
     {
       "type": "collection-shelf",
