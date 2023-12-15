@@ -174,10 +174,6 @@
     },
     {
       "type": "custom-html",
-      "html": "<!-- Place <div> tag where you want the feed to appear -->\n<div id=\"curator-feed-default-feed-layout\"><a href=\"https://curator.io\" target=\"_blank\" class=\"crt-logo crt-tag\">Powered by Curator.io</a></div>\n\n<!-- The Javascript can be moved to the end of the html page before the </body> tag -->\n<script type=\"text/javascript\">\n/* curator-feed-default-feed-layout */\n(function(){\nvar i,e,d=document,s=\"script\";i=d.createElement(\"script\");i.async=1;i.charset=\"UTF-8\";\ni.src=\"https://cdn.curator.io/published/ca1e07b4-5c30-4a29-9f0a-e0b060488351.js\";\ne=d.getElementsByTagName(s)[0];e.parentNode.insertBefore(i, e);\n})();\n</script>"
-    },
-    {
-      "type": "custom-html",
       "html": "<div role=\"main\" id=\"b2c-newsletter-customic-rodape-39ad5e81aa9d388e913c\"></div><script type=\"text/javascript\">window.setupRd = function () {setTimeout(function () { new RDStationForms('b2c-newsletter-customic-rodape-39ad5e81aa9d388e913c', 'UA-28628232-1').createForm(); }, 200)} </script>"
     }
   ]
