@@ -444,6 +444,18 @@ import {
     },
   
     watch: {
+      selectedModel: {
+        handler (obj) {
+          if (obj.colors && !this.selectedVariationId) {
+            const variation = this.product.variations.find(variation => variation.name.includes(obj.colors) && variation.picture_id)
+            if (variation) {
+              this.showVariationPicture(variation)
+            }
+          }
+        },
+        deep: true
+      },
+
       selectedVariationId (variationId) {
         if (variationId) {
           if (this.hasClickedBuy) {
