@@ -670,5 +670,10 @@ color: #fff !important;
   .text {
     padding: 0 250px
   }
+
+  .main{padding-bottom:0 !important;} 
+  .product-page-content{padding:0;margin:0}
+  #myTabContent{background-color:white;padding:0;margin:0}.imgAuto{width:100%;height:auto}.txtAuto{padding:50px 0;text-align:center}.title{padding-bottom:30px;letter-spacing:3px;font-size:2em;font-weight:700;text-transform:uppercase;font-family:Roboto,sans-serif}.text{font-size:1.4em;font-family:Roboto,sans-serif;padding:0 200px}@media (max-width: 1068px){.text{padding:0 50px !important;}}@media (min-width: 1068px){.text{padding:0 500px}}@media (min-width: 768px){.title{font-size:2.5em}}@media (max-width:600px){.desktop{display:none}}@media (min-width:600px){.mobile{display:none}}.text{padding:0 250px}
+ 
   
 }
