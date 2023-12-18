@@ -447,7 +447,7 @@ import {
       selectedModel: {
         handler (obj) {
           if (obj.colors && !this.selectedVariationId) {
-            const variation = this.product.variations.find(variation => variation.name.includes(obj.colors) && variation.picture_id)
+            const variation = this.product.variations.find(variation => variation.name.includes(obj.colors) && variation.picture_id && ((variation.specifications['modelo'] && (variation.specifications['modelo'][0].text.includes('iPhone 15') || variation.specifications['modelo'][0].text.includes('iPhone 14'))) || variation))
             if (variation) {
               this.showVariationPicture(variation)
             }

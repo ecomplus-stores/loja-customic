@@ -71,7 +71,6 @@ const isCentralizedLogo = header.centralized_logo
               <div class="glide__track" data-glide-el="track">
                 <ul class="glide__slides"> 
                   <% header.marketing_stripe.market_list.forEach(({ texto, link }) => { 
-                    console.log(texto, link)
                     if (texto) {
                     %>
                     <li class="glide__slide">
@@ -286,7 +285,7 @@ const isCentralizedLogo = header.centralized_logo
       <% if (categories && categories.length) { %>
         <div class="d-none d-lg-block <%= isCategoriesNavFull ? 'col-12 order-lg-last' : 'col' %> header__nav-block">
           <nav class="header__nav<%= isCategoriesNavFull ? ' header__nav--full' : '' %>">
-            <% categories.forEach(({ slug, name}) => { %>
+            <% categories.forEach(({ slug, name}) => { console.log(slug) %>
               <% let $categoryLink %>
               <div class="d-inline-block">
                 <a
