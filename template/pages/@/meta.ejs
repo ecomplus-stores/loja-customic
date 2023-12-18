@@ -78,9 +78,30 @@ if (pathname) {
 <% } %>
 
 <% if (resource === 'products') { %>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;900&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    @font-face{
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url(/fonts/Roboto-Regular.ttf) format('ttf')
+    }
+    @font-face{
+      font-family: 'Roboto';
+      font-style: bold;
+      font-weight: 700;
+      font-display: swap;
+      src: url(/fonts/Roboto-Bold.ttf) format('truetype')
+    }
+    @font-face{
+      font-family: 'Roboto';
+      font-style: bold;
+      font-weight: 600;
+      font-display: swap;
+      src: url(/fonts/Roboto-Bold.ttf) format('truetype')
+    }
+    
+  </style>
 <% } %>
 
 <% if (!path.startsWith('/admin/')) { %>

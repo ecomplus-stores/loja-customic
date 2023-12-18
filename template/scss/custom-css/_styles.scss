@@ -677,3 +677,20 @@ color: #fff !important;
  
   
 }
+
+.search-engine__aside .card-body {
+  display: flex;
+  flex-direction: column
+}
+.search-engine__filter--price {
+  order: -9
+}
+.search-engine__filter--marca_do_aparelho {
+  order: -8
+}
+
+.search-engine__filter--Brands {
+  order: 1
+}
+
+
