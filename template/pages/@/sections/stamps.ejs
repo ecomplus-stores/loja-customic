@@ -2,7 +2,26 @@
   <ul class="stamps">
     <% opt.stamps.forEach(({ src, alt, link, ...dimensions }) => {
       const { width, height } = _.tryImageSize(src, dimensions)
-      console.log(width)
+      if (!width) {
+        switch (src) {
+          case '/img/uploads/ativo-12.png':
+            width = 30
+            height = 49
+            break
+          case '/img/uploads/google-selo-1-.webp':
+            width = 82
+            height = 30
+            break
+          case '/img/uploads/selo-norton-secured-1-.webp':
+            width = 82
+            height = 44
+            break
+          case '/img/uploads/selo-ssl.webp':
+            width = 82
+            height = 39
+            break
+        }
+      }
       const imgHtml = `<img data-src="${(_.assetsPrefix || '')}${src}" alt="${alt}" class="lozad fade"` +
         (width ? ` data-preload width="${width}" height="${height}">` : '>')
       %>
