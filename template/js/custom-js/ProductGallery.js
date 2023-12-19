@@ -93,6 +93,16 @@ export default {
         : (this.product.pictures || [])
     },
 
+    reducePictures () {
+        return this.pictures && this.pictures.length && !this.isSliderMoved
+        ? this.pictures.slice(0, 6)
+        : (this.pictures || this.product.pictures || [])
+    },
+
+    isMobileApp () {
+      return isMobile
+    },
+
     videoSrc () {
       const video = this.video || (this.product.videos && this.product.videos[0])
       console.log(video)

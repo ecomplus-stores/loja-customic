@@ -11,9 +11,10 @@
       </div>
   
       <div
-        v-for="(picture, i) in localPictures"
+        v-for="(picture, i) in reducePictures"
         :key="'img-' + i"
         class="gallery__item"
+        v-if="!isSliderMoved ? i < 5 : i >= 0"
         :class="{ 'gallery__item--selected': i === activeIndex }"
         @click="activeIndex = i"
       >
@@ -22,6 +23,13 @@
           class="gallery__thumb"
           :src="getImg(picture, null, 'small')"
         />
+      </div>
+      <div
+        class="count-picture"
+        v-if="isMobileApp"
+      >
+        <span class="first">{{ activeIndex + 1 }}</span>
+        <span class="last">{{ localPictures.length }}</span>
       </div>
   
       <button

@@ -92,18 +92,22 @@
   },
   "stamps": [
     {
+      "alt": "Blog",
       "src": "/img/uploads/ativo-12.png",
       "link": "https://blog.customic.com.br/grs/"
     },
     {
+      "alt": "Certificado de Segurança - Google",
       "src": "/img/uploads/google-selo-1-.webp",
       "link": "https://transparencyreport.google.com/safe-browsing/search?url=customic.com.br"
     },
     {
+      "alt": "Certificado de Segurança - Norton",
       "src": "/img/uploads/selo-norton-secured-1-.webp",
       "link": "https://safeweb.norton.com/report/show?url=https%3A%2F%2Fcustomic.com.br%2F"
     },
     {
+      "alt": "Certificado de Segurança",
       "src": "/img/uploads/selo-ssl.webp",
       "link": "https://www.ssllabs.com/ssltest/analyze.html?d=customic.com.br"
     }
