@@ -3,9 +3,6 @@
 
 <head>
   <%- await include('@/head') %>
-  <% if (_.route.resource === 'products' && _.state.pictures && Array.isArray(_.state.pictures) && _.state.pictures[0].big && _.state.pictures[0].big.url) { %>
-    <link rel="preload" as="image" href="<%= _.state.pictures[0].big.url %>">
-  <% } %>
 </head>
 
 <body
