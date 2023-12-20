@@ -408,7 +408,6 @@ export default {
         }
         return item.quantity > 0
       })
-      this.itemsLength = filtered && filtered.length
       const diff = resultItems.filter(({ _id: id1 }) => !filtered.some(({ _id: id2 }) => id2 === id1))
       let allProducts = [
         ...filtered,
@@ -565,6 +564,82 @@ export default {
             if (presetedOptions) {
               options = options.filter(({ key }) => presetedOptions.indexOf(key) === -1)
             }
+          }
+          if (filter === 'modelo') {
+            const sizeSpec = [
+              "iPhone 15 Pro Max",
+              "iPhone 15 Pro",
+              "iPhone 15 Plus",
+              "iPhone 15",
+              "iPhone 14 Pro Max",
+              "iPhone 14 Pro",
+              "iPhone 14",
+              "iPhone 14 Plus",
+              "iPhone 13 Pro Max",
+              "iPhone 13 Pro",
+              "iPhone 13",
+              "iPhone 13 Mini",
+              "iPhone 12 Pro Max",
+              "iPhone 12 Mini",
+              "iPhone 12/12 Pro",
+              "iPhone 11 Pro Max",
+              "iPhone 11 Pro",
+              "iPhone 11",
+              "iPhone XS Max",
+              "iPhone XR",
+              "iPhone X/XS",
+              "iPhone SE 2020",
+              "iPhone 8 Plus",
+              "iPhone 8",
+              "iPhone 7 Plus",
+              "iPhone 7",
+              "iPhone 6/7/8 Plus",
+              "iPhone 6/6s Plus",
+              "iPhone 6/6s",
+              "Galaxy S22 Ultra",
+              "Galaxy S22 Plus",
+              "Galaxy S22",
+              "Galaxy S21 Ultra",
+              "Galaxy S21 Plus",
+              "Galaxy S21 FE",
+              "Galaxy S21",
+              "Galaxy S20 Ultra",
+              "Galaxy S20 Plus",
+              "Galaxy S20",
+              "Galaxy Note 20",
+              "Galaxy A72", 
+              "Galaxy A71",
+              "Galaxy A51",
+              "Galaxy A32 5G",
+              "Galaxy A32 4G",
+              "Galaxy A31",
+              "Galaxy A22 4G",
+              "Galaxy A21s",
+              "Galaxy A12",
+              "Galaxy A11",
+              "Galaxy A03s",
+              "Galaxy A02s",
+              "Galaxy S10e",
+              "Galaxy S10 Plus",
+              "Galaxy S10",
+              "Galaxy S8 Plus",
+              "Galaxy S8",
+              "K62",
+              "K61",
+              "K52",
+              "K51s",
+              "K41s",
+              "Moto G9 Play",
+              "Moto G9 Plus",
+              "Moto G8 Power Lite",
+              "Moto One Fusion", 
+              "MI 8"
+          ]
+          
+            options = options.sort((a, b) => {
+              console.log(a.key, b.key, sizeSpec.indexOf(a.key) - sizeSpec.indexOf(b.key))
+              return sizeSpec.indexOf(a.key) - sizeSpec.indexOf(b.key)
+            })
           }
           if (filter === 'colors') {
             console.log(options)
