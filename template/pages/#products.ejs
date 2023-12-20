@@ -1,13 +1,17 @@
 <%
 const { body } = await _.resolveRoute()
 _.breadcrumbs = []
-_.ecomUtils.categoriesList(body).forEach(categoryName => {
-  console.log(categoryName)
-  const findCategory = category => category.name === categoryName
+let cat = body.categories
+cat = cat.filter(c => !c.name.includes('Friday'))
+const product = {
+  ...body,
+  categories: cat
+}
+_.ecomUtils.categoriesList(product).forEach(categoryName => {
+  const findCategory = category => category.name === categoryName && categoryName !== 'Black Friday Customic 2023'
   const category = _.categories.find(findCategory) || (body.categories && body.categories.find(findCategory))
 
   if (category) {
-    console.log(category)
     if (category.parent) {
       _.breadcrumbs.push({
         name: category.parent.name,
