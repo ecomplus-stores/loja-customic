@@ -709,3 +709,11 @@ color: #fff !important;
     display: none !important;
   }
 }
+
+.color-label {
+  min-height: 1.5rem;
+  min-width: 1.5rem;
+  border-radius: 100%;
+  display: inline-block;
+  border: solid .4px #000
+}
