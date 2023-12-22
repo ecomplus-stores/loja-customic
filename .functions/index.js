@@ -1,8 +1,9 @@
 const { onRequest } = require('firebase-functions/v2/https')
 
-const { ssr } = require('@ecomplus/storefront-renderer/functions/')
+process.env.STOREFRONT_LONG_CACHE = 'false'
+process.env.STOREFRONT_ASSETS = 'https://s1-customic.b-cdn.net'
 
-process.env.STOREFRONT_LONG_CACHE = 'true'
+const { ssr } = require('@ecomplus/storefront-renderer/functions/')
 
 exports.ssr2 = onRequest({
   concurrency: 80,
@@ -14,6 +15,7 @@ exports.ssr2 = onRequest({
     return null
   }
   res.set('x-load-took', '1')
+  res.set('Link', `<${process.env.STOREFRONT_ASSETS}/>; rel=preconnect`)
   return ssr(req, res)
 })
 
