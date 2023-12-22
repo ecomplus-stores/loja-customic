@@ -10,6 +10,10 @@ exports.ssr2 = onRequest({
   minInstances: 0,
   memory: '1GiB',
 }, async (req, res) => {
+  if (req.hostname === 'customic.com.br') {
+    res.redirect(302, `https://www.customic.com.br${req.originalUrl}`)
+    return null
+  }
   if (req.path.startsWith('/~partytown')) {
     res.sendStatus(404)
     return null
