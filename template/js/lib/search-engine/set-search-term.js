@@ -6,6 +6,7 @@ export default (self, term) => {
   const modelList = [
     "iPhone 15 Pro Max",
     "iPhone 15 Pro",
+    "iPhone 15 Plus",
     "iPhone 15",
     "iPhone 14 Pro Max",
     "iPhone 14 Pro",
@@ -30,6 +31,7 @@ export default (self, term) => {
     "iPhone 7 Plus",
     "iPhone 7",
     "iPhone 6/7/8 Plus",
+    "iPhone 6/7/8",
     "iPhone 6/6s Plus",
     "iPhone 6/6s",
     "Galaxy S22 Ultra",
@@ -37,11 +39,13 @@ export default (self, term) => {
     "Galaxy S22",
     "Galaxy S21 Ultra",
     "Galaxy S21 Plus",
+    "Galaxy S21 FE",
     "Galaxy S21",
     "Galaxy S20 Ultra",
     "Galaxy S20 Plus",
     "Galaxy S20",
     "Galaxy Note 20",
+    "Galaxy A72", 
     "Galaxy A71",
     "Galaxy A51",
     "Galaxy A32 5G",
@@ -58,9 +62,19 @@ export default (self, term) => {
     "Galaxy S10",
     "Galaxy S8 Plus",
     "Galaxy S8",
+    "K62 Plus",
+    "K62",
+    "K61",
     "K52",
     "K51s",
-    "K41s"
+    "K41s",
+    "Moto Edge 20",
+    "Moto Edge 20 Lite",
+    "Moto G9 Play",
+    "Moto G9 Plus",
+    "Moto G8 Power Lite",
+    "Moto One Fusion", 
+    "MI 8"
 ]
 
   const findMatchingModel = (searchTerm) => {
