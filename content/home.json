@@ -18,7 +18,7 @@
           "start": "",
           "end": "",
           "img": "/img/uploads/banner-desk-holo_1_11zon.webp",
-          "link": "https://customic.com.br/search?term=holo",
+          "link": "/search?term=holo",
           "alt": "A capa Clear que você já conhece agora com o efeito holográfico único que você vai querer conhecer. ",
           "mobile_img": "/img/uploads/banner_mobile_holo_1_11zon.webp"
         },
@@ -34,7 +34,7 @@
           "start": "",
           "end": "",
           "img": "/img/uploads/banner-desk-sustent._5_11zon.webp",
-          "link": "https://customic.com.br/search?term=Seed+Eco+Biodegrad%C3%A1vel",
+          "link": "/search?term=Seed+Eco+Biodegrad%C3%A1vel",
           "alt": "Seed Eco Case Biodegradável 2023",
           "mobile_img": "/img/uploads/banner_mobile_sustent_5_11zon.webp"
         },
@@ -141,13 +141,13 @@
       "banners": [
         {
           "img": "/img/uploads/anyconv.com__banner-categoria-customicpeliculas-de-protecao.webp",
-          "link": "https://customic.com.br/peliculas",
+          "link": "/peliculas",
           "alt": "Capa Ipad",
           "mobile_img": "/img/uploads/anyconv.com__banner-categoria-customicpeliculas-de-protecao.webp"
         },
         {
           "img": "/img/uploads/anyconv.com__banner-categoria-customicpopsockets.webp",
-          "link": "https://customic.com.br/popsockets",
+          "link": "/popsockets",
           "alt": "Película de proteção para celular",
           "mobile_img": "/img/uploads/anyconv.com__banner-categoria-customicpopsockets.webp"
         }

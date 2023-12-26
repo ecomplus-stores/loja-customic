@@ -38,7 +38,7 @@ color: #fff !important;
     width: 100%!important;
     //height: auto!important;
     max-height: unset!important;
-    //content: url(https://customic.com.br/img/uploads/logo.png);
+    //content: url(/img/uploads/logo.png);
   } 
 }
 
@@ -667,10 +667,16 @@ color: #fff !important;
   flex-direction: column
 }
 .search-engine__filter--price {
-  order: -9
+  order: 2
 }
 .search-engine__filter--marca_do_aparelho {
   order: -8
+}
+.search-engine__filter--modelo {
+  order: -8;
+}
+.search-engine__filter--colors {
+  order: -7;
 }
 
 .search-engine__filter--Brands {
@@ -732,4 +738,8 @@ color: #fff !important;
     margin-left: 3px;
     margin-right: 3px;
   }
+}
+
+#topSlide li:last-child a {
+  font-size: 12px !important;
 }

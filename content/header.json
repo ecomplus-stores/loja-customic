@@ -3,11 +3,11 @@
     "market_list": [
       {
         "texto": "🚀 Frete Grátis acima de R$ 120 ❤️ ",
-        "link": "https://customic.com.br/colecoes"
+        "link": "/colecoes"
       },
       {
         "texto": "10% OFF na primeira compra! Cupom: PRIMEIRA10OFF 🎫🛍️",
-        "link": "https://customic.com.br/capas"
+        "link": "/capas"
       }
     ],
     "autoplay": 4000,
@@ -25,7 +25,7 @@
         "title": "Artistas e infuenciadores"
       },
       {
-        "link": "https://customic.com.br/pages/seja-um-revendedor-oficial-customic",
+        "link": "/pages/seja-um-revendedor-oficial-customic",
         "title": "Seja um revendedor Customic"
       }
     ],

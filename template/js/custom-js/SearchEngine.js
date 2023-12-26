@@ -881,6 +881,14 @@ export default {
                 ]
               },
               {
+                "_id": "747440159604217630200013",
+                "text": "Violeta",
+                "option_id": "violeta",
+                "colors": [
+                  "rgb(182, 182, 210)"
+                ]
+              },
+              {
                 "_id": "811550159604246698600029",
                 "text": "Black com furo",
                 "option_id": "black_com_furo",
