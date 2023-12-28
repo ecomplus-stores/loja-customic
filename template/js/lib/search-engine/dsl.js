@@ -26,16 +26,6 @@ export default {
     '_score'
   ],
   aggs: {
-    brands: {
-      terms: {
-        field: 'brands.name'
-      }
-    },
-    categories: {
-      terms: {
-        field: 'categories.name'
-      }
-    },
     // ref.: https://github.com/elastic/elasticsearch/issues/5789
     specs: {
       nested: {
@@ -45,13 +35,13 @@ export default {
         grid: {
           terms: {
             field: 'specs.grid',
-            size: 30
+            size: 60
           },
           aggs: {
             text: {
               terms: {
                 field: 'specs.text',
-                size: 60
+                size: 100
               }
             }
           }
