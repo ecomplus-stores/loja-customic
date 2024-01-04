@@ -125,6 +125,43 @@ export default options => {
   if (options.layout && options.layout.files && options.layout.files.length) {
     options.layout.files.map(file => {
       if (file && file.name === 'header') {
+        file.fields.push({
+          label: 'Lista de filtros',
+          name: 'filter-list',
+          widget: 'object',
+          icon: 'https://api.iconify.design/mdi:copyright.svg',
+          fields: [
+              {
+                  label: 'Lista de filtros',
+                  name: 'filters',
+                  widget: 'list',
+                  fields: [
+                      {
+                          label: 'Opção do filtro',
+                          name: 'filter_option',
+                          widget: 'string'
+                      },
+                      {
+                          label: 'Marca',
+                          name: 'filter_grid_model',
+                          widget: 'string'
+                      },
+                      {
+                        label: 'Proteção',
+                        name: 'filter_grid_protection',
+                        widget: 'string',
+                        hint: 'Se houver proteção especificada'
+                    }
+                  ]
+              },
+            {
+              name: 'title',
+              widget: 'string',
+              required: false,
+              label: 'Nome da lista de Filtros'
+            }
+          ]
+      })
         const stripe = file.fields.find(field => field.name === 'marketing_stripe')
         if (stripe) {
           stripe.fields = [{
