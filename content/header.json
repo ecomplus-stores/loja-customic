@@ -45,5 +45,240 @@
     "full_width": true
   },
   "search_input": true,
-  "desktop_megamenu": true
+  "desktop_megamenu": true,
+  "filter-list": {
+    "filters": [
+      {
+        "filter_option": "iPhone 15 Pro Max",
+        "filter_grid_model": "Apple",
+        "filter_grid_protection": "1"
+      },
+      {
+        "filter_option": "iPhone 15 Pro",
+        "filter_grid_model": "Apple",
+        "filter_grid_protection": "2"
+      },
+      {
+        "filter_option": "iPhone 15 Plus",
+        "filter_grid_model": "Apple",
+        "filter_grid_protection": "3"
+      },
+      {
+        "filter_option": "iPhone 15",
+        "filter_grid_model": "Apple",
+        "filter_grid_protection": "4"
+      },
+      {
+        "filter_option": "iPhone 14 Pro Max",
+        "filter_grid_model": "Apple",
+        "filter_grid_protection": "5"
+      },
+      {
+        "filter_option": "iPhone 14 Pro",
+        "filter_grid_model": "Apple",
+        "filter_grid_protection": "6"
+      },
+      {
+        "filter_option": "iPhone 14 Plus",
+        "filter_grid_model": "Apple",
+        "filter_grid_protection": "7"
+      },
+      {
+        "filter_option": "iPhone 14",
+        "filter_grid_model": "Apple",
+        "filter_grid_protection": "8"
+      },
+      {
+        "filter_option": "iPhone 13 Pro Max",
+        "filter_grid_model": "Apple",
+        "filter_grid_protection": "9"
+      },
+      {
+        "filter_option": "iPhone 13 Pro",
+        "filter_grid_model": "Apple",
+        "filter_grid_protection": "10"
+      },
+      {
+        "filter_option": "iPhone 13 Mini",
+        "filter_grid_model": "Apple",
+        "filter_grid_protection": "11"
+      },
+      {
+        "filter_option": "iPhone 13",
+        "filter_grid_model": "Apple",
+        "filter_grid_protection": "12"
+      },
+      {
+        "filter_option": "iPhone 12 Pro Max",
+        "filter_grid_model": "Apple",
+        "filter_grid_protection": "13"
+      },
+      {
+        "filter_option": "iPhone 12 Mini",
+        "filter_grid_model": "Apple",
+        "filter_grid_protection": "14"
+      },
+      {
+        "filter_option": "iPhone 12/12 Pro",
+        "filter_grid_model": "Apple",
+        "filter_grid_protection": "15"
+      },
+      {
+        "filter_option": "iPhone 11 Pro Max",
+        "filter_grid_model": "Apple",
+        "filter_grid_protection": "16"
+      },
+      {
+        "filter_option": "iPhone 11 Pro",
+        "filter_grid_model": "Apple",
+        "filter_grid_protection": "17"
+      },
+      {
+        "filter_option": "iPhone 11",
+        "filter_grid_model": "Apple",
+        "filter_grid_protection": "18"
+      },
+      {
+        "filter_option": "iPhone XR",
+        "filter_grid_model": "Apple",
+        "filter_grid_protection": "19"
+      },
+      {
+        "filter_option": "iPhone XS Max",
+        "filter_grid_model": "Apple",
+        "filter_grid_protection": "20"
+      },
+      {
+        "filter_option": "iPhone X/XS",
+        "filter_grid_model": "Apple",
+        "filter_grid_protection": "21"
+      },
+      {
+        "filter_option": "iPhone 7/8/SE 2022",
+        "filter_grid_model": "Apple",
+        "filter_grid_protection": "22"
+      },
+      {
+        "filter_option": "iPhone SE 2020",
+        "filter_grid_model": "Apple",
+        "filter_grid_protection": "23"
+      },
+      {
+        "filter_option": "iPhone 7/8/SE 2020",
+        "filter_grid_model": "Apple",
+        "filter_grid_protection": "24"
+      },
+      {
+        "filter_option": "iPhone 7/8",
+        "filter_grid_model": "Apple",
+        "filter_grid_protection": "25"
+      },
+      {
+        "filter_option": "iPhone 7 Plus",
+        "filter_grid_model": "Apple",
+        "filter_grid_protection": "25"
+      },
+      {
+        "filter_option": "iPhone 7",
+        "filter_grid_model": "Apple",
+        "filter_grid_protection": "26"
+      },
+      {
+        "filter_option": "iPhone 6/7/8 Plus",
+        "filter_grid_model": "Apple",
+        "filter_grid_protection": "27"
+      },
+      {
+        "filter_option": "iPhone 6/7/8",
+        "filter_grid_model": "Apple",
+        "filter_grid_protection": "28"
+      },
+      {
+        "filter_option": "Galaxy S23 Ultra",
+        "filter_grid_model": "Samsung",
+        "filter_grid_protection": "29"
+      },
+      {
+        "filter_option": "Galaxy S23 Plus",
+        "filter_grid_model": "Samsung",
+        "filter_grid_protection": "30"
+      },
+      {
+        "filter_option": "Galaxy S23",
+        "filter_grid_model": "Samsung",
+        "filter_grid_protection": "31"
+      },
+      {
+        "filter_option": "Galaxy S23 FE",
+        "filter_grid_model": "Samsung",
+        "filter_grid_protection": "32"
+      },
+      {
+        "filter_option": "Galaxy S22 Ultra",
+        "filter_grid_model": "Samsung",
+        "filter_grid_protection": "33"
+      },
+      {
+        "filter_option": "Galaxy S22 Plus",
+        "filter_grid_model": "Samsung",
+        "filter_grid_protection": "35"
+      },
+      {
+        "filter_option": "Galaxy S22",
+        "filter_grid_model": "Samsung",
+        "filter_grid_protection": "36"
+      },
+      {
+        "filter_option": "Galaxy S21 Ultra",
+        "filter_grid_model": "Samsung",
+        "filter_grid_protection": "37"
+      },
+      {
+        "filter_option": "Galaxy S21 Plus",
+        "filter_grid_model": "Samsung",
+        "filter_grid_protection": "38"
+      },
+      {
+        "filter_option": "Galaxy S21 FE",
+        "filter_grid_model": "Samsung",
+        "filter_grid_protection": "39"
+      },
+      {
+        "filter_option": "Galaxy S21",
+        "filter_grid_model": "Samsung",
+        "filter_grid_protection": "40"
+      },
+      {
+        "filter_option": "Galaxy S20 Ultra",
+        "filter_grid_model": "Samsung",
+        "filter_grid_protection": "41"
+      },
+      {
+        "filter_option": "Galaxy S20 Plus",
+        "filter_grid_model": "Samsung",
+        "filter_grid_protection": "42"
+      },
+      {
+        "filter_option": "Galaxy S20 FE",
+        "filter_grid_model": "Samsung",
+        "filter_grid_protection": "43"
+      },
+      {
+        "filter_option": "Galaxy S20",
+        "filter_grid_model": "Samsung",
+        "filter_grid_protection": "44"
+      },
+      {
+        "filter_option": "Galaxy S10e",
+        "filter_grid_model": "Samsung",
+        "filter_grid_protection": "45"
+      },
+      {
+        "filter_option": "Galaxy S10 Plus",
+        "filter_grid_model": "Samsung",
+        "filter_grid_protection": "46"
+      }
+    ],
+    "title": "Modelo"
+  }
 }
