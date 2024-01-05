@@ -261,7 +261,51 @@ export default options => {
       options.layout,
       getBlogPosts(options),
       getExtraPages(options),
-      getWidgets(options)
+      getWidgets(options),
+      {
+        name: 'category_list',        
+        label: 'Lista de itens por categoria',
+        description: 'Configure a lista de produtos em sequência para listagem da busca',
+        folder: `${options.baseDir}content/category_list`,
+        extension: 'json',
+        create: true,
+        slug: '{{slug}}',
+        fields: [
+          {
+            label: "Título do Registro",
+            hint:"Campo apenas informativo do nome da categoria",
+            name: "title",
+            widget: "string"          
+          }, 
+          {
+            label: 'Identificador [SKU] [Categoria] ou [default]',
+            name: 'identificador',
+            widget: 'select',
+                multiple: true,
+                options: [
+                  ...options.state.routes
+                  .filter(el => el.resource === 'categories')
+                  .map((el) => ({
+                    label: 'Categoria - ' + el.name,
+                    value: 'cat_'+el._id
+                  }))
+                ]                
+          }, 
+          {
+            label:"Lista de skus",
+            name:"list",
+            widget:"list",
+            required:false,
+            fields: [
+              {
+                label: "Sku",
+                name: "sku",
+                widget: "string"          
+              },             
+            ]
+          },
+        ]
+      }
     ]
   }
 }
