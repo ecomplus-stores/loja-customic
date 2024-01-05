@@ -277,6 +277,10 @@
         "filter_option": "Galaxy S10 Plus",
         "filter_grid_model": "Samsung",
         "filter_grid_protection": "46"
+      },
+      {
+        "filter_option": "Galaxy S10",
+        "filter_grid_model": "Samsung"
       }
     ],
     "title": "Modelo"
