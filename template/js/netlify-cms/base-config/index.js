@@ -130,27 +130,32 @@ export default options => {
           name: 'filter-list',
           widget: 'object',
           icon: 'https://api.iconify.design/mdi:copyright.svg',
+          required: false,
           fields: [
               {
                   label: 'Lista de filtros',
                   name: 'filters',
                   widget: 'list',
+                  required: false,
                   fields: [
                       {
                           label: 'Opção do filtro',
                           name: 'filter_option',
-                          widget: 'string'
+                          widget: 'string',
+                          required: false
                       },
                       {
                           label: 'Marca',
                           name: 'filter_grid_model',
-                          widget: 'string'
+                          widget: 'string',
+                          required: false
                       },
                       {
                         label: 'Proteção',
                         name: 'filter_grid_protection',
                         widget: 'string',
-                        hint: 'Se houver proteção especificada'
+                        hint: 'Se houver proteção especificada',
+                        required: false
                     }
                   ]
               },
