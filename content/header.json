@@ -399,12 +399,96 @@
         "filter_grid_model": "Samsung"
       },
       {
+        "filter_option": "Galaxy J6 Plus",
+        "filter_grid_model": "Samsung"
+      },
+      {
         "filter_option": "Galaxy J4",
         "filter_grid_model": "Samsung"
       },
       {
-        "filter_option": "Galaxy J6 Plus",
-        "filter_grid_model": "Samsung"
+        "filter_option": "Moto Edge 20",
+        "filter_grid_model": "Motorola"
+      },
+      {
+        "filter_option": "Moto Edge 20 Pro",
+        "filter_grid_model": "Motorola"
+      },
+      {
+        "filter_option": "Moto Edge 20 Lite",
+        "filter_grid_model": "Motorola"
+      },
+      {
+        "filter_option": "Moto G9 Play",
+        "filter_grid_model": "Motorola"
+      },
+      {
+        "filter_option": "Moto G9 Plus",
+        "filter_grid_model": "Motorola"
+      },
+      {
+        "filter_option": "Moto G8 Power Lite",
+        "filter_grid_model": "Motorola"
+      },
+      {
+        "filter_option": "Moto G7",
+        "filter_grid_model": "Motorola"
+      },
+      {
+        "filter_option": "Moto G7 Power",
+        "filter_grid_model": "Motorola"
+      },
+      {
+        "filter_option": "Moto One",
+        "filter_grid_model": "Motorola"
+      },
+      {
+        "filter_option": "Moto One Fusion",
+        "filter_grid_model": "Motorola"
+      },
+      {
+        "filter_option": "LG K72 (pré-venda)",
+        "filter_grid_model": "LG"
+      },
+      {
+        "filter_option": "K62 Plus",
+        "filter_grid_model": "LG"
+      },
+      {
+        "filter_option": "K62",
+        "filter_grid_model": "LG"
+      },
+      {
+        "filter_option": "K61",
+        "filter_grid_model": "LG"
+      },
+      {
+        "filter_option": "K52",
+        "filter_grid_model": "LG"
+      },
+      {
+        "filter_option": "K51s",
+        "filter_grid_model": "LG"
+      },
+      {
+        "filter_option": "K41s",
+        "filter_grid_model": "LG"
+      },
+      {
+        "filter_option": "MI 9",
+        "filter_grid_model": "Huawei"
+      },
+      {
+        "filter_option": "MI 8",
+        "filter_grid_model": "Huawei"
+      },
+      {
+        "filter_option": "MI 8 Lite",
+        "filter_grid_model": "Huawei"
+      },
+      {
+        "filter_option": "P30 Lite",
+        "filter_grid_model": "Huawei"
       }
     ],
     "title": "Modelo"
