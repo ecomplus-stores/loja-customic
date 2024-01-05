@@ -298,9 +298,15 @@ export default options => {
             required:false,
             fields: [
               {
-                label: "Sku",
-                name: "sku",
-                widget: "string"          
+                label: 'SKU do produto',
+                name: 'product_id',
+                widget: 'select',
+                options: options.state.routes
+                  .filter(({ sku }) => typeof sku === 'string')
+                  .map(({ _id, sku }) => ({
+                    label: sku,
+                    value: _id
+                  }))               
               },             
             ]
           },
