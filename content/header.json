@@ -313,6 +313,34 @@
       {
         "filter_option": "Galaxy A54 5G",
         "filter_grid_model": "Samsung"
+      },
+      {
+        "filter_option": "Galaxy A53 5G",
+        "filter_grid_model": "Samsung"
+      },
+      {
+        "filter_option": "Galaxy A52 4G/5G",
+        "filter_grid_model": "Samsung"
+      },
+      {
+        "filter_option": "Galaxy A51",
+        "filter_grid_model": "Samsung"
+      },
+      {
+        "filter_option": "Galaxy A34 5G",
+        "filter_grid_model": "Samsung"
+      },
+      {
+        "filter_option": "Galaxy A33 5G",
+        "filter_grid_model": "Samsung"
+      },
+      {
+        "filter_option": "Galaxy A32 5G",
+        "filter_grid_model": "Samsung"
+      },
+      {
+        "filter_option": "Galaxy A32 4G",
+        "filter_grid_model": "Samsung"
       }
     ],
     "title": "Modelo"
