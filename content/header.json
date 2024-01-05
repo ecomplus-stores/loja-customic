@@ -341,6 +341,70 @@
       {
         "filter_option": "Galaxy A32 4G",
         "filter_grid_model": "Samsung"
+      },
+      {
+        "filter_option": "Galaxy A31",
+        "filter_grid_model": "Samsung"
+      },
+      {
+        "filter_option": "Galaxy A30s",
+        "filter_grid_model": "Samsung"
+      },
+      {
+        "filter_option": "Galaxy A23 4G",
+        "filter_grid_model": "Samsung"
+      },
+      {
+        "filter_option": "Galaxy A22 4G",
+        "filter_grid_model": "Samsung"
+      },
+      {
+        "filter_option": "Galaxy A22 5G",
+        "filter_grid_model": "Samsung"
+      },
+      {
+        "filter_option": "Galaxy A21s",
+        "filter_grid_model": "Samsung"
+      },
+      {
+        "filter_option": "Galaxy A14 5G",
+        "filter_grid_model": "Samsung"
+      },
+      {
+        "filter_option": "Galaxy A13 4G",
+        "filter_grid_model": "Samsung"
+      },
+      {
+        "filter_option": "Galaxy A12",
+        "filter_grid_model": "Samsung"
+      },
+      {
+        "filter_option": "Galaxy A11",
+        "filter_grid_model": "Samsung"
+      },
+      {
+        "filter_option": "Galaxy A03s",
+        "filter_grid_model": "Samsung"
+      },
+      {
+        "filter_option": "Galaxy A02s",
+        "filter_grid_model": "Samsung"
+      },
+      {
+        "filter_option": "Galaxy M30",
+        "filter_grid_model": "Samsung"
+      },
+      {
+        "filter_option": "Galaxy M20",
+        "filter_grid_model": "Samsung"
+      },
+      {
+        "filter_option": "Galaxy J4",
+        "filter_grid_model": "Samsung"
+      },
+      {
+        "filter_option": "Galaxy J6 Plus",
+        "filter_grid_model": "Samsung"
       }
     ],
     "title": "Modelo"
