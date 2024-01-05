@@ -281,6 +281,38 @@
       {
         "filter_option": "Galaxy S10",
         "filter_grid_model": "Samsung"
+      },
+      {
+        "filter_option": "Galaxy S9",
+        "filter_grid_model": "Samsung"
+      },
+      {
+        "filter_option": "Galaxy S9 Plus",
+        "filter_grid_model": "Samsung"
+      },
+      {
+        "filter_option": "Galaxy Note 20",
+        "filter_grid_model": "Samsung"
+      },
+      {
+        "filter_option": "Galaxy A80",
+        "filter_grid_model": "Samsung"
+      },
+      {
+        "filter_option": "Galaxy A73 5G",
+        "filter_grid_model": "Samsung"
+      },
+      {
+        "filter_option": "Galaxy A72",
+        "filter_grid_model": "Samsung"
+      },
+      {
+        "filter_option": "Galaxy A71",
+        "filter_grid_model": "Samsung"
+      },
+      {
+        "filter_option": "Galaxy A54 5G",
+        "filter_grid_model": "Samsung"
       }
     ],
     "title": "Modelo"
