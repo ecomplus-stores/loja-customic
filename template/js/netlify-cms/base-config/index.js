@@ -278,7 +278,7 @@ export default options => {
             widget: "string"          
           }, 
           {
-            label: 'Identificador [SKU] [Categoria] ou [default]',
+            label: 'Identificador [Categoria]',
             name: 'identificador',
             widget: 'select',
                 multiple: true,
