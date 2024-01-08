@@ -66,6 +66,9 @@ if (opt.sort || opt.collection_id) {
 }
 if (items && items.length) {
   items = items.filter(item => item.quantity > 0)
+  if (opt.sort === 'sales') {
+    items = items.sort((a, b) => b.sales > a.sales ? 1 : -1)
+  }
 }
 
 

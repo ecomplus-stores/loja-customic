@@ -156,20 +156,6 @@ export default options => {
                         widget: 'string',
                         hint: 'Se houver proteção especificada',
                         required: false
-                      },
-                      {
-                        label: 'Cores',
-                        name: 'filter_grid_color',
-                        widget: 'list',
-                        required: false,
-                        fields: [
-                          {
-                            label: 'Nome da cor para filtro',
-                            name: 'filter_option_color_name',
-                            widget: 'string',
-                            required: false
-                          }
-                        ]
                       }
                   ]
               },
