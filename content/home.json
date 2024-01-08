@@ -100,7 +100,7 @@
       "type": "collection-shelf",
       "shuffle": false,
       "limit": 12,
-      "page": "",
+      "page": "1",
       "sort": "sales",
       "title": "Mais vendidos 🏆",
       "collection_id": "5f1f3f3cf023684cdbd4a1b1:categories:Capinha de celular:/capas"
