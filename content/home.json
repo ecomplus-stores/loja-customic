@@ -98,7 +98,7 @@
     },
     {
       "type": "collection-shelf",
-      "shuffle": true,
+      "shuffle": false,
       "limit": 12,
       "page": "",
       "sort": "sales",
