@@ -109,9 +109,9 @@
       "type": "banners-grid",
       "banners": [
         {
-          "img": "/img/uploads/desk.png",
+          "img": "/img/uploads/banners-combo-customic-site-1-1-.webp",
           "link": "/combos",
-          "mobile_img": "/img/uploads/mobile.webp"
+          "mobile_img": "/img/uploads/banners-combo-customic-site-2-1-.webp"
         }
       ]
     },
@@ -123,16 +123,16 @@
       "type": "banners-grid",
       "banners": [
         {
-          "img": "/img/uploads/anyconv.com__banner-categoria-customiccapas-iphone.webp",
+          "img": "/img/uploads/banners-colecoes_em_destaque-customic-site-1-2-.webp",
           "link": "/todasascasesdeiphone/",
           "alt": "Capa Iphone",
-          "mobile_img": "/img/uploads/anyconv.com__banner-categoria-customiccapas-iphone.webp"
+          "mobile_img": "/img/uploads/banners-colecoes_em_destaque-customic-site-1-2-.webp"
         },
         {
-          "img": "/img/uploads/anyconv.com__banner-categoria-customicandroid-cases.webp",
+          "img": "/img/uploads/banners-colecoes_em_destaque-customic-site-3-1-.webp",
           "link": "/todos-modelos-de-android/",
           "alt": "Capa Android",
-          "mobile_img": "/img/uploads/anyconv.com__banner-categoria-customicandroid-cases.webp"
+          "mobile_img": "/img/uploads/banners-colecoes_em_destaque-customic-site-3-1-.webp"
         }
       ]
     },
@@ -140,16 +140,16 @@
       "type": "banners-grid",
       "banners": [
         {
-          "img": "/img/uploads/anyconv.com__banner-categoria-customicpeliculas-de-protecao.webp",
+          "img": "/img/uploads/banners-colecoes_em_destaque-customic-site-2-1-.webp",
           "link": "/peliculas",
           "alt": "Capa Ipad",
-          "mobile_img": "/img/uploads/anyconv.com__banner-categoria-customicpeliculas-de-protecao.webp"
+          "mobile_img": "/img/uploads/banners-colecoes_em_destaque-customic-site-2-1-.webp"
         },
         {
-          "img": "/img/uploads/anyconv.com__banner-categoria-customicpopsockets.webp",
+          "img": "/img/uploads/banners-colecoes_em_destaque-customic-site-4-1-.webp",
           "link": "/popsockets",
           "alt": "Película de proteção para celular",
-          "mobile_img": "/img/uploads/anyconv.com__banner-categoria-customicpopsockets.webp"
+          "mobile_img": "/img/uploads/banners-colecoes_em_destaque-customic-site-4-1-.webp"
         }
       ]
     },
