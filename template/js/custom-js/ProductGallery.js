@@ -105,7 +105,6 @@ export default {
 
     videoSrc () {
       const video = this.video || (this.product.videos && this.product.videos[0])
-      console.log(video)
       if (video && video.url) {
         return video.url.replace(/watch\?v=(V7XQvAde51w)/i, 'embed/$1?rel=0')
       }

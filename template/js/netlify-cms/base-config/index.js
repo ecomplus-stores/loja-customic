@@ -120,7 +120,6 @@ export default options => {
     ]
   }
   ])
-  console.log(options)
   options.layout = getLayout(options)
   if (options.layout && options.layout.files && options.layout.files.length) {
     options.layout.files.map(file => {

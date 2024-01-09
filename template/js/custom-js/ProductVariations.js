@@ -56,7 +56,6 @@ export default {
 
     variationsGrids() {
       const variations = getVariationsGrids(this.product)
-      console.log(variations)
       if (variations) {
         const variationModified = {}
         const keys = Object.keys(variations)
@@ -80,7 +79,6 @@ export default {
     variationFromUrl () {
       if (typeof window === 'object') {
         const urlParams = new URLSearchParams(window.location.search)
-        console.log(urlParams)
         const variationId = urlParams.get('variation_id')
         if (variationId) {
           return variationId
@@ -125,7 +123,6 @@ export default {
         } else {
           url = `?marca=${marcaSelected}&modelo=${modeloSelected}`;
         }
-        console.log(window.history)
 
         window.history.pushState("object or string", "", `${url}`);
       }
@@ -214,7 +211,6 @@ export default {
     },
 
     selectOption(optionText, grid, gridIndex) {
-      console.log(optionText, grid, gridIndex)
       const { product, selectedOptions, orderedGrids } = this;
       let variationText
       if (optionText.includes('novo')) {
