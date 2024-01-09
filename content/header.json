@@ -114,14 +114,24 @@
         "filter_grid_protection": "13"
       },
       {
-        "filter_option": "iPhone 12 Mini",
+        "filter_option": "iPhone 12 Pro",
         "filter_grid_model": "Apple",
-        "filter_grid_protection": "14"
+        "filter_grid_protection": "13"
+      },
+      {
+        "filter_option": "iPhone 12",
+        "filter_grid_model": "Apple",
+        "filter_grid_protection": "13"
       },
       {
         "filter_option": "iPhone 12/12 Pro",
         "filter_grid_model": "Apple",
         "filter_grid_protection": "15"
+      },
+      {
+        "filter_option": "iPhone 12 Mini",
+        "filter_grid_model": "Apple",
+        "filter_grid_protection": "14"
       },
       {
         "filter_option": "iPhone 11 Pro Max",
@@ -192,6 +202,21 @@
         "filter_option": "iPhone 6/7/8",
         "filter_grid_model": "Apple",
         "filter_grid_protection": "28"
+      },
+      {
+        "filter_option": "Galaxy S24 Ultra",
+        "filter_grid_model": "Samsung",
+        "filter_grid_protection": "29"
+      },
+      {
+        "filter_option": "Galaxy S24 Plus",
+        "filter_grid_model": "Samsung",
+        "filter_grid_protection": "30"
+      },
+      {
+        "filter_option": "Galaxy S24",
+        "filter_grid_model": "Samsung",
+        "filter_grid_protection": "30"
       },
       {
         "filter_option": "Galaxy S23 Ultra",
