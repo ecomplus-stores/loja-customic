@@ -611,7 +611,7 @@ import {
         setStickyBuyObserver()
       }
       if (this.isOnSale) {
-        const promotionDate = new Date(this.mockNewPromoDate.price_effective_date.end)
+        const promotionDate = new Date(this.body.price_effective_date.end)
         const now = Date.now()
         if (promotionDate.getTime() > now) {
           let targetDate

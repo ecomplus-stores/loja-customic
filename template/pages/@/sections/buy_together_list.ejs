@@ -1,15 +1,21 @@
 <%
 const buyList = opt.buy_list
+
 if (Array.isArray(buyList) && buyList.length) { 
-    const filteredCategory = buyList.find(category => {
+    const filteredCategory = buyList.filter(category => {
         return _.state.categories.some(faq => category.slug === faq.slug)
     });
-    
-    if (filteredCategory && filteredCategory.products && filteredCategory.products.length) {
+
+    let finalArray = []
+    filteredCategory.forEach(item => {
+        if (item.products && item.products.length) {
+            finalArray = finalArray.concat(item.products)
+        }
+    })
+    if (filteredCategory && finalArray && finalArray.length) {
     %>
         <script>
-            window.idsBuyTogether = <%- JSON.stringify(filteredCategory.products) %>
-            console.log(window.idsBuyTogether)
+            window.idsBuyTogether = <%- JSON.stringify(finalArray) %>
         </script>
     <%    }
 } %>
