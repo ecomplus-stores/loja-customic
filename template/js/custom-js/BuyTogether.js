@@ -131,8 +131,8 @@ export default {
             const variationSelected = item.variations.find(variation => {
               const { specifications } = variation
               const selectedVar = specifications['modelo'] && specifications['modelo'][0].text
-              if (selectedVar === ('iPhone 13' || 'iPhone 13 Pro' || 'iPhone 13/13 Pro')) {
-                return 'iPhone 13/13 Pro' === this.variationSelected
+              if ((selectedVar === 'iPhone 13/13 Pro') || (selectedVar === 'iPhone 13') || selectedVar === 'iPhone 13 Pro') {
+                return (('iPhone 13/13 Pro' === this.variationSelected) ||  'iPhone 13' === this.variationSelected || 'iPhone 13 Pro' === this.variationSelected)
               } else if (selectedVar) {
                 return selectedVar === this.variationSelected
               }
@@ -234,7 +234,6 @@ export default {
       delete this.ecomSearch.dsl.aggs
       this.ecomSearch.dsl.query.bool.filter = this.ecomSearch.dsl.query.bool.filter.slice(1, 4)
       this.ecomSearch.fetch().then(() => {
-        console.log(this.ecomSearch.getItems())
         this.recommendedItems = this.recommendedItems.concat(this.ecomSearch.getItems())
       }).finally(() => {
         this.hasLoadedItems = true
