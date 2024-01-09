@@ -1,8 +1,7 @@
 import * as merge from 'lodash.merge'
 
 export default (self, term) => {
-  console.log(self)
-  console.log(term)
+
   const modelList = [
     "iPhone 15 Pro Max",
     "iPhone 15 Pro",

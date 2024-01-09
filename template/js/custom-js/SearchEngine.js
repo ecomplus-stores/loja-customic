@@ -689,12 +689,10 @@ export default {
           ]
           
             options = options.sort((a, b) => {
-              console.log(a.key, b.key, sizeSpec.indexOf(a.key) - sizeSpec.indexOf(b.key))
               return sizeSpec.indexOf(a.key) - sizeSpec.indexOf(b.key)
             })
           }
           if (filter === 'colors') {
-            console.log(options)
             const arrayOptions = [
               {
                 "_id": "747440159604217630200000",
