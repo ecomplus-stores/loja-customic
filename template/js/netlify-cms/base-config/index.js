@@ -17,7 +17,6 @@ export default options => {
             {
                 label: "Faqs",
                 name: "faq-list",
-                required: false,
                 widget: "list",
                 fields: [
                     {
@@ -45,7 +44,6 @@ export default options => {
           {
               label: "Lista compre junto",
               name: "buy_list",
-              required: false,
               widget: "list",
               fields: [
                   {
@@ -58,7 +56,6 @@ export default options => {
                   {
                     label: 'Produtos',
                     name: 'products',
-                    required: false,
                     widget: 'list',
                     field: {
                       label: 'SKU do produto',
@@ -89,8 +86,7 @@ export default options => {
                 {
                     "label": "Imagem",
                     "name": "img",
-                    "widget": "image",
-                    "required": false
+                    "widget": "image"
                 },
                 {
                     "label": "Link",
@@ -124,6 +120,7 @@ export default options => {
     ]
   }
   ])
+  console.log(options)
   options.layout = getLayout(options)
   if (options.layout && options.layout.files && options.layout.files.length) {
     options.layout.files.map(file => {
@@ -198,8 +195,7 @@ export default options => {
             "min": 0,
             "step": 1000,
             "default": 9000,
-            "widget": "number",
-            "required": false
+            "widget": "number"
           },
           {
             "label": "Cor de fundo",
@@ -258,30 +254,34 @@ export default options => {
         description: 'Configure a lista de produtos em sequência para listagem da busca',
         folder: `${options.baseDir}content/category_list`,
         extension: 'json',
-        required: false,
         create: true,
         slug: '{{slug}}',
         fields: [
+          {
+            label: "Título do Registro",
+            hint: "Insira o slug da categoria",
+            name: "title",
+            widget: "string"          
+          }, 
           {
             label: 'Identificador [Categoria]',
             name: 'identificador',
             widget: 'select',
                 multiple: false,
-                required: false,
                 options: [
                   ...options.state.routes
                   .filter(el => el.resource === 'categories')
                   .map((el) => ({
                     label: 'Categoria - ' + el.name,
-                    value: el.slug
+                    value: 'cat_'+el._id
                   }))
                 ]                
           }, 
           {
-            label: "Lista de skus",
-            name: "list",
-            widget: "list",
-            required: false,
+            label:"Lista de skus",
+            name:"list",
+            widget:"list",
+            required:false,
             fields: [
               {
                 label: 'SKU do produto',
@@ -296,12 +296,6 @@ export default options => {
               },             
             ]
           },
-          {
-            label: 'Slug da Categoria',
-            name: 'title',
-            widget: 'string',
-            required: false
-          }
         ]
       }
     ]
