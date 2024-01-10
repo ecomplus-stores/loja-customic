@@ -289,6 +289,11 @@ export default options => {
               },             
             ]
           },
+          {
+            label: 'Slug da Categoria',
+            name: 'title',
+            widget: 'string' 
+          }
         ]
       }
     ]
