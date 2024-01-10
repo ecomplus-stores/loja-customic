@@ -264,20 +264,6 @@ export default options => {
             widget: "string"          
           }, 
           {
-            label: 'Identificador [Categoria]',
-            name: 'identificador',
-            widget: 'select',
-                multiple: false,
-                options: [
-                  ...options.state.routes
-                  .filter(el => el.resource === 'categories')
-                  .map((el) => ({
-                    label: 'Categoria - ' + el.name,
-                    value: 'cat_'+el._id
-                  }))
-                ]                
-          }, 
-          {
             label:"Lista de skus",
             name:"list",
             widget:"list",
