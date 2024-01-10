@@ -257,12 +257,6 @@ export default options => {
         slug: '{{slug}}',
         fields: [
           {
-            label: "Título do Registro",
-            hint:"Campo apenas informativo do nome da categoria",
-            name: "title",
-            widget: "string"          
-          }, 
-          {
             label: 'Identificador [Categoria]',
             name: 'identificador',
             widget: 'select',
@@ -272,7 +266,7 @@ export default options => {
                   .filter(el => el.resource === 'categories')
                   .map((el) => ({
                     label: 'Categoria - ' + el.name,
-                    value: 'cat_'+el._id
+                    value: el.slug
                   }))
                 ]                
           }, 

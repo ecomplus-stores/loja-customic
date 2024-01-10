@@ -397,6 +397,7 @@ export default {
 
     filteredItems () {
       let resultItems = this.resultItems
+      const orderItems = window.categoryOrder || []
       if (this.hasCapa) {
         resultItems = resultItems.filter(item => item.name.toLowerCase().includes('cap'))
       } else if (this.hasPelicula) {
@@ -413,6 +414,27 @@ export default {
         ...filtered,
         ...diff
       ]
+
+      if (orderItems && orderItems.length) {
+        allProducts.sort((a, b) => {
+
+          const modelNameA = orderItems.find(id => b._id === id) || '';
+          const modelNameB = orderItems.find(id => a._id === id) || '';
+
+          const indexA = orderItems.findIndex(id => id === modelNameA);
+          const indexB = orderItems.findIndex(id => id === modelNameB);
+
+          if (modelNameA === '' && modelNameB === '') {
+            return 1; 
+          } else if (modelNameA === '' && modelNameB !== '') {
+            return -1
+          } else if (modelNameA !== '' && modelNameB === '') {
+            return 1
+          }
+
+          return indexB - indexA;
+        });
+      }
       
       return allProducts
       /* const items = [ ...this.resultItems ]

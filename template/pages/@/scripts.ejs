@@ -47,9 +47,22 @@ const customCode = _.cms('code')
 if (customCode) {
   %> <%- customCode.html_body %> <%
 }
+let productOrder
 %>
 
+<% if (_.route.resource === 'categories') { 
+  const categoryOrder = _.cms(`category_list/${_.state.slug}`)
+  if (categoryOrder && categoryOrder.list && categoryOrder.list.length) {
+    productOrder =  categoryOrder.list.map(({ product_id }) => product_id)
+  }
+  %>
+  <script>
+    window.categoryOrder = <%- JSON.stringify(productOrder) %>
+  </script>
+<% } %>
+
 <script>
+  window.categoryOrder = <%- JSON.stringify(productOrder) %>;
 window.modelList = [
     "iPhone 15 Pro Max",
     "iPhone 15 Pro",
