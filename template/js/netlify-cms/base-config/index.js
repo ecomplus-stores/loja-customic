@@ -17,6 +17,7 @@ export default options => {
             {
                 label: "Faqs",
                 name: "faq-list",
+                required: false,
                 widget: "list",
                 fields: [
                     {
@@ -44,6 +45,7 @@ export default options => {
           {
               label: "Lista compre junto",
               name: "buy_list",
+              required: false,
               widget: "list",
               fields: [
                   {
@@ -56,6 +58,7 @@ export default options => {
                   {
                     label: 'Produtos',
                     name: 'products',
+                    required: false,
                     widget: 'list',
                     field: {
                       label: 'SKU do produto',
@@ -86,7 +89,8 @@ export default options => {
                 {
                     "label": "Imagem",
                     "name": "img",
-                    "widget": "image"
+                    "widget": "image",
+                    "required": false
                 },
                 {
                     "label": "Link",
@@ -194,7 +198,8 @@ export default options => {
             "min": 0,
             "step": 1000,
             "default": 9000,
-            "widget": "number"
+            "widget": "number",
+            "required": false
           },
           {
             "label": "Cor de fundo",
@@ -253,6 +258,7 @@ export default options => {
         description: 'Configure a lista de produtos em sequência para listagem da busca',
         folder: `${options.baseDir}content/category_list`,
         extension: 'json',
+        required: false,
         create: true,
         slug: '{{slug}}',
         fields: [
@@ -260,7 +266,8 @@ export default options => {
             label: 'Identificador [Categoria]',
             name: 'identificador',
             widget: 'select',
-                multiple: true,
+                multiple: false,
+                required: false,
                 options: [
                   ...options.state.routes
                   .filter(el => el.resource === 'categories')
@@ -271,10 +278,10 @@ export default options => {
                 ]                
           }, 
           {
-            label:"Lista de skus",
-            name:"list",
-            widget:"list",
-            required:false,
+            label: "Lista de skus",
+            name: "list",
+            widget: "list",
+            required: false,
             fields: [
               {
                 label: 'SKU do produto',
@@ -292,7 +299,8 @@ export default options => {
           {
             label: 'Slug da Categoria',
             name: 'title',
-            widget: 'string' 
+            widget: 'string',
+            required: false
           }
         ]
       }
