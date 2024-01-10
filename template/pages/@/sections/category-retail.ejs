@@ -53,23 +53,26 @@ const itemQuantity = items.filter(item => {
 const diff = items.filter(({ _id: id1 }) => !itemQuantity.some(({ _id: id2 }) => id2 === id1))
 
 items = [...itemQuantity, ...diff]
-items.sort((a, b) => {
-  const modelNameA = productOrder.find(id => b._id === id) || '';
-  const modelNameB = productOrder.find(id => a._id === id) || '';
+if (productOrder && productOrder.length) {
+  items.sort((a, b) => {
+    const modelNameA = productOrder.find(id => b._id === id) || '';
+    const modelNameB = productOrder.find(id => a._id === id) || '';
 
-  const indexA = productOrder.findIndex(id => id === modelNameA);
-  const indexB = productOrder.findIndex(id => id === modelNameB);
+    const indexA = productOrder.findIndex(id => id === modelNameA);
+    const indexB = productOrder.findIndex(id => id === modelNameB);
 
-  if (modelNameA === '' && modelNameB === '') {
-    return 1; 
-  } else if (modelNameA === '' && modelNameB !== '') {
-    return -1
-  } else if (modelNameA !== '' && modelNameB === '') {
-    return 1
-  }
+    if (modelNameA === '' && modelNameB === '') {
+      return 1; 
+    } else if (modelNameA === '' && modelNameB !== '') {
+      return -1
+    } else if (modelNameA !== '' && modelNameB === '') {
+      return 1
+    }
 
-  return indexB - indexA;
-});
+    return indexB - indexA;
+  });
+}
+
 %>
 
 <div class="category-retail">
