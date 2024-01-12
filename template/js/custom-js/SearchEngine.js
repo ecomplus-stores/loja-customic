@@ -588,19 +588,20 @@ export default {
             }
           }
           if (filter === 'modelo') {
-            const sizeSpec = window.modelList || []
+            const sizeSpec = window.listModel || []
             console.log(sizeSpec)
+            console.log(JSON.stringify(options))
           
             if (sizeSpec.length) {
               options.sort((a, b) => {
-                const modelNameA = sizeSpec.find(item => b.key && b.key.toLowerCase().includes(item.filter_option && item.filter_option.toLowerCase()));
-                const modelNameB = sizeSpec.find(item => a.key && a.key.toLowerCase().includes(item.filter_option && item.filter_option.toLowerCase()));
+                const modelNameA = sizeSpec.find(item => b.key === item.filter_option);
+                const modelNameB = sizeSpec.find(item => a.key === item.filter_option);
 
                 const filteredModelA = modelNameA && modelNameA.filter_option || ''
                 const filteredModelB = modelNameB && modelNameB.filter_option || ''
   
-                const indexA = sizeSpec.findIndex(item => item.filter_option && item.filter_option.toLowerCase() === filteredModelA.toLowerCase());
-                const indexB = sizeSpec.findIndex(item => item.filter_option && item.filter_option.toLowerCase() === filteredModelB.toLowerCase());
+                const indexA = sizeSpec.findIndex(item => item.filter_option && item.filter_option === filteredModelA);
+                const indexB = sizeSpec.findIndex(item => item.filter_option && item.filter_option === filteredModelB);
   
                 if (filteredModelA === '' && filteredModelB === '') {
                   return 1; 
