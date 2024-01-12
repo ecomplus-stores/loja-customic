@@ -58,7 +58,7 @@ const isCentralizedLogo = header.centralized_logo
 
 %>
 <script>
-  window.listModel = <%- JSON.stringify(filters) %>
+  window.listModel = <%- JSON.stringify(filters || []) %>
 </script>
 
 <div id="overlay" class="fade"></div>
