@@ -590,7 +590,8 @@ export default {
           if (filter === 'modelo') {
             const sizeSpec = window.listModel || []
             console.log(sizeSpec)
-            console.log(JSON.stringify(options))
+            console.log(sizeSpec[0])
+            console.log(sizeSpec.length)
           
             if (sizeSpec.length) {
               options.sort((a, b) => {

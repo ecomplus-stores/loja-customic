@@ -7,6 +7,7 @@ import getExtraPages from "@ecomplus/storefront-template/template/js/netlify-cms
 import getWidgets from "@ecomplus/storefront-template/template/js/netlify-cms/base-config/collections/widgets"
 
 export default options => {
+  console.log(options)
   options.sections = getSections(options).concat([
     {
         label: "Faq por categoria",
