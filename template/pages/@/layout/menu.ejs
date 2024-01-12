@@ -93,7 +93,8 @@ if (mainCategories) {
             >
               <i class="i-arrow-left"></i>
             </button>
-          <% } %>
+          <% }
+          %>
 
           <div class="menu__list">
             <% categoryParents[slug].forEach((subcategory, index) => { %>
@@ -131,8 +132,8 @@ if (mainCategories) {
             <a id="personalize" targe="_blank" class="menu__item" href="https://www.lab.customic.com.br/">Personalize</a>
           </div>
 
-          <% if (category && category.slug && categoriesHeader.indexOf('/' + category.slug)) { %>
-            <a href="/<%= category.slug %>" class="menu__link">
+          <% if (category && category.slug && (categoriesHeader.indexOf('/' + category.slug) > -1)) { %>
+            <a href="/<%= category.slug %>" class="menu__link see-all">
               <%= _.dictionary('seeAll$1Category').replace('$1', category.name) %>
             </a>
           <% } %>
