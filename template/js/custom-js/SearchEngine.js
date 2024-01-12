@@ -590,7 +590,6 @@ export default {
           if (filter === 'modelo') {
             const sizeSpec = window.listModel || []
             console.log(sizeSpec)
-            console.log(sizeSpec[0])
             console.log(sizeSpec.length)
           
             if (sizeSpec.length) {

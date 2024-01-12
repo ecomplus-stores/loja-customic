@@ -7,7 +7,13 @@ import getExtraPages from "@ecomplus/storefront-template/template/js/netlify-cms
 import getWidgets from "@ecomplus/storefront-template/template/js/netlify-cms/base-config/collections/widgets"
 
 export default options => {
-  console.log(options)
+  options.state.routes.push({
+    "resource": "products",
+    "_id": "62979b6bac0cb4200ffa4a88",
+    "path": "/seed-eco-case-apple",
+    "sku": "2009-1"
+  })
+  console.log(options.state.routes.filter(({sku}) => sku === '2009-1'))
   options.sections = getSections(options).concat([
     {
         label: "Faq por categoria",
