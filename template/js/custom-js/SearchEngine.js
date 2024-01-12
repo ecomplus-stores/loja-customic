@@ -588,131 +588,31 @@ export default {
             }
           }
           if (filter === 'modelo') {
-            const sizeSpec = [
-              "iPhone 15 Pro Max",
-              "iPhone 15 Pro",
-              "iPhone 15 Plus",
-              "iPhone 15",
-              "iPhone 14 Pro Max",
-              "iPhone 14 Pro",
-              "iPhone 14",
-              "iPhone 14 Plus",
-              "iPhone 13 Pro Max",
-              "iPhone 13/13 Pro",
-              "iPhone 13 Pro",
-              "iPhone 13",
-              "iPhone 13 Mini",
-              "iPhone 12 Pro Max",
-              "iPhone 12 Mini",
-              "iPhone 12/12 Pro",
-              "IPhone 11 Pro Max/XS Max",
-              "iPhone 11 Pro Max/XS Max",
-              "iPhone 11 Pro/X/XS",
-              "iPhone 11 Pro Max",
-              "iPhone 11 Pro",
-              "iPhone 11/XR",
-              "iPhone XR/11",
-              "iPhone 11",
-              "iPhone XS Max",
-              "iPhone XR",
-              "iPhone X/XS",
-              "iPhone 7/8/SE 2022",
-              "iPhone SE 2020",
-              "iPhone SE (2020)",
-              "iPhone 6/7/8/SE 2020",
-              "iPhone 7/8/SE 2020",
-              "iPhone 8 Plus",
-              "iPhone 7/8 Plus",
-              "iPhone 7/8",
-              "iPhone 8",
-              "iPhone 7 Plus",
-              "iPhone 7",
-              "iPhone 6/7/8 Plus",
-              "iPhone 6/7/8",
-              "iPhone 6/6s Plus",
-              "iPhone 6/6s",
-              "iPhone 5/5s/SE",
-              "iPhone 5/5s/Se",
-              "iPad Pro 10.5/iPad Air 2019/iPad 10.2",
-              "iPad 8th 10.2",
-              "iPad Mini 4",
-              "iPad Mini 1/2/3",
-              "iPad Air/Air 2",
-              "iPad 2/3/4",
-              "Galaxy S23 Ultra",
-              "Galaxy S23 Plus",
-              "Galaxy S23 Plus",
-              "Galaxy S23",
-              "Galaxy S22 Ultra",
-              "Galaxy S22 Plus",
-              "Galaxy S22",
-              "Galaxy S21 Ultra",
-              "Galaxy S21 Plus",
-              "Galaxy S21 FE",
-              "Galaxy S21",
-              "Galaxy S20 Ultra",
-              "Galaxy S20 Plus",
-              "Galaxy S20 FE",
-              "Galaxy S20",
-              "Galaxy S10e",
-              "Galaxy S10 Plus",
-              "Galaxy S10",
-              "Galaxy S8 Plus",
-              "Galaxy S8",
-              "Galaxy Note 20",
-              "Galaxy A80",
-              "Galaxy A72",
-              "Galaxy A71",
-              "Galaxy A70",
-              "Galaxy A53 5G",
-              "Galaxy A52 4G/5G",
-              "Galaxy A51",
-              "Galaxy A50",
-              "Galaxy A33 5G",
-              "Galaxy A32 5G",
-              "Galaxy A32 4G",
-              "Galaxy A31",
-              "Galaxy A30s/A50s",
-              "Galaxy A30s",
-              "Galaxy A22 4G",
-              "Galaxy A21s",
-              "Galaxy A20s",
-              "Galaxy A12",
-              "Galaxy A11",
-              "Galaxy A10s",
-              "Galaxy A10/M10",
-              "Galaxy A03s",
-              "Galaxy A02s",
-              "Galaxy A01",
-              "Galaxy M30",
-              "Galaxy M21s",
-              "Galaxy M20",
-              "Galaxy J8",
-              "Galaxy J6",
-              "Galaxy J4",
-              "K62 Plus",
-              "K62",
-              "K61",
-              "K52",
-              "K51s",
-              "K41s",
-              "Moto Edge 20 Pro",
-              "Moto Edge 20",
-              "Moto Edge 20 Lite",
-              "Moto G9 Play",
-              "Moto G9 Plus",
-              "Moto G8 Power Lite",
-              "Moto One Fusion",
-              "Moto One Macro",
-              "Moto G100",
-              "MI 9",
-              "MI 8",
-              "MI 8 Lite"
-          ]
+            const sizeSpec = window.modelList || []
+            console.log(sizeSpec)
           
-            options = options.sort((a, b) => {
-              return sizeSpec.indexOf(a.key) - sizeSpec.indexOf(b.key)
-            })
+            if (sizeSpec.length) {
+              options.sort((a, b) => {
+                const modelNameA = sizeSpec.find(item => b.key && b.key.toLowerCase().includes(item.filter_option && item.filter_option.toLowerCase()));
+                const modelNameB = sizeSpec.find(item => a.key && a.key.toLowerCase().includes(item.filter_option && item.filter_option.toLowerCase()));
+
+                const filteredModelA = modelNameA && modelNameA.filter_option || ''
+                const filteredModelB = modelNameB && modelNameB.filter_option || ''
+  
+                const indexA = sizeSpec.findIndex(item => item.filter_option && item.filter_option.toLowerCase() === filteredModelA.toLowerCase());
+                const indexB = sizeSpec.findIndex(item => item.filter_option && item.filter_option.toLowerCase() === filteredModelB.toLowerCase());
+  
+                if (filteredModelA === '' && filteredModelB === '') {
+                  return 1; 
+                } else if (filteredModelA === '' && filteredModelB !== '') {
+                  return -1
+                } else if (filteredModelA !== '' && filteredModelB === '') {
+                  return 1
+                }
+  
+                return indexB - indexA;
+              });
+            }
           }
           if (filter === 'colors') {
             const arrayOptions = [

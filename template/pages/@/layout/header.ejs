@@ -55,7 +55,11 @@ const hasMegamenu = header.desktop_megamenu
 const isAlphabeticalOrderSubmenu = header.alphabetical_order_submenu
 const fullWidthSubmenu = header.full_width_submenu
 const isCentralizedLogo = header.centralized_logo
+
 %>
+<script>
+  window.modelList = <%- JSON.stringify(filters) %>
+</script>
 
 <div id="overlay" class="fade"></div>
 
@@ -378,4 +382,4 @@ const isCentralizedLogo = header.centralized_logo
       </div>
     </div>
   </div>
-<% } %> 
+<% } %>
