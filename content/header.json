@@ -206,17 +206,20 @@
       {
         "filter_option": "Galaxy S24 Ultra",
         "filter_grid_model": "Samsung",
-        "filter_grid_protection": "29"
+        "filter_grid_protection": "29",
+        "is_new": true
       },
       {
         "filter_option": "Galaxy S24 Plus",
         "filter_grid_model": "Samsung",
-        "filter_grid_protection": "30"
+        "filter_grid_protection": "30",
+        "is_new": true
       },
       {
         "filter_option": "Galaxy S24",
         "filter_grid_model": "Samsung",
-        "filter_grid_protection": "30"
+        "filter_grid_protection": "30",
+        "is_new": true
       },
       {
         "filter_option": "Galaxy S23 Ultra",
