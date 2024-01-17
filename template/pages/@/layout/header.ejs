@@ -352,9 +352,16 @@ const isCentralizedLogo = header.centralized_logo
                               
                             }
                           %>
-                          <% thirdCategories.forEach(thirdCategory => { %>
+                          <% thirdCategories.forEach(thirdCategory => {  
+                            const findCategoryThird = filters.find(({ filter_option }) => {
+                              return thirdCategory.name && thirdCategory.name.includes(filter_option)
+                            })
+                            %>
                             <a id="cd-<%= thirdCategory._id %>" class="header__submenu-subcategory" href="/<%= thirdCategory.slug %>">
                               <%= thirdCategory.name %>
+                              <% if (findCategoryThird && findCategoryThird.is_new) { %>
+                                <span class="new-category">Novo</span>
+                              <% } %>
                             </a>
                           <% }) %>
                         </div>
