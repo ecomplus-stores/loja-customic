@@ -163,6 +163,13 @@ export default options => {
                         widget: 'string',
                         hint: 'Se houver proteção especificada',
                         required: false
+                      },
+                      {
+                        label: 'Selo Novo',
+                        name: 'is_new',
+                        widget: 'boolean',
+                        hint: 'Será inserido selo de novo, se marcado como ativo',
+                        required: false
                       }
                   ]
               },
