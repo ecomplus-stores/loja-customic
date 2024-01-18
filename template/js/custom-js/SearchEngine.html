@@ -108,7 +108,7 @@
                 type="button"
                 data-toggle="collapse"
                 :data-target="`#collapse-${filter}`"
-                aria-expanded="true"
+                :aria-expanded="i < 1 ? 'true' : 'false'"
                 :aria-controls="`collapse-${filter}`"
               >
                 <i class="i-chevron-down"></i><i class="i-chevron-up"></i>
@@ -116,7 +116,7 @@
               </button>
 
               <div
-                class="collapse show"
+                class="collapse"
                 :id="`collapse-${filter}`"
               >
                 <div
