@@ -7,6 +7,13 @@ const categoriesHeader = header.categories_list.featured.map(item => {
   return item.substring(0, item.indexOf('?'))
 })
 
+const { filters } = header['filter-list']
+
+const brandsModel = _.lodash.groupBy(filters, ({ filter_grid_model }) => {
+  return !filter_grid_model ? '_' : filter_grid_model
+})
+const keysMenu = Object.keys(brandsModel) || []
+
 // some social networks handled by contacts
 const networksWithColors = [
   ['facebook', '#3b5998'],
@@ -97,7 +104,39 @@ if (mainCategories) {
           %>
 
           <div class="menu__list">
-            <% categoryParents[slug].forEach((subcategory, index) => { %>
+            <% 
+           /*  console.log(category)
+            console.log(Object.keys(category || {}))
+            console.log('--------- slug:')
+            console.log(slug)
+            console.log(keysMenu)
+            const indexMenu = keysMenu.findIndex(menu => category['name'] && category['name'].includes(menu))
+            if (indexMenu > -1) {
+              const arrayMenu = brandsModel[keysMenu[indexMenu]]
+              categoryParents[slug].sort((a, b) => {
+                const modelNameA = arrayMenu.find(item => b.name && b.name.toLowerCase().includes(item.filter_option && item.filter_option.toLowerCase()))?.filter_option || '';
+                const modelNameB = arrayMenu.find(item => a.name && a.name.toLowerCase().includes(item.filter_option && item.filter_option.toLowerCase()))?.filter_option || '';
+
+                const indexA = arrayMenu.findIndex(item => item.filter_option && item.filter_option.toLowerCase() === modelNameA.toLowerCase());
+                const indexB = arrayMenu.findIndex(item => item.filter_option && item.filter_option.toLowerCase() === modelNameB.toLowerCase());
+
+                if (modelNameA === '' && modelNameB === '') {
+                  return 1; 
+                } else if (modelNameA === '' && modelNameB !== '') {
+                  return -1
+                } else if (modelNameA !== '' && modelNameB === '') {
+                  return 1
+                }
+
+                return indexB - indexA;
+              });
+              
+            } */
+            categoryParents[slug].forEach((subcategory, index) => { 
+              const findCategorySub = filters.find(({ filter_option }) => {
+                return subcategory.name && subcategory.name.includes(filter_option)
+              })
+              %>
               <% const hasSubmenu = Array.isArray(categoryParents[subcategory.slug]) %>
               <a
                 <% if (hasSubmenu) {
@@ -127,6 +166,9 @@ if (mainCategories) {
                 <span>
                   <%= subcategory.name %>
                 </span>
+                <% if (findCategorySub && findCategorySub.is_new) { %>
+                    <span class="new-category">Novo</span>
+                <% } %>
               </a>
             <% }) %>
             <a id="personalize" targe="_blank" class="menu__item" href="https://www.lab.customic.com.br/">Personalize</a>
