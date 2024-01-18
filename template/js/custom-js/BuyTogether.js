@@ -146,12 +146,12 @@ export default {
     },
 
     productIds () {
-      const productsFromCategory = window.idsBuyTogether || []
+      const buyTogetherDiscount = Object.keys(this.productQnts)
+      const productsFromCategory = buyTogetherDiscount.length > 0 ? [] : window.idsBuyTogether
       const products = [
-        ...Object.keys(this.productQnts),
+        ...buyTogetherDiscount,
         ...productsFromCategory
       ]
-      
       return products
     },
 
