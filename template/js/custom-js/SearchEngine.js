@@ -41,8 +41,11 @@ import ProductCard from '@ecomplus/storefront-components/src/ProductCard.vue'
 
 const resetEcomSearch = ({ ecomSearch, term, page, defaultSort }) => {
   ecomSearch.reset()
+  console.log('default sort', defaultSort)
   if (defaultSort) {
     ecomSearch.setSortOrder(defaultSort)
+  } else if (!defaultSort) {
+    ecomSearch.setSortOrder('sales')
   }
   if (term) {
     ecomSearch.setSearchTerm(term)
@@ -414,6 +417,12 @@ export default {
         ...filtered,
         ...diff
       ]
+
+      if (!this.defaultSort && !this.modelSpec) {
+        allProducts = [
+          ...resultItems
+        ]
+      }
 
       if (orderItems && orderItems.length) {
         allProducts.sort((a, b) => {

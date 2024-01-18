@@ -18,11 +18,6 @@ export default {
         order: 'desc'
       }
     },
-    {
-      ad_relevance: {
-        order: 'desc'
-      }
-    },
     '_score'
   ],
   aggs: {
@@ -41,7 +36,7 @@ export default {
             text: {
               terms: {
                 field: 'specs.text',
-                size: 100
+                size: 200
               }
             }
           }
