@@ -181,7 +181,7 @@
               </div>
             </slot>
 
-            <div
+            <!-- <div
               v-if="isKit"
               class="product__kit"
             >
@@ -215,7 +215,22 @@
                   <span class="sr-only">Loading...</span>
                 </span>
               </slot>
-            </div>
+            </div> -->
+            <kit-product-variations
+                    v-if="kitItems.length"
+                    :items="kitItems"
+                    :min="body.min_quantity"
+                    :max="body.quantity"
+                    :slug="body.slug"
+                    :kit-product-id="body._id"
+                    :kit-name="body.name"
+                    :kit-price="fixedPrice"
+                    :max-options-btns="maxVariationOptionsBtns"
+                  >
+                    <template #buy-button-content>
+                      <slot name="buy-button-content"/>
+                    </template>
+                  </kit-product-variations>
 
             <template v-else>
               <div

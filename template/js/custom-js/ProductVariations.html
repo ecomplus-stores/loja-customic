@@ -1,6 +1,6 @@
 <div
   class="variations"
-  v-if="product.variations"
+  v-if="product && product.variations && product.variations.length"
 >
   <div
     v-for="(options, grid, index) in variationsGrids"

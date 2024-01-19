@@ -241,7 +241,7 @@ export default {
           this.$set(selectedOptions, grid, undefined);
         }
       }
-      const variations = product.variations.slice(0);
+      const variations = product.variations && product.variations.slice(0)
       for (let i = 0; i < variations.length; i++) {
         const variation = variations[i];
         const { specifications } = variation;

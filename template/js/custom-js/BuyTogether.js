@@ -147,7 +147,10 @@ export default {
 
     productIds () {
       const buyTogetherDiscount = Object.keys(this.productQnts)
-      const productsFromCategory = buyTogetherDiscount.length > 0 ? [] : window.idsBuyTogether
+      let productsFromCategory = buyTogetherDiscount.length > 0 ? [] : window.idsBuyTogether
+      if (!productsFromCategory) {
+        productsFromCategory = []
+      }
       const products = [
         ...buyTogetherDiscount,
         ...productsFromCategory

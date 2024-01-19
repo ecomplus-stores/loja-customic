@@ -1,7 +1,7 @@
 <%
 const { body } = await _.resolveRoute()
 _.breadcrumbs = []
-let cat = body.categories
+let cat = body.categories || []
 cat = cat.filter(c => !c.name.includes('Friday'))
 const product = {
   ...body,

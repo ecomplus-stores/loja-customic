@@ -1,6 +1,6 @@
 <%
 const faqList = opt['faq-list']
-if (Array.isArray(faqList) && faqList.length) { 
+if (Array.isArray(faqList) && faqList.length && _.state.categories && _.state.categories.length) { 
     const filteredCategory = faqList.find(category => {
         return _.state.categories.some(faq => category.slug === faq.slug)
     });

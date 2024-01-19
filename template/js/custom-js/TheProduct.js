@@ -58,6 +58,7 @@ import {
   import ShippingCalculator from '@ecomplus/storefront-components/src/ShippingCalculator.vue'
   import PaymentOption from '@ecomplus/storefront-components/src/PaymentOption.vue'
   import ecomPassport from '@ecomplus/passport-client'
+  import KitProductVariations from './components/KitProductVariations.vue'
   import { toggleFavorite, checkFavorite } from '@ecomplus/storefront-components/src/js/helpers/favorite-products'
   
   const storefront = (typeof window === 'object' && window.storefront) || {}
@@ -85,6 +86,7 @@ import {
       APrices,
       AShare,
       BuyTogether,
+      KitProductVariations,
       ProductVariations,
       ProductGallery,
       QuantitySelector,
@@ -296,6 +298,10 @@ import {
   
       isKit () {
         return this.body.kit_composition && this.body.kit_composition.length
+      },
+
+      isKitWithVariations () {
+        return this.kitItems.some(item => item.variations && item.variations.length)
       }
     },
   
@@ -536,14 +542,7 @@ import {
                       _id: genRandomObjectId()
                     })
                   }
-                  if (product.variations) {
-                    product.variations.forEach(variation => {
-                      variation._id = genRandomObjectId()
-                      addKitItem(variation._id)
-                    })
-                  } else {
-                    addKitItem()
-                  }
+                  addKitItem()
                 })
               })
               .catch(console.error)
