@@ -201,7 +201,12 @@ import {
           : {}
       },
   
-      name () {
+      nameProduct () {
+        if (this.buyTogetherProducts && this.buyTogetherProducts.length) {
+          let nameComb = ''
+          this.buyTogetherProducts.forEach(item => nameComb += `+ ${item.name}`)
+          return `Combo ${this.selectedVariation.name || getName(this.body)} ${nameComb}`
+        }
         return this.selectedVariation.name || getName(this.body)
       },
   
