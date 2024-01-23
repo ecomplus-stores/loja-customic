@@ -48,7 +48,6 @@
         ref="actions"
       >
         <slot
-          v-if="!isSSR"
           name="heading"
         >
           <component
@@ -61,6 +60,7 @@
             COD: {{ body.sku }}
           </p>
         </slot>
+
 
         <component
           :is="isSSR ? 'portal' : 'div'"
@@ -113,6 +113,7 @@
               <p class="product__prices">
                 <a-prices
                   :product="ghostProductForPrices"
+                  :buy-together="buyTogetherProducts"
                   :is-literal="true"
                   :is-big="true"
                   @fix-price="price => fixedPrice = price"

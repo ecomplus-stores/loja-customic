@@ -466,6 +466,18 @@ import {
         deep: true
       },
 
+      nameProduct: {
+        handler (currentName) {
+          if (this.body.name !== currentName) {
+            const h1Element = document.getElementById('h1-product')
+            if (h1Element) {
+              h1Element.remove()
+            }
+          }
+        },
+        immediate: true
+      },
+
       selectedVariationId (variationId) {
         if (variationId) {
           if (this.hasClickedBuy) {

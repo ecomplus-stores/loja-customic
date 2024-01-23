@@ -16,7 +16,7 @@ import {
   } from '@ecomplus/utils'
   
   import waitStorefrontInfo from '@ecomplus/storefront-components/src/js/helpers/wait-storefront-info'
-import utm from '@ecomplus/storefront-template/template/js/lib/persist-utm'
+  import utm from '@ecomplus/storefront-template/template/js/lib/persist-utm'
   
   const getPriceWithDiscount = (price, discount) => {
     const { type, value } = discount
@@ -38,6 +38,12 @@ import utm from '@ecomplus/storefront-template/template/js/lib/persist-utm'
       product: {
         type: Object,
         required: true
+      },
+      buyTogether: {
+        type: Array,
+        default () {
+          return []
+        }
       },
       isLiteral: Boolean,
       isBig: Boolean,
@@ -104,7 +110,12 @@ import utm from '@ecomplus/storefront-template/template/js/lib/persist-utm'
       },
   
       price () {
-        const price = getPrice(this.product)
+        let price = getPrice(this.product)
+        if (this.buyTogether && this.buyTogether.length) {
+          this.buyTogether.forEach(element => {
+            price += getPrice(element)
+          });
+        }
         if (
           this.extraDiscount.value &&
           (!this.extraDiscount.min_amount || price > this.extraDiscount.min_amount)
