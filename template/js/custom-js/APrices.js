@@ -45,6 +45,10 @@ import {
           return []
         }
       },
+      discountBuyTogether: {
+        type: Number,
+        default: 0
+      },
       isLiteral: Boolean,
       isBig: Boolean,
       isAmountTotal: Boolean,
@@ -115,6 +119,9 @@ import {
           this.buyTogether.forEach(element => {
             price += getPrice(element)
           });
+          if (this.discountBuyTogether) {
+            price -= this.discountBuyTogether
+          }
         }
         if (
           this.extraDiscount.value &&

@@ -157,6 +157,7 @@ import {
         fixedPrice: null,
         selectedVariationId: null,
         buyTogetherProducts: [],
+        discountBuyTogether: 0,
         selectedModel: {},
         currentGalleyImg: 1,
         isOnCart: false,

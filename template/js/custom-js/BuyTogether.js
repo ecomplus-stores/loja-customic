@@ -206,6 +206,7 @@ export default {
       } else {
         this.discount = this.subtotal * this.discountValue / 100
       }
+      this.$emit('update:discount-together', this.discount)
     },
 
     setProductQnts (productsIds) {

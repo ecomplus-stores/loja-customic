@@ -114,6 +114,7 @@
                 <a-prices
                   :product="ghostProductForPrices"
                   :buy-together="buyTogetherProducts"
+                  :discount-buy-together="discountBuyTogether"
                   :is-literal="true"
                   :is-big="true"
                   @fix-price="price => fixedPrice = price"
@@ -309,6 +310,7 @@
                 :base-product="body"
                 :selected-variation="selectedVariationId"
                 :selected-products.sync="buyTogetherProducts"
+                :discount-together.sync="discountBuyTogether"
                 :selected-model="selectedModel"
             />
 
