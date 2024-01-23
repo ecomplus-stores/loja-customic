@@ -12,7 +12,7 @@ module.exports = () => ({
       './methods/set-search-term': path.resolve(dirSearchAlias, 'set-search-term'),
       './base-config': path.resolve(__dirname, 'template/js/netlify-cms/base-config'),
       './js/ProductCard.js': path.resolve(__dirname, 'template/js/custom-js/ProductCard.js'),
-      './js/DiscountApplier.js': path.resolve(__dirname, 'template/js/custom-js/DiscountApplier.js'),
+      //'./js/DiscountApplier.js': path.resolve(__dirname, 'template/js/custom-js/DiscountApplier.js'),
       './js/ProductVariations.js': path.resolve(__dirname, 'template/js/custom-js/ProductVariations.js'),
       './html/ProductVariations.html': path.resolve(__dirname, 'template/js/custom-js/ProductVariations.html'),
       './html/SearchEngine.html': path.resolve(__dirname, 'template/js/custom-js/SearchEngine.html'),
