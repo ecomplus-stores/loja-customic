@@ -517,6 +517,16 @@
       {
         "filter_option": "P30 Lite",
         "filter_grid_model": "Huawei"
+      },
+      {
+        "filter_option": "Galaxy A25 5G",
+        "filter_grid_model": "Samsung",
+        "is_new": true
+      },
+      {
+        "filter_option": "Galaxy A05",
+        "filter_grid_model": "Samsung",
+        "is_new": true
       }
     ],
     "title": "Modelo"
