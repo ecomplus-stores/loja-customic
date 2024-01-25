@@ -51,22 +51,26 @@
       {
         "filter_option": "iPhone 15 Pro Max",
         "filter_grid_model": "Apple",
-        "filter_grid_protection": "1"
+        "filter_grid_protection": "1",
+        "is_new": true
       },
       {
         "filter_option": "iPhone 15 Pro",
         "filter_grid_model": "Apple",
-        "filter_grid_protection": "2"
+        "filter_grid_protection": "2",
+        "is_new": true
       },
       {
         "filter_option": "iPhone 15 Plus",
         "filter_grid_model": "Apple",
-        "filter_grid_protection": "3"
+        "filter_grid_protection": "3",
+        "is_new": true
       },
       {
         "filter_option": "iPhone 15",
         "filter_grid_model": "Apple",
-        "filter_grid_protection": "4"
+        "filter_grid_protection": "4",
+        "is_new": true
       },
       {
         "filter_option": "iPhone 14 Pro Max",
@@ -379,12 +383,18 @@
         "filter_grid_model": "Samsung"
       },
       {
+        "filter_option": "Galaxy A25 5G",
+        "filter_grid_model": "Samsung",
+        "is_new": true
+      },
+      {
         "filter_option": "Galaxy A23 4G",
         "filter_grid_model": "Samsung"
       },
       {
         "filter_option": "Galaxy A22 4G",
-        "filter_grid_model": "Samsung"
+        "filter_grid_model": "Samsung",
+        "is_new": false
       },
       {
         "filter_option": "Galaxy A22 5G",
@@ -395,12 +405,18 @@
         "filter_grid_model": "Samsung"
       },
       {
+        "filter_option": "Galaxy A15 5G",
+        "filter_grid_model": "Samsung",
+        "is_new": true
+      },
+      {
         "filter_option": "Galaxy A14 5G",
         "filter_grid_model": "Samsung"
       },
       {
         "filter_option": "Galaxy A13 4G",
-        "filter_grid_model": "Samsung"
+        "filter_grid_model": "Samsung",
+        "is_new": false
       },
       {
         "filter_option": "Galaxy A12",
@@ -408,7 +424,18 @@
       },
       {
         "filter_option": "Galaxy A11",
-        "filter_grid_model": "Samsung"
+        "filter_grid_model": "Samsung",
+        "is_new": false
+      },
+      {
+        "filter_option": "Galaxy A05s",
+        "filter_grid_model": "Samsung",
+        "is_new": true
+      },
+      {
+        "filter_option": "Galaxy A05",
+        "filter_grid_model": "Samsung",
+        "is_new": true
       },
       {
         "filter_option": "Galaxy A03s",
@@ -416,7 +443,8 @@
       },
       {
         "filter_option": "Galaxy A02s",
-        "filter_grid_model": "Samsung"
+        "filter_grid_model": "Samsung",
+        "is_new": false
       },
       {
         "filter_option": "Galaxy M30",
@@ -428,11 +456,13 @@
       },
       {
         "filter_option": "Galaxy J6 Plus",
-        "filter_grid_model": "Samsung"
+        "filter_grid_model": "Samsung",
+        "is_new": false
       },
       {
         "filter_option": "Galaxy J4",
-        "filter_grid_model": "Samsung"
+        "filter_grid_model": "Samsung",
+        "is_new": false
       },
       {
         "filter_option": "Moto Edge 20",
@@ -448,7 +478,8 @@
       },
       {
         "filter_option": "Moto G9 Play",
-        "filter_grid_model": "Motorola"
+        "filter_grid_model": "Motorola",
+        "is_new": false
       },
       {
         "filter_option": "Moto G9 Plus",
@@ -460,7 +491,8 @@
       },
       {
         "filter_option": "Moto G7",
-        "filter_grid_model": "Motorola"
+        "filter_grid_model": "Motorola",
+        "is_new": false
       },
       {
         "filter_option": "Moto G7 Power",
@@ -472,11 +504,13 @@
       },
       {
         "filter_option": "Moto One Fusion",
-        "filter_grid_model": "Motorola"
+        "filter_grid_model": "Motorola",
+        "is_new": false
       },
       {
         "filter_option": "LG K72 (pré-venda)",
-        "filter_grid_model": "LG"
+        "filter_grid_model": "LG",
+        "is_new": false
       },
       {
         "filter_option": "K62 Plus",
@@ -492,7 +526,8 @@
       },
       {
         "filter_option": "K52",
-        "filter_grid_model": "LG"
+        "filter_grid_model": "LG",
+        "is_new": false
       },
       {
         "filter_option": "K51s",
@@ -500,7 +535,8 @@
       },
       {
         "filter_option": "K41s",
-        "filter_grid_model": "LG"
+        "filter_grid_model": "LG",
+        "is_new": false
       },
       {
         "filter_option": "MI 9",
@@ -516,17 +552,8 @@
       },
       {
         "filter_option": "P30 Lite",
-        "filter_grid_model": "Huawei"
-      },
-      {
-        "filter_option": "Galaxy A25 5G",
-        "filter_grid_model": "Samsung",
-        "is_new": true
-      },
-      {
-        "filter_option": "Galaxy A05",
-        "filter_grid_model": "Samsung",
-        "is_new": true
+        "filter_grid_model": "Huawei",
+        "is_new": false
       }
     ],
     "title": "Modelo"
