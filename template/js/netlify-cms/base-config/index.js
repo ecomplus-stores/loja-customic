@@ -181,6 +181,50 @@ export default options => {
             }
           ]
       })
+      file.fields.push({
+        label: 'Ordenação Submenu',
+        name: 'submenu_order',
+        widget: 'object',
+        icon: 'https://api.iconify.design/mdi:copyright.svg',
+        required: false,
+        fields: [
+            {
+                label: 'Ordenação do Submenu',
+                name: 'submenu',
+                widget: 'list',
+                required: false,
+                fields: [
+                    {
+                        label: 'Categoria pai',
+                        name: 'submenu_slug',
+                        widget: 'string',
+                        required: false
+                    },
+                    {
+                      label:"Ordem da categoria segundo nível",
+                      name:"subcategory_order",
+                      widget:"list",
+                      required:false,
+                      fields: [
+                        {
+                          label: 'Slug da subcategoria',
+                          name: 'subcategory_slug',
+                          widget: 'string',
+                          required: false              
+                        },             
+                      ]
+                    },
+                    
+                ]
+            },
+          {
+            name: 'title',
+            widget: 'string',
+            required: false,
+            label: 'Nome da lista de Filtros'
+          }
+        ]
+    })
         const stripe = file.fields.find(field => field.name === 'marketing_stripe')
         if (stripe) {
           stripe.fields = [{
@@ -295,7 +339,7 @@ export default options => {
                   }))               
               },             
             ]
-          },
+          }
         ]
       }
     ]
