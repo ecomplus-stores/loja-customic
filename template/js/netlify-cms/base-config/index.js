@@ -205,14 +205,12 @@ export default options => {
                     name: 'subcategory_slug',
                     widget: 'select',
                     required: false,
-                    options: [
-                      ...options.state.routes
-                      .filter(el => el.resource === 'categories')
-                      .map((el) => ({
-                        label: el.name,
-                        value: el.path
-                      }))
-                    ]              
+                    options: options.state.routes
+                    .filter(el => el.resource === 'categories')
+                    .map((el) => ({
+                      label: el.name,
+                      value: el.path
+                    }))             
                   }
                     
                 ]
