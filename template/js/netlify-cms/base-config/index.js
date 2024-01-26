@@ -216,7 +216,7 @@ export default options => {
                             .filter(el => el.resource === 'categories')
                             .map((el) => ({
                               label: el.name,
-                              value: el.slug
+                              value: el.path
                             }))
                           ]              
                         },             
