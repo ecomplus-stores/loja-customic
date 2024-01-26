@@ -188,49 +188,35 @@ export default options => {
         icon: 'https://api.iconify.design/mdi:copyright.svg',
         required: false,
         fields: [
+          {
+            label: 'Categoria pai slug',
+            name: 'submenu_slug',
+            widget: 'string',
+            required: false
+          },
             {
                 label: 'Ordenação do Submenu',
                 name: 'submenu',
                 widget: 'list',
                 required: false,
                 fields: [
-                    {
-                        label: 'Categoria pai',
-                        name: 'submenu_slug',
-                        widget: 'string',
-                        required: false
-                    },
-                    {
-                      label:"Ordem da categoria segundo nível",
-                      name:"subcategory_order",
-                      widget:"list",
-                      required:false,
-                      fields: [
-                        {
-                          label: 'Slug da subcategoria',
-                          name: 'subcategory_slug',
-                          widget: 'select',
-                          required: false,
-                          options: [
-                            options.state.routes
-                            .filter(el => el.resource === 'categories')
-                            .map((el) => ({
-                              label: el.name,
-                              value: el.path
-                            }))
-                          ]              
-                        },             
-                      ]
-                    },
+                  {
+                    label: 'Slug da subcategoria',
+                    name: 'subcategory_slug',
+                    widget: 'select',
+                    required: false,
+                    options: [
+                      options.state.routes
+                      .filter(el => el.resource === 'categories')
+                      .map((el) => ({
+                        label: el.name,
+                        value: el.path
+                      }))
+                    ]              
+                  }
                     
                 ]
-            },
-          {
-            name: 'title',
-            widget: 'string',
-            required: false,
-            label: 'Nome da lista de Filtros'
-          }
+            }
         ]
     })
         const stripe = file.fields.find(field => field.name === 'marketing_stripe')
