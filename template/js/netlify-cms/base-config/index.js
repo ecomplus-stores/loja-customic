@@ -212,7 +212,7 @@ export default options => {
                           widget: 'select',
                           required: false,
                           options: [
-                            ...options.state.routes
+                            options.state.routes
                             .filter(el => el.resource === 'categories')
                             .map((el) => ({
                               label: el.name,
