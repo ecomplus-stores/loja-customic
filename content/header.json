@@ -557,5 +557,24 @@
       }
     ],
     "title": "Modelo"
-  }
+  },
+  "submenu_order": [
+    {
+      "submenu_slug": "/popsockets",
+      "submenu": [
+        {
+          "subcategory_slug": "/licenciados"
+        },
+        {
+          "subcategory_slug": "/funcionais"
+        },
+        {
+          "subcategory_slug": "/estilos"
+        },
+        {
+          "subcategory_slug": "/magsafe"
+        }
+      ]
+    }
+  ]
 }
