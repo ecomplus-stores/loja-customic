@@ -17,6 +17,10 @@
       "sort": "views"
     },
     {
+      "type": "blog",
+      "enabled": true
+    },
+    {
       "type": "document-description",
       "enabled": true
     },
