@@ -2,10 +2,14 @@
 // setup page object for current route
 const { path, resource, collection } = _.route
 let pathname
+function removeHtmlAndStyle(html) {
+    // Remove style tags and their content
+    var cleanedHtml = html.replace(/<style[^>]*>[\s\S]*?<\/style>/gi, '');
 
-function htmlToText(html) {var a = html.replace(/<style[^>]*>[\s\S]*?<\/style>/gi, '');
-    var doc = new DOMParser().parseFromString(a, 'text/html');
-    return doc.body.textContent || "";
+    // Remove all other HTML tags
+    cleanedHtml = cleanedHtml.replace(/<[^>]*>/g, '');
+
+    return cleanedHtml;
 }
 
 
@@ -33,9 +37,8 @@ if (resource || collection) {
 
 let textDescription
 if (_.state.body_html) {
-  textDescription = htmlToText(_.state.body_html)
+  textDescription = removeHtmlAndStyle(_.state.body_html)
 }
-console.log(textDescription)
 // preset global list of active widgets
 _.widgets = []
 const widgets = _.cms('widgets')
@@ -46,7 +49,7 @@ if (Array.isArray(widgets)) {
 
 // page title and description
 const title = _.state.meta_title || _.state.name || _.state.title || _.settings.name
-const description = _.state.meta_description || _.state.description || _.state.short_description || _.settings.description
+const description = _.state.meta_description || (textDescription && textDescription.substring(0, 150)) || _.state.short_description || _.settings.description
 
 let url, domain, social, ogLocale, ogImage
 if (pathname) {
