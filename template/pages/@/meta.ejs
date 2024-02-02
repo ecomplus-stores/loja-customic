@@ -3,6 +3,12 @@
 const { path, resource, collection } = _.route
 let pathname
 
+function htmlToText(html) {var a = html.replace(/<style[^>]*>[\s\S]*?<\/style>/gi, '');
+    var doc = new DOMParser().parseFromString(a, 'text/html');
+    return doc.body.textContent || "";
+}
+
+
 switch (path) {
   case '/':
   case '/index':
@@ -25,6 +31,11 @@ if (resource || collection) {
   _.state = Object.assign({}, body || content, _.state)
 }
 
+let textDescription
+if (_.state.body_html) {
+  textDescription = htmlToText(_.state.body_html)
+}
+console.log(textDescription)
 // preset global list of active widgets
 _.widgets = []
 const widgets = _.cms('widgets')
@@ -35,7 +46,7 @@ if (Array.isArray(widgets)) {
 
 // page title and description
 const title = _.state.meta_title || _.state.name || _.state.title || _.settings.name
-const description = _.state.meta_description || _.state.short_description || _.settings.description
+const description = _.state.meta_description || _.state.description || _.state.short_description || _.settings.description
 
 let url, domain, social, ogLocale, ogImage
 if (pathname) {
@@ -180,6 +191,7 @@ if (pathname) {
   <meta property="og:locale" content="<%= ogLocale %>">
   <% if (ogImage) { %>
     <meta property="og:image" content="<%= ogImage %>">
+    <meta name="thumbnail" content="<%= ogImage %>" />
   <% } %>
   <% if (social.fb_app_id) { %>
     <meta property="fb:app_id" content="<%= social.fb_app_id %>">
