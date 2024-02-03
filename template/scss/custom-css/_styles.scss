@@ -762,3 +762,60 @@ color: #fff !important;
 .search-engine__filter .text-truncate {
   white-space: unset !important;
 }
+
+.tec--carousel__item__thumb__image {
+  border-radius: 8px;
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.tec--carousel__item__thumb {
+  margin: 0;
+  position: relative;
+}
+
+.swiper-lazy, .lazyload, .lazyloading {
+  overflow: hidden;
+  position: relative;
+}
+
+.tec--carousel__item__subtitle:not(:empty) {
+  margin-bottom: 8px;
+}
+
+.tec--carousel__item__subtitle {
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  line-height: 20px;
+}
+
+.tec--carousel__item {
+  position: relative;
+}
+
+.tec--carousel__item--template3, .tec--carousel__item--template2, .tec--carousel__item--template4 {
+  align-items: center;
+  display: flex;
+  @media(max-width: 600px) {
+    flex-direction: column;
+  }
+}
+
+.tec--carousel__item__title
+{
+  color: #030303;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.tec--carousel__item__thumb__image {
+  min-width: 164px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  @media(max-width: 600px) {
+    height: auto !important;
+    width: 100% !important;
+  }
+}

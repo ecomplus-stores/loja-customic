@@ -16,7 +16,7 @@ try {
 }
 const categoryNames = [_.state.name]
 let productOrder
-const categoryOrder = _.cms(`category_list/${_.state.slug}`)
+const categoryOrder = _.cms(`category_list/${_.state.slug}`) || {}
 if (categoryOrder && categoryOrder.list && categoryOrder.list.length) {
     productOrder =  categoryOrder.list.map(({ product_id }) => product_id)
 }
