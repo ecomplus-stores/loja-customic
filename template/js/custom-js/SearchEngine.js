@@ -72,7 +72,7 @@ export default {
     },
     pageSize: {
       type: Number,
-      default: 24
+      default: 100
     },
     brands: Array,
     categories: Array,
@@ -443,22 +443,10 @@ export default {
 
           return indexB - indexA;
         });
+        console.log('after', allProducts[0].name)
       }
       
       return allProducts
-      /* const items = [ ...this.resultItems ]
-      const lengthItems = this.resultItems.length
-      this.resultItems.forEach((item, i) => {
-        if (item.variations && item.variations.length) {
-          const hasProduct = item.variations.find(variation => variation.specifications['modelo'][0].text === this.modelSpec && !variation.quantity)
-          if (hasProduct) {
-            console.log(i)
-            const removedItem = items.splice(i, 1)[0]
-            items.splice(lengthItems, 0, removedItem)
-          }
-        }
-      })
-      return items */
     },
 
     hasEmptyResult () {

@@ -1,85 +1,211 @@
-<div class="blog my-4 my-lg-5 ">
-  <div class="container">
-    <div class="row">
-      <div class="col col-md-6 col-lg-6" id="bloco-1-blog">
-        <article class="tec--carousel__item tec--carousel__item--template1">
-        </article>
+<% 
+const modelList = [
+  'iphone',
+  'samsung',
+  'xiaomi',
+  'motorola',
+  'asus'
+]
+
+const findMatchingModel = (searchTerm) => {
+    const lowerSearchTerm = searchTerm.toLowerCase();
+    for (const model of modelList) {
+        if (model.toLowerCase() === lowerSearchTerm || lowerSearchTerm.includes(model.toLowerCase())) {
+            switch (model) {
+              case 'iphone':
+                return 'apple'
+                break;
+              case 'samsung': 
+                return 'samsung'
+                break
+              default:
+                return 'celular'
+            }
+        }
+    }
+    return 'celular';
+}
+
+const type = findMatchingModel(_.state && _.state.name)
+
+%>
+
+<% if (_.route && _.route.resource === 'categories') { %>
+  <div class="blog my-4 my-lg-5 ">
+    <div class="container">
+      <div class="row">
+        <div class="col col-md-6 col-lg-6" id="bloco-1-blog">
+          <article class="tec--carousel__item tec--carousel__item--template1">
+          </article>
+        </div>
+        <div class="col col-md-6 col-lg-6">
+          <article class="tec--carousel__item tec--carousel__item--template2">
+          </article>
+          <article class="tec--carousel__item tec--carousel__item--template3">
+          </article>
+          <article class="tec--carousel__item tec--carousel__item--template4">
+          </article>
+        </div>
+        <script>
+          const typeScript = '<%- type %>'
+          fetch(`https://blog.customic.com.br/wp-json/wp/v2/search?search=${typeScript}&order=desc`)
+          .then(response => response.json())
+          .then(response => {
+            console.log(response)
+            document.querySelector('.tec--carousel__item--template1').insertAdjacentHTML('afterbegin', `
+            <figure class="tec--carousel__item__thumb"></figure>
+            <div class="tec--carousel__item__info">
+              <div class="tec--carousel__item__subtitle tec--carousel__item__subtitle--customic">${typeScript.toUpperCase()}</div>
+              <h4 class="tec--carousel__item__title"><a class="tec--carousel__item__title__link"
+                  href="${response[0].link}"
+                  title="${response[0].title}"> ${response[0].title} </a></h4>
+            </div>`);
+            document.querySelector('.tec--carousel__item--template2').insertAdjacentHTML('afterbegin', `
+            <figure class="tec--carousel__item__thumb"></figure>
+            <div class="tec--carousel__item__info">
+              <div class="tec--carousel__item__subtitle tec--carousel__item__subtitle--customic">${typeScript.toUpperCase()}</div>
+              <h4 class="tec--carousel__item__title"><a class="tec--carousel__item__title__link"
+                  href="${response[1].link}"
+                  title="${response[0].title}"> ${response[0].title} </a></h4>
+            </div>`);
+            document.querySelector('.tec--carousel__item--template3').insertAdjacentHTML('afterbegin', `
+            <figure class="tec--carousel__item__thumb"></figure>
+            <div class="tec--carousel__item__info">
+              <div class="tec--carousel__item__subtitle tec--carousel__item__subtitle--customic">${typeScript.toUpperCase()}</div>
+              <h4 class="tec--carousel__item__title"><a class="tec--carousel__item__title__link"
+                  href="${response[2].link}"
+                  title="${response[2].title}"> ${response[2].title} </a></h4>
+            </div>`);
+            document.querySelector('.tec--carousel__item--template4').insertAdjacentHTML('afterbegin', `
+            <figure class="tec--carousel__item__thumb"></figure>
+            <div class="tec--carousel__item__info">
+              <div class="tec--carousel__item__subtitle tec--carousel__item__subtitle--customic">${typeScript.toUpperCase()}</div>
+              <h4 class="tec--carousel__item__title"><a class="tec--carousel__item__title__link"
+                  href="${response[3].link}"
+                  title="${response[3].title}"> ${response[3].title} </a></h4>
+            </div>`);
+            fetch(`https://blog.customic.com.br/wp-json/wp/v2/media?parent=${response[0].id}`)
+            .then(respons => respons.json())
+            .then(media1 => {
+              const finalMedia = media1 && media1.length ? media1[0] : media1
+              document.querySelector('.tec--carousel__item--template1 .tec--carousel__item__thumb').insertAdjacentHTML('afterbegin', `
+              <a href="${response[0].link}" title="${response[0].title}" class="tec--carousel__item__thumb__link"> <img width="704" height="288" alt="${response[0].title}" class="tec--carousel__item__thumb__image swiper-lazy swiper-lazy-loaded img-fluid lozad" src="${finalMedia.guid.rendered}" pinger-seen="true"> </a>
+              `)
+            })
+            fetch(`https://blog.customic.com.br/wp-json/wp/v2/media?parent=${response[1].id}`)
+            .then(response => response.json())
+            .then(media2 => {
+              const finalMedia2 = media2 && media2.length ? media2[0] : media2
+              document.querySelector('.tec--carousel__item--template2 .tec--carousel__item__thumb').insertAdjacentHTML('afterbegin', `
+              <a href="${response[1].link}" title="${response[1].title}" class="tec--carousel__item__thumb__link"> <img width="164" height="118" alt="${response[1].title}" class="tec--carousel__item__thumb__image swiper-lazy swiper-lazy-loaded" src="${finalMedia2.guid.rendered}" pinger-seen="true"> </a>
+              `)
+            })
+            fetch(`https://blog.customic.com.br/wp-json/wp/v2/media?parent=${response[2].id}`)
+            .then(response => response.json())
+            .then(media3 => {
+              const finalMedia3 = media3 && media3.length ? media3[0] : media3
+              document.querySelector('.tec--carousel__item--template3 .tec--carousel__item__thumb').insertAdjacentHTML('afterbegin', `
+              <a href="${response[2].link}" title="${response[2].title}" class="tec--carousel__item__thumb__link"> <img width="164" height="118" alt="${response[2].title}" class="tec--carousel__item__thumb__image swiper-lazy swiper-lazy-loaded" src="${finalMedia3.guid.rendered}" pinger-seen="true"> </a>
+              `)
+            })
+            fetch(`https://blog.customic.com.br/wp-json/wp/v2/media?parent=${response[3].id}`)
+            .then(response => response.json())
+            .then(media4 => {
+              const finalMedia4 = media4 && media4.length ? media4[0] : media4
+              document.querySelector('.tec--carousel__item--template4 .tec--carousel__item__thumb').insertAdjacentHTML('afterbegin', `
+              <a href="${response[3].link}" title="${response[3].title}" class="tec--carousel__item__thumb__link"> <img width="164" height="118" alt="${response[3].title}" class="tec--carousel__item__thumb__image swiper-lazy swiper-lazy-loaded" src="${finalMedia4.guid.rendered}" pinger-seen="true"> </a>
+              `)
+            })
+            })
+          .catch(err => console.error(err));
+        </script>
       </div>
-      <div class="col col-md-6 col-lg-6">
-        <article class="tec--carousel__item tec--carousel__item--template2">
-        </article>
-        <article class="tec--carousel__item tec--carousel__item--template3">
-        </article>
-        <article class="tec--carousel__item tec--carousel__item--template4">
-        </article>
-      </div>
-      <script>
-        fetch('https://blog.customic.com.br/wp-json/wp/v2/posts')
-        .then(response => response.json())
-        .then(response => {
-          document.querySelector('.tec--carousel__item--template1').insertAdjacentHTML('afterbegin', `
-          <figure class="tec--carousel__item__thumb"></figure>
-          <div class="tec--carousel__item__info">
-            <div class="tec--carousel__item__subtitle tec--carousel__item__subtitle--customic">${response[0].title.rendered}</div>
-            <h4 class="tec--carousel__item__title"><a class="tec--carousel__item__title__link"
-                href="${response[0].link}"
-                title="${response[0].title.rendered}"> ${response[0].excerpt.rendered} </a></h4>
-          </div>`);
-          document.querySelector('.tec--carousel__item--template2').insertAdjacentHTML('afterbegin', `
-          <figure class="tec--carousel__item__thumb"></figure>
-          <div class="tec--carousel__item__info">
-            <div class="tec--carousel__item__subtitle tec--carousel__item__subtitle--customic">${response[1].title.rendered}</div>
-            <h4 class="tec--carousel__item__title"><a class="tec--carousel__item__title__link"
-                href="${response[1].link}"
-                title="${response[1].title.rendered}"> ${response[1].excerpt.rendered} </a></h4>
-          </div>`);
-          document.querySelector('.tec--carousel__item--template3').insertAdjacentHTML('afterbegin', `
-          <figure class="tec--carousel__item__thumb"></figure>
-          <div class="tec--carousel__item__info">
-            <div class="tec--carousel__item__subtitle tec--carousel__item__subtitle--customic">${response[2].title.rendered}</div>
-            <h4 class="tec--carousel__item__title"><a class="tec--carousel__item__title__link"
-                href="${response[2].link}"
-                title="${response[2].title.rendered}"> ${response[2].excerpt.rendered} </a></h4>
-          </div>`);
-          document.querySelector('.tec--carousel__item--template4').insertAdjacentHTML('afterbegin', `
-          <figure class="tec--carousel__item__thumb"></figure>
-          <div class="tec--carousel__item__info">
-            <div class="tec--carousel__item__subtitle tec--carousel__item__subtitle--customic">${response[3].title.rendered}</div>
-            <h4 class="tec--carousel__item__title"><a class="tec--carousel__item__title__link"
-                href="${response[3].link}"
-                title="${response[3].title.rendered}"> ${response[3].excerpt.rendered} </a></h4>
-          </div>`);
-          fetch(`https://blog.customic.com.br/wp-json/wp/v2/media/${response[0].featured_media}`)
-          .then(respons => respons.json())
-          .then(media1 => {
-            document.querySelector('.tec--carousel__item--template1 .tec--carousel__item__thumb').insertAdjacentHTML('afterbegin', `
-            <a href="${response[0].link}" title="${response[0].title.rendered}" class="tec--carousel__item__thumb__link"> <img width="704" height="288" alt="${response[0].title.rendered}" class="tec--carousel__item__thumb__image swiper-lazy swiper-lazy-loaded img-fluid lozad" src="${media1.guid.rendered}" pinger-seen="true"> </a>
-            `)
-          })
-          fetch(`https://blog.customic.com.br/wp-json/wp/v2/media/${response[1].featured_media}`)
-          .then(response => response.json())
-          .then(media2 => {
-            document.querySelector('.tec--carousel__item--template2 .tec--carousel__item__thumb').insertAdjacentHTML('afterbegin', `
-            <a href="${response[1].link}" title="${response[1].title.rendered}" class="tec--carousel__item__thumb__link"> <img width="164" height="118" alt="${response[1].title.rendered}" class="tec--carousel__item__thumb__image swiper-lazy swiper-lazy-loaded" src="${media2.guid.rendered}" pinger-seen="true"> </a>
-            `)
-          })
-          fetch(`https://blog.customic.com.br/wp-json/wp/v2/media/${response[2].featured_media}`)
-          .then(response => response.json())
-          .then(media3 => {
-            document.querySelector('.tec--carousel__item--template3 .tec--carousel__item__thumb').insertAdjacentHTML('afterbegin', `
-            <a href="${response[2].link}" title="${response[2].title.rendered}" class="tec--carousel__item__thumb__link"> <img width="164" height="118" alt="${response[2].title.rendered}" class="tec--carousel__item__thumb__image swiper-lazy swiper-lazy-loaded" src="${media3.guid.rendered}" pinger-seen="true"> </a>
-            `)
-          })
-          fetch(`https://blog.customic.com.br/wp-json/wp/v2/media/${response[3].featured_media}`)
-          .then(response => response.json())
-          .then(media4 => {
-            document.querySelector('.tec--carousel__item--template4 .tec--carousel__item__thumb').insertAdjacentHTML('afterbegin', `
-            <a href="${response[3].link}" title="${response[3].title.rendered}" class="tec--carousel__item__thumb__link"> <img width="164" height="118" alt="${response[3].title.rendered}" class="tec--carousel__item__thumb__image swiper-lazy swiper-lazy-loaded" src="${media4.guid.rendered}" pinger-seen="true"> </a>
-            `)
-          })
-          })
-        .catch(err => console.error(err));
-      </script>
     </div>
   </div>
-</div>
+<% } else { %>
+  <div class="blog my-4 my-lg-5 ">
+    <div class="container">
+      <div class="row">
+        <div class="col col-md-6 col-lg-6" id="bloco-1-blog">
+          <article class="tec--carousel__item tec--carousel__item--template1">
+          </article>
+        </div>
+        <div class="col col-md-6 col-lg-6">
+          <article class="tec--carousel__item tec--carousel__item--template2">
+          </article>
+          <article class="tec--carousel__item tec--carousel__item--template3">
+          </article>
+          <article class="tec--carousel__item tec--carousel__item--template4">
+          </article>
+        </div>
+        <script>
+          fetch('https://blog.customic.com.br/wp-json/wp/v2/posts')
+          .then(response => response.json())
+          .then(response => {
+            document.querySelector('.tec--carousel__item--template1').insertAdjacentHTML('afterbegin', `
+            <figure class="tec--carousel__item__thumb"></figure>
+            <div class="tec--carousel__item__info">
+              <div class="tec--carousel__item__subtitle tec--carousel__item__subtitle--customic">${response[0].title.rendered}</div>
+              <h4 class="tec--carousel__item__title"><a class="tec--carousel__item__title__link"
+                  href="${response[0].link}"
+                  title="${response[0].title.rendered}"> ${response[0].excerpt.rendered} </a></h4>
+            </div>`);
+            document.querySelector('.tec--carousel__item--template2').insertAdjacentHTML('afterbegin', `
+            <figure class="tec--carousel__item__thumb"></figure>
+            <div class="tec--carousel__item__info">
+              <div class="tec--carousel__item__subtitle tec--carousel__item__subtitle--customic">${response[1].title.rendered}</div>
+              <h4 class="tec--carousel__item__title"><a class="tec--carousel__item__title__link"
+                  href="${response[1].link}"
+                  title="${response[1].title.rendered}"> ${response[1].excerpt.rendered} </a></h4>
+            </div>`);
+            document.querySelector('.tec--carousel__item--template3').insertAdjacentHTML('afterbegin', `
+            <figure class="tec--carousel__item__thumb"></figure>
+            <div class="tec--carousel__item__info">
+              <div class="tec--carousel__item__subtitle tec--carousel__item__subtitle--customic">${response[2].title.rendered}</div>
+              <h4 class="tec--carousel__item__title"><a class="tec--carousel__item__title__link"
+                  href="${response[2].link}"
+                  title="${response[2].title.rendered}"> ${response[2].excerpt.rendered} </a></h4>
+            </div>`);
+            document.querySelector('.tec--carousel__item--template4').insertAdjacentHTML('afterbegin', `
+            <figure class="tec--carousel__item__thumb"></figure>
+            <div class="tec--carousel__item__info">
+              <div class="tec--carousel__item__subtitle tec--carousel__item__subtitle--customic">${response[3].title.rendered}</div>
+              <h4 class="tec--carousel__item__title"><a class="tec--carousel__item__title__link"
+                  href="${response[3].link}"
+                  title="${response[3].title.rendered}"> ${response[3].excerpt.rendered} </a></h4>
+            </div>`);
+            fetch(`https://blog.customic.com.br/wp-json/wp/v2/media/${response[0].featured_media}`)
+            .then(respons => respons.json())
+            .then(media1 => {
+              document.querySelector('.tec--carousel__item--template1 .tec--carousel__item__thumb').insertAdjacentHTML('afterbegin', `
+              <a href="${response[0].link}" title="${response[0].title.rendered}" class="tec--carousel__item__thumb__link"> <img width="704" height="288" alt="${response[0].title.rendered}" class="tec--carousel__item__thumb__image swiper-lazy swiper-lazy-loaded img-fluid lozad" src="${media1.guid.rendered}" pinger-seen="true"> </a>
+              `)
+            })
+            fetch(`https://blog.customic.com.br/wp-json/wp/v2/media/${response[1].featured_media}`)
+            .then(response => response.json())
+            .then(media2 => {
+              document.querySelector('.tec--carousel__item--template2 .tec--carousel__item__thumb').insertAdjacentHTML('afterbegin', `
+              <a href="${response[1].link}" title="${response[1].title.rendered}" class="tec--carousel__item__thumb__link"> <img width="164" height="118" alt="${response[1].title.rendered}" class="tec--carousel__item__thumb__image swiper-lazy swiper-lazy-loaded" src="${media2.guid.rendered}" pinger-seen="true"> </a>
+              `)
+            })
+            fetch(`https://blog.customic.com.br/wp-json/wp/v2/media/${response[2].featured_media}`)
+            .then(response => response.json())
+            .then(media3 => {
+              document.querySelector('.tec--carousel__item--template3 .tec--carousel__item__thumb').insertAdjacentHTML('afterbegin', `
+              <a href="${response[2].link}" title="${response[2].title.rendered}" class="tec--carousel__item__thumb__link"> <img width="164" height="118" alt="${response[2].title.rendered}" class="tec--carousel__item__thumb__image swiper-lazy swiper-lazy-loaded" src="${media3.guid.rendered}" pinger-seen="true"> </a>
+              `)
+            })
+            fetch(`https://blog.customic.com.br/wp-json/wp/v2/media/${response[3].featured_media}`)
+            .then(response => response.json())
+            .then(media4 => {
+              document.querySelector('.tec--carousel__item--template4 .tec--carousel__item__thumb').insertAdjacentHTML('afterbegin', `
+              <a href="${response[3].link}" title="${response[3].title.rendered}" class="tec--carousel__item__thumb__link"> <img width="164" height="118" alt="${response[3].title.rendered}" class="tec--carousel__item__thumb__image swiper-lazy swiper-lazy-loaded" src="${media4.guid.rendered}" pinger-seen="true"> </a>
+              `)
+            })
+            })
+          .catch(err => console.error(err));
+        </script>
+      </div>
+    </div>
+  </div>
+<% } %>
