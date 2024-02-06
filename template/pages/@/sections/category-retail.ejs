@@ -54,7 +54,6 @@ const diff = items.filter(({ _id: id1 }) => !itemQuantity.some(({ _id: id2 }) =>
 
 items = [...itemQuantity, ...diff]
 
-console.log('before', items[0].name)
 if (productOrder && productOrder.length) {
   items.sort((a, b) => {
     const modelNameA = productOrder.find(id => b._id === id) || '';
