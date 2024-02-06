@@ -8,6 +8,7 @@ const modelList = [
 ]
 
 const findMatchingModel = (searchTerm) => {
+  if (searchTerm) {
     const lowerSearchTerm = searchTerm.toLowerCase();
     for (const model of modelList) {
         if (model.toLowerCase() === lowerSearchTerm || lowerSearchTerm.includes(model.toLowerCase())) {
@@ -23,6 +24,7 @@ const findMatchingModel = (searchTerm) => {
             }
         }
     }
+  }
     return 'celular';
 }
 
