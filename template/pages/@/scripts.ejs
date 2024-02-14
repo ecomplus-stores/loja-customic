@@ -51,19 +51,21 @@ let productOrder
 %>
 
 <% if (_.route.resource === 'categories') { 
-  const categoryOrder = _.cms(`category_list/${_.state.slug}`)
+  const categoryOrder = _.cms(`category_list/${_.state.slug}`) || {}
   if (categoryOrder && categoryOrder.list && categoryOrder.list.length) {
     productOrder =  categoryOrder.list.map(({ product_id }) => product_id)
   }
   %>
+  <% if (categoryOrder) { %>
   <script>
-    window.categoryOrder = <%- JSON.stringify(productOrder) %>;
+      window.categoryOrder = <%- JSON.stringify(productOrder || {})  %>
   </script>
+  <% } %>
 <% } 
 %>
 
 <script>
-window.categoryOrder = <%- JSON.stringify(productOrder) %>
+window.categoryOrder = <%- JSON.stringify(productOrder || {}) %>
 window.modelList = [
     "iPhone 15 Pro Max",
     "iPhone 15 Pro",

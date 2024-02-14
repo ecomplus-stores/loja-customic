@@ -8,7 +8,22 @@ const modelList = [
   'galaxy',
   'ipad',
   'macbook',
-  'android'
+  'android',
+  'especiais',
+  'eco',
+  'hardbox',
+  'marble',
+  'silicone',
+  'militar',
+  'popsockets',
+  'combo'
+]
+
+const popsocketsArray = [
+  'Licenciados', 'Disney', 'Marvel', 'Harry Potter', 'Star Wars', 'DC Comics',
+  'Funcionais', 'PopWallet', 'PopMount', 'PopEspelho', 'PopLabial', 'PopAjustável', 'PopAbridor', 'PopBolso',
+  'Estilos', 'Basic', 'Graphic', 'Premium', 'Luxe', 'Giratório', 'Plant', 'EcoGrip', 'Translúcidos', 'Enamel',
+  'Magsafe', 'PopGrip', 'Magsafe', 'PopWallet', 'Magsafe',
 ]
 
 const findMatchingModel = (searchTerm) => {
@@ -17,6 +32,12 @@ const findMatchingModel = (searchTerm) => {
     for (const model of modelList) {
       if (model.toLowerCase() === lowerSearchTerm || lowerSearchTerm.includes(model.toLowerCase())) {
             switch (model) {
+              case 'popsockets':
+                return 'popsockets'
+                break
+              case 'militar':
+                return 'capa+militar'
+                break
               case 'iphone':
               case 'apple':
                 return 'apple'
@@ -28,6 +49,18 @@ const findMatchingModel = (searchTerm) => {
               case 'ipad':
                 return 'capas+ipad'
                 break
+              case 'silicone':
+                return 'capa+de+silicone'
+                break
+              case 'hardbox':
+                return 'proteção'
+                break
+              case 'marble':
+                return 'capa+de+celular+marble'
+                break
+              case 'especiais':
+              case 'eco':
+                return 'biodegradável'
               case 'macbook':
                 return 'capa+macbook'
                 break
@@ -42,13 +75,18 @@ const findMatchingModel = (searchTerm) => {
             }
         }
     }
+    return lowerSearchTerm.replaceAll(' ', '+')
   }
     return 'capas';
 }
 
-const type = findMatchingModel(_.state && _.state.name)
+let type = findMatchingModel(_.state && _.state.name)
 const isPelicula = ['película', 'gel', 'vidro', 'pelicula', 'antiblue'].some(type => _.state && _.state.name && _.state.name.toLowerCase().includes(type))
+const isPopsockets = popsocketsArray.some(type => _.state && _.state.name && _.state.name.includes(type))
 
+if (isPopsockets) {
+  type = findMatchingModel('popsockets')
+}
 
 
 %>
@@ -74,71 +112,29 @@ const isPelicula = ['película', 'gel', 'vidro', 'pelicula', 'antiblue'].some(ty
           fetch(`https://blog.customic.com.br/wp-json/wp/v2/search?search=${typeScript}&order=desc`)
           .then(response => response.json())
           .then(response => {
-            console.log(response)
-            document.querySelector('.tec--carousel__item--template1').insertAdjacentHTML('afterbegin', `
-            <figure class="tec--carousel__item__thumb"></figure>
-            <div class="tec--carousel__item__info">
-              <div class="tec--carousel__item__subtitle tec--carousel__item__subtitle--customic">${typeScript.replaceAll('+', ' ').toUpperCase()}</div>
-              <h5 class="tec--carousel__item__title"><a class="tec--carousel__item__title__link"
-                  href="${response[0].url}" target="_blank"
-                  title="${response[0].title}"> ${response[0].title} </a></h5>
-            </div>`);
-            document.querySelector('.tec--carousel__item--template2').insertAdjacentHTML('afterbegin', `
-            <figure class="tec--carousel__item__thumb"></figure>
-            <div class="tec--carousel__item__info">
-              <div class="tec--carousel__item__subtitle tec--carousel__item__subtitle--customic">${typeScript.replaceAll('+', ' ').toUpperCase()}</div>
-              <h5 class="tec--carousel__item__title"><a class="tec--carousel__item__title__link"
-                  href="${response[1].url}" target="_blank"
-                  title="${response[0].title}"> ${response[0].title} </a></h5>
-            </div>`);
-            document.querySelector('.tec--carousel__item--template3').insertAdjacentHTML('afterbegin', `
-            <figure class="tec--carousel__item__thumb"></figure>
-            <div class="tec--carousel__item__info">
-              <div class="tec--carousel__item__subtitle tec--carousel__item__subtitle--customic">${typeScript.replaceAll('+', ' ').toUpperCase()}</div>
-              <h5 class="tec--carousel__item__title"><a class="tec--carousel__item__title__link"
-                  href="${response[2].url}" target="_blank"
-                  title="${response[2].title}"> ${response[2].title} </a></h5>
-            </div>`);
-            document.querySelector('.tec--carousel__item--template4').insertAdjacentHTML('afterbegin', `
-            <figure class="tec--carousel__item__thumb"></figure>
-            <div class="tec--carousel__item__info">
-              <div class="tec--carousel__item__subtitle tec--carousel__item__subtitle--customic">${typeScript.replaceAll('+', ' ').toUpperCase()}</div>
-              <h5 class="tec--carousel__item__title"><a class="tec--carousel__item__title__link"
-                  href="${response[3].url}" target="_blank"
-                  title="${response[3].title}"> ${response[3].title} </a></h5>
-            </div>`);
-            fetch(`https://blog.customic.com.br/wp-json/wp/v2/media?parent=${response[0].id}`)
-            .then(respons => respons.json())
-            .then(media1 => {
-              const finalMedia = media1 && media1.length ? media1[0] : media1
-              document.querySelector('.tec--carousel__item--template1 .tec--carousel__item__thumb').insertAdjacentHTML('afterbegin', `
-              <a href="${response[0].url}" target="_blank" title="${response[0].title}" class="tec--carousel__item__thumb__link"> <img width="704" height="288" alt="${response[0].title}" class="tec--carousel__item__thumb__image swiper-lazy swiper-lazy-loaded img-fluid lozad" src="${finalMedia.guid.rendered}" pinger-seen="true"> </a>
-              `)
-            })
-            fetch(`https://blog.customic.com.br/wp-json/wp/v2/media?parent=${response[1].id}`)
-            .then(response => response.json())
-            .then(media2 => {
-              const finalMedia2 = media2 && media2.length ? media2[0] : media2
-              document.querySelector('.tec--carousel__item--template2 .tec--carousel__item__thumb').insertAdjacentHTML('afterbegin', `
-              <a href="${response[1].url}" target="_blank" title="${response[1].title}" class="tec--carousel__item__thumb__link"> <img width="164" height="118" alt="${response[1].title}" class="tec--carousel__item__thumb__image swiper-lazy swiper-lazy-loaded" src="${finalMedia2.guid.rendered}" pinger-seen="true"> </a>
-              `)
-            })
-            fetch(`https://blog.customic.com.br/wp-json/wp/v2/media?parent=${response[2].id}`)
-            .then(response => response.json())
-            .then(media3 => {
-              const finalMedia3 = media3 && media3.length ? media3[0] : media3
-              document.querySelector('.tec--carousel__item--template3 .tec--carousel__item__thumb').insertAdjacentHTML('afterbegin', `
-              <a href="${response[2].url}" target="_blank" title="${response[2].title}" class="tec--carousel__item__thumb__link"> <img width="164" height="118" alt="${response[2].title}" class="tec--carousel__item__thumb__image swiper-lazy swiper-lazy-loaded" src="${finalMedia3.guid.rendered}" pinger-seen="true"> </a>
-              `)
-            })
-            fetch(`https://blog.customic.com.br/wp-json/wp/v2/media?parent=${response[3].id}`)
-            .then(response => response.json())
-            .then(media4 => {
-              const finalMedia4 = media4 && media4.length ? media4[0] : media4
-              document.querySelector('.tec--carousel__item--template4 .tec--carousel__item__thumb').insertAdjacentHTML('afterbegin', `
-              <a href="${response[3].url}" target="_blank" title="${response[3].title}" class="tec--carousel__item__thumb__link"> <img width="164" height="118" alt="${response[3].title}" class="tec--carousel__item__thumb__image swiper-lazy swiper-lazy-loaded" src="${finalMedia4.guid.rendered}" pinger-seen="true"> </a>
-              `)
-            })
+            const maxLength = response && response.length > 3 ? 4 : response.length
+            console.log('resultado blog', maxLength)
+            for (let index = 0; index < maxLength; index++) {
+              const element = response[index];
+              document.querySelector(`.tec--carousel__item--template${index+1}`).insertAdjacentHTML('afterbegin', `
+              <figure class="tec--carousel__item__thumb"></figure>
+              <div class="tec--carousel__item__info">
+                <div class="tec--carousel__item__subtitle tec--carousel__item__subtitle--customic">${typeScript.replaceAll('+', ' ').toUpperCase()}</div>
+                <h5 class="tec--carousel__item__title"><a class="tec--carousel__item__title__link"
+                    href="${element.url}" target="_blank"
+                    title="${element.title}"> ${element.title} </a></h5>
+              </div>`);
+              fetch(`https://blog.customic.com.br/wp-json/wp/v2/media?parent=${response[index].id}`)
+                .then(respons => respons.json())
+                .then(media => {
+                  const finalMedia = media && media.length ? media[0] : media
+                  document.querySelector(`.tec--carousel__item--template${index+1} .tec--carousel__item__thumb`).insertAdjacentHTML('afterbegin', `
+                  <a href="${response[index].url}" target="_blank" title="${response[index].title}" class="tec--carousel__item__thumb__link"> <img width="${index === 0 ? '704': '164'}" :  height="${index === 0 ? '288': '118'}" alt="${response[index].title}" class="tec--carousel__item__thumb__image swiper-lazy swiper-lazy-loaded img-fluid lozad" src="${finalMedia.guid.rendered}" pinger-seen="true"> </a>
+                  `)
+                })
+            }
+            
+
             })
           .catch(err => console.error(err));
         </script>
