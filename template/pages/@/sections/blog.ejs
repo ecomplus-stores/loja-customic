@@ -11,7 +11,7 @@ const findMatchingModel = (searchTerm) => {
   if (searchTerm) {
     const lowerSearchTerm = searchTerm.toLowerCase();
     for (const model of modelList) {
-        if (model.toLowerCase() === lowerSearchTerm || lowerSearchTerm.includes(model.toLowerCase())) {
+      if (model.toLowerCase() === lowerSearchTerm || lowerSearchTerm.includes(model.toLowerCase())) {
             switch (model) {
               case 'iphone':
                 return 'apple'
@@ -29,10 +29,13 @@ const findMatchingModel = (searchTerm) => {
 }
 
 const type = findMatchingModel(_.state && _.state.name)
+const isPelicula = ['película', 'gel', 'vidro', 'pelicula', 'antiblue'].some(type => _.state && _.state.name && _.state.name.toLowerCase().includes(type))
+
+
 
 %>
 
-<% if (_.route && _.route.resource === 'categories') { %>
+<% if (_.route && _.route.resource === 'categories' && !isPelicula) { %>
   <div class="blog my-4 my-lg-5 ">
     <div class="container">
       <div class="row">
@@ -141,9 +144,22 @@ const type = findMatchingModel(_.state && _.state.name)
           </article>
         </div>
         <script>
-          fetch('https://blog.customic.com.br/wp-json/wp/v2/posts')
+          const isType = <%= isPelicula %> || false
+          const urlFetch  = (type) => {
+            switch (type) {
+              case 'pelicula':
+                return 'https://blog.customic.com.br/wp-json/wp/v2/posts?categories=66'
+                break;
+              default:
+                return 'https://blog.customic.com.br/wp-json/wp/v2/posts'
+                      }
+          }
+          const urlPost = isType ? urlFetch('pelicula') : urlFetch()
+          console.log(urlPost)
+          fetch(urlPost)
           .then(response => response.json())
           .then(response => {
+            console.log(response)
             document.querySelector('.tec--carousel__item--template1').insertAdjacentHTML('afterbegin', `
             <figure class="tec--carousel__item__thumb"></figure>
             <div class="tec--carousel__item__info">
