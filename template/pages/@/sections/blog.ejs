@@ -4,7 +4,11 @@ const modelList = [
   'samsung',
   'xiaomi',
   'motorola',
-  'asus'
+  'asus',
+  'galaxy',
+  'ipad',
+  'macbook',
+  'android'
 ]
 
 const findMatchingModel = (searchTerm) => {
@@ -14,10 +18,24 @@ const findMatchingModel = (searchTerm) => {
       if (model.toLowerCase() === lowerSearchTerm || lowerSearchTerm.includes(model.toLowerCase())) {
             switch (model) {
               case 'iphone':
+              case 'apple':
                 return 'apple'
                 break;
               case 'samsung': 
-                return 'samsung'
+              case 'galaxy':
+                return 'samsung+galaxy'
+                break
+              case 'ipad':
+                return 'capas+ipad'
+                break
+              case 'macbook':
+                return 'capa+macbook'
+                break
+              case 'android':
+                return 'android'
+                break
+              case 'xiaomi':
+                return 'capa+xiaomi'
                 break
               default:
                 return 'capas'
@@ -60,34 +78,34 @@ const isPelicula = ['película', 'gel', 'vidro', 'pelicula', 'antiblue'].some(ty
             document.querySelector('.tec--carousel__item--template1').insertAdjacentHTML('afterbegin', `
             <figure class="tec--carousel__item__thumb"></figure>
             <div class="tec--carousel__item__info">
-              <div class="tec--carousel__item__subtitle tec--carousel__item__subtitle--customic">${typeScript.toUpperCase()}</div>
-              <h4 class="tec--carousel__item__title"><a class="tec--carousel__item__title__link"
+              <div class="tec--carousel__item__subtitle tec--carousel__item__subtitle--customic">${typeScript.replaceAll('+', ' ').toUpperCase()}</div>
+              <h5 class="tec--carousel__item__title"><a class="tec--carousel__item__title__link"
                   href="${response[0].url}" target="_blank"
-                  title="${response[0].title}"> ${response[0].title} </a></h4>
+                  title="${response[0].title}"> ${response[0].title} </a></h5>
             </div>`);
             document.querySelector('.tec--carousel__item--template2').insertAdjacentHTML('afterbegin', `
             <figure class="tec--carousel__item__thumb"></figure>
             <div class="tec--carousel__item__info">
-              <div class="tec--carousel__item__subtitle tec--carousel__item__subtitle--customic">${typeScript.toUpperCase()}</div>
-              <h4 class="tec--carousel__item__title"><a class="tec--carousel__item__title__link"
+              <div class="tec--carousel__item__subtitle tec--carousel__item__subtitle--customic">${typeScript.replaceAll('+', ' ').toUpperCase()}</div>
+              <h5 class="tec--carousel__item__title"><a class="tec--carousel__item__title__link"
                   href="${response[1].url}" target="_blank"
-                  title="${response[0].title}"> ${response[0].title} </a></h4>
+                  title="${response[0].title}"> ${response[0].title} </a></h5>
             </div>`);
             document.querySelector('.tec--carousel__item--template3').insertAdjacentHTML('afterbegin', `
             <figure class="tec--carousel__item__thumb"></figure>
             <div class="tec--carousel__item__info">
-              <div class="tec--carousel__item__subtitle tec--carousel__item__subtitle--customic">${typeScript.toUpperCase()}</div>
-              <h4 class="tec--carousel__item__title"><a class="tec--carousel__item__title__link"
+              <div class="tec--carousel__item__subtitle tec--carousel__item__subtitle--customic">${typeScript.replaceAll('+', ' ').toUpperCase()}</div>
+              <h5 class="tec--carousel__item__title"><a class="tec--carousel__item__title__link"
                   href="${response[2].url}" target="_blank"
-                  title="${response[2].title}"> ${response[2].title} </a></h4>
+                  title="${response[2].title}"> ${response[2].title} </a></h5>
             </div>`);
             document.querySelector('.tec--carousel__item--template4').insertAdjacentHTML('afterbegin', `
             <figure class="tec--carousel__item__thumb"></figure>
             <div class="tec--carousel__item__info">
-              <div class="tec--carousel__item__subtitle tec--carousel__item__subtitle--customic">${typeScript.toUpperCase()}</div>
-              <h4 class="tec--carousel__item__title"><a class="tec--carousel__item__title__link"
+              <div class="tec--carousel__item__subtitle tec--carousel__item__subtitle--customic">${typeScript.replaceAll('+', ' ').toUpperCase()}</div>
+              <h5 class="tec--carousel__item__title"><a class="tec--carousel__item__title__link"
                   href="${response[3].url}" target="_blank"
-                  title="${response[3].title}"> ${response[3].title} </a></h4>
+                  title="${response[3].title}"> ${response[3].title} </a></h5>
             </div>`);
             fetch(`https://blog.customic.com.br/wp-json/wp/v2/media?parent=${response[0].id}`)
             .then(respons => respons.json())
@@ -155,42 +173,40 @@ const isPelicula = ['película', 'gel', 'vidro', 'pelicula', 'antiblue'].some(ty
                       }
           }
           const urlPost = isType ? urlFetch('pelicula') : urlFetch()
-          console.log(urlPost)
           fetch(urlPost)
           .then(response => response.json())
           .then(response => {
-            console.log(response)
             document.querySelector('.tec--carousel__item--template1').insertAdjacentHTML('afterbegin', `
             <figure class="tec--carousel__item__thumb"></figure>
             <div class="tec--carousel__item__info">
               <div class="tec--carousel__item__subtitle tec--carousel__item__subtitle--customic">${response[0].title.rendered}</div>
-              <h4 class="tec--carousel__item__title"><a class="tec--carousel__item__title__link"
+              <h5 class="tec--carousel__item__title"><a class="tec--carousel__item__title__link"
                   href="${response[0].link}" target="_blank"
-                  title="${response[0].title.rendered}"> ${response[0].excerpt.rendered} </a></h4>
+                  title="${response[0].title.rendered}"> ${response[0].excerpt.rendered} </a></h5>
             </div>`);
             document.querySelector('.tec--carousel__item--template2').insertAdjacentHTML('afterbegin', `
             <figure class="tec--carousel__item__thumb"></figure>
             <div class="tec--carousel__item__info">
               <div class="tec--carousel__item__subtitle tec--carousel__item__subtitle--customic">${response[1].title.rendered}</div>
-              <h4 class="tec--carousel__item__title"><a class="tec--carousel__item__title__link"
+              <h5 class="tec--carousel__item__title"><a class="tec--carousel__item__title__link"
                   href="${response[1].link}" target="_blank"
-                  title="${response[1].title.rendered}"> ${response[1].excerpt.rendered} </a></h4>
+                  title="${response[1].title.rendered}"> ${response[1].excerpt.rendered} </a></h5>
             </div>`);
             document.querySelector('.tec--carousel__item--template3').insertAdjacentHTML('afterbegin', `
             <figure class="tec--carousel__item__thumb"></figure>
             <div class="tec--carousel__item__info">
               <div class="tec--carousel__item__subtitle tec--carousel__item__subtitle--customic">${response[2].title.rendered}</div>
-              <h4 class="tec--carousel__item__title"><a class="tec--carousel__item__title__link"
+              <h5 class="tec--carousel__item__title"><a class="tec--carousel__item__title__link"
                   href="${response[2].link}" target="_blank"
-                  title="${response[2].title.rendered}"> ${response[2].excerpt.rendered} </a></h4>
+                  title="${response[2].title.rendered}"> ${response[2].excerpt.rendered} </a></h5>
             </div>`);
             document.querySelector('.tec--carousel__item--template4').insertAdjacentHTML('afterbegin', `
             <figure class="tec--carousel__item__thumb"></figure>
             <div class="tec--carousel__item__info">
               <div class="tec--carousel__item__subtitle tec--carousel__item__subtitle--customic">${response[3].title.rendered}</div>
-              <h4 class="tec--carousel__item__title"><a class="tec--carousel__item__title__link"
+              <h5 class="tec--carousel__item__title"><a class="tec--carousel__item__title__link"
                   href="${response[3].link}" target="_blank"
-                  title="${response[3].title.rendered}"> ${response[3].excerpt.rendered} </a></h4>
+                  title="${response[3].title.rendered}"> ${response[3].excerpt.rendered} </a></h5>
             </div>`);
             fetch(`https://blog.customic.com.br/wp-json/wp/v2/media/${response[0].featured_media}`)
             .then(respons => respons.json())
