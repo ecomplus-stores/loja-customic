@@ -2,6 +2,11 @@
   "hosting": {
      "redirects": [
       {
+        "source": "/new-iphone-15",
+        "destination": "/capa-para-celular/apple/iphone-15",
+        "type": 301
+      },
+      {
         "source": "/airpod-silicon-black",
         "destination": "/airpod-silicon",
         "type": 301
