@@ -128,7 +128,7 @@ if (isPopsockets) {
                 .then(media => {
                   const finalMedia = media && media.length ? media[0] : media
                   document.querySelector(`.tec--carousel__item--template${index+1} .tec--carousel__item__thumb`).insertAdjacentHTML('afterbegin', `
-                  <a href="${response[index].url}" target="_blank" title="${response[index].title}" class="tec--carousel__item__thumb__link"> <img width="${index === 0 ? 704: 164}" :  height="${index === 0 ? 288: 118}" alt="${response[index].title}" class="tec--carousel__item__thumb__image lozad-delay fade img-fluid lozad" data-src="${finalMedia.guid.rendered}" pinger-seen="true"> </a>
+                  <a href="${response[index].url}" target="_blank" title="${response[index].title}" class="tec--carousel__item__thumb__link"> <img width="${index === 0 ? 704: 164}" :  height="${index === 0 ? 288: 118}" alt="${response[index].title}" class="tec--carousel__item__thumb__image lozad-delay fade img-fluid lozad" src="${finalMedia.guid.rendered}" pinger-seen="true"> </a>
                   `)
                 })
             }
