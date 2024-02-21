@@ -7,6 +7,11 @@
         "type": 301
       },
       {
+        "source": "/capas",
+        "destination": "/capa-para-celular",
+        "type": 301
+      },
+      {
         "source": "/airpod-silicon-black",
         "destination": "/airpod-silicon",
         "type": 301
