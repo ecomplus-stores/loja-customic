@@ -16,7 +16,7 @@
         <a-link
           class="product-card__link"
           :href="`/${body.slug}${marcaSearch}${modeloSearch}${corSearch}`"
-          :title="name"
+          :title="nameProduct"
         >
           <slot name="header"/>
 
@@ -46,16 +46,28 @@
             </div>
           </slot>
 
+          <slot name="details">
+            <div class="details">
+              <span v-if="hasMagSafe" class="magsafe" style="justify-content: center;">
+                <img src="/img/uploads/mag-safe.svg">
+                &nbsp Compatível com MagSafe
+              </span>
+              <span v-if="variationName && !h1" class="variation" style="justify-content: center; display: flex; align-items: center;">
+                {{ variationName }}
+              </span>
+            </div>
+          </slot>
+
           <slot name="title">
-            <span class="spec-search" style="display: flex; justify-content: center;" v-if="isSearchingPhoneModel.specifictions">
-              {{ isSearchingPhoneModel.specifictions }}
+            <span class="spec-search" style="display: flex; justify-content: center;" v-if="isSearchingPhoneModel.specifictions || h1">
+              {{ isSearchingPhoneModel.specifictions || h1 }}
             </span>
            
             <component
               :is="headingTag"
               class="product-card__name"
             >   
-              {{ name }}          
+              {{ nameProduct }}          
             </component>
           </slot>
 

@@ -586,8 +586,6 @@ export default {
           }
           if (filter === 'modelo') {
             const sizeSpec = window.listModel || []
-            console.log(sizeSpec)
-            console.log(sizeSpec.length)
           
             if (sizeSpec.length) {
               options.sort((a, b) => {
@@ -1035,13 +1033,170 @@ export default {
                 ]
               }
             ]
+            const translate = [
+              {
+                "new": "White",
+                "current": "Branco"
+              },
+              {
+                "new": "Black",
+                "current": "Preto"
+              },
+              {
+                "new": "Pink",
+                "current": "Rosa"
+              },
+              {
+                "new": "Purple",
+                "current": "Roxo"
+              },
+              {
+                "new": "Smoky Gray",
+                "current": "Fumê"
+              },
+              {
+                "new": "Red",
+                "current": "Vermelho"
+              },
+              {
+                "new": "Blue",
+                "current": "Azul"
+              },
+              {
+                "new": "Gradient (Pink + Green)",
+                "current": "Gradiente (Rosa + Verde)"
+              },
+              {
+                "new": "Green",
+                "current": "Verde"
+              },
+              {
+                "new": "Light Purple",
+                "current": "Lilás"
+              },
+              {
+                "new": "Blue",
+                "current": "Azul"
+              },
+              {
+                "new": "Candy",
+                "current": "Candy"
+              },
+              {
+                "new": "Gold",
+                "current": "Dourado"
+              },
+              {
+                "new": "Gradient",
+                "current": "Gradiente"
+              },
+              {
+                "new": "White",
+                "current": "Branco"
+              },
+              {
+                "new": "Red",
+                "current": "Vermelho"
+              },
+              {
+                "new": "Pink",
+                "current": "Rosa"
+              },
+              {
+                "new": "Green",
+                "current": "Verde"
+              },
+              {
+                "new": "Petroleum",
+                "current": "Petróleo"
+              },
+              {
+                "new": "Rose Gold",
+                "current": "Dourado Rosé"
+              },
+              {
+                "new": "Gradient (Pink)",
+                "current": "Gradiente (Rosa)"
+              },
+              {
+                "new": "Grey",
+                "current": "Cinza"
+              },
+              {
+                "new": "Sierra Blue",
+                "current": "Azul sierra"
+              },
+              {
+                "new": "Black com furo",
+                "current": "Preto com furo"
+              },
+              {
+                "new": "Gradient (Blue)",
+                "current": "Gradiente (Blue)"
+              },
+              {
+                "new": "Gradient (Pink)",
+                "current": "Gradiente (Pink)"
+              },
+              {
+                "new": "Brown",
+                "current": "Marrom"
+              },
+              {
+                "new": "Rainbown",
+                "current": "Rainbown"
+              },
+              {
+                "new": "Brown",
+                "current": "Marrom"
+              },
+              {
+                "new": "Pink com furo",
+                "current": "Rosa com furo"
+              },
+              {
+                "new": "Red com furo",
+                "current": "Vermelho com furo"
+              },
+              {
+                "new": "White com furo",
+                "current": "Branco com furo"
+              },
+              {
+                "new": "Light Blue",
+                "current": "Azul Claro"
+              },
+              {
+                "new": "Blue com furo",
+                "current": "Azul com furo"
+              },
+              {
+                "new": "Dark Blue",
+                "current": "Azul escuro"
+              },
+              {
+                "new": "Dark Blue com furo",
+                "current": "Azul escuro com furo"
+              },
+              {
+                "new": "Grey com furo",
+                "current": "Cinza com furo"
+              },
+              {
+                "new": "Violet",
+                "current": "Violeta"
+              }
+            ]
             options = options.map(option => {
               const optionFound = arrayOptions.find(opt => {
                 return opt.text === option.key
               })
+              const translateOption = translate.find((item) => item.current === (optionFound && optionFound.text))
+
               return {
                 ...option,
-                hexadecimal: optionFound && optionFound.colors
+                hexadecimal: optionFound && optionFound.colors,
+                key: (translateOption && translateOption.new) || option.key
               }
             })
           }

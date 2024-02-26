@@ -210,6 +210,10 @@ import {
         }
         return this.selectedVariation.name || getName(this.body)
       },
+
+      hasMagSafe () {
+        return this.nameProduct && this.nameProduct.toLowerCase() && this.nameProduct.toLowerCase().includes('magsafe')
+      },
   
       isInStock () {
         return checkInStock(this.body)

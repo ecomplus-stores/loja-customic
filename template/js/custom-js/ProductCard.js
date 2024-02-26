@@ -93,7 +93,10 @@ export default {
       isFavorite: false,
       error: '',
       specifications: "",
-      teste: []
+      teste: [],
+      h1: null,
+      brand: null,
+      variationName: null
     }
   },
 
@@ -131,7 +134,8 @@ export default {
       //setando term em paginas de categoria
       if (term === undefined || term === null) {
         if ($(".page-title__head h1").length > 0) { 
-          term = $(".page-title__head h1").text();
+          term = $(".page-title__head h1").text().trim();
+          this.h1 = term
         }
       }      
 
@@ -141,7 +145,7 @@ export default {
 
         if(getListModels !== undefined){
 
-          getListModels.map( (variation) => {    
+          getListModels.map((variation) => {    
 
           
             if(variation !== undefined){
@@ -151,6 +155,13 @@ export default {
               let modeloVariationInitial = "";
               let pictureId = variation.picture_id;
 
+              if (window.modelList && window.modelList.length) {
+                const variationOption = window.modelList.find(model => variation.name.includes(model))
+
+                if (variationOption && !this.variationName) {
+                  this.variationName = variationOption
+                }
+              }
               
               //se array nao for vazio 
               if (variation && variation.specifications && variation.specifications.modelo && variation.specifications.modelo.length > 0){
@@ -193,6 +204,7 @@ export default {
 
               //se tem o modelo ja seta a marca 
               if (term.indexOf(modeloVariation) !== -1 && marcaVariation !== "") {
+                console.log('entrei')
                 modeloVariation =
                   modeloVariation.charAt(0).toUpperCase() +
                   modeloVariation.slice(1);
@@ -218,6 +230,13 @@ export default {
                     });
                     break;
                   case "Apple":
+                    console.log(body.variations)
+                    if (body && body.variations && body.variations.length && window.modelList && window.modelList.length) {
+                      const variation = body.variations.find(({name}) => {
+                        return window.modelList.some(model => name.includes(model))
+                      })
+                      console.log(variation)
+                    }
                     body.pictures.map(function(product, index) {
                       if (product._id == pictureId) {
                         let foto = (product.normal || product.zoom).url;
@@ -276,6 +295,7 @@ export default {
                     listNomeProduto.foto.push(foto);
                   }
                 });
+
               }              
             }
           })
@@ -291,7 +311,6 @@ export default {
 
       if(listNomeProduto.cor !== "" && listNomeProduto.modelo !== ""){
         //listNomeProduto.specifictions = `${listNomeProduto.marca} / ${listNomeProduto.modelo} / ${listNomeProduto.cor}`;
-
         this.marcaSearch = `?marca=${listNomeProduto.marca}`;
 
         let listNomeProdutoModelo = listNomeProduto.modelo.replaceAll(' ','-');
@@ -349,8 +368,19 @@ export default {
       return getExternalHtml('Footer', this.body)
     },
 
-    name () {
-      return getName(this.body)
+    nameProduct () {
+      let name = getName(this.body)
+      if (name.includes('-')) {
+        const splitName = name.split('-')
+        this.brand = splitName[1].trim()
+        name = splitName[0].trim()
+        return name
+      }
+      return name
+    },
+
+    hasMagSafe () {
+      return this.nameProduct && this.nameProduct.toLowerCase() && this.nameProduct.toLowerCase().includes('magsafe')
     },
 
     strBuy () {

@@ -56,6 +56,11 @@
           >
             {{ nameProduct }}
           </component>
+
+          <span v-if="hasMagSafe" class="magsafe">
+            <img src="/img/uploads/mag-safe.svg">
+            &nbsp Compatível com MagSafe
+          </span>
           <p class="product__sku">
             COD: {{ body.sku }}
           </p>

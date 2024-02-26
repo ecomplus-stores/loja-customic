@@ -819,3 +819,17 @@ color: #fff !important;
     width: 100% !important;
   }
 }
+
+.product-card__name {
+  --max-lines: 5 !important;
+}
+
+.spec-search {
+  font-size: 0.875rem !important;
+}
+
+.magsafe {
+  color: #f15b41;
+  display: flex;
+  align-items: center;
+}
