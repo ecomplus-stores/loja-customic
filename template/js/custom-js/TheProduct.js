@@ -169,7 +169,8 @@ import {
         paymentOptions: [],
         customizations: [],
         kitItems: [],
-        currentTimer: null
+        currentTimer: null,
+        changeName: false
       }
     },
   
@@ -208,7 +209,7 @@ import {
           this.buyTogetherProducts.forEach(item => nameComb += `+ ${item.name}`)
           return `Combo ${this.selectedVariation.name || getName(this.body)} ${nameComb}`
         }
-        return this.selectedVariation.name || getName(this.body)
+        return getName(this.body)
       },
 
       hasMagSafe () {
@@ -473,10 +474,11 @@ import {
 
       nameProduct: {
         handler (currentName) {
-          if (this.body.name !== currentName) {
+          if (this.body.name !== currentName && (currentName !== undefined) && this.body.name !== undefined) {
             const h1Element = document.getElementById('h1-product')
             if (h1Element) {
               h1Element.remove()
+              this.changeName = true
             }
           }
         },

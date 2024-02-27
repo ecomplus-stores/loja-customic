@@ -48,22 +48,15 @@
         ref="actions"
       >
         <slot
+          v-if="!isSSR || changeName"
           name="heading"
         >
           <component
             :is="headingTag"
-            class="product__name"
+            class="product__name h1__ssr"
           >
             {{ nameProduct }}
           </component>
-
-          <span v-if="hasMagSafe" class="magsafe">
-            <img src="/img/uploads/mag-safe.svg">
-            &nbsp Compatível com MagSafe
-          </span>
-          <p class="product__sku">
-            COD: {{ body.sku }}
-          </p>
         </slot>
 
 
@@ -114,6 +107,10 @@
           </div>
 
           <template v-else>
+            <span v-if="hasMagSafe" class="magsafe">
+              <img src="/img/uploads/mag-safe.svg">
+              &nbsp Compatível com MagSafe
+            </span>
             <slot name="prices">
               <p class="product__prices">
                 <a-prices

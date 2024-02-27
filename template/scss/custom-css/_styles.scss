@@ -833,3 +833,15 @@ color: #fff !important;
   display: flex;
   align-items: center;
 }
+
+.product > div + div.row > .col-12.col-md-6 {
+  height: 20px;
+}
+
+h1.product__name {
+  font-size: 2rem !important;
+}
+
+h1.product__name.h1__ssr {
+  font-size: 1.2rem !important;
+}
