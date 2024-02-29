@@ -7,6 +7,8 @@ const maintenance = _.cms('maintenance') || {}
 <html lang="<%= _.lang.replace('_', '-') %>" dir="ltr">
   <% if (!maintenance.active) { %>
     <head>
+      <meta name="robots" content="noindex" />
+      <title>Página de Manutenção - Loja de Capa de Celular: Capa, Película, Popsocket | Customic</title>
       <script>
         location.href = '/'
       </script>
