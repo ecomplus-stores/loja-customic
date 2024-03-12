@@ -7,6 +7,31 @@
         "type": 301
       },
       {
+        "source": "/magsafe/popgrip-for-magsafe",
+        "destination": "/magsafe",
+        "type": 301
+      },
+      {
+        "source": "/impactor-ultra-fabric-apple?t=*",
+        "destination": "/impactor-ultra-fabric-apple",
+        "type": 301
+      }, 
+      {
+        "source": "/pelicula-customic-vidro-premium",
+        "destination": "/peliculas",
+        "type": 301
+      },
+      {
+        "source": "/join.php",
+        "destination": "/app/#/account/",
+        "type": 301
+      },
+      {
+        "source": "/comprar",
+        "destination": "/search",
+        "type": 301
+      },
+      {
         "source": "/capas",
         "destination": "/capa-para-celular",
         "type": 301
