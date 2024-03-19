@@ -3,6 +3,31 @@
 @font-face{font-family:flama bold;font-style:normal;font-weight:750;src:local('Flama Bold'),url(/fonts/Flama-Bold.woff) format('woff')}
 @font-face{font-family:flama light italic;font-style:normal;font-weight:525;src:local('Flama Light Italic'),url(/fonts/Flama-LightItalic.woff) format('woff')}
 @font-face{font-family:flama medium;font-style:normal;font-weight:650;src:local('Flama Medium'),url(/fonts/Flama-Medium.woff) format('woff')}
+
+.menu-topo {
+  height: 40px;
+  padding-left: 15px;
+  padding-top: 7.8px;
+  color: #fff;
+  background-color: #000;
+  text-align: center;
+  .menu__btn--close i {
+    color: #fff !important;
+  }
+  span {
+    font-weight: bold;
+    text-align: center;
+  }
+}
+
+.menu__item.has-subcategory {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu__btn.btn.collapsed {
+  color: #fff !important;
+}
 .footer address {
 color: #fff !important;
 }
@@ -871,3 +896,4 @@ h1.product__name.h1__ssr {
 .magsafe img {
   height: 15px
 }
+

@@ -54,14 +54,17 @@ if (mainCategories) {
 
 <aside id="menu" class="menu shadow">
   <nav class="accordion" id="accordion-menu">
-    <button
-      class="menu__btn menu__btn--close btn"
-      type="button"
-      onclick="toggleSidenav()"
-      aria-label="Toggle Side Navigation"
-    >
-      <i class="i-times"></i>
-    </button>
+    <div class="menu-topo">
+      <span>COMPRAR POR</span>
+      <button
+        class="menu__btn menu__btn--close btn"
+        type="button"
+        onclick="toggleSidenav()"
+        aria-label="Toggle Side Navigation"
+      >
+        <i class="i-times"></i>
+      </button>
+    </div>
 
     <% for (const slug in categoryParents) { %>
       
@@ -187,7 +190,7 @@ if (mainCategories) {
                   href="/<%= subcategory.slug %>"
                 <% } %>
                 id="c-<%= subcategory._id %>"
-                class="menu__item"
+                class="menu__item<%- hasSubmenu ? ' has-subcategory' : '' %>"
               >
                 <% if (subcategory.icon) { %>
                   <span class="menu__item-icon">
@@ -204,6 +207,9 @@ if (mainCategories) {
                 </span>
                 <% if (findCategorySub && findCategorySub.is_new) { %>
                     <span class="new-category">Novo</span>
+                <% } %>
+                <% if (hasSubmenu) { %>
+                  <i class="i-chevron-right"></i>
                 <% } %>
               </a>
             <% }) %>
