@@ -52,7 +52,7 @@
                 <img src="/img/uploads/mag-safe.svg">
                 &nbsp Compatível com MagSafe
               </span>
-              <span v-if="variationName && !h1" class="variation" style="justify-content: center; display: flex; align-items: center;">
+              <span v-if="variationName && !h1 && !(isSearchingPhoneModel.specifictions || h1)" class="variation" style="justify-content: center; display: flex; align-items: center;">
                 {{ variationName }}
               </span>
             </div>

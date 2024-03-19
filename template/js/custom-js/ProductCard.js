@@ -156,10 +156,15 @@ export default {
               let pictureId = variation.picture_id;
 
               if (window.modelList && window.modelList.length) {
-                const variationOption = window.modelList.find(model => variation.name.includes(model))
+                
+                const variationOption = window.modelList.find(model => variation.name.includes(model) && model.toLowerCase().includes(term))
 
                 if (variationOption && !this.variationName) {
                   this.variationName = variationOption
+                  const variationPicture = body.pictures.find(({_id}) => _id === pictureId)
+                  if (variationPicture) {
+                    listNomeProduto.foto[0] = variationPicture.zoom.url
+                  }
                 }
               }
               
