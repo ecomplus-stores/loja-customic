@@ -29,23 +29,6 @@
             <a-picture v-else class="product-card__picture" />
           </div>
 
-          <slot
-            name="discount-tag"
-            v-bind="{ discount }"
-          >
-            <div class="product-card__offer">
-              <span
-              v-if="isActive && discount > 0"
-              class="product-card__offer-stamp"
-              >
-                <i class="i-arrow-down"></i> <b>{{ discount }}</b>%
-              </span>
-              <span v-if="isActive && discount > 0" class="product-card__offer-text">
-                {{ isBlack }}
-              </span>
-            </div>
-          </slot>
-
           <slot name="details">
             <div class="details">
               <span v-if="hasMagSafe" class="magsafe" style="justify-content: center;">
@@ -123,6 +106,22 @@
 
 
       <template v-else>
+        <slot
+            name="discount-tag"
+            v-bind="{ discount }"
+          >
+            <div class="product-card__offer">
+              <span
+              v-if="isActive && discount > 0"
+              class="product-card__offer-stamp"
+              >
+                <i class="i-arrow-down"></i> <b>{{ discount }}</b>%
+              </span>
+              <span v-if="isActive && discount > 0" class="product-card__offer-text">
+                {{ isBlack }}
+              </span>
+            </div>
+          </slot>
         <slot name="prices">
           <a-prices
             class="product-card__prices"
