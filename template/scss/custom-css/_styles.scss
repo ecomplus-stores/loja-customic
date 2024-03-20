@@ -901,3 +901,16 @@ h1.product__name.h1__ssr {
   height: 15px
 }
 
+
+element {
+}
+@media (max-width: 575.98px) {
+  #search-bar {
+    display: block !important;
+    height: 46px !important;
+    transition: none;
+    #search-input {
+      border: 1px solid;
+    }
+  }
+}
