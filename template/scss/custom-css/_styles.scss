@@ -887,6 +887,7 @@ h1.product__name.h1__ssr {
 .product-card__prices .prices__discount {
   display: flex;
   align-items: baseline;
+  justify-content: center;
   small {
     margin-left: 5px;
   }
