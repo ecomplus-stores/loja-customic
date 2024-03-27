@@ -269,6 +269,22 @@ export default options => {
           ] 
         }
       }
+      if (file && file.name === 'menu') {
+        file.fields.push({
+          label: 'Configurações menu',
+          name: 'menu-comprar',
+          widget: 'object',
+          required: false,
+          fields: [
+            {
+              name: 'title',
+              widget: 'string',
+              required: false,
+              label: 'Texto comprar'
+            }
+          ]
+      })
+      }
       return file
     })
   }
