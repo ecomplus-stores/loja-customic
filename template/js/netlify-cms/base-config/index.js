@@ -125,6 +125,56 @@ export default options => {
           "widget": "string"
       }
     ]
+  },
+  {
+    "label": "Grid blog",
+    "name": "blog-grid",
+    "widget": "list",
+    "fields": [
+        {
+            "label": "Banners",
+            "name": "banners",
+            "widget": "list",
+            "fields": [
+                {
+                    "label": "Imagem",
+                    "name": "img",
+                    "widget": "image",
+                    "required": false
+                },
+                {
+                    "label": "Link",
+                    "required": false,
+                    "name": "link",
+                    "widget": "string"
+                },
+                {
+                    "label": "Alt",
+                    "required": false,
+                    "name": "alt",
+                    "widget": "string"
+                },
+                {
+                  "label": "Frase de chamada blog",
+                  "required": false,
+                  "name": "phrase_blog",
+                  "widget": "string"
+                },
+                {
+                  "label": "Texto de chamada blog",
+                  "required": false,
+                  "name": "text_blog",
+                  "widget": "string"
+                }
+            ]
+        },
+        {
+          "label": "Slug categoria",
+          "required": false,
+          "name": "title",
+          "widget": "string"
+      }
+    ]
   }
   ])
   console.log(options)
