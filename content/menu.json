@@ -10,5 +10,8 @@
   ],
   "phone_wpp": true,
   "socials": true,
-  "alphabetical_order": false
+  "alphabetical_order": false,
+  "menu-comprar": {
+    "title": "tudo para seu smartphone"
+  }
 }
