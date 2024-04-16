@@ -1,6 +1,7 @@
 <%
 // load menu options and contacts from content
 const menu = _.cms('menu') || {}
+console.log(menu)
 const contacts = _.cms('contacts') || {}
 const header = _.cms('header') || {}
 const categoriesHeader = header.categories_list.featured.map(item => {
@@ -55,7 +56,7 @@ if (mainCategories) {
 <aside id="menu" class="menu shadow">
   <nav class="accordion" id="accordion-menu">
     <div class="menu-topo">
-      <span><%- menu['menu-comprar'] %></span>
+      <span><%= menu['menu-comprar'] && menu['menu-comprar'].title %></span>
       <button
         class="menu__btn menu__btn--close btn"
         type="button"
