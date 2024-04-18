@@ -13,5 +13,75 @@
   "alphabetical_order": false,
   "menu-comprar": {
     "title": "tudo para seu smartphone 🤳"
-  }
+  },
+  "submenu_menu_order": [
+    {
+      "submenu_menu_slug": "/samsung",
+      "submenu_menu": [
+        {
+          "subcategory_menu_slug": "/galaxy-s24-ultra"
+        },
+        {
+          "subcategory_menu_slug": "/galaxy-s24-plus"
+        },
+        {
+          "subcategory_menu_slug": "/galaxy-s24"
+        },
+        {
+          "subcategory_menu_slug": "/galaxy-s23-ultra"
+        },
+        {
+          "subcategory_menu_slug": "/galaxy-s23-plus"
+        },
+        {
+          "subcategory_menu_slug": "/galaxy-s23"
+        },
+        {
+          "subcategory_menu_slug": "/galaxy-s22-ultra"
+        },
+        {
+          "subcategory_menu_slug": "/galaxy-s22-plus"
+        },
+        {
+          "subcategory_menu_slug": "/galaxy-s22"
+        },
+        {
+          "subcategory_menu_slug": "/galaxy-s21-ultra"
+        },
+        {
+          "subcategory_menu_slug": "/galaxy-s21-plus"
+        },
+        {
+          "subcategory_menu_slug": "/galaxy-s21-fe"
+        },
+        {
+          "subcategory_menu_slug": "/galaxy-s21"
+        },
+        {
+          "subcategory_menu_slug": "/capas-para-galaxy-a54-5g"
+        },
+        {
+          "subcategory_menu_slug": "/capas-para-galaxy-a34-5g"
+        },
+        {
+          "subcategory_menu_slug": "/capas-para-galaxy-a25-5g"
+        },
+        {
+          "subcategory_menu_slug": "/capas-para-galaxy-a15-5g"
+        },
+        {
+          "subcategory_menu_slug": "/capas-para-a14-5g"
+        },
+        {
+          "subcategory_menu_slug": "/capas-para-galaxy-a05s"
+        },
+        {
+          "subcategory_menu_slug": "/capas-para-galaxy-a05"
+        },
+        {
+          "subcategory_menu_slug": "/todos-modelos-de-samsung"
+        }
+      ]
+    }
+  ]
 }
