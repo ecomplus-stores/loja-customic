@@ -320,6 +320,20 @@ export default options => {
         }
       }
       if (file && file.name === 'menu') {
+        const menuCategory = file.fields.find(field => field.name === 'sort_categories')
+        if (menuCategory) {
+          menuCategory.field = {
+            "label": "Categoria/Coleção/Marca",
+            "name": "slug",
+            "widget": "select",
+            "options": state.routes
+              .filter(({ resource, name }) => Boolean(resource !== 'products' && name))
+              .map(({ name, path }) => ({
+                label: name,
+                value: path.slice(1)
+              }))
+          } 
+        }
         file.fields.push({
           label: 'Configurações menu',
           name: 'menu-comprar',
