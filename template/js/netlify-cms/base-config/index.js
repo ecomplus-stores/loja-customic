@@ -334,6 +334,48 @@ export default options => {
             }
           ]
       })
+      file.fields.push({
+        label: 'Ordenação Submenu',
+        name: 'submenu_menu_order',
+        widget: 'list',
+        icon: 'https://api.iconify.design/mdi:copyright.svg',
+        required: false,
+        fields: [
+          {
+            label: 'Categoria pai slug',
+            name: 'submenu_menu_slug',
+            widget: 'select',
+            required: false,
+            options: options.state.routes
+            .filter(el => el.resource === 'categories')
+            .map((el) => ({
+              label: el.name,
+              value: el.path
+            }))
+          },
+            {
+                label: 'Ordenação do Submenu',
+                name: 'submenu_menu',
+                widget: 'list',
+                required: false,
+                fields: [
+                  {
+                    label: 'Slug da subcategoria',
+                    name: 'subcategory_menu_slug',
+                    widget: 'select',
+                    required: false,
+                    options: options.state.routes
+                    .filter(el => el.resource === 'categories')
+                    .map((el) => ({
+                      label: el.name,
+                      value: el.path
+                    }))             
+                  }
+                    
+                ]
+            }
+        ]
+    })
       }
       return file
     })
