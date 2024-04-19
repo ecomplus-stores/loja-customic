@@ -360,7 +360,7 @@ export default options => {
             name: 'submenu_menu_slug',
             widget: 'select',
             required: false,
-            options: options.state.routes
+            options: state.routes
             .filter(el => el.resource === 'categories')
             .map((el) => ({
               label: el.name,
@@ -378,7 +378,7 @@ export default options => {
                     name: 'subcategory_menu_slug',
                     widget: 'select',
                     required: false,
-                    options: options.state.routes
+                    options: state.routes
                     .filter(el => el.resource === 'categories')
                     .map((el) => ({
                       label: el.name,
