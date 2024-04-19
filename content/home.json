@@ -183,16 +183,6 @@
       "title": "Linha Impactor® de Proteção Militar"
     },
     {
-      "type": "banners-grid",
-      "banners": [
-        {
-          "img": "/img/uploads/anyconv.com__banner-insta-desk.webp",
-          "link": "https://www.instagram.com/customic/",
-          "mobile_img": "/img/uploads/anyconv.com__banner-insta-mobile.webp"
-        }
-      ]
-    },
-    {
       "type": "custom-html",
       "html": "<!-- LightWidget WIDGET --><script src=\"https://cdn.lightwidget.com/widgets/lightwidget.js\"></script><iframe src=\"//lightwidget.com/widgets/dd04921c68845ae9b61c61aa72f1a404.html\" scrolling=\"no\" allowtransparency=\"true\" class=\"lightwidget-widget\" style=\"width:100%;border:0;overflow:hidden;\"></iframe>"
     },
