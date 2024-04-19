@@ -323,16 +323,17 @@ export default options => {
         const menuCategory = file.fields.find(field => field.name === 'sort_categories')
         if (menuCategory) {
           menuCategory.field = {
-            "label": "Categoria/Coleção/Marca",
-            "name": "slug",
-            "widget": "select",
-            "options": options.state.routes
-              .filter(({ resource, name }) => Boolean(resource !== 'products' && name))
-              .map(({ name, path }) => ({
-                label: name,
-                value: path.slice(1)
-              }))
-          } 
+                    label: 'Categoria/Coleção/Marca',
+                    name: 'slug',
+                    widget: 'select',
+                    required: false,
+                    options: options.state.routes
+                    .filter(el => el.resource !== 'products')
+                    .map((el) => ({
+                      label: el.name,
+                      value: el.path
+                    }))             
+                  }
         }
         file.fields.push({
           label: 'Configurações menu',
