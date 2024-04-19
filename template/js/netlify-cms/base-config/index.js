@@ -326,7 +326,7 @@ export default options => {
             "label": "Categoria/Coleção/Marca",
             "name": "slug",
             "widget": "select",
-            "options": state.routes
+            "options": options.state.routes
               .filter(({ resource, name }) => Boolean(resource !== 'products' && name))
               .map(({ name, path }) => ({
                 label: name,
@@ -360,7 +360,7 @@ export default options => {
             name: 'submenu_menu_slug',
             widget: 'select',
             required: false,
-            options: state.routes
+            options: options.state.routes
             .filter(el => el.resource === 'categories')
             .map((el) => ({
               label: el.name,
@@ -378,7 +378,7 @@ export default options => {
                     name: 'subcategory_menu_slug',
                     widget: 'select',
                     required: false,
-                    options: state.routes
+                    options: options.state.routes
                     .filter(el => el.resource === 'categories')
                     .map((el) => ({
                       label: el.name,
