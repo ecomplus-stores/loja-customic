@@ -82,6 +82,32 @@
           "subcategory_menu_slug": "/todos-modelos-de-samsung"
         }
       ]
+    },
+    {
+      "submenu_menu_slug": "/android",
+      "submenu_menu": [
+        {
+          "subcategory_menu_slug": "/xiaomi"
+        },
+        {
+          "subcategory_menu_slug": "/modelos-motorola"
+        },
+        {
+          "subcategory_menu_slug": "/asus"
+        },
+        {
+          "subcategory_menu_slug": "/lg"
+        },
+        {
+          "subcategory_menu_slug": "/huawei"
+        },
+        {
+          "subcategory_menu_slug": "/outros-android"
+        },
+        {
+          "subcategory_menu_slug": "/todos-modelos-de-android"
+        }
+      ]
     }
   ]
 }
