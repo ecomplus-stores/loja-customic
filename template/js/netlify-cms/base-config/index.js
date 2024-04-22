@@ -331,7 +331,7 @@ export default options => {
                     .filter(el => el.resource !== 'products')
                     .map((el) => ({
                       label: el.name,
-                      value: el.path
+                      value: el.path && el.path.slice(1)
                     }))             
                   }
         }
