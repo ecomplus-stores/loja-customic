@@ -1,12 +1,14 @@
 {
   "sort_categories": [
-    "capa-para-celular",
-    "peliculas",
-    "acessorios",
-    "popsockets",
-    "colecoes",
-    "combos",
-    "capa-para-celular/apple/iphone-15"
+    "/destaques-do-momento",
+    "/mais-vendidos",
+    "/capa-para-celular",
+    "/peliculas",
+    "/acessorios",
+    "/popsockets",
+    "/colecoes",
+    "/combos",
+    "/capa-para-celular/apple/iphone-15"
   ],
   "phone_wpp": true,
   "socials": true,
@@ -106,23 +108,6 @@
         },
         {
           "subcategory_menu_slug": "/todos-modelos-de-android"
-        }
-      ]
-    },
-    {
-      "submenu_menu_slug": "/peliculas",
-      "submenu_menu": [
-        {
-          "subcategory_menu_slug": "/pelicula-vidro"
-        },
-        {
-          "subcategory_menu_slug": "/pelicula-vidro-3d"
-        },
-        {
-          "subcategory_menu_slug": "/pelicula-gel"
-        },
-        {
-          "subcategory_menu_slug": "/peliculas-gel-flexivel"
         }
       ]
     }
