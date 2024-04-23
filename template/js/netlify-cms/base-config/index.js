@@ -328,11 +328,11 @@ export default options => {
                     widget: 'select',
                     required: false,
                     options: options.state.routes
-                    .filter(el => el.resource !== 'products')
-                    .map((el) => ({
-                      label: el.name,
-                      value: el.path && el.path.slice(1)
-                    }))             
+                      .filter(({ resource, name }) => resource !== 'products')
+                      .map(({ name, path }) => ({
+                        label: name,
+                        value: path.slice(1)
+                      }))             
                   }
         }
         file.fields.push({
