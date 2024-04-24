@@ -16,10 +16,12 @@
       "type": "buy_together_list",
       "buy_list": [
         {
-          "slug": "capas",
+          "slug": "/capa-para-celular",
           "products": [
             "6544ed9e2cd6b6595995bbf1",
-            "5f1f4bc0f023684cdbd4abe4"
+            "5fcad06269274c73fce1cb95",
+            "5fcad05d69274c73fce1cb88",
+            "60082f7769274c73fcf9362c"
           ]
         },
         {
