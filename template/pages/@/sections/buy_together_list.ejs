@@ -1,10 +1,11 @@
 <%
 const buyList = opt.buy_list
 
-if (Array.isArray(buyList) && buyList.length && _.state.categories && _.state.categories.length) { 
+if (Array.isArray(buyList) && buyList.length && _.state.categories && _.state.categories.length) {
     const filteredCategory = buyList.filter(category => {
         return _.state.categories.some(faq => category.slug === faq.slug)
     });
+    console.log(filteredCategory, _.state.categories, buyList) 
 
     let finalArray = []
     filteredCategory.forEach(item => {
