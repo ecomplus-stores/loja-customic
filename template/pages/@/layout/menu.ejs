@@ -1,7 +1,6 @@
 <%
 // load menu options and contacts from content
 const menu = _.cms('menu') || {}
-//console.log(menu)
 const contacts = _.cms('contacts') || {}
 const header = _.cms('header') || {}
 const categoriesHeader = header.categories_list.featured.map(item => {
@@ -46,6 +45,12 @@ if (mainCategories) {
         const category = mainCategories[categoryIndex]
         mainCategories.splice(categoryIndex, 1)
         mainCategories.unshift(category)
+      } else {
+        mainCategories.unshift({
+          _id: _.ecomUtils.randomObjectId(),
+          name: (slug[0].toUpperCase() + slug.substring(1)).replaceAll('-', ' '),
+          slug
+        })
       }
     }
   }
@@ -197,6 +202,8 @@ if (mainCategories) {
 
                 return indexB - indexA;
               });
+            }  else if (slug === 'android') {
+              console.log(slug)
             }
             submenuOrder.forEach(({ submenu_slug, submenu }) => {
               if (('/' + slug) === submenu_slug) {
@@ -262,7 +269,7 @@ if (mainCategories) {
                 <% } %>
               </a>
             <% }) %>
-            <a id="personalize" targe="_blank" class="menu__item" href="https://www.lab.customic.com.br/">Personalize</a>
+            
           </div>
 
           <% if (category && category.slug && (categoriesHeader.indexOf('/' + category.slug) > -1)) { %>
