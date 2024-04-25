@@ -1,14 +1,14 @@
 {
   "sort_categories": [
-    "/destaques-do-momento",
-    "/mais-vendidos",
-    "/capa-para-celular",
-    "/peliculas",
-    "/acessorios",
-    "/popsockets",
-    "/colecoes",
-    "/combos",
-    "/capa-para-celular/apple/iphone-15"
+    "destaques-do-momento",
+    "mais-vendidos",
+    "capa-para-celular",
+    "peliculas",
+    "acessorios",
+    "popsockets",
+    "colecoes",
+    "combos",
+    "capa-para-celular/apple/iphone-15"
   ],
   "phone_wpp": true,
   "socials": true,
