@@ -4,8 +4,13 @@
   "sections": [
     {
       "type": "banner-slider",
-      "autoplay": 4000,
+      "autoplay": 13000,
       "slides": [
+        {
+          "start": "",
+          "end": "",
+          "img": "https://www.comercial.customic.com.br/news/promo_dia_das_maes_2024/CUSTOMIC-BANNER-SITE-DESK.webm"
+        },
         {
           "start": "",
           "end": "",
