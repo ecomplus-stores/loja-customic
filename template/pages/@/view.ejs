@@ -6,6 +6,15 @@
   <% if (_.route.resource === 'products' && _.state.pictures && Array.isArray(_.state.pictures) && _.state.pictures[0].big && _.state.pictures[0].big.url) { %>
     <link rel="preload" as="image" href="<%= _.state.pictures[0].big.url %>">
   <% } %>
+  <% if (_.route.path === '/search') { %>
+   <style>
+      @media(max-width: 600px) {
+        .header {
+          position: relative;
+        }
+      }
+   </style>
+  <% } %>
 </head>
 
 <body

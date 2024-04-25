@@ -210,21 +210,10 @@
           name="nav"
           v-bind="{ totalSearchResults, toggleFilters }"
         >
-          <div class="search-engine__count">
-            <strong>{{ itemsLength || totalSearchResults }}</strong>
-            {{ i19itemsFound }}
-            <div
-              v-if="isSearching"
-              class="search-engine__spinner spinner-grow"
-              role="status"
-            >
-              <span class="sr-only">Loading...</span>
-            </div>
-          </div>
-
           <div
             v-if="isFilterable"
             class="search-engine__toggles"
+            style="width: 100%;"
           >
             <button
               v-if="hasFilters"
@@ -237,7 +226,7 @@
                 {{ i19filterResults }}
               </span>
               <span class="d-md-none">
-                {{ i19filter }}
+                Filtrar
               </span>
             </button>
 
@@ -270,6 +259,17 @@
                   {{ label }}
                 </a>
               </div>
+            </div>
+          </div>
+          <div class="search-engine__count mt-2">
+            <strong>{{ itemsLength || totalSearchResults }}</strong>
+            {{ i19itemsFound }}
+            <div
+              v-if="isSearching"
+              class="search-engine__spinner spinner-grow"
+              role="status"
+            >
+              <span class="sr-only">Loading...</span>
             </div>
           </div>
         </slot>

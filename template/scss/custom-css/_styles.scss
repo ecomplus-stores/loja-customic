@@ -915,3 +915,43 @@ h1.product__name.h1__ssr {
 .menu__list {
   padding-top: 0px !important;
 }
+
+@media(max-width: 600px) {
+  button.search-engine__aside-open {
+    display: none !important;
+  }
+}
+
+.search-engine__nav {
+  @media(max-width: 600px) {
+    position: sticky;
+    top: 0;
+    z-index: 900;
+  }
+  .container {
+    flex-direction: column;
+    width: 100%;
+    .search-engine__toggles {
+      width: 100%;
+      justify-content: space-between;
+      button {
+        font-weight: bold;
+      }
+      & > button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: .5px solid;
+        width: 48%;
+      }
+      .dropdown {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: .5px solid;
+        border-radius: 5px;
+        width: 48%;
+      }
+    }
+  }
+}
