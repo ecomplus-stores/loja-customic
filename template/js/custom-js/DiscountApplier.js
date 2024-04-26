@@ -64,7 +64,7 @@ import {
                     ...data,
                     flags: ['freebie', '__tmp']
                   },
-                  variationBrinde._id,
+                  variationBrinde && variationBrinde._id,
                   productIds.reduce((qnt, _id) => {
                     return _id === productId ? qnt + 1 : qnt
                   }, 0)

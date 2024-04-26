@@ -32,11 +32,6 @@
         "type": 301
       },
       {
-        "source": "/capas",
-        "destination": "/capinha-de-celular",
-        "type": 301
-      },
-      {
         "source": "/capa-para-celular",
         "destination": "/capinha-de-celular",
         "type": 301
