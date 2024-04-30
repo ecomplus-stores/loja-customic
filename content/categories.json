@@ -17,16 +17,37 @@
       "sort": "views"
     },
     {
+      "type": "banners-grid",
+      "banners": [
+        {
+          "img": "/img/uploads/425583659_764929711730357_5772745624342383373_n.jpg",
+          "link": "https://www.instagram.com/customic/",
+          "alt": "Fique na moda com a Spot Silicone Reciclado, uma maneira divertida de proteger seu telefone."
+        },
+        {
+          "img": "/img/uploads/436867369_811331180851767_8515988639330544982_n.jpg",
+          "link": "https://www.instagram.com/customic/",
+          "alt": "Jovem filmando com seu celular protegido por uma capa Impactor Holo Magsafe da Customic"
+        },
+        {
+          "img": "/img/uploads/439253908_3907504892864481_2687891782062014314_n.jpg",
+          "link": "https://www.instagram.com/customic/",
+          "alt": "Uma capa Impactor Holo Magsafe Rainbown com um anel azul ao lado de uma piscina."
+        },
+        {
+          "img": "/img/uploads/439747368_2206043789741563_5774587235675409851_n.jpg",
+          "alt": "Capa Impactor Ultra na cor preta, destacando  seu diferencial de ter a maior proteção anti-impacto do Brasil",
+          "link": "https://www.instagram.com/customic/"
+        }
+      ]
+    },
+    {
       "type": "document-description",
       "enabled": true
     },
     {
       "type": "custom-content",
       "markdown": "#### Fique por dentro das novidades do nosso Blog 😁✍"
-    },
-    {
-      "type": "custom-html",
-      "html": "<div role=\"main\" id=\"b2c-newsletter-customic-rodape-39ad5e81aa9d388e913c\"></div><script type=\"text/javascript\">window.setupRd = function () {setTimeout(function () { new RDStationForms('b2c-newsletter-customic-rodape-39ad5e81aa9d388e913c', 'UA-28628232-1').createForm(); }, 200)} </script>"
     },
     {
       "type": "blog-grid",
@@ -53,29 +74,8 @@
       ]
     },
     {
-      "type": "banners-grid",
-      "banners": [
-        {
-          "img": "/img/uploads/425583659_764929711730357_5772745624342383373_n.jpg",
-          "link": "https://www.instagram.com/customic/",
-          "alt": "Fique na moda com a Spot Silicone Reciclado, uma maneira divertida de proteger seu telefone."
-        },
-        {
-          "img": "/img/uploads/436867369_811331180851767_8515988639330544982_n.jpg",
-          "link": "https://www.instagram.com/customic/",
-          "alt": "Jovem filmando com seu celular protegido por uma capa Impactor Holo Magsafe da Customic"
-        },
-        {
-          "img": "/img/uploads/439253908_3907504892864481_2687891782062014314_n.jpg",
-          "link": "https://www.instagram.com/customic/",
-          "alt": "Uma capa Impactor Holo Magsafe Rainbown com um anel azul ao lado de uma piscina."
-        },
-        {
-          "img": "/img/uploads/439747368_2206043789741563_5774587235675409851_n.jpg",
-          "alt": "Capa Impactor Ultra na cor preta, destacando  seu diferencial de ter a maior proteção anti-impacto do Brasil",
-          "link": "https://www.instagram.com/customic/"
-        }
-      ]
+      "type": "custom-html",
+      "html": "<div role=\"main\" id=\"b2c-newsletter-customic-rodape-39ad5e81aa9d388e913c\"></div><script type=\"text/javascript\">window.setupRd = function () {setTimeout(function () { new RDStationForms('b2c-newsletter-customic-rodape-39ad5e81aa9d388e913c', 'UA-28628232-1').createForm(); }, 200)} </script>"
     }
   ]
 }
