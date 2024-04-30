@@ -51,6 +51,10 @@
           "img": "/img/uploads/09f8c877-0f27-49b6-b530-40521df1f390_easy-resize.com_-780x450.jpg"
         }
       ]
+    },
+    {
+      "type": "custom-html",
+      "html": "<!-- Place somewhere in the <body> of your page -->\n<div class=\"flexslider carousel\">\n  <ul class=\"slides\">\n    <li>\n      <img src=\"https://i.imgur.com/HlhMTO6.jpg\" />\n    </li>\n    <li>\n      <img src=\"https://i.imgur.com/2K5BL1z.jpg\" />\n    </li>\n    <li>\n      <img src=\"https://i.imgur.com/09fFlpj.jpg\" />\n    </li>\n    <li>\n      <img src=\"https://i.imgur.com/ABe0G0N.jpg\" />\n    </li>\n    <!-- items mirrored twice, total of 12 -->\n  </ul>\n</div>"
     }
   ]
 }
