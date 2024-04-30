@@ -53,32 +53,18 @@
       ]
     },
     {
-      "type": "custom-html",
-      "html": "<!-- Place somewhere in the <body> of your page -->\n<div class=\"flexslider carousel\">\n  <ul class=\"slides\">\n    <li>\n      <img src=\"https://i.imgur.com/HlhMTO6.jpg\" />\n    </li>\n    <li>\n      <img src=\"https://i.imgur.com/2K5BL1z.jpg\" />\n    </li>\n    <li>\n      <img src=\"https://i.imgur.com/09fFlpj.jpg\" />\n    </li>\n    <li>\n      <img src=\"https://i.imgur.com/ABe0G0N.jpg\" />\n    </li>\n    <!-- items mirrored twice, total of 12 -->\n  </ul>\n</div>"
-    },
-    {
-      "type": "banner-slider",
-      "autoplay": 4000,
-      "full_width": false,
-      "slides": [
+      "type": "banners-grid",
+      "banners": [
         {
-          "start": "",
-          "end": "",
           "img": "/img/uploads/431148523_2192257747801937_3662471376438952897_n.jpg"
         },
         {
-          "start": "",
-          "end": "",
           "img": "/img/uploads/436867369_811331180851767_8515988639330544982_n.jpg"
         },
         {
-          "start": "",
-          "end": "",
           "img": "/img/uploads/439253908_3907504892864481_2687891782062014314_n.jpg"
         },
         {
-          "start": "",
-          "end": "",
           "img": "/img/uploads/439747368_2206043789741563_5774587235675409851_n.jpg"
         }
       ]
