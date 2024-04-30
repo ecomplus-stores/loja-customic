@@ -32,6 +32,7 @@ const allCategories = menu.alphabetical_order
 let categoryParents = _.lodash.groupBy(allCategories, ({ parent }) => {
   return !parent || !parent.slug ? '_' : parent.slug
 })
+categoryParents['_'] = categoryParents['_'].filter(({slug}) => menu.sort_categories.includes(slug))
 const getSubmenuId = slug => `a-${slug.replace(/\//g, '_')}`
 
 const mainCategories = categoryParents._
@@ -55,9 +56,6 @@ if (mainCategories) {
     }
   }
 }
-
-//categoryParents = categoryParents.filter(({slug}) => menu.sort_categories.includes(slug))
-console.log(categoryParents)
 %>
 
 <aside id="menu" class="menu shadow">
@@ -122,9 +120,10 @@ console.log(categoryParents)
           <% } %>
         </div>
 
-    <% for (const slug in categoryParents) { %>
+    <% for (const slug in categoryParents) {
+      %>
       
-      <% if (categoryParents.hasOwnProperty(slug)) { %>
+      <% if (categoryParents.hasOwnProperty(slug) && (menu.sort_categories.includes(slug) || slug === '_')) { %>
         <% let category, parent %>
         <div
           <% if (slug === '_') { %>
