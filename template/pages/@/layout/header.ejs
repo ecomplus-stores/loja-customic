@@ -341,7 +341,7 @@ const isCentralizedLogo = header.centralized_logo
                                 return b.name > a.name ? -1 : 1
                               })
                             }
-                            const indexMenu = keysMenu.findIndex(menu => subcategory.name && subcategory.name.includes(menu))
+                            const indexMenu = keysMenu.findIndex(menu => subcategory.name && subcategory.name.includes(menu === 'Apple' ? 'iPhone' : menu))
                             if (indexMenu > -1) {
                               const arrayMenu = brandsModel[keysMenu[indexMenu]]
                               thirdCategories.sort((a, b) => {
