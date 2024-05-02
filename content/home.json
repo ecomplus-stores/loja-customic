@@ -172,6 +172,13 @@
     },
     {
       "type": "collection-shelf",
+      "shuffle": true,
+      "limit": 12,
+      "page": 1,
+      "collection_id": "609027b8014d483dbf199881:collections:PopSockets, o Original!:/popsockets-original"
+    },
+    {
+      "type": "collection-shelf",
       "shuffle": false,
       "limit": 12,
       "page": 1,
