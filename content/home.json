@@ -175,7 +175,8 @@
       "shuffle": true,
       "limit": 12,
       "page": 1,
-      "collection_id": "609027b8014d483dbf199881:collections:PopSockets, o Original!:/popsockets-original"
+      "collection_id": "609027b8014d483dbf199881:collections:PopSockets, o Original!:/popsockets-original",
+      "sort": "sales"
     },
     {
       "type": "collection-shelf",
