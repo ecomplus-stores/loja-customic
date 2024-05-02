@@ -955,3 +955,77 @@ h1.product__name.h1__ssr {
     }
   }
 }
+
+.faq_list{
+  .list{
+      display:flex;
+      flex-direction: column;
+  }
+  .faq_list-item{
+      .hat{
+          .a_text{
+              letter-spacing: 0.05em;
+          }
+          button{
+              border:0;
+              padding:0;
+              background:transparent;
+              svg{
+                  transition: all .5s;
+              }
+          }
+          border: 1px solid #F8F8F8;
+      }
+      .content{
+          font-family: "Source Sans Pro";   
+          letter-spacing: 0.05em;         
+          height:0;
+          max-height:0;
+          overflow: hidden;
+          transition: padding .5s, max-height .5s;
+          background:#f8f8f8;
+          padding: 0rem;
+          margin-top: -.5rem;
+          box-sizing: border-box;
+      }
+  }
+  .faq_list-item.visible{
+      .hat{
+          button{
+              border:0;
+              padding:0;
+              background:transparent;
+              svg{
+                  transform: rotate(315deg);
+              }
+          }            
+      }
+      .content{
+          transition: padding .5s, max-height .5s;
+          max-height:180px;
+          overflow-y: auto;
+          height:auto;
+          padding: 2rem;
+      }
+  }
+}
+.text-center {
+  text-align: center;
+}
+.mx-auto {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.faq_list {
+  h2 {
+      color: #f3237f;
+      font-family: GoldplayAltBold;
+      font-size: 30px;
+  }
+  &-item {
+      svg path {
+          color: #f3237f;
+      }
+  }
+}
