@@ -127,52 +127,59 @@ export default options => {
     ]
   },
   {
-    "label": "Grid blog",
-    "name": "blog-grid",
-    "widget": "list",
-    "fields": [
-        {
-            "label": "Banners",
-            "name": "banners",
-            "widget": "list",
-            "fields": [
-                {
-                    "label": "Imagem",
-                    "name": "img",
-                    "widget": "image",
-                    "required": false
-                },
-                {
-                    "label": "Link",
-                    "required": false,
-                    "name": "link",
-                    "widget": "string"
-                },
-                {
-                    "label": "Alt",
-                    "required": false,
-                    "name": "alt",
-                    "widget": "string"
-                },
-                {
-                  "label": "Frase de chamada blog",
-                  "required": false,
-                  "name": "phrase_blog",
-                  "widget": "string"
-                },
-                {
-                  "label": "Texto de chamada blog",
-                  "required": false,
-                  "name": "text_blog",
-                  "widget": "string"
-                }
-            ]
-        },
-        {
-          "label": "Slug categoria",
-          "required": false,
-          "name": "title",
-          "widget": "string"
+    label: 'Lista de Posts do Blog',
+    name: 'blog_list',
+    widget: 'object',
+    fields: [
+      {
+        "label": "Grid blog",
+        "name": "blog-grid",
+        "widget": "list",
+        "fields": [
+            {
+                "label": "Banners",
+                "name": "banners",
+                "widget": "list",
+                "fields": [
+                    {
+                        "label": "Imagem",
+                        "name": "img",
+                        "widget": "image",
+                        "required": false
+                    },
+                    {
+                        "label": "Link",
+                        "required": false,
+                        "name": "link",
+                        "widget": "string"
+                    },
+                    {
+                        "label": "Alt",
+                        "required": false,
+                        "name": "alt",
+                        "widget": "string"
+                    },
+                    {
+                      "label": "Frase de chamada blog",
+                      "required": false,
+                      "name": "phrase_blog",
+                      "widget": "string"
+                    },
+                    {
+                      "label": "Texto de chamada blog",
+                      "required": false,
+                      "name": "text_blog",
+                      "widget": "string"
+                    }
+                ]
+            },
+            {
+              "label": "Slug categoria",
+              "required": false,
+              "name": "title",
+              "widget": "string"
+          }
+        ]
       }
     ]
   },
@@ -182,56 +189,63 @@ export default options => {
     widget: 'object',
     fields: [
       {
-        label: 'Título',
-        required: false,
-        name: 'title',
-        widget: 'string'
-      },
-      {
-        label: 'Descrição',
-        required: false,
-        name: 'description',
-        widget: 'text'
-      },
-      {
-        label: 'Posição da descrição',
-        required: false,
-        name: 'list',
-        widget: 'select',
-        options: ["description_first","description_last"]
-      },        
-      {
-        label: 'Perguntas',
-        name: 'questions',
+        label: 'Lista de faqs',
+        name: 'mgnr_faq_list':
         widget: 'list',
-        required:false,
         fields: [
           {
-            label: 'Pergunta',
-            name: 'question',
-            widget: 'object',
+            label: 'Título',
+            required: false,
+            name: 'title',
+            widget: 'string'
+          },
+          {
+            label: 'Descrição',
+            required: false,
+            name: 'description',
+            widget: 'text'
+          },
+          {
+            label: 'Posição da descrição',
+            required: false,
+            name: 'list',
+            widget: 'select',
+            options: ["description_first","description_last"]
+          },        
+          {
+            label: 'Perguntas',
+            name: 'questions',
+            widget: 'list',
             required:false,
             fields: [
               {
                 label: 'Pergunta',
-                name: 'title',
-                widget: 'string'          
-              },
-              {
-                label: 'Resposta',
-                name: 'response',
-                widget: 'string'          
-              }              
+                name: 'question',
+                widget: 'object',
+                required:false,
+                fields: [
+                  {
+                    label: 'Pergunta',
+                    name: 'title',
+                    widget: 'string'          
+                  },
+                  {
+                    label: 'Resposta',
+                    name: 'response',
+                    widget: 'string'          
+                  }              
+                ]
+              },          
             ]
-          },          
+          },
+          {
+            label: 'Slug da categoria',
+            required: false,
+            name: 'category',
+            widget: 'string'
+          } 
         ]
-      },
-      {
-        label: 'Slug da categoria',
-        required: false,
-        name: 'category',
-        widget: 'string'
-      },     
+      }    
     ]
   }
   ])
