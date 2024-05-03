@@ -194,6 +194,10 @@
       "title": "Linha Impactor® de Proteção Militar"
     },
     {
+      "type": "blog",
+      "enabled": true
+    },
+    {
       "type": "custom-html",
       "html": "<!-- LightWidget WIDGET --><script src=\"https://cdn.lightwidget.com/widgets/lightwidget.js\"></script><iframe src=\"//lightwidget.com/widgets/dd04921c68845ae9b61c61aa72f1a404.html\" scrolling=\"no\" allowtransparency=\"true\" class=\"lightwidget-widget\" style=\"width:100%;border:0;overflow:hidden;\"></iframe>"
     },
