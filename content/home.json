@@ -10,7 +10,8 @@
           "start": "",
           "end": "",
           "img": "https://www.comercial.customic.com.br/news/promo_dia_das_maes_2024/CUSTOMIC-BANNER-SITE-DESK.webm",
-          "mobile_img": "https://www.comercial.customic.com.br/news/promo_dia_das_maes_2024/CUSTOMIC-BANNER-SITE-MOBILE.webm"
+          "mobile_img": "https://www.comercial.customic.com.br/news/promo_dia_das_maes_2024/CUSTOMIC-BANNER-SITE-MOBILE.webm",
+          "link": "/dia-das-maes-customic"
         },
         {
           "start": "",
@@ -191,9 +192,6 @@
       "collection_id": "5f1f3f59f023684cdbd4a1f0:categories:Capinha Militar para Celular:/protecao-militar",
       "sort": "sales",
       "title": "Linha Impactor® de Proteção Militar"
-    },
-    {
-      "type": "blog"
     },
     {
       "type": "custom-html",
