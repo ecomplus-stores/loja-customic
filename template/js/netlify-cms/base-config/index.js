@@ -190,7 +190,7 @@ export default options => {
     fields: [
       {
         label: 'Lista de faqs',
-        name: 'mgnr_faq_list':
+        name: 'mgnr_faq_list',
         widget: 'list',
         fields: [
           {
