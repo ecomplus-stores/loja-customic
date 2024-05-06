@@ -198,14 +198,6 @@
       "enabled": true
     },
     {
-      "type": "custom-html",
-      "html": "<!-- LightWidget WIDGET --><script src=\"https://cdn.lightwidget.com/widgets/lightwidget.js\"></script><iframe src=\"//lightwidget.com/widgets/dd04921c68845ae9b61c61aa72f1a404.html\" scrolling=\"no\" allowtransparency=\"true\" class=\"lightwidget-widget\" style=\"width:100%;border:0;overflow:hidden;\"></iframe>"
-    },
-    {
-      "type": "custom-html",
-      "html": "<div role=\"main\" id=\"b2c-newsletter-customic-rodape-39ad5e81aa9d388e913c\"></div><script type=\"text/javascript\">window.setupRd = function () {setTimeout(function () { new RDStationForms('b2c-newsletter-customic-rodape-39ad5e81aa9d388e913c', 'UA-28628232-1').createForm(); }, 200)} </script>"
-    },
-    {
       "type": "banners-grid",
       "banners": [
         {
@@ -213,6 +205,14 @@
           "mobile_img": "/img/uploads/anyconv.com__banner-insta-mobile.webp"
         }
       ]
+    },
+    {
+      "type": "custom-html",
+      "html": "<!-- LightWidget WIDGET --><script src=\"https://cdn.lightwidget.com/widgets/lightwidget.js\"></script><iframe src=\"//lightwidget.com/widgets/dd04921c68845ae9b61c61aa72f1a404.html\" scrolling=\"no\" allowtransparency=\"true\" class=\"lightwidget-widget\" style=\"width:100%;border:0;overflow:hidden;\"></iframe>"
+    },
+    {
+      "type": "custom-html",
+      "html": "<div role=\"main\" id=\"b2c-newsletter-customic-rodape-39ad5e81aa9d388e913c\"></div><script type=\"text/javascript\">window.setupRd = function () {setTimeout(function () { new RDStationForms('b2c-newsletter-customic-rodape-39ad5e81aa9d388e913c', 'UA-28628232-1').createForm(); }, 200)} </script>"
     }
   ]
 }
