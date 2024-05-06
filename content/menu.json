@@ -109,23 +109,6 @@
           "subcategory_menu_slug": "/todos-modelos-de-android"
         }
       ]
-    },
-    {
-      "submenu_menu_slug": "/peliculas",
-      "submenu_menu": [
-        {
-          "subcategory_menu_slug": "/pelicula-gel"
-        },
-        {
-          "subcategory_menu_slug": "/peliculas-gel-flexivel"
-        },
-        {
-          "subcategory_menu_slug": "/pelicula-vidro"
-        },
-        {
-          "subcategory_menu_slug": "/pelicula-vidro-3d"
-        }
-      ]
     }
   ]
 }
