@@ -210,7 +210,9 @@
       "banners": [
         {
           "img": "/img/uploads/anyconv.com__banner-insta-desk.webp",
-          "mobile_img": "/img/uploads/anyconv.com__banner-insta-mobile.webp"
+          "mobile_img": "/img/uploads/anyconv.com__banner-insta-mobile.webp",
+          "link": "https://www.instagram.com/customic/",
+          "alt": "Instagram Customic Oficial"
         }
       ]
     },
