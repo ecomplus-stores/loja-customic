@@ -1,7 +1,7 @@
 <%
-console.log(_.state && _.state.slug, opt.title)
 if (_.state && _.state.slug === opt.title) {
     console.log('estou dentro')
+    console.log(opt)
 %>
 <div class="blog my-4 my-lg-5 ">
     <div class="container">
@@ -9,14 +9,23 @@ if (_.state && _.state.slug === opt.title) {
         <div class="col col-md-6 col-lg-6" id="bloco-1-blog">
           <article class="tec--carousel__item tec--carousel__item--template1">
             <figure class="tec--carousel__item__thumb">
-                <a href="<%= opt.banners[0].link %>" target="_blank" title="<%= opt.banners[0].alt %>" class="tec--carousel__item__thumb__link"> <img width="704" :  height="288" alt="<%= opt.banners[0].alt %>" class="tec--carousel__item__thumb__image swiper-lazy swiper-lazy-loaded img-fluid lozad" src="<%= opt.banners[0].img %>" pinger-seen="true"> </a>
+              <% if (opt.banners && opt.banners.length && opt.banners[0] && opt.banners[0].link) { %>
+                <a href="<%= opt.banners[0].link %>" target="_blank" title="<%= opt.banners[0].alt  %>" class="tec--carousel__item__thumb__link"> <img width="704" :  height="288" alt="<%= opt.banners[0].alt %>" class="tec--carousel__item__thumb__image swiper-lazy swiper-lazy-loaded img-fluid lozad" src="<%= opt.banners[0].img %>" pinger-seen="true"> </a>
+            <%  } else { %>
+                <img width="704" :  height="288" alt="<%= opt.banners[0].alt %>" class="tec--carousel__item__thumb__image swiper-lazy swiper-lazy-loaded img-fluid lozad" src="<%= opt.banners[0].img %>" pinger-seen="true">
+            <%  } %>
+                
             </figure>
+            <% if (opt.banners && opt.banners.length && opt.banners[0] && opt.banners[0].text_blog) { %>
               <div class="tec--carousel__item__info">
                 <div class="tec--carousel__item__subtitle tec--carousel__item__subtitle--customic"> <%= opt.banners[0].phrase_blog %> </div>
                 <h5 class="tec--carousel__item__title"><a class="tec--carousel__item__title__link"
                     href="<%= opt.banners[0].link %>" target="_blank"
                     title="<%= opt.banners[0].link %>"> <%= opt.banners[0].text_blog %> </a></h5>
               </div>
+              <% 
+            }
+            %>
           </article>
         </div>
         <div class="col col-md-6 col-lg-6">
@@ -26,14 +35,23 @@ if (_.state && _.state.slug === opt.title) {
             <article class="tec--carousel__item tec--carousel__item--template<%= index %>">
                 
             <figure class="tec--carousel__item__thumb">
-                <a href="<%= opt.banners[index].link %>" target="_blank" title="${<%= opt.banners[index].alt %>}" class="tec--carousel__item__thumb__link"> <img width="164" :  height="118" alt="<%= opt.banners[index].alt %>" class="tec--carousel__item__thumb__image swiper-lazy swiper-lazy-loaded img-fluid lozad" src="<%= opt.banners[index].img %>" pinger-seen="true"> </a>
+              <% if (element && element.link) { %>
+                <a href="<%= element.link %>" target="_blank" title="${<%= element.alt %>}" class="tec--carousel__item__thumb__link"> <img width="164" :  height="118" alt="<%= element.alt %>" class="tec--carousel__item__thumb__image swiper-lazy swiper-lazy-loaded img-fluid lozad" src="<%= element.img %>" pinger-seen="true"> </a>
+            <%  } else { %>
+              <img width="164" :  height="118" alt="<%= element.alt %>" class="tec--carousel__item__thumb__image swiper-lazy swiper-lazy-loaded img-fluid lozad" src="<%= element.img %>" pinger-seen="true">
+            <%  } %>
+                
             </figure>
+            <% if (element && element.text_blog) { %>
               <div class="tec--carousel__item__info">
-                <div class="tec--carousel__item__subtitle tec--carousel__item__subtitle--customic"> <%= opt.banners[index].phrase_blog %> </div>
+                <div class="tec--carousel__item__subtitle tec--carousel__item__subtitle--customic"> <%= element.phrase_blog %> </div>
                 <h5 class="tec--carousel__item__title"><a class="tec--carousel__item__title__link"
-                    href="<%= opt.banners[index].link %>" target="_blank"
-                    title="<%= opt.banners[index].link %>"> <%= opt.banners[index].text_blog %> </a></h5>
+                    href="<%= element.link %>" target="_blank"
+                    title="<%= element.link %>"> <%= element.text_blog %> </a></h5>
               </div>
+              <% 
+            }
+            %>
             </article>
             <%
             }

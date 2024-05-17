@@ -180,27 +180,27 @@
       "enabled": true
     },
     {
-      "type": "blog_list",
-      "blog-grid": [
+      "type": "blog-grid",
+      "banners": [
         {
-          "banners": [
-            {
-              "img": "/img/uploads/customic-blog-perguntas-militar-1-.webp",
-              "link": "https://blog.customic.com.br/voce-tem-perguntas-nos-temos-respostas-protecao-militar/"
-            },
-            {
-              "img": "/img/uploads/customic-story-perguntas-antiblue-blog-1-.webp",
-              "link": "https://blog.customic.com.br/voce-tem-perguntas-nos-temos-respostas-pelicula-antiblue/"
-            },
-            {
-              "img": "/img/uploads/vendedor-consultor-profissional-de-celular-em-loja-de-tecnologia-ou-loja-780x450.webp",
-              "link": "https://blog.customic.com.br/como-aumentar-o-seu-ticket-medio/"
-            },
-            {
-              "img": "/img/uploads/loja-de-acessorios-para-celular-online-como-montar-780x450-1-.webp",
-              "link": "https://blog.customic.com.br/como-escolher-a-capa-ideal-para-voce/"
-            }
-          ]
+          "img": "/img/uploads/customic-blog-perguntas-militar-1-.webp",
+          "link": "https://blog.customic.com.br/voce-tem-perguntas-nos-temos-respostas-protecao-militar/",
+          "alt": "Customic Militar"
+        },
+        {
+          "img": "/img/uploads/customic-story-perguntas-antiblue-blog-1-.webp",
+          "link": "https://blog.customic.com.br/voce-tem-perguntas-nos-temos-respostas-pelicula-antiblue/",
+          "alt": "Customic Antiblue"
+        },
+        {
+          "img": "/img/uploads/vendedor-consultor-profissional-de-celular-em-loja-de-tecnologia-ou-loja-780x450.webp",
+          "link": "https://blog.customic.com.br/como-aumentar-o-seu-ticket-medio/",
+          "alt": "Customic Consultor"
+        },
+        {
+          "img": "/img/uploads/loja-de-acessorios-para-celular-online-como-montar-780x450-1-.webp",
+          "link": "https://blog.customic.com.br/como-escolher-a-capa-ideal-para-voce/",
+          "alt": "Customic Acessórios"
         }
       ]
     },

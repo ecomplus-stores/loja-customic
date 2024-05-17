@@ -128,7 +128,7 @@ export default options => {
   },
   {
     label: 'Lista de Posts do Blog',
-    name: 'blog_list',
+    name: 'blog-grid',
     widget: 'object',
     fields: [
       {
