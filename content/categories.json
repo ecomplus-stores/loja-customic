@@ -17,6 +17,55 @@
       "sort": "views"
     },
     {
+      "type": "mgnr_faq",
+      "mgnr_faq_list": [
+        {
+          "category": "/capinha-de-celular",
+          "title": "Você já ficou indeciso na hora de escolher a capa ideal para o seu celular?🤔",
+          "description": "Há mais de 10 anos no mercado de capas para celular, pesquisamos, desenvolvemos e aperfeiçoamos diferentes tecnologias, para as mais diversas finalidades de cases. Da mais alta proteção ao design mais clean, que não esconde o celular, mas ainda assim garante a sua segurança. Aqui neste passo a passo, você vai descobrir como escolher a case ideal para proteger e dar a personalidade que o seu celular precisa.",
+          "questions": [
+            {
+              "question": {
+                "title": "Quais são as minhas necessidades de proteção para o celular?",
+                "response": "Antes de começar a busca pela capa perfeita, é importante entender as suas necessidades. Você precisa de uma capa que proteja o seu celular em qualquer situação do dia a dia? Ou está procurando por algo que traduza o seu estilo, para complementar o look? Identificar as suas prioridades vai te ajudar a direcionar a busca."
+              }
+            },
+            {
+              "question": {
+                "title": "Qual material de capa se adequa melhor ao meu estilo de vida?",
+                "response": "Aqui na Customic, você vai encontrar uma ampla variedade de materiais para atender a diferentes preferências e necessidades. Se você valoriza a proteção contra impactos, capas com a traseira rígida são excelentes para você. Como a linha Impactor Ultra, que suporta quedas de até 3m de altura. Já para proteção que não esconde o celular e realça o design do seu aparelho, nossas linhas transparentes poderão ser a sua escolha. Com tecnologia que retarda o amarelamento, elas duram mais que as convencionais. Para traduzir a sua personalidade e acompanhar os seus looks, temos as capas de silicone, com diversas opções de cores e toque aveludado."
+              }
+            },
+            {
+              "question": {
+                "title": "Qual estilo de capa reflete minha personalidade?",
+                "response": "Praticidade e simplicidade? Confira a Impactor Ultra MagSafe. Estilo, cor e alegria? Você vai amar a linha Impactor Clear Holo. Eco friendly sem perder o seu estilo? Essa é a sua: Spot Silicone Reciclado. Ama estar por dentro das novidades? Vem ver esse super lançamento: Impactor Clear MagSafe Gradiente. Se encontrou nos estilos acima? Se não, não se preocupe, no site da Customic você vai encontrar a case perfeita para você, vem conferir: Link para o site"
+              }
+            },
+            {
+              "question": {
+                "title": "Que funcionalidades adicionais eu gostaria na minha capa de celular?",
+                "response": "Além de proteger o seu celular, algumas capas oferecem funcionalidades adicionais, que podem ajudar muito no seu dia a dia. Elas podem ser, por exemplo, a compatibilidade com MagSafe, para você não precisar retirar a capa na hora de carregar o celular. Mais segurança e praticidade para você! Ou a tecnologia antibacteriana, como em nossa case Impactor Flex AntiBactéria, que elimina até 99,99% das bactérias comuns."
+              }
+            },
+            {
+              "question": {
+                "title": "Onde posso encontrar uma variedade de capas que atendam às minhas necessidades?",
+                "response": "Agora que você sabe como escolher a capa perfeita para o seu celular, e já tem até alguns exemplos, vem conferir nossas linhas completas disponíveis:  Capinha Militar para Celular: Link Compatíveis com Carregamento MagSafe: Link Capas AntiBactéria Customic: Link Capas Especiais Customic: Link"
+              }
+            },
+            {
+              "question": {
+                "title": "Espero que este guia tenha ajudado você a encontrar a capa perfeita para o seu celular.",
+                "response": "Esperamos que este guia tenha ajudado você a encontrar a proteção perfeita para o seu celular. Na Customic, estamos comprometidos em oferecer produtos de alta qualidade e que combinem com o seu estilo de vida. Você também encontra as capas para celular Customic nas melhores lojas de acessórios da sua cidade. Ficou com alguma dúvida ou quer saber mais sobre algum tipo de capa específica? Comenta aqui embaixo que responderemos o mais breve possível. 👇"
+              }
+            }
+          ],
+          "list": "description_first"
+        }
+      ]
+    },
+    {
       "type": "custom-html",
       "html": "<div role=\"main\" id=\"b2c-newsletter-customic-rodape-39ad5e81aa9d388e913c\"></div><script type=\"text/javascript\">window.setupRd = function () {setTimeout(function () { new RDStationForms('b2c-newsletter-customic-rodape-39ad5e81aa9d388e913c', 'UA-28628232-1').createForm(); }, 200)} </script>"
     },
