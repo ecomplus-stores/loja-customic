@@ -239,11 +239,17 @@ export default options => {
             ]
           },
           {
-            label: 'Slug da categoria',
-            required: false,
+            label: 'Escolha a categoria',
             name: 'category',
-            widget: 'string'
-          } 
+            widget: 'select',
+            required: false,
+            options: options.state.routes
+            .filter(el => el.resource === 'categories')
+            .map((el) => ({
+              label: el.name,
+              value: el.slug || el._id
+            }))
+          }
         ]
       }    
     ]
