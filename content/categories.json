@@ -105,30 +105,6 @@
     {
       "type": "blog",
       "enabled": true
-    },
-    {
-      "type": "blog-grid",
-      "title": "capinha-de-celular",
-      "banners": [
-        {
-          "phrase_blog": "CAPAS PARA CELULAR",
-          "text_blog": "Perguntas frequentes sobre como vender capas de celular e suas respostas! ",
-          "img": "/img/uploads/02_07.jpg",
-          "link": "https://blog.customic.com.br/perguntas-frequentes-sobre-como-vender-capas-de-celular-e-suas-respostas/",
-          "alt": "Perguntas frequentes sobre como vender capas de celular e suas respostas!"
-        },
-        {
-          "phrase_blog": "Capas",
-          "text_blog": "Conheça: Impactor Clear MagSafe Gradiente",
-          "img": "/img/uploads/capa-mag-sage.jpg"
-        },
-        {
-          "phrase_blog": "Qual a melhor capa para iPhone",
-          "text_blog": "As cases para celular são acessórios que garantem a proteção contra quedas e arranhões. Eles podem ser encontrados em diversas cores e modelos no mercado. Leia o texto e descubra a melhor capa para iPhone.",
-          "alt": "",
-          "img": "/img/uploads/09f8c877-0f27-49b6-b530-40521df1f390_easy-resize.com_-780x450.jpg"
-        }
-      ]
     }
   ]
 }
