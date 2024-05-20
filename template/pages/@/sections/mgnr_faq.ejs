@@ -1,27 +1,28 @@
 <% 
-    if(Array.isArray(opt.questions) && opt.questions.length){
-
+const hasCategory = opt && opt.mgnr_faq_list && opt.mgnr_faq_list.length && opt.mgnr_faq_list.find(({category}) => category === _.state._id)
+    if(hasCategory && Array.isArray(opt.mgnr_faq_list) && opt.mgnr_faq_list.length){
+        console.log('here im')
         %>
         <section
             class="faq_list my-5 py-5 px-2 px-md-5"
        >
             <div class="container">
             <%
-                if(opt.title){
+                if(hasCategory.title){
                     %>
                         <div class="faq_section-title text-center mb-4">
                         <%
-                        if(opt.list != "description_last"){
+                        if(hasCategory.list != "description_last"){
                             %>
-                            <small class="text-uppercase"><%- opt.description %></small>
+                            <small class="text-uppercase"><%- hasCategory.description %></small>
                             <%
                         }
                         %>
-                            <h2 class="text-bold text-uppercase"><%- opt.title %></h2>
+                            <h2 class="text-bold text-uppercase"><%- hasCategory.title %></h2>
                         <%
-                        if(opt.list == "description_last"){
+                        if(hasCategory.list == "description_last"){
                             %>
-                            <small class="text-uppercase"><%- opt.description %></small>
+                            <small class="text-uppercase"><%- hasCategory.description %></small>
                             <%
                         }
                         %>
@@ -31,11 +32,11 @@
             %>
             <div class="row list mx-0">      
                 <div class="col-md-8 mx-auto">
-                <% for (let i = 0; i < opt.questions.length; i++) { %>
+                <% for (let i = 0; i < hasCategory.questions.length; i++) { %>
                     <div class="faq_list-item">
                         <div class="hat px-3 py-2 my-2 d-flex justify-content-between">
                             <span class="a_text py-2 d-block">
-                                <%- opt.questions[i].question.title %>
+                                <%- hasCategory.questions[i].question.title %>
                             </span>
                             <button type="button" aria-label="Ver mais opções">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -44,7 +45,7 @@
                             </button>
                         </div>
                         <div class="content">
-                            <%- opt.questions[i].question.response %>
+                            <%- hasCategory.questions[i].question.response %>
                         </div>
                     </div>
                 <% } %>          

@@ -976,8 +976,7 @@ h1.product__name.h1__ssr {
           }
           border: 1px solid #F8F8F8;
       }
-      .content{
-          font-family: "Source Sans Pro";   
+      .content{  
           letter-spacing: 0.05em;         
           height:0;
           max-height:0;
@@ -1017,18 +1016,6 @@ h1.product__name.h1__ssr {
   margin-left: auto;
 }
 
-.faq_list {
-  h2 {
-      color: #f3237f;
-      font-family: GoldplayAltBold;
-      font-size: 30px;
-  }
-  &-item {
-      svg path {
-          color: #f3237f;
-      }
-  }
-}
 
 .shipping-calculator__services::before {
   content: '⚠️ Devido as fortes chuvas no Rio Grande do Sul, a entrega poderá sofrer atrasos.';
@@ -1038,4 +1025,12 @@ h1.product__name.h1__ssr {
   padding: 10px;
   display: flex;
   margin-bottom: 3px;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.faq_section-title h2 {
+  margin-top: 15px;
 }

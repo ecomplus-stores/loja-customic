@@ -68,3 +68,7 @@ if (window.navigator.userAgent && !/Chrome-Lighthouse/i.test(window.navigator.us
     loadChat()
   })
 }
+
+$('.faq_list button').click(function(){
+  $(this).closest('.faq_list-item').toggleClass('visible')
+});
