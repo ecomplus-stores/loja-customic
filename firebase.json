@@ -32,6 +32,11 @@
         "type": 301
       },
       {
+        "source": "/capa-para-celular/apple/pages/seja-um-revendedor-oficial-customic",
+        "destination": "/pages/seja-um-revendedor-oficial-customic",
+        "type": 301
+      },
+      {
         "source": "/capa-para-celular",
         "destination": "/capinha-de-celular",
         "type": 301
