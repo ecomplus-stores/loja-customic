@@ -15,6 +15,7 @@ module.exports = () => ({
       './js/DiscountApplier.js': path.resolve(__dirname, 'template/js/custom-js/DiscountApplier.js'),
       './js/ProductVariations.js': path.resolve(__dirname, 'template/js/custom-js/ProductVariations.js'),
       './html/ProductVariations.html': path.resolve(__dirname, 'template/js/custom-js/ProductVariations.html'),
+      './html/EcOrderInfo.html': path.resolve(__dirname, 'template/js/custom-js/EcOrderInfo.html'),
       './html/SearchEngine.html': path.resolve(__dirname, 'template/js/custom-js/SearchEngine.html'),
       './js/SearchEngine.js': path.resolve(__dirname, 'template/js/custom-js/SearchEngine.js'),
       './html/ProductCard.html': path.resolve(__dirname, 'template/js/custom-js/ProductCard.html'),

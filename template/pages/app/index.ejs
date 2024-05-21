@@ -56,6 +56,8 @@ const logo = _.settings.logo
     <div id="storefront-app">
       <%- await include('@/sections/inc/loading') %>
     </div>
+    <div role="main" class="d-none" id="b2c-formulario-pesquisa-de-satisfacao-de-compra-no-site-e839da08110213fb4bcb"></div>
+    
 
     <div id="sch-tef-main-container">
       <div class="holder">
@@ -93,6 +95,7 @@ const logo = _.settings.logo
   <%- await include('@/json', { _ }) %>
   <%- await include('@/scripts') %>
   <script src="https://www.mercadopago.com/v2/security.js" view="checkout"></script>
+  <script type="text/javascript" src="https://d335luupugsy2.cloudfront.net/js/rdstation-forms/stable/rdstation-forms.min.js"></script><script type="text/javascript"> new RDStationForms('b2c-formulario-pesquisa-de-satisfacao-de-compra-no-site-e839da08110213fb4bcb', 'null').createForm();</script>
 </body>
 
 </html>

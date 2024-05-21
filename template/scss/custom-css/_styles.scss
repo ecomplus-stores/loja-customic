@@ -1034,3 +1034,13 @@ h1.product__name.h1__ssr {
 .faq_section-title h2 {
   margin-top: 15px;
 }
+
+#form-b2c-formulario-pesquisa-de-satisfacao-de-compra-no-site-e839da08110213fb4bcb {
+  display: flex;
+  justify-content: center
+}
+
+#storefront-app:has(#confirmation) + #b2c-formulario-pesquisa-de-satisfacao-de-compra-no-site-e839da08110213fb4bcb {
+  display: flex !important;
+  justify-content: center;
+}
