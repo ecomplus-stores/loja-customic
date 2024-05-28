@@ -6,7 +6,7 @@
     },
     {
       "type": "document-banner",
-      "enabled": true
+      "enabled": false
     },
     {
       "type": "page-title"
