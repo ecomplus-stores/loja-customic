@@ -1,5 +1,6 @@
 <% 
-const hasCategory = opt && opt.mgnr_faq_list && opt.mgnr_faq_list.length && opt.mgnr_faq_list.find(({category}) => category === _.state._id)
+const fatherCategory = _.categories.find(({_id}) => _id === (_.state.parent && _.state.parent._id))
+const hasCategory = opt && opt.mgnr_faq_list && opt.mgnr_faq_list.length && opt.mgnr_faq_list.find(({category}) => category === _.state._id || (category === (fatherCategory && fatherCategory._id)) || (category === (fatherCategory && fatherCategory.parent && fatherCategory.parent._id))) 
     if(hasCategory && Array.isArray(opt.mgnr_faq_list) && opt.mgnr_faq_list.length){
         console.log('here im')
         %>
