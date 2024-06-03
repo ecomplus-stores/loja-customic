@@ -6,6 +6,9 @@ import getBlogPosts from "@ecomplus/storefront-template/template/js/netlify-cms/
 import getExtraPages from "@ecomplus/storefront-template/template/js/netlify-cms/base-config/collections/extra-pages"
 import getWidgets from "@ecomplus/storefront-template/template/js/netlify-cms/base-config/collections/widgets"
 
+//CUSTOM MODULES
+import getCases from './collections/sua-capa'
+
 export default options => {
   options.state.routes.push({
     "resource": "products",
@@ -503,6 +506,7 @@ export default options => {
       getPages(options),
       options.layout,
       getBlogPosts(options),
+      getCases(options),
       getExtraPages(options),
       getWidgets(options),
       {
