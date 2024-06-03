@@ -1,6 +1,6 @@
 export default ({ baseDir, sections }) => ({
     name: 'receitas-posts',
-    label: 'Receitas',
+    label: Encontre sua capa',
     folder: `${baseDir}content/encontre-sua-capa`,
     extension: 'json',
     create: true,
