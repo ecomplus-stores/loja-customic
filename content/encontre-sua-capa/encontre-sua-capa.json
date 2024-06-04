@@ -1,0 +1,24 @@
+{
+  "title": "Encontre Sua Capa",
+  "sections": [
+    {
+      "type": "custom-content",
+      "markdown": "### **Escolha por Objetivo**"
+    },
+    {
+      "type": "banners-grid",
+      "banners": [
+        {
+          "img": "/img/uploads/443823791_1648327202592295_9084129620165835101_n-1-.jpg"
+        },
+        {
+          "img": "/img/uploads/431148523_2192257747801937_3662471376438952897_n-1-.jpg"
+        },
+        {
+          "img": "/img/uploads/412425508_913584037084369_6279235939057486160_n.jpg"
+        }
+      ]
+    }
+  ],
+  "imagem": "https://s1-customic.b-cdn.net/img/uploads/banner-desk-peliculas_2_11zon.webp"
+}
