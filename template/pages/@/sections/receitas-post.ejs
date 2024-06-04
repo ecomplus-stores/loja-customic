@@ -1,0 +1,33 @@
+<div id="receitas-post">
+    <% 
+      const { slug, content } = await _.resolveRoute()
+      const receita = _.cms(`receita/${slug}`)
+  
+      const { sections } = receita
+      
+    %>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <img src="<%= receita.imagem %>" class="img-responsive"/>
+        </div>
+      </div>
+    </div>
+    <div id="receita-sections">
+      <%
+    
+      if (Array.isArray(sections)) {
+        for (let i = 0; i < sections.length; i++) {
+          const opt = sections[i]
+          if (opt && opt.enabled !== false) {
+            %>
+            <%- await include(`@/sections/${opt.type}`, { _, opt }) %>
+            <%
+          }
+        }
+      }
+    
+      %>  
+  </div>
+  </div>
+  
