@@ -66,7 +66,21 @@
       "markdown": "## **E﻿scolha por Sensação**"
     },
     {
-      "type": "banners-grid"
+      "type": "banners-grid",
+      "banners": [
+        {
+          "img": "/img/uploads/anyconv.com__446100765_2173004493052816_5568052955505380227_n.webp"
+        },
+        {
+          "img": "/img/uploads/anyconv.com__443823791_1648327202592295_9084129620165835101_n-1-.webp"
+        },
+        {
+          "img": "/img/uploads/anyconv.com__439747368_2206043789741563_5774587235675409851_n-1-.webp"
+        },
+        {
+          "img": "/img/uploads/anyconv.com__405269333_883720603394787_6330632399042358421_n.webp"
+        }
+      ]
     }
   ],
   "imagem": "https://s1-customic.b-cdn.net/img/uploads/banner-desk-peliculas_2_11zon.webp"
