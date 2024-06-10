@@ -108,6 +108,24 @@
           "img": "/img/uploads/1709034568948-305985_capa_customic_iphone_15_pro_max_impactor_clear_magsafe_gradiente_green_frente.webp"
         }
       ]
+    },
+    {
+      "type": "custom-content",
+      "markdown": "## **A﻿valiações dos Nossos Clientes**"
+    },
+    {
+      "type": "banners-grid",
+      "banners": [
+        {
+          "img": "/img/uploads/leo-santana-v2.avif"
+        },
+        {
+          "img": "/img/uploads/iury.avif"
+        },
+        {
+          "img": "/img/uploads/debora.avif"
+        }
+      ]
     }
   ],
   "imagem": "https://s1-customic.b-cdn.net/img/uploads/banner-desk-peliculas_2_11zon.webp"
