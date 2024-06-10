@@ -1,5 +1,5 @@
 {
-  "title": "Encontre Sua Capa",
+  "title": "Encontre Sua Capa Ideal | Customic",
   "sections": [
     {
       "type": "custom-content",
@@ -22,6 +22,17 @@
           "img": "/img/uploads/412425508_913584037084369_6279235939057486160_n.jpg"
         }
       ]
+    },
+    {
+      "type": "custom-content",
+      "markdown": "## **C﻿onheça nossas coleções e descubra qual mais se encaixa com você**"
+    },
+    {
+      "type": "collection-shelf",
+      "shuffle": false,
+      "limit": 12,
+      "page": 1,
+      "collection_id": null
     }
   ],
   "imagem": "https://s1-customic.b-cdn.net/img/uploads/banner-desk-peliculas_2_11zon.webp"
