@@ -3,7 +3,7 @@
   "sections": [
     {
       "type": "custom-content",
-      "markdown": "### **Encontre Sua Capa Ideal**"
+      "markdown": "### **Encontre Sua Capa**"
     },
     {
       "type": "custom-content",
@@ -64,6 +64,9 @@
     {
       "type": "custom-content",
       "markdown": "## **E﻿scolha por Sensação**"
+    },
+    {
+      "type": "banners-grid"
     }
   ],
   "imagem": "https://s1-customic.b-cdn.net/img/uploads/banner-desk-peliculas_2_11zon.webp"
