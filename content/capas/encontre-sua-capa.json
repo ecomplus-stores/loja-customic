@@ -34,6 +34,23 @@
       "page": 1,
       "collection_id": "6666fb57f4e6d85ab2a61642:collections:Encontre Sua Capa Ideal:/encontre-sua-capa-ideal",
       "headless": true
+    },
+    {
+      "type": "banners-grid",
+      "banners": [
+        {
+          "img": "/img/uploads/anyconv.com__447779544_3756409151343004_3095815958379448384_n.webp"
+        },
+        {
+          "img": "/img/uploads/anyconv.com__447510579_1926483921144581_5830865565104075332_n.webp"
+        },
+        {
+          "img": "/img/uploads/anyconv.com__445369176_432547349394450_1965822041650355414_n.webp"
+        },
+        {
+          "img": "/img/uploads/anyconv.com__441505092_18434413918031293_1512096059984995987_n.webp"
+        }
+      ]
     }
   ],
   "imagem": "https://s1-customic.b-cdn.net/img/uploads/banner-desk-peliculas_2_11zon.webp"
