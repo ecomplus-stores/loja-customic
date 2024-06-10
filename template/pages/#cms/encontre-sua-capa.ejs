@@ -1,0 +1,25 @@
+<%
+const blogPage = _.cms('capas')
+const { slug, content } = await _.resolveRoute()
+_.breadcrumbs = [{
+  name: blogPage.title,
+  link: `/capas`
+}, {
+  name: content.title,
+  link: `/receita/${slug}`
+}]
+//console.log(content)
+if (!content.sections || !content.sections.length) {
+  content.sections = [
+    { type: 'breadcrumbs' },
+    { type: 'page-title' },
+    { type: 'encontre-sua-capa' }
+  ]
+} else if (!content.sections.find(({ type }) => type === 'encontre-sua-capa')) {
+  content.sections.push({ type: 'encontre-sua-capa' })
+}
+%>
+
+<%- await include('@/view') %>
+
+

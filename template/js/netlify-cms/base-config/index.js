@@ -7,7 +7,7 @@ import getExtraPages from "@ecomplus/storefront-template/template/js/netlify-cms
 import getWidgets from "@ecomplus/storefront-template/template/js/netlify-cms/base-config/collections/widgets"
 
 //CUSTOM MODULES
-import getCases from './collections/sua-capa'
+import getCases from './collections/capas'
 
 export default options => {
   options.state.routes.push({

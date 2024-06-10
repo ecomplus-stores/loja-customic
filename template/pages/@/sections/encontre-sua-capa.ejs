@@ -1,0 +1,28 @@
+<div id="capas-post">
+    <% 
+      const { slug, content } = await _.resolveRoute()
+      const cases = _.cms(`capas/encontre-sua-capa`)
+      console.log(cases)
+      const { sections } = cases
+      
+    %>
+    <div class="container">
+      <div id="capas-sections">
+        <%
+      
+        if (Array.isArray(sections)) {
+          for (let i = 0; i < sections.length; i++) {
+            const opt = sections[i]
+            if (opt && opt.enabled !== false) {
+              %>
+              <%- await include(`@/sections/${opt.type}`, { _, opt }) %>
+              <%
+            }
+          }
+        }
+      
+        %>  
+      </div>
+    </div>
+</div>
+  
