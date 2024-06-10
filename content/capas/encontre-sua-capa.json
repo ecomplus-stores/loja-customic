@@ -32,7 +32,8 @@
       "shuffle": false,
       "limit": 12,
       "page": 1,
-      "collection_id": null
+      "collection_id": "6666fb57f4e6d85ab2a61642:collections:Encontre Sua Capa Ideal:/encontre-sua-capa-ideal",
+      "headless": true
     }
   ],
   "imagem": "https://s1-customic.b-cdn.net/img/uploads/banner-desk-peliculas_2_11zon.webp"
