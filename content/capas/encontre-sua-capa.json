@@ -36,6 +36,10 @@
       "headless": true
     },
     {
+      "type": "custom-content",
+      "markdown": "## **E﻿scolha por Objetivo**"
+    },
+    {
       "type": "banners-grid",
       "banners": [
         {
