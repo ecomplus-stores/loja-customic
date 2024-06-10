@@ -28,6 +28,11 @@
       "markdown": "## **C﻿onheça nossas coleções e descubra qual mais se encaixa com você**"
     },
     {
+      "type": "brands-carousel",
+      "limit": 24,
+      "offset": 0
+    },
+    {
       "type": "collection-shelf",
       "shuffle": false,
       "limit": 12,
@@ -55,6 +60,10 @@
           "img": "/img/uploads/anyconv.com__441505092_18434413918031293_1512096059984995987_n.webp"
         }
       ]
+    },
+    {
+      "type": "custom-content",
+      "markdown": "## **E﻿scolha por Sensação**"
     }
   ],
   "imagem": "https://s1-customic.b-cdn.net/img/uploads/banner-desk-peliculas_2_11zon.webp"
