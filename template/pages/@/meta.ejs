@@ -65,7 +65,7 @@ if (pathname) {
     ogLocale = _.lang.length === 2 ? _.lang : _.lang.substr(0, 3) + _.lang.slice(3).toUpperCase()
     if (resource) {
       const picture = _.ecomUtils.img(_.state, null, 'zoom') || (_.state.pictures && _.state.pictures.length && _.state.pictures[0])
-      ogImage = picture && picture.url
+      ogImage = picture && picture.url.replace('avif', 'webp')
     }
     if (!ogImage) {
       if (social.og_image) {
