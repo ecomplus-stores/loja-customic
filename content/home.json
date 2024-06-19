@@ -81,7 +81,7 @@
     {
       "type": "collection-shelf",
       "shuffle": false,
-      "limit": 12,
+      "limit": 6,
       "page": 1,
       "sort": "news",
       "collection_id": "5f1f3f37f023684cdbd4a1a6:categories:Películas para Celular:/peliculas",
