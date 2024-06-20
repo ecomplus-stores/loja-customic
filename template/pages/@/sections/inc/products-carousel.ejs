@@ -26,8 +26,9 @@
     <% } %>
     data-title="<%= title %>"
   >
+  <h1 style="text-align: center; font-size: 2em;">Loja de Capa de Celular Customic</h1>
     <% if (!opt.headless) { %>
-      <h4 class="products-carousel__title">
+      <h2 class="products-carousel__title">
         <% if (opt.title || opt.collection) { %>
           <% if (link) { %>
             <a href="<%= link %>">
@@ -41,7 +42,7 @@
             <%= title %>
           </a>
         <% } %>
-      </h4>
+      </h2>
     <% } %>
 
     <div
