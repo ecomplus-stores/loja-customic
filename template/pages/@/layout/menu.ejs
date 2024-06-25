@@ -248,14 +248,17 @@ if (mainCategories) {
                 id="c-<%= subcategory._id %>"
                 class="menu__item<%- hasSubmenu ? ' has-subcategory' : '' %>"
               >
-                <% if (subcategory.icon) { %>
+                  
+                <% console.log(subcategory.icon, subcategory.name); 
+                if (subcategory.icon && subcategory.icon.url) {
+                  %>
                   <span class="menu__item-icon">
                     <img
                       data-src="<%= subcategory.icon.url %>"
-                      alt="<%= subcategory.icon.alt || subcategory.name %>"
+                      alt="<%= subcategory.icon.alt %>"
                       class="lozad"
                       data-preload="<%= (index * 200) %>"
-                    >
+                    />
                   </span>
                 <% } %>
                 <span>

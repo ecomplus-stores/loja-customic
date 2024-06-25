@@ -1034,3 +1034,8 @@ h1.product__name.h1__ssr {
   display: flex !important;
   justify-content: center;
 }
+
+
+.menu__item-icon:not(:has(img)) {
+  display: none !important;
+}
