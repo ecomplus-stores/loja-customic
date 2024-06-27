@@ -11,7 +11,7 @@
     },
     {
       "type": "custom-content",
-      "markdown": "<!--StartFragment-->\n\nProteger seu celular com a capa certa é essencial. Mas a capa ideal depende exclusivamente de você, do seu estilo e das suas necessidades. Estamos aqui para te ajudar a procurar, explorar e comparar todas as opções de capas para que você encontre a proteção perfeita para o seu dispositivo.\n\n<!--EndFragment-->"
+      "markdown": "<div style=\"text-align: center; font-size: 24px;\">\n\n**Proteger seu celular com a capa certa é essencial.**\n\n**Mas a capa ideal depende exclusivamente de você, do seu estilo e das suas necessidades.**\n\n**Estamos aqui para te ajudar a procurar, explorar e comparar todas as opções de capas para que você encontre a proteção perfeita para o seu dispositivo.**\n\n</div>"
     },
     {
       "type": "responsive-banner",
