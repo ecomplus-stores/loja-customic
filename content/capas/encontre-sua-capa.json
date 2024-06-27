@@ -11,7 +11,7 @@
     },
     {
       "type": "custom-content",
-      "markdown": "<div style=\"text-align: center; font-size: 24px;\">\n\n**Proteger seu celular com a capa certa é essencial.**\n\n**Mas a capa ideal depende exclusivamente de você, do seu estilo e das suas necessidades.**\n\n**Estamos aqui para te ajudar a procurar, explorar e comparar todas as opções de capas para que você encontre a proteção perfeita para o seu dispositivo.**\n\n</div>"
+      "markdown": "<div style=\"text-align: center; font-size: 24px;\">\n\nProteger seu celular com a capa certa é essencial.\n\nMas a capa ideal depende exclusivamente de você, do seu estilo e das suas necessidades.\n\nEstamos aqui para te ajudar a procurar, explorar e comparar todas as opções de capas para que você encontre a proteção perfeita para o seu dispositivo.\n\n</div>"
     },
     {
       "type": "responsive-banner",
@@ -85,22 +85,22 @@
       "type": "banners-grid",
       "banners": [
         {
-          "img": "/img/uploads/1703270327038-iphone14_pro_max_impactor_flex_antib_black_304429_frente.png"
+          "img": "/img/uploads/6-1-detalhes-ultra-desk.png"
         },
         {
-          "img": "/img/uploads/1702924494429-capa_customic_iphone14_impactor_ultra_gradiente_pink_green_305226_frente4.png"
+          "img": "/img/uploads/6-2-detalhes-flex-desk.png"
         },
         {
-          "img": "/img/uploads/1708706670322-306019_capa_customic_iphone_15_pro_max_impactor_ultra_glitter_gradiente_20_pink_frente.webp"
+          "img": "/img/uploads/6-3-detalhes-flex_antibac-desk.png"
         },
         {
-          "img": "/img/uploads/1699363105701-305487_capa_customic_iphone_15_pro_max_impactor_clear_holo_magsafe_rainbow_frente.png"
+          "img": "/img/uploads/6-4-detalhes-seed-desk.png"
         },
         {
-          "img": "/img/uploads/1699367765398-capa_customic_iphone15_pro_max_spot_silicone_reciclado_magsafe_gradiente_pink_305523_frente.png"
+          "img": "/img/uploads/6-5-detalhes-holo-desk.png"
         },
         {
-          "img": "/img/uploads/1709034568948-305985_capa_customic_iphone_15_pro_max_impactor_clear_magsafe_gradiente_green_frente.webp"
+          "img": "/img/uploads/6-6-detalhes-magsafe_gradiente-desk.png"
         }
       ]
     },
