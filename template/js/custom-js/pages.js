@@ -20,8 +20,6 @@ document.getElementById('c-5f1f3f3bf023684cdbd4a1af').href = '/impactor-clear-al
 document.getElementById('cd-5f1f3f3bf023684cdbd4a1af').href = '/impactor-clear-all';
 document.getElementById('c-5fb80f6669274c73fcd951f5').href = '/seed-eco-case-antibacteria';
 document.getElementById('cd-5fb80f6669274c73fcd951f5').href = '/seed-eco-case-antibacteria';
-document.querySelector('#c-5f1f3f3cf023684cdbd4a1b1 span').innerText = 'Capas'
-document.querySelector('#c-5f1f3f37f023684cdbd4a1a6 span').innerText = 'Películas'
 
 function setTitleCategoryProductCard() {
   let categoryTitle = $(".breadcrumb-item:nth-of-type(3)").text().trim();

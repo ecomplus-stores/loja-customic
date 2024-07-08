@@ -1036,6 +1036,10 @@ h1.product__name.h1__ssr {
 }
 
 
-.menu__item-icon:not(:has(img)) {
+/* .menu__item-icon:not(:has(img)) {
+  display: none !important;
+} */
+
+#sub-6683ccc9f4e6d85ab2c12ffd, #sub-667b019ff4e6d85ab2b89a5f, #sub-667c1f1df4e6d85ab2b9d79d, #cd-667c26d6f4e6d85ab2b9e504, #sub-667c26d6f4e6d85ab2b9e504, #sub-667c2d98f4e6d85ab2b9f064, #sub-6688376ef4e6d85ab2c61af5 {
   display: none !important;
 }
