@@ -8,7 +8,7 @@ const categoriesHeader = header.categories_list.featured.map(item => {
 })
 
 const { filters } = header['filter-list']
-const submenuOrder = header['submenu_order'] || []
+const submenuOrder = menu['submenu_menu_order'] || []
 
 const brandsModel = _.lodash.groupBy(filters, ({ filter_grid_model }) => {
   return !filter_grid_model ? '_' : filter_grid_model
@@ -205,9 +205,9 @@ if (mainCategories) {
               });
             }  else if (slug === 'android') {
             }
-            submenuOrder.forEach(({ submenu_slug, submenu }) => {
-              if (('/' + slug) === submenu_slug) {
-                const mapSubmenu = submenu.map(({subcategory_slug}) => subcategory_slug.replace('/', ''))
+            submenuOrder.forEach(({ submenu_menu_slug, submenu_menu }) => {
+              if (('/' + slug) === submenu_menu_slug) {
+                const mapSubmenu = submenu_menu.map(({subcategory_menu_slug}) => subcategory_menu_slug.replace('/', ''))
                 listCategories.sort((a, b) => {
                   const modelNameA = mapSubmenu.find(item => b.slug && b.slug.toLowerCase().includes(item && item.toLowerCase())) || '';
                   const modelNameB = mapSubmenu.find(item => a.slug && a.slug.toLowerCase().includes(item && item.toLowerCase())) || '';
@@ -249,12 +249,13 @@ if (mainCategories) {
                 class="menu__item<%- hasSubmenu ? ' has-subcategory' : '' %>"
               >
                   
-                <% console.log(subcategory.icon, subcategory.name); 
+                <% 
                 if (subcategory.icon && subcategory.icon.url) {
                   %>
                   <span class="menu__item-icon">
                     <img
                       src="<%= subcategory.icon.url %>"
+                      alt="<%= subcategory.icon.alt %>"
                       class="lozad"
                       data-preload="<%= (index * 200) %>"
                     />
@@ -268,6 +269,8 @@ if (mainCategories) {
                 <% } %>
                 <% if (hasSubmenu) { %>
                   <i class="i-chevron-right"></i>
+                <% } else if (!hasSubmenu && !(findCategorySub && findCategorySub.is_new) && subcategory.icon && subcategory.icon.url) { %>
+                  <small> </small>
                 <% } %>
               </a>
             <% }) %>

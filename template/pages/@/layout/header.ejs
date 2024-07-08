@@ -1,6 +1,7 @@
 <%
 // load header options and contacts from content
 const header = _.cms('header') || {}
+const menu = _.cms('menu') || {}
 const contacts = _.cms('contacts') || {}
 const themeCustom = _.settings.theme.custom || ''
 const { filters } = header['filter-list']
@@ -11,7 +12,7 @@ const keysMenu = Object.keys(brandsModel) || []
 
 const submenuOrder = header['submenu_order'] || []
 
-
+const submenuSubOrder = menu['submenu_menu_order'] || []
 // social networks handled by contacts
 const networks = [
   'facebook',
@@ -364,7 +365,32 @@ const isCentralizedLogo = header.centralized_logo
                               
                             }
                           %>
-                          <% thirdCategories.forEach(thirdCategory => {  
+                          <% 
+
+                          submenuSubOrder.forEach(({ submenu_menu_slug, submenu_menu }) => {
+                          if (('/' + subcategory.slug) === submenu_menu_slug) {
+                            const mapSubmenu = submenu_menu.map(({subcategory_menu_slug}) => subcategory_menu_slug.replace('/', ''))
+                            thirdCategories.sort((a, b) => {
+                              const modelNameA = mapSubmenu.find(item => b.slug && b.slug.toLowerCase().includes(item && item.toLowerCase())) || '';
+                              const modelNameB = mapSubmenu.find(item => a.slug && a.slug.toLowerCase().includes(item && item.toLowerCase())) || '';
+
+                              const indexA = mapSubmenu.findIndex(item => item && item.toLowerCase() === modelNameA.toLowerCase());
+                              const indexB = mapSubmenu.findIndex(item => item && item.toLowerCase() === modelNameB.toLowerCase());
+
+                              if (modelNameA === '' && modelNameB === '') {
+                                return 1; 
+                              } else if (modelNameA === '' && modelNameB !== '') {
+                                return -1
+                              } else if (modelNameA !== '' && modelNameB === '') {
+                                return 1
+                              }
+
+                              return indexB - indexA;
+                            })
+                          }
+                        })
+                          
+                          thirdCategories.forEach(thirdCategory => {  
                             const findCategoryThird = filters.find(({ filter_option }) => {
                               return thirdCategory.name && thirdCategory.name.includes(filter_option)
                             })
