@@ -249,21 +249,24 @@ if (mainCategories) {
                 class="menu__item<%- hasSubmenu ? ' has-subcategory' : '' %>"
               >
                   
-                <% 
-                if (subcategory.icon && subcategory.icon.url) {
-                  %>
-                  <span class="menu__item-icon">
-                    <img
-                      src="<%= subcategory.icon.url %>"
-                      alt="<%= subcategory.icon.alt %>"
-                      class="lozad"
-                      data-preload="<%= (index * 200) %>"
-                    />
+                  <span>
+                    <% 
+                      if (subcategory.icon && subcategory.icon.url) {
+                        %>
+                        <span class="menu__item-icon">
+                          <img
+                            src="<%= subcategory.icon.url %>"
+                            alt="<%= subcategory.icon.alt %>"
+                            class="lozad"
+                            data-preload="<%= (index * 200) %>"
+                          />
+                        </span>
+                      <% } %>
+                      <span>
+                        <%= subcategory.name %>
+                      </span>
                   </span>
-                <% } %>
-                <span>
-                  <%= subcategory.name %>
-                </span>
+                
                 <% if (findCategorySub && findCategorySub.is_new) { %>
                     <span class="new-category">Novo</span>
                 <% } %>
