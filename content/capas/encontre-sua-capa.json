@@ -40,23 +40,6 @@
       "markdown": "## **E﻿scolha por Necessidade**"
     },
     {
-      "type": "banners-grid",
-      "banners": [
-        {
-          "img": "/img/uploads/4-2-necessidade-impactor_ultra-desk.png"
-        },
-        {
-          "img": "/img/uploads/4-4-necessidade-spot-desk.png"
-        },
-        {
-          "img": "/img/uploads/4-1-necessidade-holo-desk.png"
-        },
-        {
-          "img": "/img/uploads/4-3-necessidade-antibac-desk.png"
-        }
-      ]
-    },
-    {
       "type": "banners-carousel",
       "banners": [
         {
