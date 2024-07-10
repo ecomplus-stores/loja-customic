@@ -78,6 +78,19 @@
       ]
     },
     {
+      "type": "banners-carousel",
+      "banners": [
+        {
+          "img": "/img/uploads/5-1-material-clear-desk.png",
+          "markdown": "<!--StartFragment-->\n\nMostre a beleza do seu celular com proteção invisível e eficiente.\n\n\n\n<!--EndFragment-->"
+        },
+        {
+          "img": "/img/uploads/5-2-material-flex-desk.png",
+          "markdown": "<!--StartFragment-->\n\nVersatilidade e leveza, com ajuste perfeito e mais fácil de colocar e retirar.\n\n<!--EndFragment-->"
+        }
+      ]
+    },
+    {
       "type": "custom-content",
       "markdown": "## **D﻿etalhes Técnicos**"
     },
