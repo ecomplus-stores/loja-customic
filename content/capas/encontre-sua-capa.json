@@ -61,23 +61,6 @@
       "markdown": "## **E﻿scolha por Material**"
     },
     {
-      "type": "banners-grid",
-      "banners": [
-        {
-          "img": "/img/uploads/5-1-material-clear-desk.png"
-        },
-        {
-          "img": "/img/uploads/5-2-material-flex-desk.png"
-        },
-        {
-          "img": "/img/uploads/5-3-material-ultra-desk.png"
-        },
-        {
-          "img": "/img/uploads/5-4-material-seed-desk.png"
-        }
-      ]
-    },
-    {
       "type": "banners-carousel",
       "banners": [
         {
