@@ -130,6 +130,37 @@ export default options => {
     ]
   },
   {
+    "label": "Grid de banners com Texto",
+    "name": "banners-carousel",
+    "widget": "object",
+    "fields": [
+        {
+            "label": "Banners",
+            "name": "banners",
+            "widget": "list",
+            "fields": [
+                {
+                    "label": "Imagem",
+                    "name": "img",
+                    "widget": "image"
+                },
+                {
+                    "label": "Link",
+                    "required": false,
+                    "name": "link",
+                    "widget": "string"
+                },
+                {
+                    "label": "Descrição",
+                    "required": false,
+                    "name": "markdown",
+                    "widget": "markdown",
+                }
+            ]
+        }
+    ]
+  },
+  {
     label: 'Lista de Posts do Blog',
     name: 'blog-grid',
     widget: 'object',
