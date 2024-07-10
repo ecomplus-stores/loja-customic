@@ -57,6 +57,15 @@
       ]
     },
     {
+      "type": "banners-carousel",
+      "banners": [
+        {
+          "img": "/img/uploads/4-2-necessidade-impactor_ultra-desk.png",
+          "markdown": "<!--StartFragment-->\n\nMáxima proteção\n\nModelos reforçados, mas que não escondem o celular, oferecendo total segurança contra quedas e impactos\n\n<!--EndFragment-->"
+        }
+      ]
+    },
+    {
       "type": "custom-content",
       "markdown": "## **E﻿scolha por Material**"
     },
