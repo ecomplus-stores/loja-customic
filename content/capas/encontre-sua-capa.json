@@ -74,7 +74,7 @@
         {
           "img": "/img/uploads/5-1-material-clear-desk.png",
           "markdown": "<!--StartFragment-->\n\nMostre a beleza do seu celular com proteção invisível e eficiente.\n\n\n\n<!--EndFragment-->",
-          "link": "https://www.customic.com.br/search?filters[]=material:Transparente"
+          "link": "https://www.customic.com.br/search?filters%5B%5D=material%3ATransparente"
         },
         {
           "img": "/img/uploads/5-2-material-flex-desk.png",
