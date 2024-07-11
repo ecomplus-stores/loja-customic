@@ -74,17 +74,17 @@
         {
           "img": "/img/uploads/5-1-material-clear-desk.png",
           "markdown": "<!--StartFragment-->\n\nMostre a beleza do seu celular com proteção invisível e eficiente.\n\n\n\n<!--EndFragment-->",
-          "link": "https://www.customic.com.br/search?filters%5B%5D=material%3ATransparente"
+          "link": "search?filters[]=material:Transparente"
         },
         {
           "img": "/img/uploads/5-2-material-flex-desk.png",
           "markdown": "<!--StartFragment-->\n\nVersatilidade e leveza, com ajuste perfeito e mais fácil de colocar e retirar.\n\n<!--EndFragment-->",
-          "link": "https://www.customic.com.br/search?filters[]=material:Silicone Flexível"
+          "link": "search?filters[]=material:Transparente"
         },
         {
           "img": "/img/uploads/5-3-material-ultra-desk.png",
           "markdown": "<!--StartFragment-->\n\nA maior proteção do Brasil, sem esconder o design do seu aparelho.\n\n<!--EndFragment-->",
-          "link": "https://www.customic.com.br/search?filters[]=material:Policarbonato Rígido"
+          "link": "search?filters[]=material:Policarbonato Rígido"
         },
         {
           "img": "/img/uploads/5-4-material-seed-desk.png",
