@@ -52,3 +52,14 @@ storefront.on('widget:@ecomplus/widget-minicart', function () {
       document.getElementById('cookieconsent').classList.remove("d-none");
     }
   })
+
+
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});

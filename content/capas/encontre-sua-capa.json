@@ -3,7 +3,7 @@
   "sections": [
     {
       "type": "custom-content",
-      "markdown": "<nav class=\"t4top-menu\"><div class=\"t4area-title\"><h1 class=\"t4area-title__content t4desktop-Helvetica t4mobile-Helvetica\">Encontre Sua Capa</h1></div><ul class=\"t4top-menu__lista\"><li class=\"t4top-menu__lista-item\"><a href=\"#necessidade\" data-bannerposition=\"topmenu\" class=\"t4top-menu__lista-link\">Necessidade</a></li><li class=\"t4top-menu__lista-item\"><a href=\"#material\" data-bannerposition=\"topmenu\" class=\"t4top-menu__lista-link\">Material</a></li><li class=\"t4top-menu__lista-item\"><a href=\"#avaliacoes\" data-bannerposition=\"topmenu\" class=\"t4top-menu__lista-link\">Avaliações</a></li><li class=\"t4top-menu__lista-item\"><a href=\"#comparacao\" data-bannerposition=\"topmenu\" class=\"t4top-menu__lista-link\">Comparação</a></li></ul></nav>"
+      "markdown": "<nav class=\"t4top-menu\"><div class=\"t4area-title\"><h1 class=\"t4area-title__content t4desktop-Helvetica t4mobile-Helvetica\">Encontre Sua Capa</h1></div><ul class=\"t4top-menu__lista\"><li class=\"t4top-menu__lista-item\"><a href=\"#necessidade\" data-bannerposition=\"topmenu\" class=\"t4top-menu__lista-link\">Necessidade</a></li><li class=\"t4top-menu__lista-item\"><a href=\"#material\" data-bannerposition=\"topmenu\" class=\"t4top-menu__lista-link\">Material</a></li><li class=\"t4top-menu__lista-item\"><a href=\"#comparacao\" data-bannerposition=\"topmenu\" class=\"t4top-menu__lista-link\">Comparação</a></li><li class=\"t4top-menu__lista-item\"><a href=\"#avaliacoes\" data-bannerposition=\"topmenu\" class=\"t4top-menu__lista-link\">Avaliações</a></li></ul></nav>"
     },
     {
       "type": "custom-content",
@@ -37,36 +37,36 @@
     },
     {
       "type": "custom-content",
-      "markdown": "## **E﻿scolha por Necessidade**"
+      "markdown": "<span id=\"necessidade\"></span><h2><strong>Escolha por Necessidade</strong></h2>"
     },
     {
       "type": "banners-carousel",
       "banners": [
         {
           "img": "/img/uploads/4-2-necessidade-impactor_ultra-desk.png",
-          "markdown": "<!--StartFragment-->\n\n**Máxima proteção**\n\nModelos reforçados, mas que não escondem o celular, oferecendo total segurança contra quedas e impactos\n\n<!--EndFragment-->",
+          "markdown": "<!--StartFragment-->\n\n#### **Máxima proteção**\n\nModelos reforçados, mas que não escondem o celular, oferecendo total segurança contra quedas e impactos\n\n<!--EndFragment-->",
           "link": "https://www.customic.com.br/impactor-ultra-all"
         },
         {
           "img": "/img/uploads/4-4-necessidade-spot-desk.png",
-          "markdown": "<!--StartFragment-->\n\n**Eco-Friendly**\n\nPara quem, assim como nós, quer um mundo com menos plástico. Capas recicladas e recicláveis, para proteger o nosso mundo.\n\n<!--EndFragment-->",
+          "markdown": "<!--StartFragment-->\n\n#### **Eco-Friendly**\n\nPara quem, assim como nós, quer um mundo com menos plástico. Capas recicladas e recicláveis, para proteger o nosso mundo.\n\n<!--EndFragment-->",
           "link": "https://www.customic.com.br/capa-spot-silicone-reciclado"
         },
         {
           "img": "/img/uploads/4-1-necessidade-holo-desk.png",
-          "markdown": "<!--StartFragment-->\n\n**Estilo e sofisticação**\n\nCapas que são verdadeiros acessórios de moda, combinando com seu estilo e personalidade.\n\n<!--EndFragment-->",
+          "markdown": "<!--StartFragment-->\n\n#### **Estilo e sofisticação**\n\nCapas que são verdadeiros acessórios de moda, combinando com seu estilo e personalidade.\n\n<!--EndFragment-->",
           "link": "https://www.customic.com.br/impactor-clear-holo"
         },
         {
           "img": "/img/uploads/4-3-necessidade-antibac-desk.png",
-          "markdown": "<!--StartFragment-->\n\n**Praticidade no dia a dia**\n\nCapas funcionais, para facilitar a sua rotina, com recursos adicionais como a tecnologia AntiBactéria.\n\n<!--EndFragment-->",
+          "markdown": "<!--StartFragment-->\n\n#### **Praticidade no dia a dia**\n\nCapas funcionais, para facilitar a sua rotina, com recursos adicionais como a tecnologia AntiBactéria.\n\n<!--EndFragment-->",
           "link": "https://www.customic.com.br/impactor-flex-antibacteria-all"
         }
       ]
     },
     {
       "type": "custom-content",
-      "markdown": "## **E﻿scolha por Material**"
+      "markdown": "<span id=\"material\"></span><h2><strong>Escolha por Material</strong></h2>"
     },
     {
       "type": "banners-carousel",
@@ -94,34 +94,34 @@
     },
     {
       "type": "custom-content",
-      "markdown": "## **D﻿etalhes Técnicos**"
+      "markdown": "<span id=\"comparacao\"></span><h2><strong>Detalhes Técnicos</strong></h2>"
     },
     {
       "type": "banners-carousel",
       "banners": [
         {
           "img": "/img/uploads/6-1-detalhes-ultra-desk.png",
-          "markdown": "<!--StartFragment-->\n\n**Impactor Ultra** \n\nA maior proteção, com design slim e moderno para o seu celular. Com certificação militar contra quedas.\n\n\\- Material: Policarbonato + TPU\n\n\\- Proteção: 3 metros\n\n\\- Borda para câmera: Sim\n\n\\- Traseira: Rígida\n\n\\- Acabamento: Liso\n\n\\- Tecnologia: Antiamarelamento\n\n\\- Compatível com MagSafe: Sim\n\n<!--EndFragment-->",
+          "markdown": "<!--StartFragment-->\n\n#### **Impactor Ultra** \n\nA maior proteção, com design slim e moderno para o seu celular. Com certificação militar contra quedas.\n\n\\- Material: Policarbonato + TPU\n\n\\- Proteção: 3 metros\n\n\\- Borda para câmera: Sim\n\n\\- Traseira: Rígida\n\n\\- Acabamento: Liso\n\n\\- Tecnologia: Antiamarelamento\n\n\\- Compatível com MagSafe: Sim\n\n<!--EndFragment-->",
           "link": "https://www.customic.com.br/capa-customic-impactor-ultra-magsafe"
         },
         {
           "img": "/img/uploads/6-2-detalhes-flex-desk.png",
-          "markdown": "<!--StartFragment-->\n\n**Impactor Flex**\n\nProteção avançada e flexibilidade, garantindo um perfeito encaixe e resistência contra quedas.\n\n\\- Material: confirmar\n\n\\- Proteção: 2 metros\n\n\\- Borda para câmera: Sim\n\n\\- Traseira: Flexível\n\n\\- Acabamento: Liso\n\n\\- Tecnologia: Antiamarelamento\n\n\\- Compatível com MagSafe: Não\n\n<!--EndFragment-->"
+          "markdown": "<!--StartFragment-->\n\n#### **Impactor Flex**\n\nProteção avançada e flexibilidade, garantindo um perfeito encaixe e resistência contra quedas.\n\n\\- Material: confirmar\n\n\\- Proteção: 2 metros\n\n\\- Borda para câmera: Sim\n\n\\- Traseira: Flexível\n\n\\- Acabamento: Liso\n\n\\- Tecnologia: Antiamarelamento\n\n\\- Compatível com MagSafe: Não\n\n<!--EndFragment-->"
         },
         {
           "img": "/img/uploads/6-3-detalhes-flex_antibac-desk.png",
-          "markdown": "<!--StartFragment-->\n\n**Impactor Flex AntiBactéria**\n\nProteção total com tecnologia antibacteriana, ideal para quem se preocupa com a higiene do celular.\n\n\\- Material: confirmar (tecnologia antibactéria)\n\n\\- Proteção: 2 metros\n\n\\- Borda para câmera: Sim\n\n\\- Traseira: Flexível\n\n\\- Acabamento: Liso\n\n\\- Tecnologia: Antibacteriana\n\n\\- Compatível com MagSafe: Não\n\n<!--EndFragment-->"
+          "markdown": "<!--StartFragment-->\n\n#### **Impactor Flex AntiBactéria**\n\nProteção total com tecnologia antibacteriana, ideal para quem se preocupa com a higiene do celular.\n\n\\- Material: confirmar (tecnologia antibactéria)\n\n\\- Proteção: 2 metros\n\n\\- Borda para câmera: Sim\n\n\\- Traseira: Flexível\n\n\\- Acabamento: Liso\n\n\\- Tecnologia: Antibacteriana\n\n\\- Compatível com MagSafe: Não\n\n<!--EndFragment-->"
         },
         {
           "img": "/img/uploads/6-4-detalhes-seed-desk.png",
-          "markdown": "<!--StartFragment-->\n\n**Seed - Eco Case**\n\nProteção sustentável, feita de materiais biodegradáveis. Para quem quer um mundo com menos plástico.\n\n\\- Material: Biodegradável\n\n\\- Proteção: 1,2 metros.\n\n\\- Borda para câmera: Sim\n\n\\- Traseira: Rígida\n\n\\- Acabamento: Texturizado natural\n\n\\- Tecnologia: -\n\n\\- Compatível com MagSafe: Não\n\n<!--EndFragment-->",
+          "markdown": "<!--StartFragment-->\n\n#### **Seed - Eco Case**\n\nProteção sustentável, feita de materiais biodegradáveis. Para quem quer um mundo com menos plástico.\n\n\\- Material: Biodegradável\n\n\\- Proteção: 1,2 metros.\n\n\\- Borda para câmera: Sim\n\n\\- Traseira: Rígida\n\n\\- Acabamento: Texturizado natural\n\n\\- Tecnologia: -\n\n\\- Compatível com MagSafe: Não\n\n<!--EndFragment-->",
           "link": "https://www.customic.com.br/seed-eco-case-all"
         }
       ]
     },
     {
       "type": "custom-content",
-      "markdown": "## **A﻿valiações dos Nossos Clientes**"
+      "markdown": "<span id=\"avaliacoes\"></span><h2><strong>Avaliações dos Nossos Clientes</strong></h2>"
     },
     {
       "type": "banners-grid",
