@@ -1137,3 +1137,15 @@ h1.product__name.h1__ssr {
 #page-encontre-sua-capa h4 {
   text-align: center !important;
 }
+
+#page-encontre-sua-capa {
+  hr {
+    border: 0;
+      border-top-width: 0px;
+      border-top-style: none;
+      border-top-color: currentcolor;
+    border-top: 2px solid rgba(0,0,0,.1);
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+}

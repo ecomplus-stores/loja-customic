@@ -10,8 +10,13 @@
       >
         <div class="glide__track" data-glide-el="track">
           <ul class="glide__slides brands-carousel__list">
-            <% opt.banners.forEach(({ img, link, alt, markdown }) => { %>
-              <li class="glide__slide brands-carousel__item">
+            <% opt.banners.forEach(({ img, link, alt, markdown, background, color }) => {
+              let bannerCarouselStyle = ''
+              if (background && color) {
+                  bannerCarouselStyle += `background:${background};color:${color}`
+              }
+            %>
+              <li class="glide__slide brands-carousel__item" style="<%= bannerCarouselStyle %>">
                 <a href="<%= link ? `/${link}` : '#' %>">
                   <% if (img) { let { width, height } = _.tryImageSize(img) %>
                     <img data-src="<%= img %>" width="<%= width %>" height="<%= height %>" alt="<%= alt %>" class="img-fluid lozad">

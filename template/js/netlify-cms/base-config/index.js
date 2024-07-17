@@ -155,6 +155,18 @@ export default options => {
                     "required": false,
                     "name": "markdown",
                     "widget": "markdown",
+                },
+                {
+                  "label": "Cor de fundo",
+                  "name": "background",
+                  "required": false,
+                  "widget": "color",
+                },
+                {
+                  "label": "Cor da fonte",
+                  "name": "color",
+                  "required": false,
+                  "widget": "color"
                 }
             ]
         }
