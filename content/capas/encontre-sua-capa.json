@@ -108,18 +108,23 @@
         },
         {
           "img": "/img/uploads/6-2-detalhes-flex-desk.png",
-          "markdown": "<!--StartFragment-->\n\n#### **Impactor Flex**\n\nProteção avançada e flexibilidade, garantindo um perfeito encaixe e resistência contra quedas.\n\n\\- Material: confirmar\n\n\\- Proteção: 2 metros\n\n\\- Borda para câmera: Sim\n\n\\- Traseira: Flexível\n\n\\- Acabamento: Liso\n\n\\- Tecnologia: Antiamarelamento\n\n\\- Compatível com MagSafe: Não\n\n<!--EndFragment-->",
+          "markdown": "<!--StartFragment-->\n\n#### **Impactor Flex**\n\nProteção avançada e flexibilidade, garantindo um perfeito encaixe e resistência contra quedas.\n\n- - -\n\n\\- Material: confirmar\n\n\\- Proteção: 2 metros\n\n\\- Borda para câmera: Sim\n\n\\- Traseira: Flexível\n\n\\- Acabamento: Liso\n\n\\- Tecnologia: Antiamarelamento\n\n\\- Compatível com MagSafe: Não\n\n<!--EndFragment-->",
           "background": "#44f06a",
-          "color": "#000000"
+          "color": "#000000",
+          "link": "https://www.customic.com.br/impactor-flex-all"
         },
         {
           "img": "/img/uploads/6-3-detalhes-flex_antibac-desk.png",
-          "markdown": "<!--StartFragment-->\n\n#### **Impactor Flex AntiBactéria**\n\nProteção total com tecnologia antibacteriana, ideal para quem se preocupa com a higiene do celular.\n\n\\- Material: confirmar (tecnologia antibactéria)\n\n\\- Proteção: 2 metros\n\n\\- Borda para câmera: Sim\n\n\\- Traseira: Flexível\n\n\\- Acabamento: Liso\n\n\\- Tecnologia: Antibacteriana\n\n\\- Compatível com MagSafe: Não\n\n<!--EndFragment-->"
+          "markdown": "<!--StartFragment-->\n\n#### **Impactor Flex AntiBactéria**\n\nProteção total com tecnologia antibacteriana, ideal para quem se preocupa com a higiene do celular.\n\n- - -\n\n\\- Material: confirmar (tecnologia antibactéria)\n\n\\- Proteção: 2 metros\n\n\\- Borda para câmera: Sim\n\n\\- Traseira: Flexível\n\n\\- Acabamento: Liso\n\n\\- Tecnologia: Antibacteriana\n\n\\- Compatível com MagSafe: Não\n\n<!--EndFragment-->",
+          "background": "#f8f879",
+          "color": "#000000",
+          "link": "https://www.customic.com.br/impactor-flex-antibacteria-all"
         },
         {
           "img": "/img/uploads/6-4-detalhes-seed-desk.png",
-          "markdown": "<!--StartFragment-->\n\n#### **Seed - Eco Case**\n\nProteção sustentável, feita de materiais biodegradáveis. Para quem quer um mundo com menos plástico.\n\n\\- Material: Biodegradável\n\n\\- Proteção: 1,2 metros.\n\n\\- Borda para câmera: Sim\n\n\\- Traseira: Rígida\n\n\\- Acabamento: Texturizado natural\n\n\\- Tecnologia: -\n\n\\- Compatível com MagSafe: Não\n\n<!--EndFragment-->",
-          "link": "https://www.customic.com.br/seed-eco-case-all"
+          "markdown": "<!--StartFragment-->\n\n#### **Seed - Eco Case**\n\nProteção sustentável, feita de materiais biodegradáveis. Para quem quer um mundo com menos plástico.\n\n- - -\n\n\\- Material: Biodegradável\n\n\\- Proteção: 1,2 metros.\n\n\\- Borda para câmera: Sim\n\n\\- Traseira: Rígida\n\n\\- Acabamento: Texturizado natural\n\n\\- Tecnologia: -\n\n\\- Compatível com MagSafe: Não\n\n<!--EndFragment-->",
+          "link": "https://www.customic.com.br/seed-eco-case-all",
+          "background": "#f8f879"
         }
       ]
     },
