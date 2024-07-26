@@ -156,7 +156,7 @@ export default {
       const buyList = window.arrayBuyTogether || []
       const filteredCategory = buyList && buyList.length && buyList.filter(category => {
           return this.baseProduct && this.baseProduct.categories && this.baseProduct.categories.length && this.baseProduct.categories.some(currCat => category.slug === currCat.slug)
-      });
+      }) || [];
 
       let finalArray = []
       filteredCategory.forEach(item => {

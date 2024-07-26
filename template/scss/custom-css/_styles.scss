@@ -1151,3 +1151,13 @@ h1.product__name.h1__ssr {
     margin-top: 1rem;
   }
 }
+
+.shipping-calculator__services {
+  display: flex;
+  flex-direction: column
+}
+
+.shipping-calculator__free-from-value {
+  order: -1;
+  padding-bottom: 15px
+}

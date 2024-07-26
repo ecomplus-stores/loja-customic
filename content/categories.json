@@ -286,6 +286,62 @@
     {
       "type": "blog",
       "enabled": true
+    },
+    {
+      "type": "buy_together_list",
+      "buy_list": [
+        {
+          "slug": "capinha-de-celular",
+          "products": [
+            "6183e04d239b7206d3ffe853",
+            "5f1f4b01f023684cdbd4ab63",
+            "61a91de30c7c727225b3115a",
+            "5fcad05969274c73fce1cb7f",
+            "5fcad0d269274c73fce1cca7"
+          ]
+        },
+        {
+          "slug": "combos",
+          "products": [
+            "61a91fa90c7c727225b31680",
+            "61a91c300c7c727225b30a66",
+            "61a77a270c7c727225aefbc5"
+          ]
+        },
+        {
+          "slug": "colecoes",
+          "products": [
+            "6544ed9e2cd6b6595995bbf1",
+            "61a91de30c7c727225b3115a",
+            "5fcad05969274c73fce1cb7f",
+            "5fcad0d269274c73fce1cca7"
+          ]
+        },
+        {
+          "slug": "peliculas",
+          "products": [
+            "61a91de30c7c727225b3115a",
+            "5fcad05969274c73fce1cb7f",
+            "5fcad0d269274c73fce1cca7"
+          ]
+        },
+        {
+          "slug": "popsockets",
+          "products": [
+            "61a91de30c7c727225b3115a",
+            "5fcad05969274c73fce1cb7f",
+            "5fcad0d269274c73fce1cca7"
+          ]
+        },
+        {
+          "slug": "acessorios",
+          "products": [
+            "61a91de30c7c727225b3115a",
+            "5fcad05969274c73fce1cb7f",
+            "5fcad0d269274c73fce1cca7"
+          ]
+        }
+      ]
     }
   ]
 }
