@@ -81,7 +81,8 @@ import {
       },
 
       baseProduct () {
-        return this.cart && this.cart.items && this.cart.items.length && this.cart.items[0] || undefined
+        const capa = this.cart && this.cart.items && this.cart.items.length && this.cart.items.filter(({name}) => name && name.length && name.toLowerCase().includes('capa'))
+        return (capa && capa.length && capa[0]) || this.cart && this.cart.items && this.cart.items.length && this.cart.items[0] || undefined
       },
 
       selectedModel () {

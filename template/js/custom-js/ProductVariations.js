@@ -212,6 +212,7 @@ export default {
 
     selectOption(optionText, grid, gridIndex) {
       const { product, selectedOptions, orderedGrids } = this;
+      console.log(selectedOptions)
       let variationText
       if (optionText.includes('novo')) {
         variationText = optionText.replace('(novo)', '').trim()

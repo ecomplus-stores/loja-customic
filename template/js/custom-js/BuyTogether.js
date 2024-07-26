@@ -45,6 +45,12 @@ export default {
         return getContextBody()
       }
     },
+    isCart: {
+      type: Boolean,
+      default () {
+        return false
+      }
+    },
     ecomCart: {
       type: Object,
       default () {
@@ -147,7 +153,18 @@ export default {
 
     productIds () {
       const buyTogetherDiscount = Object.keys(this.productQnts)
-      let productsFromCategory = buyTogetherDiscount.length > 0 ? [] : window.idsBuyTogether
+      const buyList = window.arrayBuyTogether || []
+      const filteredCategory = buyList && buyList.length && buyList.filter(category => {
+          return this.baseProduct && this.baseProduct.categories && this.baseProduct.categories.length && this.baseProduct.categories.some(currCat => category.slug === currCat.slug)
+      });
+
+      let finalArray = []
+      filteredCategory.forEach(item => {
+          if (item.products && item.products.length) {
+              finalArray = finalArray.concat(item.products)
+          }
+      })
+      let productsFromCategory = buyTogetherDiscount.length > 0 ? [] : (window.idsBuyTogether || finalArray)
       if (!productsFromCategory) {
         productsFromCategory = []
       }
@@ -185,19 +202,29 @@ export default {
   methods: {
     formatMoney,
 
-    buy () {
-      const discountFactor = (this.subtotal - this.discount) / this.subtotal
-      this.items.forEach((item) => {
-        const cartItem = this.ecomCart.parseProduct({
-          ...item,
-          base_price: getPrice(item),
-          price: getPrice(item) * discountFactor,
-          price_effective_date: {}
+    buy (item) {
+      
+      if (!this.isCart) {
+        const discountFactor = (this.subtotal - this.discount) / this.subtotal
+        this.items.forEach((item) => {
+          const cartItem = this.ecomCart.parseProduct({
+            ...item,
+            base_price: getPrice(item),
+            price: getPrice(item) * discountFactor,
+            price_effective_date: {}
+          })
+          cartItem.quantity = (this.productQnts[item._id] || 1)
+          cartItem.keep_item_quantity = true
+          this.ecomCart.addItem(cartItem)
         })
-        cartItem.quantity = (this.productQnts[item._id] || 1)
+      } else {
+        const cartItem = this.ecomCart.parseProduct({
+          ...item
+        })
+        cartItem.quantity = 1
         cartItem.keep_item_quantity = true
         this.ecomCart.addItem(cartItem)
-      })
+      }
     },
 
     calcDiscount () {

@@ -67,7 +67,7 @@
                     />
                   </div>   
                 </a-link>
-                <div class="buy-together__item__checkbox">
+                <div class="buy-together__item__checkbox" v-if="!isCart">
                   <div class="align-self-center mx-1">
                     <label :for="item._id" class="checkbox d-flex flex-row flex-align-center mx-0 my-0">
                       <input :value="JSON.stringify(item)" @change="ev => sendProducts(ev.target.value, ev.target.checked)" type="checkbox" :id="item._id">
@@ -75,6 +75,14 @@
                     </label>
                   </div>
                 </div>
+                <button
+                  v-if="isCart"
+                    class="btn btn-lg btn-primary"
+                    style="border-radius: 100%;"
+                    @click="ev => buy(item)"
+                >
+                    <i style="color: #fff;" class="i-shopping-basket mr-1"></i>
+                </button>
                 
                 </li>
               </ul>
