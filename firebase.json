@@ -2,6 +2,36 @@
   "hosting": {
      "redirects": [
       {
+        "source": "/impactor-flex",
+        "destination": "/colecoes-impactor-flex",
+        "type": 301
+      },
+      {
+        "source": "/impactor-ultra",
+        "destination": "/colecoes-impactor-ultra",
+        "type": 301
+      },
+      {
+        "source": "/soft",
+        "destination": "/colecoes-soft",
+        "type": 301
+      },
+      {
+        "source": "/hardbox",
+        "destination": "/colecoes-hardbox",
+        "type": 301
+      },
+      {
+        "source": "/dispositivos",
+        "destination": "/capinha-de-celular",
+        "type": 301
+      },
+      {
+        "source": "/iphone-11",
+        "destination": "/capinha-iphone-11",
+        "type": 301
+      },
+      {
         "source": "/new-iphone-15",
         "destination": "/capa-para-celular/apple/iphone-15",
         "type": 301
