@@ -17,16 +17,21 @@
           <div
             class="col-12"
           >
-            <div class="row">
+            <div 
+              class="row"
+              :class="isCart ? 'is-cart-row' : 'not-cart-row'"
+            >
               <ul
                 class="buy-together__list--new"
+                :class="isCart ? 'is-cart' : 'not-cart'"
               > 
                 <li
-                  v-if="buyTogetherItems.length"
+                  v-if="buyTogetherItems.length && !isCart"
                   v-for="item in buyTogetherItems"
                   :key="item._id"
                   class="buy-together__item--new col-12 d-flex"
                 >
+
                 <a-link
                   v-if="item._id"
                   :href="item.slug ? `/${item.slug}` : '/black-friday-customic-2023'"
@@ -67,7 +72,7 @@
                     />
                   </div>   
                 </a-link>
-                <div class="buy-together__item__checkbox" v-if="!isCart">
+                <div class="buy-together__item__checkbox">
                   <div class="align-self-center mx-1">
                     <label :for="item._id" class="checkbox d-flex flex-row flex-align-center mx-0 my-0">
                       <input :value="JSON.stringify(item)" @change="ev => sendProducts(ev.target.value, ev.target.checked)" type="checkbox" :id="item._id">
@@ -77,13 +82,69 @@
                 </div>
                 <button
                   v-if="isCart"
-                    class="btn btn-lg btn-primary"
+                    class="btn btn-lg"
                     style="border-radius: 100%;"
                     @click="ev => buy(item)"
                 >
-                    <i style="color: #fff;" class="i-shopping-basket mr-1"></i>
+                    <i style="color: #000;" class="i-shopping-basket mr-1"></i>
                 </button>
                 
+                </li>
+                <li
+                  v-if="buyTogetherItems.length && isCart"
+                  v-for="item in buyTogetherItems"
+                  :key="item._id"
+                  class="buy-together__item--new d-flex"
+                >
+                  <div>
+                    <a-link
+                      v-if="item._id"
+                      :href="item.slug ? `/${item.slug}` : '/black-friday-customic-2023'"
+                      target="_blank"
+                      class="d-flex flex-grow buy-together__item__link"
+                    >
+                      <div class="buy-together__item__thumbnail--new">
+                        <a-picture
+                          v-if="getImg(item)"
+                          :src="getImg(item).url"
+                          :alt="getImg(item).alt || item.name"
+                        />
+                      </div>
+                      <div class="buy-together__item__name--new">
+                        <small>{{ getName(item) }}</small>
+                        <br>
+                        <span
+                          v-if="onPromotion(item)"
+                          class="buy-together__item__offer-stamp"
+                        >
+                          <i class="i-arrow-down"></i> <b>{{ Math.round(((item.base_price - getPrice(item)) * 100) / item.base_price) }}</b>%
+                        </span>
+                      </div>  
+                    </a-link>
+                    <div class="buy-together__item__price--new">
+                      <a-prices
+                        v-if="item.price"
+                        :product="{ ...item, base_price: item.price, price: item.price - (discount || 0)}"
+                        :is-literal="false"
+                        :is-big="false"
+                        :show-price-options="true"
+                      />
+                      <a-prices
+                        v-else
+                        :product="{...item, price: 0}"
+                        :is-literal="false"
+                        :is-big="false"
+                        :show-price-options="true"
+                      />
+                    </div> 
+                    <button
+                        class="btn btn-lg btn-primary"
+                        style="border-radius: 40px; color: #fff"
+                        @click="ev => buy(item)"
+                    >
+                      ADICIONAR +
+                    </button>
+                  </div>
                 </li>
               </ul>
             </div>

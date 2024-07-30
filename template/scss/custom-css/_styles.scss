@@ -466,6 +466,7 @@ color: #fff !important;
 
 .buy-together__item__name--new {
   flex-grow: 1;
+
 }
 .buy-together__item__price--new .prices__value {
   font-size: 15px
@@ -1211,3 +1212,53 @@ h1.product__name.h1__ssr {
     transition:opacity .2s;
 }
 .category-description.expand .html-clearfix:before{opacity:0;pointer-events:none;}
+
+.minicart__aside {
+  width: 480px !important;
+
+  .minicart__subtotal {
+    width: 200px;
+  }
+}
+
+.is-cart-row {
+  overflow-x: auto; /* Enable horizontal scrolling */
+  white-space: nowrap; /* Prevent line breaks */
+  width: 100%; /* Adjust based on your layout */
+  .buy-together__list--new {
+    display: flex; /* Use flexbox for horizontal alignment */
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    .buy-together__item--new {
+      div {
+        max-width: 240px;
+        height: auto;
+        flex-shrink: 0;
+        .buy-together__item__price--new {
+          justify-content: flex-start;
+          padding-bottom: 15px;
+        }
+        button.btn.btn-lg {
+          padding-right: 10px;
+          padding-left: 10px;
+          font-size: inherit;
+        }
+        .buy-together__item__link {
+          flex-direction: column;
+          min-width: 200px;
+          padding-right: 15px;
+          img {
+            width: 180px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.buy-together__list--new.is-cart {
+  .buy-together__item--new.col-12.d-flex {
+    flex-direction: column;
+  }
+}
