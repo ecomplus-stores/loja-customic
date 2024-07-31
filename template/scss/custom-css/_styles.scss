@@ -1262,3 +1262,25 @@ h1.product__name.h1__ssr {
     flex-direction: column;
   }
 }
+
+.shipping-banner {
+  display: flex;
+  justify-content: flex-start;
+  i {
+    padding-right: 5px;
+  }
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-bottom: 10px;
+}
+
+.minicart__btn-cart.btn {
+  display: none !important;
+}
+
+.minicart__btn-checkout {
+  i, * {
+    color: #fff !important
+  }
+  background-color: #0da44a !important;
+}

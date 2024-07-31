@@ -10,6 +10,8 @@ if (_.state.body_html) {
       </div>
       <% if (className == "category"){ %>
         <button class="see-more" onclick='$(".category-description").toggleClass("expand");var text = $(this).text();$(this).text(text == "Saiba Mais" ? "Fechar" : "Saiba Mais");'>Saiba Mais</button>
+      <% } else if (className == "collections") { %>
+        <button class="see-more" onclick='$(".collections-description").toggleClass("expand");var text = $(this).text();$(this).text(text == "Saiba Mais" ? "Fechar" : "Saiba Mais");'>Saiba Mais</button>
       <% } %>
     </div>
   </section>

@@ -24,6 +24,7 @@
               <span aria-hidden="true">&times;</span>
             </button>
           </header>
+          <div data-v-21d04706="" class="shipping-banner"><div data-v-21d04706=""><i class="i-shipping-fast"></i></div><div data-v-21d04706="" class="shipping-banner-text text-center">Aproveite <strong style="color:#F15B41">frete grátis</strong> a partir de R$ 120,00!</div></div>
         </slot>
   
         <article class="minicart__body card-body">
@@ -89,6 +90,16 @@
               v-if="cart.items.length && hasShippingCalculator"
               key="shipping"
             > 
+              <hr>
+             <!--  <discount-applier
+                v-if="isValidCart && canApplyDiscount"
+                class="cart__discount"
+                :amount="amount"
+                :is-coupon-applied="isCouponApplied"
+                :coupon-code.sync="localDiscountCoupon"
+                @set-discount-rule="setDiscountRule"
+                :modules-payload="modulesPayload"
+              /> -->
               <hr>
               <shipping-calculator
                 class="minicart__shipping-calculator"

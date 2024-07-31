@@ -20,6 +20,7 @@ import {
   import BuyTogether from '@ecomplus/storefront-components/src/BuyTogether.vue'
   import CartItem from '@ecomplus/storefront-components/src/CartItem.vue'
   import ShippingCalculator from '@ecomplus/storefront-components/src/ShippingCalculator.vue'
+  import DiscountApplier from '@ecomplus/storefront-components/src/DiscountApplier.vue'
   
   export default {
     name: 'CartQuickview',
@@ -30,6 +31,7 @@ import {
       APrices,
       BuyTogether,
       CartItem,
+      DiscountApplier,
       ShippingCalculator
     },
   
