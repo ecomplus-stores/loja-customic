@@ -24,11 +24,21 @@
               <span aria-hidden="true">&times;</span>
             </button>
           </header>
-          <div data-v-21d04706="" class="shipping-banner"><div data-v-21d04706=""><i class="i-shipping-fast"></i></div><div data-v-21d04706="" class="shipping-banner-text text-center">Aproveite <strong style="color:#F15B41">frete grátis</strong> a partir de R$ 120,00!</div></div>
         </slot>
   
         <article class="minicart__body card-body">
           <transition-group enter-active-class="animated fadeIn slow">
+            <div 
+              class="minicart__shipping-banner"
+              key="shipping-banner"
+            >
+              <div data-v-21d04706="" class="shipping-banner">
+                <div data-v-21d04706=""><i class="i-shipping-fast"></i></div>
+                <div data-v-21d04706="" class="shipping-banner-text text-center">Aproveite <strong style="color:#F15B41">frete
+                    grátis</strong> a partir de R$ 120,00!</div>
+                <hr>
+              </div>
+            </div>
             <div
               class="minicart__list"
               v-if="cart.items.length"
@@ -91,22 +101,58 @@
               key="shipping"
             > 
               <hr>
-             <!--  <discount-applier
-                v-if="isValidCart && canApplyDiscount"
-                class="cart__discount"
-                :amount="amount"
-                :is-coupon-applied="isCouponApplied"
-                :coupon-code.sync="localDiscountCoupon"
-                @set-discount-rule="setDiscountRule"
-                :modules-payload="modulesPayload"
-              /> -->
-              <hr>
               <shipping-calculator
                 class="minicart__shipping-calculator"
                 :can-select-services="true"
                 :shipped-items="cart.items"
                 @select-service="selectShippingService"
               />
+            </div>
+
+            <div
+              class="minicart__discount"
+              v-if="cart.items.length && selectedShippingPrice >= 0"
+              key="discount"
+            > 
+              <hr>
+              <discount-applier
+                v-if="isValidCart && selectedShippingPrice >= 0"
+                class="cart__discount"
+                :amount="amount"
+                :is-coupon-applied="isCouponApplied"
+                :coupon-code.sync="localDiscountCoupon"
+                @set-discount-rule="setDiscountRule"
+                :modules-payload="modulesPayload"
+              />
+              <hr>
+            </div>
+
+            <div
+              class="minicart__summary"
+              v-if="amount.total >= 0"
+              key="summary"
+            > 
+              <hr>
+              <hr>
+              <table data-v-439aed5c="" class="table table-borderless table-sm w-100">
+                <tr data-v-439aed5c="">
+                  <td data-v-439aed5c="" align="left"><span data-v-439aed5c=""><strong>Subtotal</strong></span></td>
+                  <td data-v-439aed5c="" align="right" class=""><!----><strong data-v-439aed5c="" class="uppercase nowrap">{{ formatMoney(amount.subtotal) }}</strong></td>
+                </tr>
+                <tr data-v-439aed5c="">
+                  <td data-v-439aed5c="" align="left"><span data-v-439aed5c=""><strong>Frete</strong></span></td>
+                  <td data-v-439aed5c="" align="right" class="shipping-fee"><!----><strong data-v-439aed5c=""
+                      class="uppercase nowrap">{{ formatMoney(amount.freight) }}</strong></td>
+                </tr>
+                <tr data-v-439aed5c="">
+                  <td data-v-439aed5c="" align="left"><strong>Desconto</strong></td>
+                  <td data-v-439aed5c="" align="right" class="nowrap discount"><strong>{{ formatMoney(amount.discount) }}</strong></td>
+                </tr>
+                <tr data-v-439aed5c="">
+                  <td data-v-439aed5c="" align="left"><strong>Total</strong></td>
+                  <td data-v-439aed5c="" align="right" class="nowrap total"> <strong>{{ formatMoney(amount.total) }}</strong></td>
+                </tr>
+              </table>
             </div>
           </transition-group>
         </article>

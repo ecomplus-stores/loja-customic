@@ -21,6 +21,7 @@ import {
   import CartItem from '@ecomplus/storefront-components/src/CartItem.vue'
   import ShippingCalculator from '@ecomplus/storefront-components/src/ShippingCalculator.vue'
   import DiscountApplier from '@ecomplus/storefront-components/src/DiscountApplier.vue'
+  import baseModulesRequestData from '@ecomplus/storefront-app/src/lib/base-modules-request-data'
   
   export default {
     name: 'CartQuickview',
@@ -65,7 +66,15 @@ import {
       return {
         selectedShippingPrice: 0,
         buyTogetherProducts: [],
-        discountBuyTogether: 0
+        discountBuyTogether: 0,
+        isCouponApplied: false,
+        amount: {
+          subtotal: this.ecomCart && this.ecomCart.data && this.ecomCart.data.subtotal,
+          freight: 0,
+          discount: 0,
+          total: this.ecomCart && this.ecomCart.data && this.ecomCart.data.subtotal
+        },
+        discountCoupon: window.sessionStorage.getItem('couponCode') || ''
       }
     },
   
@@ -82,6 +91,12 @@ import {
         return this.ecomCart.data
       },
 
+      isValidCart () {
+        return this.cart.items.find(({ quantity }) => quantity)
+      },
+
+      modulesPayload: () => baseModulesRequestData,
+
       baseProduct () {
         const capa = this.cart && this.cart.items && this.cart.items.length && this.cart.items.filter(({name}) => name && name.length && name.toLowerCase().includes('capa'))
         return (capa && capa.length && capa[0]) || this.cart && this.cart.items && this.cart.items.length && this.cart.items[0] || undefined
@@ -94,10 +109,27 @@ import {
             }
         }
       },
+
+      localDiscountCoupon: {
+        get () {
+          return this.discountCoupon
+        },
+        set (couponCode) {
+          this.discountCoupon = couponCode
+          window.localStorage.setItem('couponCode', couponCode)
+          this.$emit('update:discount-coupon', couponCode)
+        }
+      },
   
       total () {
-        return this.cart.subtotal + this.selectedShippingPrice
+        this.amount.total = this.cart.subtotal + this.amount.freight - this.amount.discount
+        let total = this.amount.total
+        if (this.modulesPayload && this.modulesPayload.utm && this.modulesPayload.utm.campaign && this.modulesPayload.utm.campaign.length) {
+          total = this.cart.subtotal + this.amount.freight
+        }
+        return total
       }
+
     },
   
     methods: {
@@ -114,10 +146,29 @@ import {
         this.selectedShippingPrice = service.shipping_line
           ? service.shipping_line.total_price
           : 0
+        this.amount.freight = this.selectedShippingPrice
       },
+
+      setDiscountRule (discountRule) {
+        console.log(discountRule)
+        this.amount.discount = discountRule && discountRule.extra_discount && discountRule.extra_discount.value || 0
+        if (this.amount.discount > 0) {
+          const sessionUtm = JSON.parse(window.sessionStorage.getItem('ecomUtm') || '{}') 
+          sessionUtm.campaign = this.discountCoupon
+          window.sessionStorage.setItem('ecomUtm', JSON.stringify(sessionUtm))
+          window.sessionStorage.setItem('couponCode', this.discountCoupon)
+        }
+        this.$nextTick(() => {
+          this.isCouponApplied = Boolean(this.discountCoupon && this.amount.discount)
+        })
+      }
     },
   
     created () {
+      const couponCode = window.sessionStorage.getItem('couponCode')
+      if (couponCode) {
+        this.discountCoupon = couponCode
+      }
       if (this.canOpenOnNewItem) {
         this.ecomCart.on('addItem', ({ data }) => {
           this.$set(this.ecomCart, 'data', data)
