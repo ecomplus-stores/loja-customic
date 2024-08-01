@@ -199,7 +199,7 @@
             "6183e04d239b7206d3ffe853",
             "5f1f4b01f023684cdbd4ab63",
             "61a91de30c7c727225b3115a",
-            "5fcad05969274c73fce1cb7f",
+            
             "5fcad0d269274c73fce1cca7"
           ]
         },
@@ -216,7 +216,7 @@
           "products": [
             "6544ed9e2cd6b6595995bbf1",
             "61a91de30c7c727225b3115a",
-            "5fcad05969274c73fce1cb7f",
+            
             "5fcad0d269274c73fce1cca7"
           ]
         },
@@ -224,22 +224,21 @@
           "slug": "peliculas",
           "products": [
             "61a91de30c7c727225b3115a",
-            "5fcad05969274c73fce1cb7f",
+            
             "5fcad0d269274c73fce1cca7"
           ]
         },
         {
           "slug": "popsockets",
           "products": [
-            "61a920950c7c727225b319a4", "61a91fa90c7c727225b31680", "61a91eb00c7c727225b313a2", "61a91de30c7c727225b3115a"
-          ],
-          "discount": 29
+             "61a91fa90c7c727225b31680", "61a91eb00c7c727225b313a2", "61a91de30c7c727225b3115a"
+          ]
         },
         {
           "slug": "acessorios",
           "products": [
             "61a91de30c7c727225b3115a",
-            "5fcad05969274c73fce1cb7f",
+            
             "5fcad0d269274c73fce1cca7"
           ]
         }
