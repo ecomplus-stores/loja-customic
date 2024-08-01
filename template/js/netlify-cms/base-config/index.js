@@ -594,6 +594,54 @@ export default options => {
             ]
           }
         ]
+      },
+      {
+        name: 'buy_together_list',        
+        label: 'Lista de compre junto para toda loja',
+        description: 'Configure a lista de produtos em sequência para listagem da busca',
+        folder: `${options.baseDir}content/buy_together_list`,
+        extension: 'json',
+        create: true,
+        slug: '{{slug}}',
+        fields: [
+          {
+              label: "Lista compre junto",
+              name: "buy_list",
+              widget: "list",
+              fields: [
+                  {
+                      label: "Slug da categoria",
+                      hint: "Será inserido com base no produto tiver a categoria",
+                      name: "slug",
+                      widget: "string",
+                      required: false
+                  },
+                  {
+                    label: 'Produtos',
+                    name: 'products',
+                    widget: 'list',
+                    field: {
+                      label: 'SKU do produto',
+                      name: 'product_id',
+                      widget: 'select',
+                      options: options.state.routes
+                        .filter(({ sku }) => typeof sku === 'string')
+                        .map(({ _id, sku }) => ({
+                          label: sku,
+                          value: _id
+                        }))
+                    }
+                  },
+                  {
+                    label: "Desconto compre junto fixo",
+                    hint: "Insira o desconto fixo baseado em se comprar a capa, qual desconto será dado no produto adicional",
+                    name: "discount",
+                    widget: "number",
+                    required: false
+                  }
+              ]
+          }
+      ]
       }
     ]
   }
