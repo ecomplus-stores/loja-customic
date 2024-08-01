@@ -78,6 +78,13 @@ export default options => {
                           value: _id
                         }))
                     }
+                  },
+                  {
+                    label: "Desconto compre junto fixo",
+                    hint: "Insira o desconto fixo baseado em se comprar a capa, qual desconto será dado no produto adicional",
+                    name: "discount",
+                    widget: "number",
+                    required: false
                   }
               ]
           }

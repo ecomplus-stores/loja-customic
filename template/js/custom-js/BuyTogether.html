@@ -124,7 +124,7 @@
                     <div class="buy-together__item__price--new">
                       <a-prices
                         v-if="item.price"
-                        :product="{ ...item, base_price: item.price, price: item.price - (discount || 0)}"
+                        :product="{ ...item, base_price: item.price, price: item.final_price - (discount || 0)}"
                         :is-literal="false"
                         :is-big="false"
                         :show-price-options="true"

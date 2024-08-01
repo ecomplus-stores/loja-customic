@@ -125,7 +125,18 @@ export default {
       const filterItems = items.filter(item => {
         return this.baseProduct._id !== item._id && !item.name.toLowerCase().includes('capa')
       })
-      return filterItems || items
+      let finalItems = filterItems || items
+      finalItems.map(item => {
+        const buyList = window.arrayBuyTogether || []
+        const filteredCategory = buyList && buyList.length && buyList.filter(category => {
+            return item && item.categories && item.categories.length && item.categories.some(currCat => category.slug === currCat.slug)
+        }) || [];
+        console.log(JSON.stringify(filteredCategory))
+        if (filteredCategory && filteredCategory.length && filteredCategory[0].discount) {
+          item.final_price = item.price - filteredCategory[0].discount
+        }
+      })
+      return finalItems
     },
 
     buyTogetherItems () {

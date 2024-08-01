@@ -16,6 +16,7 @@ if (Array.isArray(buyList) && buyList.length && _.state.categories && _.state.ca
     %>
         <script>
             window.idsBuyTogether = <%- JSON.stringify(finalArray) %>
+            window.arrayBuyTogether = <%- JSON.stringify(buyList) %>
         </script>
     <%    }
 } else if (Array.isArray(buyList) && buyList.length && _.state && _.state.meta_title) { %>
