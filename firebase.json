@@ -2,6 +2,41 @@
   "hosting": {
      "redirects": [
       {
+        "source": "/vidro-temperado",
+        "destination": "/pelicula-vidro-temperado",
+        "type": 301
+      },
+      {
+        "source": "/gel-7-camadas",
+        "destination": "/pelicula-gel-7-camadas",
+        "type": 301
+      },
+      {
+        "source": "/mirror-com-borda",
+        "destination": "/pelicula-mirror-com-borda",
+        "type": 301
+      },
+      {
+        "source": "/antibacteria-3d",
+        "destination": "/pelicula-antibacteria-3d",
+        "type": 301
+      },
+      {
+        "source": "/antiblue-3d",
+        "destination": "/pelicula-antiblue-3d",
+        "type": 301
+      },
+      {
+        "source": "/flex-pro",
+        "destination": "/pelicula-flex-pro",
+        "type": 301
+      },
+      {
+        "source": "/gamer-fosca",
+        "destination": "/pelicula-gamer-fosca",
+        "type": 301
+      },
+      {
         "source": "/impactor-flex",
         "destination": "/colecoes-impactor-flex",
         "type": 301
