@@ -118,7 +118,9 @@
               <discount-applier
                 v-if="isValidCart && selectedShippingPrice >= 0"
                 class="cart__discount"
+                ref="child"
                 :amount="amount"
+                :is-quickview="true"
                 :is-coupon-applied="isCouponApplied"
                 :coupon-code.sync="localDiscountCoupon"
                 @set-discount-rule="setDiscountRule"

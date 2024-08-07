@@ -18,6 +18,7 @@ import {
   import AAlert from '@ecomplus/storefront-components/src/AAlert.vue'
   
   const addFreebieItems = (ecomCart, productIds) => {
+    console.log(ecomCart, productIds)
     const hasSpecialGift = productIds && productIds.length ? productIds.includes('6544ed9e2cd6b6595995bb00') : false
     if (Array.isArray(productIds)) {
       let capaIndex, model, variationBrinde
@@ -93,6 +94,7 @@ import {
       },
       isFormAlwaysVisible: Boolean,
       isCouponApplied: Boolean,
+      isQuickview: Boolean,
       isAttentionWanted: Boolean,
       canAddFreebieItems: {
         type: Boolean,
@@ -183,10 +185,13 @@ import {
         let extraDiscountValue = 0
         if (listResult.length) {
           let discountRule, invalidCouponMsg, invalidAlertVariant
+          let appId = null
           listResult.forEach(appResult => {
+            console.log(appResult.validated, appResult.app_id)
             const { validated, error, response } = appResult
             if (validated && !error) {
               const appDiscountRule = response.discount_rule
+              console.log(appDiscountRule)
               if (appDiscountRule) {
                 if (extraDiscountValue) {
                   appDiscountRule.extra_discount.value += extraDiscountValue
@@ -207,7 +212,11 @@ import {
                 invalidCouponMsg = response.invalid_coupon_message
               }
               if (this.canAddFreebieItems) {
-                addFreebieItems(this.ecomCart, response.freebie_product_ids)
+                if (this.isQuickview && appResult.app_id == '122197') {
+                  addFreebieItems(this.ecomCart, response.freebie_product_ids || [])
+                } else {
+                  addFreebieItems(this.ecomCart, response.freebie_product_ids)
+                } 
               }
             }
           })
@@ -264,7 +273,7 @@ import {
               total: this.localAmountTotal,
               discount: 0
             },
-            items: this.ecomCart.data.items,
+            items: this.isQuickview ? this.ecomCart.data.items.filter(({flags}) => !flags || (flags && !flags.includes('freebie'))) : this.ecomCart.data.items,
             ...data
           }
         })

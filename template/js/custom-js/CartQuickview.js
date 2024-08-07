@@ -123,6 +123,7 @@ import {
   
       total () {
         this.amount.total = this.cart.subtotal + this.amount.freight - this.amount.discount
+        this.amount.subtotal = this.cart.subtotal
         let total = this.amount.total
         if (this.modulesPayload && this.modulesPayload.utm && this.modulesPayload.utm.campaign && this.modulesPayload.utm.campaign.length) {
           total = this.cart.subtotal + this.amount.freight
@@ -158,10 +159,29 @@ import {
           window.sessionStorage.setItem('ecomUtm', JSON.stringify(sessionUtm))
           window.sessionStorage.setItem('couponCode', this.discountCoupon)
         }
+
         this.$nextTick(() => {
           this.isCouponApplied = Boolean(this.discountCoupon && this.amount.discount)
         })
-      }
+      },
+
+      callChildMethod() {
+        this.$refs.child.updateDiscount();
+      },
+    },
+
+    watch: {
+  
+      'cart.subtotal' (total, oldTotal) {
+        if (oldTotal !== null && Math.abs(total - oldTotal) > 0.01) {
+          this.$nextTick(() => {
+            setTimeout(() => {
+              this.callChildMethod()
+            }, 600)
+          })
+        }
+      },
+
     },
   
     created () {
