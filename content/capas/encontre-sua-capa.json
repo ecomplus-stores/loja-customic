@@ -23,7 +23,7 @@
       "markdown": "## **C﻿onheça nossas coleções e descubra qual mais se encaixa com você**"
     },
     {
-      "type": "collection-carousel",
+      "type": "brands-carousel",
       "limit": 24,
       "offset": 0
     },
