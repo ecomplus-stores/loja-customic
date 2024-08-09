@@ -172,7 +172,8 @@ import {
 
     watch: {
   
-      'cart.subtotal' (total, oldTotal) {
+      total (total, oldTotal) {
+        console.log(total, oldTotal)
         if (oldTotal !== null && Math.abs(total - oldTotal) > 0.01) {
           this.$nextTick(() => {
             setTimeout(() => {
