@@ -2,6 +2,11 @@
   "hosting": {
      "redirects": [
       {
+        "source": "/pelicula-customic-vidro-3d",
+        "destination": "/pelicula-vidro-3d-customic-all",
+        "type": 301
+      },
+      {
         "source": "/spray-limpa-telas-customic-60ml",
         "destination": "/spray-limpa-telas-customic-30ml",
         "type": 301
