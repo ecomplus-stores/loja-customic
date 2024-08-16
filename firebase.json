@@ -2,6 +2,96 @@
   "hosting": {
      "redirects": [
       {
+        "source": "/customizar.php",
+        "destination": "https://customic-90205.web.app/",
+        "type": 301
+      },
+      {
+        "source": "/artist_list.php",
+        "destination": "https://novidades.customic.com.br/contato-artistas-e-influenciadores",
+        "type": 301
+      },
+      {
+        "source": "/capa-customic-impactor-ultra-magsafe",
+        "destination": "/capa-impactor-ultra-magsafe",
+        "type": 301
+      },
+      {
+        "source": "/capa-spot-silicone-reciclado",
+        "destination": "/capa-spot-silicone-reciclado",
+        "type": 301
+      },
+      {
+        "source": "/catalogue.php?model=23",
+        "destination": "/capinha-de-celular",
+        "type": 301
+      },
+      {
+        "source": "/catalogue.php?cat=all&model=all&tags=all&types=all&limit=999",
+        "destination": "/capinha-de-celular",
+        "type": 301
+      },
+      {
+        "source": "/carregadores&sa=D&source=docs&ust=1666652691225557&usg=AOvVaw05wwtFNXRdScDGpZV486Ya",
+        "destination": "/carregadores",
+        "type": 301
+      },
+      {
+        "source": "/impactor-clear-holo",
+        "destination": "/impactor-clear-holo",
+        "type": 301
+      },
+      {
+        "source": "/impactor-flex-all",
+        "destination": "/impactor-flex-all",
+        "type": 301
+      },
+      {
+        "source": "/impactor-flex-antibacteria-all",
+        "destination": "/impactor-flex-antibacteria-all",
+        "type": 301
+      },
+      {
+        "source": "/impactor-ultra-all",
+        "destination": "/impactor-ultra-all",
+        "type": 301
+      },
+      {
+        "source": "/contato",
+        "destination": "/pages/contato",
+        "type": 301
+      },
+      {
+        "source": "/pelicula-antibacteria-samsung",
+        "destination": "/pelicula-antibacteria-3d-samsung-customic",
+        "type": 301
+      },
+      {
+        "source": "/pelicula-gel-7-camadas-samsung",
+        "destination": "/pelicula-gel-7-camadas",
+        "type": 301
+      },
+      {
+        "source": "/vidro-3d",
+        "destination": "/pelicula-vidro-3d",
+        "type": 301
+      },
+      {
+        "source": "/pelicula-vidro-3d-samsung",
+        "destination": "/pelicula-vidro-3d-samsung-customic",
+        "type": 301
+      },
+      {
+        "source": "/pelicula-vidro-premium-samsung",
+        "destination": "/pelicula-vidro-premium-samsung-customic",
+        "type": 301
+      },
+      {
+        "source": "/seed-eco-case-all",
+        "destination": "/seed-eco-case-all",
+        "type": 301
+      },
+      {
         "source": "/pelicula-customic-vidro-3d",
         "destination": "/pelicula-vidro-3d-customic-all",
         "type": 301
