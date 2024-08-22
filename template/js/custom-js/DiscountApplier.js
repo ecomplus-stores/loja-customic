@@ -101,6 +101,7 @@ import {
         default: true
       },
       modulesPayload: Object,
+      paymentGateway: Object,
       ecomCart: {
         type: Object,
         default () {
@@ -170,6 +171,22 @@ import {
           delete discount.utm
         }
         return discount
+      },
+
+      paymentGatewayDiscount () {
+        if (!this.paymentGateway) return 0
+        const { discount } = this.paymentGateway
+        if (!discount || !discount.value) return 0
+        const applyAt = discount.apply_at || 'total'
+        const maxDiscount = applyAt === 'total' ? this.localAmountTotal : this.amount[applyAt]
+        if (maxDiscount > 0) {
+          const { type, value } = discount
+          if (type === 'percentage') {
+            return maxDiscount * value / 100
+          }
+          return value <= maxDiscount ? value : maxDiscount
+        }
+        return 0
       }
     },
   
@@ -178,7 +195,8 @@ import {
         const amount = this.amount || {
           subtotal: this.ecomCart.data.subtotal
         }
-        this.localAmountTotal = (amount.subtotal || 0) + (amount.freight || 0)
+        this.localAmountTotal = (amount.subtotal || 0) +
+          (amount.freight || 0) - this.paymentGatewayDiscount
       },
   
       parseDiscountOptions (listResult = []) {
@@ -271,7 +289,7 @@ import {
               subtotal: this.localAmountTotal,
               ...this.amount,
               total: this.localAmountTotal,
-              discount: 0
+              discount: this.paymentGatewayDiscount
             },
             items: this.isQuickview ? this.ecomCart.data.items.filter(({flags}) => !flags || (flags && !flags.includes('freebie'))) : this.ecomCart.data.items,
             ...data
@@ -309,6 +327,17 @@ import {
         ) {
           this.fetchDiscountOptions()
         }
+      },
+
+      scheduleUpdateDiscount () {
+        if (this.isUpdateSheduled) return
+        this.isUpdateSheduled = true
+        this.$nextTick(() => {
+          setTimeout(() => {
+            this.updateDiscount()
+            this.isUpdateSheduled = false
+          }, 600)
+        })
       }
     },
   
@@ -337,14 +366,8 @@ import {
       },
   
       localAmountTotal (total, oldTotal) {
-        if (oldTotal !== null && Math.abs(total - oldTotal) > 0.01 && !this.isUpdateSheduled) {
-          this.isUpdateSheduled = true
-          this.$nextTick(() => {
-            setTimeout(() => {
-              this.updateDiscount()
-              this.isUpdateSheduled = false
-            }, 600)
-          })
+        if (oldTotal !== null && Math.abs(total - oldTotal) > 0.01) {
+          this.scheduleUpdateDiscount()
         }
       },
   
@@ -353,6 +376,10 @@ import {
           this.fixAmount()
         },
         deep: true
+      },
+
+      paymentGatewayDiscount () {
+        this.scheduleUpdateDiscount()
       }
     },
   
