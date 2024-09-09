@@ -72,3 +72,4 @@ if (window.navigator.userAgent && !/Chrome-Lighthouse/i.test(window.navigator.us
 $('.faq_list button').click(function(){
   $(this).closest('.faq_list-item').toggleClass('visible')
 });
+

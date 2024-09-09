@@ -63,3 +63,55 @@ storefront.on('widget:@ecomplus/widget-minicart', function () {
         });
     });
 });
+
+const words = ["Capa", "Película"];
+let i = 0;
+let timer;
+
+function typingEffect() {
+    console.log('Typing effect started');
+    let word = words[i].split("");
+    let elem = document.querySelector('.header__row #search-input');
+
+
+    var loopTyping = function() {
+        if (word.length > 0) {
+            elem.setAttribute('placeholder', elem.getAttribute('placeholder') + word.shift());
+        } else {
+            // Move to deleting effect after typing is complete
+            setTimeout(deletingEffect, 1000); // Adjust delay as needed
+            return false;
+        }
+        timer = setTimeout(loopTyping, 200);
+    };
+    loopTyping();
+}
+
+function deletingEffect() {
+    console.log('Deleting effect started');
+    let elem = document.querySelector('.header__row #search-input');
+    let fullText = elem.getAttribute('placeholder');
+    let baseText = "Encontre sua "; // Base text that doesn't change
+    let word = words[i].split("");
+    
+    var loopDeleting = function() {
+        if (word.length > 0) {
+            word.pop();
+            elem.setAttribute('placeholder', baseText + word.join(""));
+        } else {
+            // Switch to the next word
+            if (words.length > (i + 1)) {
+                i++;
+            } else {
+                i = 0;
+            }
+            typingEffect();
+            return false;
+        }
+        timer = setTimeout(loopDeleting, 100);
+    };
+    loopDeleting();
+}
+
+// Start the effect with the initial placeholder set to "Encontre sua Capa"
+typingEffect();
