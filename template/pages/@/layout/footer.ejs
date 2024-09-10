@@ -3,6 +3,7 @@
 const footer = _.cms('footer') || {}
 const contacts = _.cms('contacts') || {}
 const themeCustom = _.settings.theme.custom || ''
+const { path } = _.route
 %>
 <div id="popup-rd"></div>
 <footer class="footer py-3 py-lg-4 py-xl-5">
@@ -153,10 +154,14 @@ const themeCustom = _.settings.theme.custom || ''
       <% } %>
 
       <div class="col-12 col-xl order-<%= themeCustom === 'ecom-beauty' ? '' : 'lg-'%>first">
-        <h2 class="footer__title footer__store">
-          <%= footer.description.title || _.settings.name %>
-        </h2>
-        <p><%- footer.description.text || _.settings.description %></p>
+        <div class="heading-tags" style="display: flex;">
+          <h2  class="footer__title footer__store"><%= footer.description.title || _.settings.name %></h2>
+        <% if (path === '/' || path === '/index') { %> 
+          <span style="padding-left: 5px; padding-right: 5px; color: #fff;"> - </span>
+          <h1  class="footer__title footer__store" itemprop="name">Capas para celular</h1>
+        <% } %>
+        </div>
+        <p style="color: #fff;"><%- footer.description.text || _.settings.description %></p>
 
         <div class="mt-4 mb-3">
           <div class="footer__title">
@@ -192,6 +197,11 @@ const themeCustom = _.settings.theme.custom || ''
       <span>
         <%= footer.credits || `© ${_.store.name} / ${contacts.address} / ${contacts.doc_number}` %>
       </span>
+      <% if (_.route.path === '/search') { %>
+        <div class="container">
+          <h1 style="font-size: 15px;">Busque por capas, peliculas e acessórios</h1>
+        </div>
+       <% } %>
       <% if (themeCustom === 'ecom-beauty') { %>
         <div class="ecom-credits-container">
           <div class="ecom-credits">
