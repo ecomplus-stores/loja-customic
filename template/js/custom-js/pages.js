@@ -64,7 +64,7 @@ storefront.on('widget:@ecomplus/widget-minicart', function () {
     });
 });
 
-const words = ["Capa", "Película"];
+const words = ["sua Capa", "sua Película", "seu Popsockets", "seus Acessórios", "seu Combo"];
 let i = 0;
 let timer;
 
@@ -91,7 +91,7 @@ function deletingEffect() {
     console.log('Deleting effect started');
     let elem = document.querySelector('.header__row #search-input');
     let fullText = elem.getAttribute('placeholder');
-    let baseText = "Encontre sua "; // Base text that doesn't change
+    let baseText = "Encontre "; // Base text that doesn't change
     let word = words[i].split("");
     
     var loopDeleting = function() {
