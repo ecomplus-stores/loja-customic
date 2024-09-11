@@ -243,7 +243,7 @@
         "filter_option": "Galaxy S24",
         "filter_grid_model": "Samsung",
         "filter_grid_protection": "30",
-        "is_new": true
+        "is_new": false
       },
       {
         "filter_option": "Galaxy S23 Ultra",
