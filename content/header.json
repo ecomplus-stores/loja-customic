@@ -405,7 +405,7 @@
       {
         "filter_option": "Galaxy A25 5G",
         "filter_grid_model": "Samsung",
-        "is_new": true
+        "is_new": false
       },
       {
         "filter_option": "Galaxy A23 4G",
@@ -427,7 +427,7 @@
       {
         "filter_option": "Galaxy A15 5G",
         "filter_grid_model": "Samsung",
-        "is_new": true
+        "is_new": false
       },
       {
         "filter_option": "Galaxy A14 5G",
@@ -450,12 +450,12 @@
       {
         "filter_option": "Galaxy A05s",
         "filter_grid_model": "Samsung",
-        "is_new": true
+        "is_new": false
       },
       {
         "filter_option": "Galaxy A05",
         "filter_grid_model": "Samsung",
-        "is_new": true
+        "is_new": false
       },
       {
         "filter_option": "Galaxy A03s",
