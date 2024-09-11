@@ -49,28 +49,48 @@
   "filter-list": {
     "filters": [
       {
+        "filter_option": "iPhone 16 Pro Max",
+        "filter_grid_model": "Apple",
+        "is_new": true
+      },
+      {
+        "filter_option": "iPhone 16 Pro",
+        "filter_grid_model": "Apple",
+        "is_new": true
+      },
+      {
+        "filter_option": "iPhone 16 Plus",
+        "filter_grid_model": "Apple",
+        "is_new": true
+      },
+      {
+        "filter_option": "iPhone 16",
+        "filter_grid_model": "Apple",
+        "is_new": true
+      },
+      {
         "filter_option": "iPhone 15 Pro Max",
         "filter_grid_model": "Apple",
         "filter_grid_protection": "1",
-        "is_new": true
+        "is_new": false
       },
       {
         "filter_option": "iPhone 15 Pro",
         "filter_grid_model": "Apple",
         "filter_grid_protection": "2",
-        "is_new": true
+        "is_new": false
       },
       {
         "filter_option": "iPhone 15 Plus",
         "filter_grid_model": "Apple",
         "filter_grid_protection": "3",
-        "is_new": true
+        "is_new": false
       },
       {
         "filter_option": "iPhone 15",
         "filter_grid_model": "Apple",
         "filter_grid_protection": "4",
-        "is_new": true
+        "is_new": false
       },
       {
         "filter_option": "iPhone 14 Pro Max",
@@ -217,7 +237,7 @@
         "filter_option": "Galaxy S24 Plus",
         "filter_grid_model": "Samsung",
         "filter_grid_protection": "30",
-        "is_new": true
+        "is_new": false
       },
       {
         "filter_option": "Galaxy S24",
