@@ -47,11 +47,6 @@
         "type": 301
       },
       {
-        "source": "/impactor-flex-antibacteria-all",
-        "destination": "/impactor-flex-antibacteria-all",
-        "type": 301
-      },
-      {
         "source": "/impactor-ultra-all",
         "destination": "/impactor-ultra-all",
         "type": 301
