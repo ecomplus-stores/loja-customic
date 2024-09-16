@@ -10,10 +10,6 @@
       "markdown": "<h2 class=\"block-copy__maintitle\">DESCUBRA A CAPA<br class=\"t4desktop-only\"> IDEAL PARA VOCÊ</h2>"
     },
     {
-      "type": "custom-content",
-      "markdown": "<div style=\"text-align: center; font-size: 24px;\">\n\nProteja e personalize seu celular com as capas Customic, são opções para todos os estilos e necessidades. Estamos aqui para ajudar você a encontrar a capa perfeita!\n\n</div>"
-    },
-    {
       "type": "responsive-banner",
       "img": "/img/uploads/2-carrossel-desk.png",
       "mobile_img": "/img/uploads/anyconv.com__2-carrossel-mobile.webp"
@@ -132,6 +128,10 @@
           "img": "/img/uploads/8-1-depoimento.webp"
         }
       ]
+    },
+    {
+      "type": "custom-content",
+      "markdown": "<div style=\"text-align: center; font-size: 24px;\">\n\nProteja e personalize seu celular com as capas Customic, são opções para todos os estilos e necessidades. Estamos aqui para ajudar você a encontrar a capa perfeita!\n\n</div>"
     },
     {
       "type": "brands-carousel",
