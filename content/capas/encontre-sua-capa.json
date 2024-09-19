@@ -20,24 +20,7 @@
     },
     {
       "type": "custom-content",
-      "markdown": "## **C﻿onheça nossas coleções e descubra qual mais se encaixa com você**"
-    },
-    {
-      "type": "brands-carousel",
-      "limit": 24,
-      "offset": 0
-    },
-    {
-      "type": "collection-shelf",
-      "shuffle": false,
-      "limit": 12,
-      "page": 1,
-      "collection_id": "6666fb57f4e6d85ab2a61642:collections:Encontre Sua Capa Ideal:/encontre-sua-capa-ideal",
-      "headless": true
-    },
-    {
-      "type": "custom-content",
-      "markdown": "<span id=\"necessidade\"></span><h2><strong>Escolha por Necessidade</strong></h2>"
+      "markdown": "<span id=\"necessidade\"></span><h2><strong>O que você procurando?<h2><strong>"
     },
     {
       "type": "banners-carousel",
@@ -145,6 +128,23 @@
           "img": "/img/uploads/8-1-depoimento.webp"
         }
       ]
+    },
+    {
+      "type": "custom-content",
+      "markdown": "## **C﻿onheça nossas coleções e descubra qual mais se encaixa com você**"
+    },
+    {
+      "type": "brands-carousel",
+      "limit": 24,
+      "offset": 0
+    },
+    {
+      "type": "collection-shelf",
+      "shuffle": false,
+      "limit": 12,
+      "page": 1,
+      "collection_id": "6666fb57f4e6d85ab2a61642:collections:Encontre Sua Capa Ideal:/encontre-sua-capa-ideal",
+      "headless": true
     }
   ],
   "imagem": "https://s1-customic.b-cdn.net/img/uploads/banner-desk-peliculas_2_11zon.webp"

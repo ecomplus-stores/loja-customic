@@ -49,28 +49,48 @@
   "filter-list": {
     "filters": [
       {
+        "filter_option": "iPhone 16 Pro Max",
+        "filter_grid_model": "Apple",
+        "is_new": true
+      },
+      {
+        "filter_option": "iPhone 16 Pro",
+        "filter_grid_model": "Apple",
+        "is_new": true
+      },
+      {
+        "filter_option": "iPhone 16 Plus",
+        "filter_grid_model": "Apple",
+        "is_new": true
+      },
+      {
+        "filter_option": "iPhone 16",
+        "filter_grid_model": "Apple",
+        "is_new": true
+      },
+      {
         "filter_option": "iPhone 15 Pro Max",
         "filter_grid_model": "Apple",
         "filter_grid_protection": "1",
-        "is_new": true
+        "is_new": false
       },
       {
         "filter_option": "iPhone 15 Pro",
         "filter_grid_model": "Apple",
         "filter_grid_protection": "2",
-        "is_new": true
+        "is_new": false
       },
       {
         "filter_option": "iPhone 15 Plus",
         "filter_grid_model": "Apple",
         "filter_grid_protection": "3",
-        "is_new": true
+        "is_new": false
       },
       {
         "filter_option": "iPhone 15",
         "filter_grid_model": "Apple",
         "filter_grid_protection": "4",
-        "is_new": true
+        "is_new": false
       },
       {
         "filter_option": "iPhone 14 Pro Max",
@@ -211,19 +231,19 @@
         "filter_option": "Galaxy S24 Ultra",
         "filter_grid_model": "Samsung",
         "filter_grid_protection": "29",
-        "is_new": true
+        "is_new": false
       },
       {
         "filter_option": "Galaxy S24 Plus",
         "filter_grid_model": "Samsung",
         "filter_grid_protection": "30",
-        "is_new": true
+        "is_new": false
       },
       {
         "filter_option": "Galaxy S24",
         "filter_grid_model": "Samsung",
         "filter_grid_protection": "30",
-        "is_new": true
+        "is_new": false
       },
       {
         "filter_option": "Galaxy S23 Ultra",
@@ -385,7 +405,7 @@
       {
         "filter_option": "Galaxy A25 5G",
         "filter_grid_model": "Samsung",
-        "is_new": true
+        "is_new": false
       },
       {
         "filter_option": "Galaxy A23 4G",
@@ -407,7 +427,7 @@
       {
         "filter_option": "Galaxy A15 5G",
         "filter_grid_model": "Samsung",
-        "is_new": true
+        "is_new": false
       },
       {
         "filter_option": "Galaxy A14 5G",
@@ -430,12 +450,12 @@
       {
         "filter_option": "Galaxy A05s",
         "filter_grid_model": "Samsung",
-        "is_new": true
+        "is_new": false
       },
       {
         "filter_option": "Galaxy A05",
         "filter_grid_model": "Samsung",
-        "is_new": true
+        "is_new": false
       },
       {
         "filter_option": "Galaxy A03s",

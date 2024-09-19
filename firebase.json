@@ -989,6 +989,7 @@
       {
         "source": "/soft-red-iphone-8",
         "destination": "/soft-apple",
+
         "type": 301
       },
       {
