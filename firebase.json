@@ -1,6 +1,6 @@
 {
   "hosting": {
-     "redirects": [
+    "redirects": [
       {
         "source": "/customizar.php",
         "destination": "https://customic-90205.web.app/",
@@ -32,11 +32,6 @@
         "type": 301
       },
       {
-        "source": "/impactor-ultra-all",
-        "destination": "/impactor-ultra-all",
-        "type": 301
-      },
-      {
         "source": "/contato",
         "destination": "/pages/contato",
         "type": 301
@@ -64,11 +59,6 @@
       {
         "source": "/pelicula-vidro-premium-samsung",
         "destination": "/pelicula-vidro-premium-samsung-customic",
-        "type": 301
-      },
-      {
-        "source": "/seed-eco-case-all",
-        "destination": "/seed-eco-case-all",
         "type": 301
       },
       {
@@ -160,7 +150,7 @@
         "source": "/impactor-ultra-fabric-apple?t=*",
         "destination": "/impactor-ultra-fabric-apple",
         "type": 301
-      }, 
+      },
       {
         "source": "/pelicula-customic-vidro-premium",
         "destination": "/peliculas",
@@ -193,232 +183,222 @@
       },
       {
         "source": "/impactor-clear",
-        "destination":  "/impactor-clear-all",
+        "destination": "/impactor-clear-all",
         "type": 301
       },
       {
-        "source":  "/soft-touch",
-        "destination":  "/soft-touch-all",
+        "source": "/soft-touch",
+        "destination": "/soft-touch-all",
         "type": 301
       },
       {
-        "source":  "/blog",
-        "destination":  "/",
+        "source": "/blog",
+        "destination": "/",
         "type": 301
       },
       {
-        "source":  "/posts/esta-loja-e-um-pwa",
-        "destination":  "/",
-        "type": 301
-      },
-{
-        "source":  "/pelicula-gel-7-camadas-customic",
-        "destination":  "/pelicula-gel-7-camadas",
-        "type": 301
-      },
-       {
-        "source":  "/seed-eco-case-iphone-11-petroleum",
-        "destination":  "/seed-eco-case-apple",
-        "type": 301
-      },
-     {
-        "source":  "/seed-eco-case-iphone-11-pro-white",
-        "destination":  "/seed-eco-case-apple",
+        "source": "/posts/esta-loja-e-um-pwa",
+        "destination": "/",
         "type": 301
       },
       {
-        "source":  "/seed-eco-case-iphone-11-pro-red",
-        "destination":  "/seed-eco-case-apple",
+        "source": "/pelicula-gel-7-camadas-customic",
+        "destination": "/pelicula-gel-7-camadas",
         "type": 301
       },
       {
-        "source":  "/seed-eco-case-iphone-11-pro-white",
-        "destination":  "/seed-eco-case-apple",
+        "source": "/seed-eco-case-iphone-11-petroleum",
+        "destination": "/seed-eco-case-apple",
         "type": 301
       },
       {
-        "source":  "/seed-eco-case-iphone-11-green",
-        "destination":  "/seed-eco-case-apple",
+        "source": "/seed-eco-case-iphone-11-pro-white",
+        "destination": "/seed-eco-case-apple",
         "type": 301
       },
       {
-        "source":  "/seed-eco-case-iphone-11",
-        "destination":  "/seed-eco-case-apple",
+        "source": "/seed-eco-case-iphone-11-pro-red",
+        "destination": "/seed-eco-case-apple",
         "type": 301
       },
       {
-        "source":  "/seed-eco-case-iphone-11-purple",
-        "destination":  "/seed-eco-case-apple",
+        "source": "/seed-eco-case-iphone-11-green",
+        "destination": "/seed-eco-case-apple",
         "type": 301
       },
       {
-        "source":  "/seed-eco-case-iphone-11-red",
-        "destination":  "/seed-eco-case-apple",
+        "source": "/seed-eco-case-iphone-11",
+        "destination": "/seed-eco-case-apple",
         "type": 301
       },
       {
-        "source":  "/seed-eco-case-iphone-11-white",
-        "destination":  "/seed-eco-case-apple",
+        "source": "/seed-eco-case-iphone-11-purple",
+        "destination": "/seed-eco-case-apple",
         "type": 301
       },
       {
-        "source":  "/seed-eco-case-iphone-xs-max-green",
-        "destination":  "/seed-eco-case-apple",
+        "source": "/seed-eco-case-iphone-11-red",
+        "destination": "/seed-eco-case-apple",
         "type": 301
       },
       {
-        "source":  "/seed-eco-case-iphone-xs-max",
-        "destination":  "/seed-eco-case-apple",
+        "source": "/seed-eco-case-iphone-11-white",
+        "destination": "/seed-eco-case-apple",
         "type": 301
       },
       {
-        "source":  "/seed-eco-case-iphone-xs-max-purple",
-        "destination":  "/seed-eco-case-apple",
+        "source": "/seed-eco-case-iphone-xs-max-green",
+        "destination": "/seed-eco-case-apple",
         "type": 301
       },
       {
-        "source":  "/seed-eco-case-iphone-xs-max-red",
-        "destination":  "/seed-eco-case-apple",
+        "source": "/seed-eco-case-iphone-xs-max",
+        "destination": "/seed-eco-case-apple",
         "type": 301
       },
       {
-        "source":  "/seed-eco-case-iphone-xr-green",
-        "destination":  "/seed-eco-case-apple",
+        "source": "/seed-eco-case-iphone-xs-max-purple",
+        "destination": "/seed-eco-case-apple",
         "type": 301
       },
       {
-        "source":  "/seed-eco-case-iphone-xr",
-        "destination":  "/seed-eco-case-apple",
+        "source": "/seed-eco-case-iphone-xs-max-red",
+        "destination": "/seed-eco-case-apple",
         "type": 301
       },
       {
-        "source":  "/seed-eco-case-iphone-xr-purple",
-        "destination":  "/seed-eco-case-apple",
+        "source": "/seed-eco-case-iphone-xr-green",
+        "destination": "/seed-eco-case-apple",
         "type": 301
       },
       {
-        "source":  "/seed-eco-case-iphone-xr-red",
-        "destination":  "/seed-eco-case-apple",
+        "source": "/seed-eco-case-iphone-xr",
+        "destination": "/seed-eco-case-apple",
         "type": 301
       },
       {
-        "source":  "/seed-eco-case-iphone-xr-white",
-        "destination":  "/seed-eco-case-apple",
+        "source": "/seed-eco-case-iphone-xr-purple",
+        "destination": "/seed-eco-case-apple",
         "type": 301
       },
       {
-        "source":  "/seed-eco-case-iphone-x-xs-green",
-        "destination":  "/seed-eco-case-apple",
+        "source": "/seed-eco-case-iphone-xr-red",
+        "destination": "/seed-eco-case-apple",
         "type": 301
       },
       {
-        "source":  "/seed-eco-case-iphone-x-xs",
-        "destination":  "/seed-eco-case-apple",
+        "source": "/seed-eco-case-iphone-xr-white",
+        "destination": "/seed-eco-case-apple",
         "type": 301
       },
       {
-        "source":  "/seed-eco-case-iphone-x-xs-purple",
-        "destination":  "/seed-eco-case-apple",
+        "source": "/seed-eco-case-iphone-x-xs-green",
+        "destination": "/seed-eco-case-apple",
         "type": 301
       },
       {
-        "source":  "/impactor-ultra-fabric-purple-iphone-11-pro-max",
-        "destination":  "/impactor-ultra-fabric-apple",
+        "source": "/seed-eco-case-iphone-x-xs",
+        "destination": "/seed-eco-case-apple",
         "type": 301
       },
       {
-        "source":  "/impactor-ultra-fabric-purple-iphone-11-pro",
-        "destination":  "/impactor-ultra-fabric-apple",
+        "source": "/seed-eco-case-iphone-x-xs-purple",
+        "destination": "/seed-eco-case-apple",
         "type": 301
       },
       {
-        "source":  "/impactor-ultra-fabric-grey-iphone-11-pro",
-        "destination":  "/impactor-ultra-fabric-apple",
+        "source": "/impactor-ultra-fabric-purple-iphone-11-pro-max",
+        "destination": "/impactor-ultra-fabric-apple",
         "type": 301
       },
       {
-        "source":  "/impactor-ultra-fabric-black-iphone-11-pro",
-        "destination":  "/impactor-ultra-fabric-apple",
+        "source": "/impactor-ultra-fabric-purple-iphone-11-pro",
+        "destination": "/impactor-ultra-fabric-apple",
         "type": 301
       },
       {
-        "source":  "/impactor-ultra-fabric-purple-iphone-11",
-        "destination":  "/impactor-ultra-fabric-apple",
+        "source": "/impactor-ultra-fabric-grey-iphone-11-pro",
+        "destination": "/impactor-ultra-fabric-apple",
         "type": 301
       },
       {
-        "source":  "/impactor-ultra-fabric-grey-iphone-11",
-        "destination":  "/impactor-ultra-fabric-apple",
+        "source": "/impactor-ultra-fabric-black-iphone-11-pro",
+        "destination": "/impactor-ultra-fabric-apple",
         "type": 301
       },
       {
-        "source":  "/impactor-ultra-fabric-black-iphone-11",
-        "destination":  "/impactor-ultra-fabric-apple",
+        "source": "/impactor-ultra-fabric-purple-iphone-11",
+        "destination": "/impactor-ultra-fabric-apple",
         "type": 301
       },
       {
-        "source":  "/impactor-ultra-fabric-purple-iphone-xs-max",
-        "destination":  "/impactor-ultra-fabric-apple",
+        "source": "/impactor-ultra-fabric-grey-iphone-11",
+        "destination": "/impactor-ultra-fabric-apple",
         "type": 301
       },
       {
-        "source":  "/impactor-ultra-fabric-grey-iphone-xs-max",
-        "destination":  "/impactor-ultra-fabric-apple",
+        "source": "/impactor-ultra-fabric-black-iphone-11",
+        "destination": "/impactor-ultra-fabric-apple",
         "type": 301
       },
       {
-        "source":  "/impactor-ultra-fabric-blue-iphone-xs-max",
-        "destination":  "/impactor-ultra-fabric-apple",
+        "source": "/impactor-ultra-fabric-purple-iphone-xs-max",
+        "destination": "/impactor-ultra-fabric-apple",
         "type": 301
       },
       {
-        "source":  "/impactor-ultra-fabric-black-iphone-xs-max",
-        "destination":  "/impactor-ultra-fabric-apple",
+        "source": "/impactor-ultra-fabric-grey-iphone-xs-max",
+        "destination": "/impactor-ultra-fabric-apple",
         "type": 301
       },
       {
-        "source":  "/impactor-ultra-fabric-purple-iphone-xr",
-        "destination":  "/impactor-ultra-fabric-apple",
+        "source": "/impactor-ultra-fabric-blue-iphone-xs-max",
+        "destination": "/impactor-ultra-fabric-apple",
         "type": 301
       },
       {
-        "source":  "/impactor-ultra-fabric-grey-iphone-xr",
-        "destination":  "/impactor-ultra-fabric-apple",
+        "source": "/impactor-ultra-fabric-black-iphone-xs-max",
+        "destination": "/impactor-ultra-fabric-apple",
         "type": 301
       },
       {
-        "source":  "/impactor-ultra-fabric-blue-iphone-xr",
-        "destination":  "/impactor-ultra-fabric-apple",
+        "source": "/impactor-ultra-fabric-purple-iphone-xr",
+        "destination": "/impactor-ultra-fabric-apple",
         "type": 301
       },
       {
-        "source":  "/impactor-ultra-fabric-black-iphone-xr",
-        "destination":  "/impactor-ultra-fabric-apple",
+        "source": "/impactor-ultra-fabric-grey-iphone-xr",
+        "destination": "/impactor-ultra-fabric-apple",
         "type": 301
       },
       {
-        "source":  "/impactor-ultra-fabric-grey-iphone-x-xs",
-        "destination":  "/impactor-ultra-fabric-apple",
+        "source": "/impactor-ultra-fabric-blue-iphone-xr",
+        "destination": "/impactor-ultra-fabric-apple",
         "type": 301
       },
       {
-        "source":  "/impactor-ultra-fabric-purple-iphone-x-xs",
-        "destination":  "/impactor-ultra-fabric-apple",
+        "source": "/impactor-ultra-fabric-black-iphone-xr",
+        "destination": "/impactor-ultra-fabric-apple",
         "type": 301
       },
       {
-        "source":  "/impactor-ultra-fabric-blue-iphone-x-xs",
-        "destination":  "/impactor-ultra-fabric-apple",
+        "source": "/impactor-ultra-fabric-grey-iphone-x-xs",
+        "destination": "/impactor-ultra-fabric-apple",
         "type": 301
       },
       {
-        "source":  "/impactor-ultra-fabric-grey-iphone-x-xs",
-        "destination":  "/impactor-ultra-fabric-apple",
+        "source": "/impactor-ultra-fabric-purple-iphone-x-xs",
+        "destination": "/impactor-ultra-fabric-apple",
         "type": 301
       },
       {
-        "source":  "/impactor-ultra-fabric-black-iphone-x-xs",
-        "destination":  "/impactor-ultra-fabric-apple",
+        "source": "/impactor-ultra-fabric-blue-iphone-x-xs",
+        "destination": "/impactor-ultra-fabric-apple",
+        "type": 301
+      },
+      {
+        "source": "/impactor-ultra-fabric-black-iphone-x-xs",
+        "destination": "/impactor-ultra-fabric-apple",
         "type": 301
       },
       {
@@ -457,108 +437,8 @@
         "type": 301
       },
       {
-        "source": "/seed-eco-case-iphone-11-pro-red",
-        "destination": "/seed-eco-case-all",
-        "type": 301
-      },
-      {
-        "source": "/seed-eco-case-iphone-11-pro-white",
-        "destination": "/seed-eco-case-all",
-        "type": 301
-      },
-      {
-        "source": "/seed-eco-case-iphone-11-green",
-        "destination": "/seed-eco-case-all",
-        "type": 301
-      },
-      {
-        "source": "/seed-eco-case-iphone-11",
-        "destination": "/seed-eco-case-all",
-        "type": 301
-      },
-      {
-        "source": "/seed-eco-case-iphone-11-purple",
-        "destination": "/seed-eco-case-all",
-        "type": 301
-      },
-      {
-        "source": "/seed-eco-case-iphone-11-red",
-        "destination": "/seed-eco-case-all",
-        "type": 301
-      },
-      {
-        "source": "/seed-eco-case-iphone-11-white",
-        "destination": "/seed-eco-case-all",
-        "type": 301
-      },
-      {
-        "source": "/seed-eco-case-iphone-xs-max-green",
-        "destination": "/seed-eco-case-all",
-        "type": 301
-      },
-      {
-        "source": "/seed-eco-case-iphone-xs-max",
-        "destination": "/seed-eco-case-all",
-        "type": 301
-      },
-      {
-        "source": "/seed-eco-case-iphone-xs-max-purple",
-        "destination": "/seed-eco-case-all",
-        "type": 301
-      },
-      {
-        "source": "/seed-eco-case-iphone-xs-max-red",
-        "destination": "/seed-eco-case-all",
-        "type": 301
-      },
-      {
-        "source": "/seed-eco-case-iphone-xr-green",
-        "destination": "/seed-eco-case-all",
-        "type": 301
-      },
-      {
-        "source": "/seed-eco-case-iphone-xr",
-        "destination": "/seed-eco-case-all",
-        "type": 301
-      },
-      {
-        "source": "/seed-eco-case-iphone-xr-purple",
-        "destination": "/seed-eco-case-all",
-        "type": 301
-      },
-      {
-        "source": "/seed-eco-case-iphone-xr-red",
-        "destination": "/seed-eco-case-all",
-        "type": 301
-      },
-      {
-        "source": "/seed-eco-case-iphone-xr-white",
-        "destination": "/seed-eco-case-all",
-        "type": 301
-      },
-      {
-        "source": "/seed-eco-case-iphone-x-xs-green",
-        "destination": "/seed-eco-case-all",
-        "type": 301
-      },
-      {
-        "source": "/seed-eco-case-iphone-x-xs",
-        "destination": "/seed-eco-case-all",
-        "type": 301
-      },
-      {
         "source": "/seed-eco-case-iphone-x-xs-white",
         "destination": "/seed-eco-case-all",
-        "type": 301
-      },
-      {
-        "source": "/seed-eco-case-iphone-x-xs-purple",
-        "destination": "/seed-eco-case-all",
-        "type": 301
-      },
-      {
-        "source": "/impactor-ultra-fabric-purple-iphone-11-pro-max",
-        "destination": "/impactor-ultra-fabric-all",
         "type": 301
       },
       {
@@ -572,102 +452,12 @@
         "type": 301
       },
       {
-        "source": "/impactor-ultra-fabric-purple-iphone-11-pro",
-        "destination": "/impactor-ultra-fabric-all",
-        "type": 301
-      },
-      {
-        "source": "/impactor-ultra-fabric-grey-iphone-11-pro",
-        "destination": "/impactor-ultra-fabric-all",
-        "type": 301
-      },
-      {
         "source": "/impactor-ultra-fabric-blue-iphone-11-pro",
         "destination": "/impactor-ultra-fabric-all",
         "type": 301
       },
       {
-        "source": "/impactor-ultra-fabric-black-iphone-11-pro",
-        "destination": "/impactor-ultra-fabric-all",
-        "type": 301
-      },
-      {
-        "source": "/impactor-ultra-fabric-purple-iphone-11",
-        "destination": "/impactor-ultra-fabric-all",
-        "type": 301
-      },
-      {
-        "source": "/impactor-ultra-fabric-grey-iphone-11",
-        "destination": "/impactor-ultra-fabric-all",
-        "type": 301
-      },
-      {
         "source": "/impactor-ultra-fabric-blue-iphone-11",
-        "destination": "/impactor-ultra-fabric-all",
-        "type": 301
-      },
-      {
-        "source": "/impactor-ultra-fabric-black-iphone-11",
-        "destination": "/impactor-ultra-fabric-all",
-        "type": 301
-      },
-      {
-        "source": "/impactor-ultra-fabric-purple-iphone-xs-max",
-        "destination": "/impactor-ultra-fabric-all",
-        "type": 301
-      },
-      {
-        "source": "/impactor-ultra-fabric-grey-iphone-xs-max",
-        "destination": "/impactor-ultra-fabric-all",
-        "type": 301
-      },
-      {
-        "source": "/impactor-ultra-fabric-blue-iphone-xs-max",
-        "destination": "/impactor-ultra-fabric-all",
-        "type": 301
-      },
-      {
-        "source": "/impactor-ultra-fabric-black-iphone-xs-max",
-        "destination": "/impactor-ultra-fabric-all",
-        "type": 301
-      },
-      {
-        "source": "/impactor-ultra-fabric-purple-iphone-xr",
-        "destination": "/impactor-ultra-fabric-all",
-        "type": 301
-      },
-      {
-        "source": "/impactor-ultra-fabric-grey-iphone-xr",
-        "destination": "/impactor-ultra-fabric-all",
-        "type": 301
-      },
-      {
-        "source": "/impactor-ultra-fabric-blue-iphone-xr",
-        "destination": "/impactor-ultra-fabric-all",
-        "type": 301
-      },
-      {
-        "source": "/impactor-ultra-fabric-black-iphone-xr",
-        "destination": "/impactor-ultra-fabric-all",
-        "type": 301
-      },
-      {
-        "source": "/impactor-ultra-fabric-purple-iphone-x-xs",
-        "destination": "/impactor-ultra-fabric-all",
-        "type": 301
-      },
-      {
-        "source": "/impactor-ultra-fabric-grey-iphone-x-xs",
-        "destination": "/impactor-ultra-fabric-all",
-        "type": 301
-      },
-      {
-        "source": "/impactor-ultra-fabric-blue-iphone-x-xs",
-        "destination": "/impactor-ultra-fabric-all",
-        "type": 301
-      },
-      {
-        "source": "/impactor-ultra-fabric-black-iphone-x-xs",
         "destination": "/impactor-ultra-fabric-all",
         "type": 301
       },
@@ -697,1096 +487,696 @@
         "type": 301
       },
       {
-"source":"/capa-celular-customic-iphone-x-xs-seed-biodegradvel",
-"destination":"/seed-eco-case-apple",
-"type":301
-},
-{
-"source":"/hardbox-all-2",
-"destination":"/hardbox-all",
-"type":301
-},
-{
-"source":"/hardbox-black",
-  "destination":"/hardbox-all",
-"type":301
-},
-{
-"source":"/hardbox-black-galaxy-s10",
-"destination":"/hardbox-samsung",
-"type":301
-},
-{
-"source":"/hardbox-black-galaxy-s10-plus",
-"destination":"/hardbox-samsung",
-"type":301
-},
-{
-"source":"/hardbox-black-galaxy-s10e",
-"destination":"/hardbox-samsung",
-"type":301
-},
-{
-"source":"/hardbox-black-motorola",
-"destination":"/hardbox-motorola",
-"type":301
-},
-{
-"source":"/hardbox-black-huawei",
-"destination":"/hardbox-huawei",
-"type":301
-},
-{
-"source":"/hardbox-blue",
-"destination":"/hardbox-all",
-"type":301
-},
-{
-"source":"/hardbox-blue-galaxy-s10",
-"destination":"/hardbox-samsung",
-"type":301
-},
-{
-"source":"/hardbox-blue-galaxy-s10-plus",
-"destination":"/hardbox-samsung",
-"type":301
-},
-{
-"source":"/hardbox-blue-galaxy-s10e",
-"destination":"/hardbox-samsung",
-"type":301
-},
-{
-"source":"/hardbox-blue-xiaomi",
-"destination":"/hardbox-xiaomi",
-"type":301
-},
-{
-"source":"/hardbox-blue-motorola",
-"destination":"/hardbox-motorola",
-"type":301
-},
-{
-"source":"/hardbox-dark-blue",
-"destination":"/hardbox-all",
-"type":301
-},
-{
-"source":"/hardbox-dark-blue-xiaomi",
-"destination":"/hardbox-xiaomi",
-"type":301
-},
-{
-"source":"/hardbox-gold",
-"destination":"/hardbox-all",
-"type":301
-},
-{
-"source":"/hardbox-gold-galaxy-s10",
-"destination":"/hardbox-samsung",
-"type":301
-},
-{
-"source":"/hardbox-gold-galaxy-s10-plus",
-"destination":"/hardbox-samsung",
-"type":301
-},
-{
-"source":"/hardbox-gold-galaxy-s10e",
-"destination":"/hardbox-samsung",
-"type":301
-},
-{
-"source":"/hardbox-gold-motorola",
-"destination":"/hardbox-motorola",
-"type":301
-},
-{
-"source":"/hardbox-gold-xiaomi",
-"destination":"/hardbox-xiaomi",
-"type":301
-},
-{
-"source":"/hardbox-red",
-"destination":"/hardbox-all",
-"type":301
-},
-{
-"source":"/hardbox-red-galaxy-s10",
-"destination":"/hardbox-samsung",
-"type":301
-},
-{
-"source":"/hardbox-red-galaxy-s10-plus",
-"destination":"/hardbox-samsung",
-"type":301
-},
-{
-"source":"/hardbox-red-galaxy-s10e",
-"destination":"/hardbox-samsung",
-"type":301
-},
-{
-"source":"/hardbox-red-xiaomi",
-"destination":"/hardbox-xiaomi",
-"type":301
-},
-{
-"source":"/hardbox-rose-gold",
-"destination":"/hardbox-all",
-"type":301
-},
-{
-"source":"/hardbox-rose-gold-galaxy-s10",
-"destination":"/hardbox-samsung",
-"type":301
-},
-{
-"source":"/hardbox-rose-gold-galaxy-s10-plus",
-"destination":"/hardbox-samsung",
-"type":301
-},
-{
-"source":"/hardbox-rose-gold-galaxy-s10e",
-"destination":"/hardbox-samsung",
-"type":301
-},
-{
-"source":"/impactor-clear-galaxy-s10",
-"destination":"/impactor-clear-samsung",
-"type":301
-},
-{
-"source":"/impactor-clear-all-2",
-"destination":"/impactor-clear-all",
-"type":301
-},
-{
-"source":"/impactor-clear-galaxy-s10-plus",
-"destination":"/impactor-clear-samsung",
-"type":301
-},
-{
-"source":"/impactor-clear-galaxy-s10e",
-"destination":"/impactor-clear-samsung",
-"type":301
-},
-{
-"source":"/impactor-clear-iphone-11",
-"destination":"/impactor-clear-apple",
-"type":301
-},
-{
-"source":"/impactor-clear-iphone-11-pro",
-"destination":"/impactor-clear-apple",
-"type":301
-},
-{
-"source":"/impactor-clear-iphone-11-pro-max",
-"destination":"/impactor-clear-apple",
-"type":301
-},
-{
-"source":"/impactor-clear-iphone-x-xs",
-"destination":"/impactor-clear-apple",
-"type":301
-},
-{
-"source":"/impactor-clear-iphone-xr",
-"destination":"/impactor-clear-apple",
-"type":301
-},
-{
-"source":"/impactor-clear-samsung-galaxy-s20",
-"destination":"/impactor-clear-samsung",
-"type":301
-},
-{
-"source":"/impactor-clear-todos-os-modelos-de-android",
-"destination":"/impactor-clear-all",
-"type":301
-},
-{
-"source":"/impactor-clear-todos-os-modelos-de-iphone",
-"destination":"/impactor-clear-apple",
-"type":301
-},
-{
-"source":"/impactor-flex-all-2",
-"destination":"/impactor-flex-all",
-"type":301
-},
-{
-"source":"/impactor-flex-black",
-"destination":"/impactor-flex-all",
-"type":301
-},
-{
-"source":"/impactor-flex-black-galaxy-s10e",
-"destination":"/impactor-flex-samsung",
-"type":301
-},
-{
-"source":"/impactor-flex-black-iphone-11",
-"destination":"/impactor-flex-apple",
-"type":301
-},
-{
-"source":"/impactor-flex-black-iphone-11-pro",
-"destination":"/impactor-flex-apple",
-"type":301
-},
-{
-"source":"/impactor-flex-black-iphone-11-pro-max",
-"destination":"/impactor-flex-apple",
-"type":301
-},
-{
-"source":"/impactor-flex-black-iphone-x-xs",
-"destination":"/impactor-flex-apple",
-"type":301
-},
-{
-"source":"/impactor-flex-black-iphone-xs-max",
-"destination":"/impactor-flex-apple",
-"type":301
-},
-{
-"source":"/impactor-flex-black-samsung-galaxy-s20-ultra",
-"destination":"/impactor-flex-samsung",
-"type":301
-},
-{
-"source":"/impactor-flex-pink",
-"destination":"/impactor-flex-all",
-"type":301
-},
-{
-"source":"/impactor-flex-pink-iphone-11",
-"destination":"/impactor-flex-apple",
-"type":301
-},
-{
-"source":"/impactor-flex-pink-iphone-11-pro",
-"destination":"/impactor-flex-apple",
-"type":301
-},
-{
-"source":"/impactor-flex-pink-iphone-11-pro-max",
-"destination":"/impactor-flex-apple",
-"type":301
-},
-{
-"source":"/impactor-flex-pink-iphone-x-xs",
-"destination":"/seed-eco-case-all",
-"type":301
-},
-{
-"source":"/impactor-flex-pink-iphone-xr",
-"destination":"/impactor-flex-apple",
-"type":301
-},
-{
-"source":"/impactor-flex-pink-iphone-xs-max",
-"destination":"/impactor-flex-apple",
-"type":301
-},
-{
-"source":"/impactor-flex-todos-os-modelos-de-android",
-"destination":"/impactor-flex-all",
-"type":301
-},
-{
-"source":"/impactor-flex-white",
-"destination":"/impactor-flex-all",
-"type":301
-},
-{
-"source":"/impactor-flex-white-iphone-11",
-"destination":"/impactor-flex-apple",
-"type":301
-},
-{
-"source":"/impactor-flex-white-iphone-11-pro",
-"destination":"/impactor-flex-apple",
-"type":301
-},
-{
-"source":"/impactor-flex-white-iphone-11-pro-max",
-"destination":"/impactor-flex-apple",
-"type":301
-},
-{
-"source":"/impactor-flex-white-iphone-x-xs",
-"destination":"/impactor-flex-apple",
-"type":301
-},
-{
-"source":"/impactor-flex-white-iphone-xr",
-"destination":"/impactor-flex-apple",
-"type":301
-},
-{
-"source":"/impactor-ultra-all-2",
-"destination":"/impactor-ultra-all",
-"type":301
-},
-{
-"source":"/impactor-ultra-android",
-"destination":"/impactor-ultra-all",
-"type":301
-},
-{
-"source":"/impactor-ultra-black-galaxy-s10",
-"destination":"/impactor-ultra-samsung",
-"type":301
-},
-{
-"source":"/impactor-ultra-black",
-"destination":"/impactor-ultra-all",
-"type":301
-},
-{
-"source":"/impactor-ultra-black-galaxy-s10e",
-"destination":"/impactor-ultra-samsung",
-"type":301
-},
-{
-"source":"/impactor-ultra-black-iphone-11",
-"destination":"/impactor-ultra-apple",
-"type":301
-},
-{
-"source":"/impactor-ultra-black-iphone-11-pro",
-"destination":"/impactor-ultra-apple",
-"type":301
-},
-{
-"source":"/impactor-ultra-black-iphone-11-pro-max",
-"destination":"/impactor-ultra-apple",
-"type":301
-},
-{
-"source":"/impactor-ultra-black-iphone-xr",
-"destination":"/impactor-ultra-apple",
-"type":301
-},
-{
-"source":"/impactor-ultra-black-iphone-xs-max",
-"destination":"/impactor-ultra-apple",
-"type":301
-},
-{
-"source":"/impactor-ultra-black-samsung-galaxy-s20",
-"destination":"/impactor-ultra-samsung",
-"type":301
-},
-{
-"source":"/impactor-ultra-blue",
-"destination":"/impactor-ultra-all",
-"type":301
-},
-{
-"source":"/impactor-ultra-blue-iphone-11-pro",
-"destination":"/impactor-ultra-apple",
-"type":301
-},
-{
-"source":"/impactor-ultra-blue-iphone-11",
-"destination":"/impactor-ultra-apple",
-"type":301
-},
-{
-"source":"/impactor-ultra-blue-iphone-11-pro-max",
-"destination":"/impactor-ultra-apple",
-"type":301
-},
-{
-"source":"/impactor-ultra-fabric-all-2",
-"destination":"/impactor-ultra-all",
-"type":301
-},
-{
-"source":"/impactor-ultra-fabric-grey-iphone-11-pro-max",
-"destination":"/impactor-ultra-apple",
-"type":301
-},
-{
-"source":"/impactor-ultra-red-iphone-11-pro",
-"destination":"/impactor-ultra-apple",
-"type":301
-},
-{
-"source":"/impactor-ultra-red",
-"destination":"/impactor-ultra-all",
-"type":301
-},
-{
-"source":"/impactor-ultra-red-iphone-11",
-"destination":"/impactor-ultra-apple",
-"type":301
-},
-{
-"source":"/impactor-ultra-red-iphone-11-pro-max",
-"destination":"/impactor-ultra-apple",
-"type":301
-},
-{
-"source":"/impactor-ultra-red-iphone-xr",
-"destination":"/impactor-ultra-apple",
-"type":301
-},
-{
-"source":"/impactor-ultra-todos-os-modelos-de-iphone",
-"destination":"/impactor-ultra-apple",
-"type":301
-},
-{
-"source":"/impactor-ultra-white",
-"destination":"/impactor-ultra-all",
-"type":301
-},
-{
-"source":"/impactor-ultra-white-galaxy-s10-plus",
-"destination":"/impactor-ultra-samsung",
-"type":301
-},
-{
-"source":"/pelicula-antibacteria-3d-customic",
-"destination":"/pelicula-antibacteria-3d",
-"type":301
-},
-{
-"source":"/pelicula-antiblue-vidro-3d-customic",
-"destination":"/pelicula-antiblue-3d",
-"type":301
-},
-{
-"source":"/pelicula-gamer-fosca-3d-customic",
-"destination":"/pelicula-gamer-fosca",
-"type":301
-},
-{
-"source":"/pelicula-mirror-com-borda-customic",
-"destination":"/pelicula-mirror-com-borda",
-"type":301
-},
-{
-"source":"/soft-todos-os-modelos-de-iphone",
-"destination":"/soft-apple",
-"type":301
-},
-{
-"source":"/soft-touch-2",
-"destination":"/soft-all",
-"type":301
-},
-{
-"source":"/soft-red-iphone-x-xs",
-"destination":"/soft-apple",
-"type":301
-},
-{
-"source":"/soft-red-com-furo",
-"destination":"/soft-all",
-"type":301
-},
-{
-"source":"/seed-eco-case-petroleum",
-"destination":"/seed-eco-case-all",
-"type":301
-},
-{
-"source":"/soft-red-iphone-8-plus",
-"destination":"/soft-apple",
-"type":301
-},
-{
-"source":"/soft-red-iphone-8",
-"destination":"/soft-apple",
-"type":301
-},
-{
-"source":"/soft-grey-com-furo",
-"destination":"/soft-all",
-"type":301
-},
-{
-"source":"/soft-red",
-"destination":"/soft-all",
-"type":301
-},
-{
-"source":"/soft-dark-blue-iphone-x-xs",
-"destination":"/soft-apple",
-"type":301
-},
-{
-"source":"/soft-dark-blue",
-"destination":"/soft-all",
-"type":301
-},
-{
-"source":"/soft-black-iphone-xs-max",
-"destination":"/soft-apple",
-"type":301
-},
-{
-"source":"/soft-dark-blue-iphone-8",
-"destination":"/soft-apple",
-"type":301
-},
-{
-"source":"/soft-dark-blue-com-furo",
-"destination":"/soft-all",
-"type":301
-},
-{
-"source":"/soft-dark-blue-iphone-8-plus",
-"destination":"/soft-apple",
-"type":301
-},
-{
-"source":"/soft-black-iphone-xr",
-"destination":"/soft-apple",
-"type":301
-},
-{
-"source":"/soft-black-iphone-8-plus",
-"destination":"/soft-apple",
-"type":301
-},
-{
-"source":"/soft-black-iphone-11-pro",
-"destination":"/soft-apple",
-"type":301
-},
-{
-"source":"/soft-black-iphone-11-pro-max",
-"destination":"/soft-apple",
-"type":301
-},
-{
-"source":"/soft-black-iphone-8",
-"destination":"/soft-apple",
-"type":301
-},
-{
-"source":"/soft-black-iphone-11",
-"destination":"/soft-apple",
-"type":301
-},
-{
-"source":"/soft-black-com-furo-iphone-x-xs",
-"destination":"/soft-apple",
-"type":301
-},
-{
-"source":"/soft-black-com-furo",
-"destination":"/soft-all",
-"type":301
-},
-{
-"source":"/soft-black-com-furo-iphone-8-plus",
-"destination":"/seed-eco-case-all",
-"type":301
-},
-{
-"source":"/soft-black",
-"destination":"/soft-all",
-"type":301
-},
-{
-"source":"/soft-all-2",
-"destination":"/soft-all",
-"type":301
-},
-{
-"source":"/seed-eco-case-iphone-11-pro-purple",
-"destination":"/seed-eco-case-apple",
-"type":301
-},
-{
-"source":"/seed-eco-case-iphone-11-pro-max",
-"destination":"/seed-eco-case-apple",
-"type":301
-},
-{
-"source":"/seed-eco-case-iphone-11-pro-max-red",
-"destination":"/seed-eco-case-apple",
-"type":301
-},
-{
-"source":"/seed-eco-case-iphone-11-pro-max-purple",
-"destination":"/seed-eco-case-apple",
-"type":301
-},
-{
-"source":"/seed-eco-case-iphone-11-pro-max-green",
-"destination":"/seed-eco-case-apple",
-"type":301
-},
-{
-"source":"/seed-eco-case-iphone-11-pro",
-"destination":"/seed-eco-case-apple",
-"type":301
-},
-{
-"source":"/seed-eco-case-iphone-11-pro-green",
-"destination":"/seed-eco-case-apple",
-"type":301
-},
-{
-"source":"/seed-eco-case-biodegradavel-antibacteria",
-"destination":"/seed-eco-case-antibacteria",
-"type":301
-},
-{
-"source":"/seed-eco-case-all-2",
-"destination":"/seed-eco-case-all",
-"type":301
-},
-{
-"source":"/pelicula-vidro-premium-customic",
-"destination":"/pelicula-vidro-temperado",
-"type":301
-},
-{
-"source":"/pelicula-vidro-3d-customic",
-"destination":"/pelicula-vidro-3d",
-"type":301
-},
-{
-"source":"/hardbox-dark-blue-galaxy-s10",
-"destination":"/hardbox-samsung",
-"type":301
-},
-{
-"source":"/impactor-clear-iphone-xs-max",
-"destination":"/impactor-clear-apple",
-"type":301
-},
-{
-"source":"/impactor-flex-antibacteria-all-2",
-"destination":"/impactor-flex-antibacteria-all",
-"type":301
-},
-{
-"source":"/impactor-flex-todos-os-modelos-de-iphone",
-"destination":"/impactor-flex-apple",
-"type":301
-},
-{
-"source":"/seed-eco-case-iphone-xr-petroleum",
-"destination":"/seed-eco-case-apple",
-"type":301
-},
-{
-"source":"/soft-white-com-furo",
-"destination":"/soft-all",
-"type":301
-},
-{
-        "source":  "/pelicula-gel-7-camadas-customic",
-        "destination":  "/pelicula-gel-7-camadas",
-        "type": 301
-      },
-      {
-        "source":  "/seed-eco-case-iphone-11-pro-white",
-        "destination":  "/seed-eco-case-apple",
-        "type": 301
-      },
-      {
-        "source":  "/seed-eco-case-iphone-11-pro-red",
-        "destination":  "/seed-eco-case-apple",
-        "type": 301
-      },
-      {
-        "source":  "/seed-eco-case-iphone-11-pro-white",
-        "destination":  "/seed-eco-case-apple",
-        "type": 301
-      },
-      {
-        "source":  "/seed-eco-case-iphone-11-green",
-        "destination":  "/seed-eco-case-apple",
-        "type": 301
-      },
-      {
-        "source":  "/seed-eco-case-iphone-11",
-        "destination":  "/seed-eco-case-apple",
-        "type": 301
-      },
-      {
-        "source":  "/seed-eco-case-iphone-11-purple",
-        "destination":  "/seed-eco-case-apple",
-        "type": 301
-      },
-      {
-        "source":  "/seed-eco-case-iphone-11-red",
-        "destination":  "/seed-eco-case-apple",
-        "type": 301
-      },
-      {
-        "source":  "/seed-eco-case-iphone-11-white",
-        "destination":  "/seed-eco-case-apple",
-        "type": 301
-      },
-      {
-        "source":  "/seed-eco-case-iphone-xs-max-green",
-        "destination":  "/seed-eco-case-apple",
-        "type": 301
-      },
-      {
-        "source":  "/seed-eco-case-iphone-xs-max",
-        "destination":  "/seed-eco-case-apple",
-        "type": 301
-      },
-      {
-        "source":  "/seed-eco-case-iphone-xs-max-purple",
-        "destination":  "/seed-eco-case-apple",
-        "type": 301
-      },
-      {
-        "source":  "/seed-eco-case-iphone-xs-max-red",
-        "destination":  "/seed-eco-case-apple",
-        "type": 301
-      },
-      {
-        "source":  "/seed-eco-case-iphone-xr-green",
-        "destination":  "/seed-eco-case-apple",
-        "type": 301
-      },
-      {
-        "source":  "/seed-eco-case-iphone-xr",
-        "destination":  "/seed-eco-case-apple",
-        "type": 301
-      },
-      {
-        "source":  "/seed-eco-case-iphone-xr-purple",
-        "destination":  "/seed-eco-case-apple",
-        "type": 301
-      },
-      {
-        "source":  "/seed-eco-case-iphone-xr-red",
-        "destination":  "/seed-eco-case-apple",
-        "type": 301
-      },
-      {
-        "source":  "/seed-eco-case-iphone-xr-white",
-        "destination":  "/seed-eco-case-apple",
-        "type": 301
-      },
-      {
-        "source":  "/seed-eco-case-iphone-x-xs-green",
-        "destination":  "/seed-eco-case-apple",
-        "type": 301
-      },
-      {
-        "source":  "/seed-eco-case-iphone-x-xs",
-        "destination":  "/seed-eco-case-apple",
-        "type": 301
-      },
-      {
-        "source":  "/seed-eco-case-iphone-x-xs-purple",
-        "destination":  "/seed-eco-case-apple",
-        "type": 301
-      },
-      {
-        "source":  "/impactor-ultra-fabric-purple-iphone-11-pro-max",
-        "destination":  "/impactor-ultra-fabric-apple",
-        "type": 301
-      },
-      {
-        "source":  "/impactor-ultra-fabric-purple-iphone-11-pro",
-        "destination":  "/impactor-ultra-fabric-apple",
-        "type": 301
-      },
-      {
-        "source":  "/impactor-ultra-fabric-grey-iphone-11-pro",
-        "destination":  "/impactor-ultra-fabric-apple",
-        "type": 301
-      },
-      {
-        "source":  "/impactor-ultra-fabric-black-iphone-11-pro",
-        "destination":  "/impactor-ultra-fabric-apple",
-        "type": 301
-      },
-      {
-        "source":  "/impactor-ultra-fabric-purple-iphone-11",
-        "destination":  "/impactor-ultra-fabric-apple",
-        "type": 301
-      },
-      {
-        "source":  "/impactor-ultra-fabric-grey-iphone-11",
-        "destination":  "/impactor-ultra-fabric-apple",
-        "type": 301
-      },
-      {
-        "source":  "/impactor-ultra-fabric-black-iphone-11",
-        "destination":  "/impactor-ultra-fabric-apple",
-        "type": 301
-      },
-      {
-        "source":  "/impactor-ultra-fabric-purple-iphone-xs-max",
-        "destination":  "/impactor-ultra-fabric-apple",
-        "type": 301
-      },
-      {
-        "source":  "/impactor-ultra-fabric-grey-iphone-xs-max",
-        "destination":  "/impactor-ultra-fabric-apple",
-        "type": 301
-      },
-      {
-        "source":  "/impactor-ultra-fabric-blue-iphone-xs-max",
-        "destination":  "/impactor-ultra-fabric-apple",
-        "type": 301
-      },
-      {
-        "source":  "/impactor-ultra-fabric-black-iphone-xs-max",
-        "destination":  "/impactor-ultra-fabric-apple",
-        "type": 301
-      },
-      {
-        "source":  "/impactor-ultra-fabric-purple-iphone-xr",
-        "destination":  "/impactor-ultra-fabric-apple",
-        "type": 301
-      },
-      {
-        "source":  "/impactor-ultra-fabric-grey-iphone-xr",
-        "destination":  "/impactor-ultra-fabric-apple",
-        "type": 301
-      },
-      {
-        "source":  "/impactor-ultra-fabric-blue-iphone-xr",
-        "destination":  "/impactor-ultra-fabric-apple",
-        "type": 301
-      },
-      {
-        "source":  "/impactor-ultra-fabric-black-iphone-xr",
-        "destination":  "/impactor-ultra-fabric-apple",
-        "type": 301
-      },
-      {
-        "source":  "/impactor-ultra-fabric-grey-iphone-x-xs",
-        "destination":  "/impactor-ultra-fabric-apple",
-        "type": 301
-      },
-      {
-        "source":  "/impactor-ultra-fabric-purple-iphone-x-xs",
-        "destination":  "/impactor-ultra-fabric-apple",
-        "type": 301
-      },
-      {
-        "source":  "/impactor-ultra-fabric-blue-iphone-x-xs",
-        "destination":  "/impactor-ultra-fabric-apple",
-        "type": 301
-      },
-      {
-        "source":  "/impactor-ultra-fabric-grey-iphone-x-xs",
-        "destination":  "/impactor-ultra-fabric-apple",
-        "type": 301
-      },
-      {
-        "source":  "/impactor-ultra-fabric-black-iphone-x-xs",
-        "destination":  "/impactor-ultra-fabric-apple",
-        "type": 301
-      },
-      {
-        "source":  "/pelicula-gel-7-camadas-customic",
-        "destination":  "/pelicula-gel-7-camadas",
-        "type": 301
-      },
-      {
-        "source":  "/seed-eco-case-iphone-11-pro-white",
-        "destination":  "/seed-eco-case-apple",
-        "type": 301
-      },
-      {
-        "source":  "/seed-eco-case-iphone-11-pro-red",
-        "destination":  "/seed-eco-case-apple",
-        "type": 301
-      },
-      {
-        "source":  "/seed-eco-case-iphone-11-pro-white",
-        "destination":  "/seed-eco-case-apple",
-        "type": 301
-      },
-      {
-        "source":  "/seed-eco-case-iphone-11-green",
-        "destination":  "/seed-eco-case-apple",
-        "type": 301
-      },
-      {
-        "source":  "/seed-eco-case-iphone-11",
-        "destination":  "/seed-eco-case-apple",
-        "type": 301
-      },
-      {
-        "source":  "/seed-eco-case-iphone-11-purple",
-        "destination":  "/seed-eco-case-apple",
-        "type": 301
-      },
-      {
-        "source":  "/seed-eco-case-iphone-11-red",
-        "destination":  "/seed-eco-case-apple",
-        "type": 301
-      },
-      {
-        "source":  "/seed-eco-case-iphone-11-white",
-        "destination":  "/seed-eco-case-apple",
-        "type": 301
-      },
-      {
-        "source":  "/seed-eco-case-iphone-xs-max-green",
-        "destination":  "/seed-eco-case-apple",
-        "type": 301
-      },
-      {
-        "source":  "/seed-eco-case-iphone-xs-max",
-        "destination":  "/seed-eco-case-apple",
-        "type": 301
-      },
-      {
-        "source":  "/seed-eco-case-iphone-xs-max-purple",
-        "destination":  "/seed-eco-case-apple",
-        "type": 301
-      },
-      {
-        "source":  "/seed-eco-case-iphone-xs-max-red",
-        "destination":  "/seed-eco-case-apple",
-        "type": 301
-      },
-      {
-        "source":  "/seed-eco-case-iphone-xr-green",
-        "destination":  "/seed-eco-case-apple",
-        "type": 301
-      },
-      {
-        "source":  "/seed-eco-case-iphone-xr",
-        "destination":  "/seed-eco-case-apple",
-        "type": 301
-      },
-      {
-        "source":  "/seed-eco-case-iphone-xr-purple",
-        "destination":  "/seed-eco-case-apple",
-        "type": 301
-      },
-      {
-        "source":  "/seed-eco-case-iphone-xr-red",
-        "destination":  "/seed-eco-case-apple",
-        "type": 301
-      },
-      {
-        "source":  "/seed-eco-case-iphone-xr-white",
-        "destination":  "/seed-eco-case-apple",
-        "type": 301
-      },
-      {
-        "source":  "/seed-eco-case-iphone-x-xs-green",
-        "destination":  "/seed-eco-case-apple",
-        "type": 301
-      },
-      {
-        "source":  "/seed-eco-case-iphone-x-xs",
-        "destination":  "/seed-eco-case-apple",
-        "type": 301
-      },
-      {
-        "source":  "/seed-eco-case-iphone-x-xs-purple",
-        "destination":  "/seed-eco-case-apple",
-        "type": 301
-      },
-      {
-        "source":  "/impactor-ultra-fabric-purple-iphone-11-pro-max",
-        "destination":  "/impactor-ultra-fabric-apple",
-        "type": 301
-      },
-      {
-        "source":  "/impactor-ultra-fabric-purple-iphone-11-pro",
-        "destination":  "/impactor-ultra-fabric-apple",
-        "type": 301
-      },
-      {
-        "source":  "/impactor-ultra-fabric-grey-iphone-11-pro",
-        "destination":  "/impactor-ultra-fabric-apple",
-        "type": 301
-      },
-      {
-        "source":  "/impactor-ultra-fabric-black-iphone-11-pro",
-        "destination":  "/impactor-ultra-fabric-apple",
-        "type": 301
-      },
-      {
-        "source":  "/impactor-ultra-fabric-purple-iphone-11",
-        "destination":  "/impactor-ultra-fabric-apple",
-        "type": 301
-      },
-      {
-        "source":  "/impactor-ultra-fabric-grey-iphone-11",
-        "destination":  "/impactor-ultra-fabric-apple",
-        "type": 301
-      },
-      {
-        "source":  "/impactor-ultra-fabric-black-iphone-11",
-        "destination":  "/impactor-ultra-fabric-apple",
-        "type": 301
-      },
-      {
-        "source":  "/impactor-ultra-fabric-purple-iphone-xs-max",
-        "destination":  "/impactor-ultra-fabric-apple",
-        "type": 301
-      },
-      {
-        "source":  "/impactor-ultra-fabric-grey-iphone-xs-max",
-        "destination":  "/impactor-ultra-fabric-apple",
-        "type": 301
-      },
-      {
-        "source":  "/impactor-ultra-fabric-blue-iphone-xs-max",
-        "destination":  "/impactor-ultra-fabric-apple",
-        "type": 301
-      },
-      {
-        "source":  "/impactor-ultra-fabric-black-iphone-xs-max",
-        "destination":  "/impactor-ultra-fabric-apple",
-        "type": 301
-      },
-      {
-        "source":  "/pre-venda-liquid-silicone-iphone-15",
-        "destination":  "/capa-customic-liquid-silicone-apple",
-        "type": 301
-      },
-      {
-        "source":  "/impactor-ultra-fabric-purple-iphone-xr",
-        "destination":  "/impactor-ultra-fabric-apple",
-        "type": 301
-      },
-      {
-        "source":  "/impactor-ultra-fabric-grey-iphone-xr",
-        "destination":  "/impactor-ultra-fabric-apple",
-        "type": 301
-      },
-      {
-        "source":  "/impactor-ultra-fabric-blue-iphone-xr",
-        "destination":  "/impactor-ultra-fabric-apple",
-        "type": 301
-      },
-      {
-        "source":  "/impactor-ultra-fabric-black-iphone-xr",
-        "destination":  "/impactor-ultra-fabric-apple",
-        "type": 301
-      },
-      {
-        "source":  "/impactor-ultra-fabric-grey-iphone-x-xs",
-        "destination":  "/impactor-ultra-fabric-apple",
-        "type": 301
-      },
-      {
-        "source":  "/impactor-ultra-fabric-purple-iphone-x-xs",
-        "destination":  "/impactor-ultra-fabric-apple",
+        "source": "/capa-celular-customic-iphone-x-xs-seed-biodegradvel",
+        "destination": "/seed-eco-case-apple",
+        "type": 301
+      },
+      {
+        "source": "/hardbox-all-2",
+        "destination": "/hardbox-all",
+        "type": 301
+      },
+      {
+        "source": "/hardbox-black",
+        "destination": "/hardbox-all",
+        "type": 301
+      },
+      {
+        "source": "/hardbox-black-galaxy-s10",
+        "destination": "/hardbox-samsung",
+        "type": 301
+      },
+      {
+        "source": "/hardbox-black-galaxy-s10-plus",
+        "destination": "/hardbox-samsung",
+        "type": 301
+      },
+      {
+        "source": "/hardbox-black-galaxy-s10e",
+        "destination": "/hardbox-samsung",
+        "type": 301
+      },
+      {
+        "source": "/hardbox-black-motorola",
+        "destination": "/hardbox-motorola",
+        "type": 301
+      },
+      {
+        "source": "/hardbox-black-huawei",
+        "destination": "/hardbox-huawei",
+        "type": 301
+      },
+      {
+        "source": "/hardbox-blue",
+        "destination": "/hardbox-all",
+        "type": 301
+      },
+      {
+        "source": "/hardbox-blue-galaxy-s10",
+        "destination": "/hardbox-samsung",
+        "type": 301
+      },
+      {
+        "source": "/hardbox-blue-galaxy-s10-plus",
+        "destination": "/hardbox-samsung",
+        "type": 301
+      },
+      {
+        "source": "/hardbox-blue-galaxy-s10e",
+        "destination": "/hardbox-samsung",
+        "type": 301
+      },
+      {
+        "source": "/hardbox-blue-xiaomi",
+        "destination": "/hardbox-xiaomi",
+        "type": 301
+      },
+      {
+        "source": "/hardbox-blue-motorola",
+        "destination": "/hardbox-motorola",
+        "type": 301
+      },
+      {
+        "source": "/hardbox-dark-blue",
+        "destination": "/hardbox-all",
+        "type": 301
+      },
+      {
+        "source": "/hardbox-dark-blue-xiaomi",
+        "destination": "/hardbox-xiaomi",
+        "type": 301
+      },
+      {
+        "source": "/hardbox-gold",
+        "destination": "/hardbox-all",
+        "type": 301
+      },
+      {
+        "source": "/hardbox-gold-galaxy-s10",
+        "destination": "/hardbox-samsung",
+        "type": 301
+      },
+      {
+        "source": "/hardbox-gold-galaxy-s10-plus",
+        "destination": "/hardbox-samsung",
+        "type": 301
+      },
+      {
+        "source": "/hardbox-gold-galaxy-s10e",
+        "destination": "/hardbox-samsung",
+        "type": 301
+      },
+      {
+        "source": "/hardbox-gold-motorola",
+        "destination": "/hardbox-motorola",
+        "type": 301
+      },
+      {
+        "source": "/hardbox-gold-xiaomi",
+        "destination": "/hardbox-xiaomi",
+        "type": 301
+      },
+      {
+        "source": "/hardbox-red",
+        "destination": "/hardbox-all",
+        "type": 301
+      },
+      {
+        "source": "/hardbox-red-galaxy-s10",
+        "destination": "/hardbox-samsung",
+        "type": 301
+      },
+      {
+        "source": "/hardbox-red-galaxy-s10-plus",
+        "destination": "/hardbox-samsung",
+        "type": 301
+      },
+      {
+        "source": "/hardbox-red-galaxy-s10e",
+        "destination": "/hardbox-samsung",
+        "type": 301
+      },
+      {
+        "source": "/hardbox-red-xiaomi",
+        "destination": "/hardbox-xiaomi",
+        "type": 301
+      },
+      {
+        "source": "/hardbox-rose-gold",
+        "destination": "/hardbox-all",
+        "type": 301
+      },
+      {
+        "source": "/hardbox-rose-gold-galaxy-s10",
+        "destination": "/hardbox-samsung",
+        "type": 301
+      },
+      {
+        "source": "/hardbox-rose-gold-galaxy-s10-plus",
+        "destination": "/hardbox-samsung",
+        "type": 301
+      },
+      {
+        "source": "/hardbox-rose-gold-galaxy-s10e",
+        "destination": "/hardbox-samsung",
+        "type": 301
+      },
+      {
+        "source": "/impactor-clear-galaxy-s10",
+        "destination": "/impactor-clear-samsung",
+        "type": 301
+      },
+      {
+        "source": "/impactor-clear-all-2",
+        "destination": "/impactor-clear-all",
+        "type": 301
+      },
+      {
+        "source": "/impactor-clear-galaxy-s10-plus",
+        "destination": "/impactor-clear-samsung",
+        "type": 301
+      },
+      {
+        "source": "/impactor-clear-galaxy-s10e",
+        "destination": "/impactor-clear-samsung",
+        "type": 301
+      },
+      {
+        "source": "/impactor-clear-iphone-11",
+        "destination": "/impactor-clear-apple",
+        "type": 301
+      },
+      {
+        "source": "/impactor-clear-iphone-11-pro",
+        "destination": "/impactor-clear-apple",
+        "type": 301
+      },
+      {
+        "source": "/impactor-clear-iphone-11-pro-max",
+        "destination": "/impactor-clear-apple",
+        "type": 301
+      },
+      {
+        "source": "/impactor-clear-iphone-x-xs",
+        "destination": "/impactor-clear-apple",
+        "type": 301
+      },
+      {
+        "source": "/impactor-clear-iphone-xr",
+        "destination": "/impactor-clear-apple",
+        "type": 301
+      },
+      {
+        "source": "/impactor-clear-samsung-galaxy-s20",
+        "destination": "/impactor-clear-samsung",
+        "type": 301
+      },
+      {
+        "source": "/impactor-clear-todos-os-modelos-de-android",
+        "destination": "/impactor-clear-all",
+        "type": 301
+      },
+      {
+        "source": "/impactor-clear-todos-os-modelos-de-iphone",
+        "destination": "/impactor-clear-apple",
+        "type": 301
+      },
+      {
+        "source": "/impactor-flex-all-2",
+        "destination": "/impactor-flex-all",
+        "type": 301
+      },
+      {
+        "source": "/impactor-flex-black",
+        "destination": "/impactor-flex-all",
+        "type": 301
+      },
+      {
+        "source": "/impactor-flex-black-galaxy-s10e",
+        "destination": "/impactor-flex-samsung",
+        "type": 301
+      },
+      {
+        "source": "/impactor-flex-black-iphone-11",
+        "destination": "/impactor-flex-apple",
+        "type": 301
+      },
+      {
+        "source": "/impactor-flex-black-iphone-11-pro",
+        "destination": "/impactor-flex-apple",
+        "type": 301
+      },
+      {
+        "source": "/impactor-flex-black-iphone-11-pro-max",
+        "destination": "/impactor-flex-apple",
+        "type": 301
+      },
+      {
+        "source": "/impactor-flex-black-iphone-x-xs",
+        "destination": "/impactor-flex-apple",
+        "type": 301
+      },
+      {
+        "source": "/impactor-flex-black-iphone-xs-max",
+        "destination": "/impactor-flex-apple",
+        "type": 301
+      },
+      {
+        "source": "/impactor-flex-black-samsung-galaxy-s20-ultra",
+        "destination": "/impactor-flex-samsung",
+        "type": 301
+      },
+      {
+        "source": "/impactor-flex-pink",
+        "destination": "/impactor-flex-all",
+        "type": 301
+      },
+      {
+        "source": "/impactor-flex-pink-iphone-11",
+        "destination": "/impactor-flex-apple",
+        "type": 301
+      },
+      {
+        "source": "/impactor-flex-pink-iphone-11-pro",
+        "destination": "/impactor-flex-apple",
+        "type": 301
+      },
+      {
+        "source": "/impactor-flex-pink-iphone-11-pro-max",
+        "destination": "/impactor-flex-apple",
+        "type": 301
+      },
+      {
+        "source": "/impactor-flex-pink-iphone-x-xs",
+        "destination": "/seed-eco-case-all",
+        "type": 301
+      },
+      {
+        "source": "/impactor-flex-pink-iphone-xr",
+        "destination": "/impactor-flex-apple",
+        "type": 301
+      },
+      {
+        "source": "/impactor-flex-pink-iphone-xs-max",
+        "destination": "/impactor-flex-apple",
+        "type": 301
+      },
+      {
+        "source": "/impactor-flex-todos-os-modelos-de-android",
+        "destination": "/impactor-flex-all",
+        "type": 301
+      },
+      {
+        "source": "/impactor-flex-white",
+        "destination": "/impactor-flex-all",
+        "type": 301
+      },
+      {
+        "source": "/impactor-flex-white-iphone-11",
+        "destination": "/impactor-flex-apple",
+        "type": 301
+      },
+      {
+        "source": "/impactor-flex-white-iphone-11-pro",
+        "destination": "/impactor-flex-apple",
+        "type": 301
+      },
+      {
+        "source": "/impactor-flex-white-iphone-11-pro-max",
+        "destination": "/impactor-flex-apple",
+        "type": 301
+      },
+      {
+        "source": "/impactor-flex-white-iphone-x-xs",
+        "destination": "/impactor-flex-apple",
+        "type": 301
+      },
+      {
+        "source": "/impactor-flex-white-iphone-xr",
+        "destination": "/impactor-flex-apple",
+        "type": 301
+      },
+      {
+        "source": "/impactor-ultra-all-2",
+        "destination": "/impactor-ultra-all",
+        "type": 301
+      },
+      {
+        "source": "/impactor-ultra-android",
+        "destination": "/impactor-ultra-all",
+        "type": 301
+      },
+      {
+        "source": "/impactor-ultra-black-galaxy-s10",
+        "destination": "/impactor-ultra-samsung",
+        "type": 301
+      },
+      {
+        "source": "/impactor-ultra-black",
+        "destination": "/impactor-ultra-all",
+        "type": 301
+      },
+      {
+        "source": "/impactor-ultra-black-galaxy-s10e",
+        "destination": "/impactor-ultra-samsung",
+        "type": 301
+      },
+      {
+        "source": "/impactor-ultra-black-iphone-11",
+        "destination": "/impactor-ultra-apple",
+        "type": 301
+      },
+      {
+        "source": "/impactor-ultra-black-iphone-11-pro",
+        "destination": "/impactor-ultra-apple",
+        "type": 301
+      },
+      {
+        "source": "/impactor-ultra-black-iphone-11-pro-max",
+        "destination": "/impactor-ultra-apple",
+        "type": 301
+      },
+      {
+        "source": "/impactor-ultra-black-iphone-xr",
+        "destination": "/impactor-ultra-apple",
+        "type": 301
+      },
+      {
+        "source": "/impactor-ultra-black-iphone-xs-max",
+        "destination": "/impactor-ultra-apple",
+        "type": 301
+      },
+      {
+        "source": "/impactor-ultra-black-samsung-galaxy-s20",
+        "destination": "/impactor-ultra-samsung",
+        "type": 301
+      },
+      {
+        "source": "/impactor-ultra-blue",
+        "destination": "/impactor-ultra-all",
+        "type": 301
+      },
+      {
+        "source": "/impactor-ultra-blue-iphone-11-pro",
+        "destination": "/impactor-ultra-apple",
+        "type": 301
+      },
+      {
+        "source": "/impactor-ultra-blue-iphone-11",
+        "destination": "/impactor-ultra-apple",
+        "type": 301
+      },
+      {
+        "source": "/impactor-ultra-blue-iphone-11-pro-max",
+        "destination": "/impactor-ultra-apple",
+        "type": 301
+      },
+      {
+        "source": "/impactor-ultra-fabric-all-2",
+        "destination": "/impactor-ultra-all",
+        "type": 301
+      },
+      {
+        "source": "/impactor-ultra-fabric-grey-iphone-11-pro-max",
+        "destination": "/impactor-ultra-apple",
+        "type": 301
+      },
+      {
+        "source": "/impactor-ultra-red-iphone-11-pro",
+        "destination": "/impactor-ultra-apple",
+        "type": 301
+      },
+      {
+        "source": "/impactor-ultra-red",
+        "destination": "/impactor-ultra-all",
+        "type": 301
+      },
+      {
+        "source": "/impactor-ultra-red-iphone-11",
+        "destination": "/impactor-ultra-apple",
+        "type": 301
+      },
+      {
+        "source": "/impactor-ultra-red-iphone-11-pro-max",
+        "destination": "/impactor-ultra-apple",
+        "type": 301
+      },
+      {
+        "source": "/impactor-ultra-red-iphone-xr",
+        "destination": "/impactor-ultra-apple",
+        "type": 301
+      },
+      {
+        "source": "/impactor-ultra-todos-os-modelos-de-iphone",
+        "destination": "/impactor-ultra-apple",
+        "type": 301
+      },
+      {
+        "source": "/impactor-ultra-white",
+        "destination": "/impactor-ultra-all",
+        "type": 301
+      },
+      {
+        "source": "/impactor-ultra-white-galaxy-s10-plus",
+        "destination": "/impactor-ultra-samsung",
+        "type": 301
+      },
+      {
+        "source": "/pelicula-antibacteria-3d-customic",
+        "destination": "/pelicula-antibacteria-3d",
+        "type": 301
+      },
+      {
+        "source": "/pelicula-antiblue-vidro-3d-customic",
+        "destination": "/pelicula-antiblue-3d",
+        "type": 301
+      },
+      {
+        "source": "/pelicula-gamer-fosca-3d-customic",
+        "destination": "/pelicula-gamer-fosca",
+        "type": 301
+      },
+      {
+        "source": "/pelicula-mirror-com-borda-customic",
+        "destination": "/pelicula-mirror-com-borda",
+        "type": 301
+      },
+      {
+        "source": "/soft-todos-os-modelos-de-iphone",
+        "destination": "/soft-apple",
+        "type": 301
+      },
+      {
+        "source": "/soft-touch-2",
+        "destination": "/soft-all",
+        "type": 301
+      },
+      {
+        "source": "/soft-red-iphone-x-xs",
+        "destination": "/soft-apple",
+        "type": 301
+      },
+      {
+        "source": "/soft-red-com-furo",
+        "destination": "/soft-all",
+        "type": 301
+      },
+      {
+        "source": "/soft-red-iphone-8-plus",
+        "destination": "/soft-apple",
+        "type": 301
+      },
+      {
+        "source": "/soft-red-iphone-8",
+        "destination": "/soft-apple",
+
+        "type": 301
+      },
+      {
+        "source": "/soft-grey-com-furo",
+        "destination": "/soft-all",
+        "type": 301
+      },
+      {
+        "source": "/soft-red",
+        "destination": "/soft-all",
+        "type": 301
+      },
+      {
+        "source": "/soft-dark-blue-iphone-x-xs",
+        "destination": "/soft-apple",
+        "type": 301
+      },
+      {
+        "source": "/soft-dark-blue",
+        "destination": "/soft-all",
+        "type": 301
+      },
+      {
+        "source": "/soft-black-iphone-xs-max",
+        "destination": "/soft-apple",
+        "type": 301
+      },
+      {
+        "source": "/soft-dark-blue-iphone-8",
+        "destination": "/soft-apple",
+        "type": 301
+      },
+      {
+        "source": "/soft-dark-blue-com-furo",
+        "destination": "/soft-all",
+        "type": 301
+      },
+      {
+        "source": "/soft-dark-blue-iphone-8-plus",
+        "destination": "/soft-apple",
+        "type": 301
+      },
+      {
+        "source": "/soft-black-iphone-xr",
+        "destination": "/soft-apple",
+        "type": 301
+      },
+      {
+        "source": "/soft-black-iphone-8-plus",
+        "destination": "/soft-apple",
+        "type": 301
+      },
+      {
+        "source": "/soft-black-iphone-11-pro",
+        "destination": "/soft-apple",
+        "type": 301
+      },
+      {
+        "source": "/soft-black-iphone-11-pro-max",
+        "destination": "/soft-apple",
+        "type": 301
+      },
+      {
+        "source": "/soft-black-iphone-8",
+        "destination": "/soft-apple",
+        "type": 301
+      },
+      {
+        "source": "/soft-black-iphone-11",
+        "destination": "/soft-apple",
+        "type": 301
+      },
+      {
+        "source": "/soft-black-com-furo-iphone-x-xs",
+        "destination": "/soft-apple",
+        "type": 301
+      },
+      {
+        "source": "/soft-black-com-furo",
+        "destination": "/soft-all",
+        "type": 301
+      },
+      {
+        "source": "/soft-black-com-furo-iphone-8-plus",
+        "destination": "/seed-eco-case-all",
+        "type": 301
+      },
+      {
+        "source": "/soft-black",
+        "destination": "/soft-all",
+        "type": 301
+      },
+      {
+        "source": "/soft-all-2",
+        "destination": "/soft-all",
+        "type": 301
+      },
+      {
+        "source": "/seed-eco-case-iphone-11-pro-purple",
+        "destination": "/seed-eco-case-apple",
+        "type": 301
+      },
+      {
+        "source": "/seed-eco-case-iphone-11-pro-max",
+        "destination": "/seed-eco-case-apple",
+        "type": 301
+      },
+      {
+        "source": "/seed-eco-case-iphone-11-pro-max-red",
+        "destination": "/seed-eco-case-apple",
+        "type": 301
+      },
+      {
+        "source": "/seed-eco-case-iphone-11-pro-max-purple",
+        "destination": "/seed-eco-case-apple",
+        "type": 301
+      },
+      {
+        "source": "/seed-eco-case-iphone-11-pro-max-green",
+        "destination": "/seed-eco-case-apple",
+        "type": 301
+      },
+      {
+        "source": "/seed-eco-case-iphone-11-pro",
+        "destination": "/seed-eco-case-apple",
+        "type": 301
+      },
+      {
+        "source": "/seed-eco-case-iphone-11-pro-green",
+        "destination": "/seed-eco-case-apple",
+        "type": 301
+      },
+      {
+        "source": "/seed-eco-case-biodegradavel-antibacteria",
+        "destination": "/seed-eco-case-antibacteria",
+        "type": 301
+      },
+      {
+        "source": "/seed-eco-case-all-2",
+        "destination": "/seed-eco-case-all",
+        "type": 301
+      },
+      {
+        "source": "/pelicula-vidro-premium-customic",
+        "destination": "/pelicula-vidro-temperado",
+        "type": 301
+      },
+      {
+        "source": "/pelicula-vidro-3d-customic",
+        "destination": "/pelicula-vidro-3d",
+        "type": 301
+      },
+      {
+        "source": "/hardbox-dark-blue-galaxy-s10",
+        "destination": "/hardbox-samsung",
+        "type": 301
+      },
+      {
+        "source": "/impactor-clear-iphone-xs-max",
+        "destination": "/impactor-clear-apple",
+        "type": 301
+      },
+      {
+        "source": "/impactor-flex-antibacteria-all-2",
+        "destination": "/impactor-flex-antibacteria-all",
+        "type": 301
+      },
+      {
+        "source": "/impactor-flex-todos-os-modelos-de-iphone",
+        "destination": "/impactor-flex-apple",
+        "type": 301
+      },
+      {
+        "source": "/seed-eco-case-iphone-xr-petroleum",
+        "destination": "/seed-eco-case-apple",
+        "type": 301
+      },
+      {
+        "source": "/soft-white-com-furo",
+        "destination": "/soft-all",
+        "type": 301
+      },
+      {
+        "source": "/pre-venda-liquid-silicone-iphone-15",
+        "destination": "/capa-customic-liquid-silicone-apple",
         "type": 301
       }
-	    
     ],
     "public": "dist",
     "ignore": [
