@@ -9,6 +9,14 @@
         {
           "start": "",
           "end": "",
+          "img": "/img/uploads/banner-site-iphone16-desktop-2-.webp",
+          "mobile_img": "/img/uploads/banner-site-iphone16-copiar.webp",
+          "link": "https://www.customic.com.br/iphone-16",
+          "alt": "Banner Lançamento novo iPhone 16"
+        },
+        {
+          "start": "",
+          "end": "",
           "img": "/img/uploads/banner-magsafe-gradiente-1-.webp",
           "mobile_img": "/img/uploads/banner-magsafe-gradiente-mobile-1-.webp",
           "alt": "Capa Impactor Clear MagSafe Gradiente para iPhone - Customic",
