@@ -12,11 +12,6 @@
         "type": 301
       },
       {
-        "source": "/capa-customic-impactor-ultra-magsafe",
-        "destination": "/capa-impactor-ultra-magsafe",
-        "type": 301
-      },
-      {
         "source": "/catalogue.php?model=23",
         "destination": "/capinha-de-celular",
         "type": 301
