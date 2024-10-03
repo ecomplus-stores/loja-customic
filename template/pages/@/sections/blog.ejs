@@ -109,32 +109,33 @@ if (isPopsockets) {
         </div>
         <script>
           const typeScript = '<%- type %>'
-          fetch(`https://blog.customic.com.br/wp-json/wp/v2/search?search=${typeScript}&order=desc`)
+          fetch(`https://blog.customic.com.br/wp-json/wp/v2/posts?search=${typeScript}&orderby=date&order=desc&_embed`)
           .then(response => response.json())
           .then(response => {
             const maxLength = response && response.length > 3 ? 4 : response.length
             for (let index = 0; index < maxLength; index++) {
-              const element = response[index];
+              const post = response[index];
+              const featuredMedia = post._embedded['wp:featuredmedia'] ? post._embedded['wp:featuredmedia'][0] : null;
               document.querySelector(`.tec--carousel__item--template${index+1}`).insertAdjacentHTML('afterbegin', `
-              <figure class="tec--carousel__item__thumb"></figure>
+              <figure class="tec--carousel__item__thumb">
+                <a href="${post.link}" target="_blank" title="${post.title.rendered}" class="tec--carousel__item__thumb__link">
+                  <img width="${index === 0 ? 704: 164}" height="${index === 0 ? 288: 118}" 
+                       alt="${post.title.rendered}" 
+                       class="tec--carousel__item__thumb__image swiper-lazy swiper-lazy-loaded img-fluid lozad" 
+                       src="${featuredMedia ? featuredMedia.source_url : ''}" 
+                       pinger-seen="true">
+                </a>
+              </figure>
               <div class="tec--carousel__item__info">
                 <div class="tec--carousel__item__subtitle tec--carousel__item__subtitle--customic">${typeScript.replaceAll('+', ' ').toUpperCase()}</div>
-                <h5 class="tec--carousel__item__title"><a class="tec--carousel__item__title__link"
-                    href="${element.url}" target="_blank"
-                    title="${element.title}"> ${element.title} </a></h5>
+                <h5 class="tec--carousel__item__title">
+                  <a class="tec--carousel__item__title__link"
+                     href="${post.link}" target="_blank"
+                     title="${post.title.rendered}"> ${post.title.rendered} </a>
+                </h5>
               </div>`);
-              fetch(`https://blog.customic.com.br/wp-json/wp/v2/media?parent=${response[index].id}`)
-                .then(respons => respons.json())
-                .then(media => {
-                  const finalMedia = media && media.length ? media[0] : media
-                  document.querySelector(`.tec--carousel__item--template${index+1} .tec--carousel__item__thumb`).insertAdjacentHTML('afterbegin', `
-                  <a href="${response[index].url}" target="_blank" title="${response[index].title}" class="tec--carousel__item__thumb__link"> <img width="${index === 0 ? 704: 164}" :  height="${index === 0 ? 288: 118}" alt="${response[index].title}" class="tec--carousel__item__thumb__image swiper-lazy swiper-lazy-loaded img-fluid lozad" src="${finalMedia.guid.rendered}" pinger-seen="true"> </a>
-                  `)
-                })
             }
-            
-
-            })
+          })
           .catch(err => console.error(err));
         </script>
       </div>
