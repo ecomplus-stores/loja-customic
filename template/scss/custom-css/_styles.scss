@@ -4,6 +4,10 @@
 @font-face{font-family:flama light italic;font-style:normal;font-weight:525;src:local('Flama Light Italic'),url(/fonts/Flama-LightItalic.woff) format('woff')}
 @font-face{font-family:flama medium;font-style:normal;font-weight:650;src:local('Flama Medium'),url(/fonts/Flama-Medium.woff) format('woff')}
 
+#bot {
+  left: 56px !important;
+  bottom: 29px !important;
+}
 .menu-topo {
   height: 40px;
   padding-left: 15px;
@@ -1288,7 +1292,3 @@ h1.product__name.h1__ssr {
   display: none !important;
 }
 
-#bot {
-  left: 56px !important;
-  bottom: 29px !important;
-}
