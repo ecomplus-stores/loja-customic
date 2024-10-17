@@ -5,9 +5,22 @@
 @font-face{font-family:flama medium;font-style:normal;font-weight:650;src:local('Flama Medium'),url(/fonts/Flama-Medium.woff) format('woff')}
 
 #bot {
-  left: 56px !important;
-  bottom: 29px !important;
+  left: 10px !important;
+  bottom: 10px !important;
+  @media(min-width: 768px) {
+    left: 56px !important;
+    bottom: 29px !important;
+  }
 }
+span:has(>span>.rHELf) {
+  right: 10px !important;
+  bottom: 10px !important;
+  @media(min-width: 768px) {
+    right: 56px !important;
+    bottom: 29px !important;
+  }
+}
+
 .menu-topo {
   height: 40px;
   padding-left: 15px;
