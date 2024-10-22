@@ -1305,3 +1305,64 @@ h1.product__name.h1__ssr {
   display: none !important;
 }
 
+#busca-car {
+  width: 100%;
+  position: relative;
+  height: 120px;
+  background: #010605;
+  padding-top: 25px;
+  border-radius: 15px;
+}
+.box-busca-car {
+  padding: 10px;
+  margin-left: 8px;
+  float: left;
+  margin-top: -9px;
+}
+.busca-title {
+  line-height: 27px;
+  color: #fff;
+  font-weight: 700;
+  text-align: left;
+  font-size: 21px;
+  letter-spacing: -1px;
+  padding-top: 6px;
+}
+.box-input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  height: 69px;
+  background: url(/img/uploads/input1.png) no-repeat left center;
+  background-size: 300px auto;
+  border: none;
+  color: #010605;
+  position: relative;
+  border-radius: 5px;
+  width: 400px;
+  padding-left: 71px;
+  font-weight: 600;
+  font-size: 14px;
+}
+.box2 {
+  background: url(/img/uploads/input2.png) no-repeat left center;
+  background-size: 300px auto;
+}
+
+@media (max-width: 600px) {
+  .box-input {
+
+    background-size: 250px auto;
+    width: 300px;
+  }
+
+  .box-busca-car:nth-child(2) {
+    margin-left: 0px !important;
+    margin-top: 15px !important;
+  }
+
+  .box-busca-car:nth-child(3) {
+    margin-left: 0px !important;
+  }
+}

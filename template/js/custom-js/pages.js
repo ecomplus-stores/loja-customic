@@ -115,3 +115,7 @@ function deletingEffect() {
 
 // Start the effect with the initial placeholder set to "Encontre sua Capa"
 typingEffect();
+
+     
+    function checkSelection() { const brand = document.getElementById('brand').value, model = document.getElementById('model').value; if (brand && model) { document.querySelector('button').disabled = false; } } 
+    
