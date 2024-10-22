@@ -1352,14 +1352,19 @@ h1.product__name.h1__ssr {
 
 @media (max-width: 600px) {
   .box-input {
+    background-size: 100%;
+    width: 100%;
+    padding-left: 90px;
+    height: 81px;
+  }
 
-    background-size: 250px auto;
-    width: 300px;
+  .box-busca-car{
+    width: 100%;
   }
 
   .box-busca-car:nth-child(2) {
     margin-left: 0px !important;
-    margin-top: 15px !important;
+    margin-top: 0px !important;
   }
 
   .box-busca-car:nth-child(3) {
