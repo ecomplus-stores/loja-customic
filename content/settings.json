@@ -1,9 +1,9 @@
 {
   "domain": "www.customic.com.br",
   "currency_symbol": "R$",
-  "primary_color": "#2b2938",
+  "primary_color": "#eeeeee",
   "theme": {
-    "bootswatch": "_",
+    "bootswatch": "cyborg",
     "custom": "_"
   },
   "bg_color": "#2b2938",
@@ -18,7 +18,7 @@
   "favicon": "/img/uploads/favicon_2.ico",
   "icons_font": "_",
   "country_code": "BR",
-  "secondary_color": "#2b2938",
+  "secondary_color": "#aaaaaa",
   "icon": "/img/uploads/minilogooo.ico",
   "store_id": 1131,
   "description": "Faça sua Capa de Celular Personalizada aqui na Customic! Escolha o dispositivo, as fotos e crie o design que você quiser rápido e fácil! ",
