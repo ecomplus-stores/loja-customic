@@ -65,18 +65,12 @@
       ]
     },
     {
-      "type": "review-carousel",
-      "autoplay": 9000,
-      "reviews": [],
-      "title": "Avaliações dos nosso clientes "
+      "type": "recommended-products",
+      "title": "Quem comprou este produto, também comprou:"
     },
     {
       "type": "product-description",
       "enabled": true
-    },
-    {
-      "type": "recommended-products",
-      "title": "Quem comprou este produto, também comprou:"
     },
     {
       "type": "faq",
