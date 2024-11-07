@@ -14,7 +14,7 @@
     {
       "type": "category-retail",
       "enabled": true,
-      "sort": "highest_price"
+      "sort": "news"
     },
     {
       "type": "mgnr_faq",
