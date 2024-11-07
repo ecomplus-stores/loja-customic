@@ -196,8 +196,15 @@
       "markdown": "#### n﻿os acompanhe tb nas redes 🤳💜 @customic"
     },
     {
-      "type": "custom-html",
-      "html": "<!-- LightWidget WIDGET --><script src=\"https://cdn.lightwidget.com/widgets/lightwidget.js\"></script><iframe src=\"https://cdn.lightwidget.com/widgets/6054ba683509508a9a84b0179d892c75.html\" scrolling=\"no\" allowtransparency=\"true\" class=\"lightwidget-widget\" style=\"width:100%;border:0;overflow:hidden;\"></iframe>"
+      "type": "banners-grid",
+      "banners": [
+        {
+          "img": "/img/uploads/anyconv.com__banner-insta-desk.webp",
+          "mobile_img": "/img/uploads/anyconv.com__banner-insta-mobile.webp",
+          "link": "https://www.instagram.com/customic/",
+          "alt": "Banner Widget Instagram Customic"
+        }
+      ]
     },
     {
       "type": "custom-html",
