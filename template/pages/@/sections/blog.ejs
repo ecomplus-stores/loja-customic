@@ -109,7 +109,7 @@ if (isPopsockets) {
         </div>
         <script>
           const typeScript = '<%- type %>'
-          fetch(`https://blog.customic.com.br/wp-json/wp/v2/posts?search=${typeScript}&orderby=date&order=desc&_embed`)
+          fetch(`https://blog.customic.com.br/wp-json/wp/v2/posts?categories=66&orderby=date&order=desc&_embed`)
           .then(response => response.json())
           .then(response => {
             const maxLength = response && response.length > 3 ? 4 : response.length
