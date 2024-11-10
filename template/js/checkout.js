@@ -112,3 +112,25 @@ if (!isTEF) {
     }
   }]
 }
+
+
+const routerToLink = window.storefrontApp && window.storefrontApp.router
+routerToLink.afterEach(({ name }) => {
+  if (name === 'confirmation') {
+    const orderId = routerToLink.currentRoute &&  routerToLink.currentRoute.params && routerToLink.currentRoute.params.id
+    const orderJson = JSON.parse(decodeURIComponent(routerToLink.currentRoute.params.json)) 
+    const zeroAmount = orderJson.amount && orderJson.amount.total
+    let sentMetafield = window.sessionStorage.getItem('sent_metafield')
+    console.log('enviado metafield', sentMetafield)
+    if (orderId && !sentMetafield && zeroAmount === 0 && orderJson.payment_method_label === 'Pagamento Promocional') {
+      console.log('cookie', zeroAmount, orderId)
+      window.ecomPassport.requestApi(`/orders/${orderId}.json`, 'PATCH', {
+        financial_status: {
+          current: 'paid'
+        }
+      }).then(() => {
+        window.sessionStorage.setItem('sent_metafield', 1)
+      })
+    }
+  }
+})

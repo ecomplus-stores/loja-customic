@@ -1465,3 +1465,12 @@ a.header__category, #personalize {
   color: #ffffff;
 }
   // styles for black friday 
+.embed-responsive.embed-responsive-16by9 {
+  height: 400px;
+}
+
+@media(max-width: 600px) {
+  .glide__slides {
+    height: 400px;
+  }
+}
