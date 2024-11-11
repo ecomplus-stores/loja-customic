@@ -6,8 +6,8 @@
         :class="{ 'gallery__item--selected': localPictures.length === activeIndex }"
         @click="activeIndex = localPictures.length"
       >
-        <img v-if="imgVideo" :src="imgVideo" alt="Thumb video" style="max-width: 100%;">
         <i id="video-play" class="i-play"></i>
+        <img v-if="imgVideo" :src="imgVideo" alt="Thumb video" style="max-width: 100%;">        
       </div>
   
       <div
@@ -30,10 +30,14 @@
       >
         <span class="first">{{ activeIndex + 1 }}</span>
         <span class="last">{{ localPictures.length }}</span>
+        <div v-if="videoSrc" 
+          @click="activeIndex = localPictures.length">
+          <i class="i-play"></i>
+        </div>
       </div>
   
       <button
-        v-if="localPictures.length > 4"
+        v-if="localPictures.length > 4" 
         type="button"
         class="gallery__open btn btn-dark"
         :style="zoomLinkStyle"
@@ -89,11 +93,13 @@
               :key="'slide-' + localPictures.length"
             >
               <div
-                class="embed-responsive"
+                class="embed-responsive ratio" 
                 :class="`embed-responsive-${videoAspectRatio}`"
               >
                 <iframe
+                  height="100%"
                   class="embed-responsive-item"
+                  frameborder="0" style="position: absolute; top: 0; left: 0;"
                   :src="videoSrc"
                   allowfullscreen
                   loading="lazy"

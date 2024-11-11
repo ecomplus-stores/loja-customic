@@ -1464,4 +1464,21 @@ a.header__category, #personalize {
 .subcategory{
   color: #ffffff;
 }
-  // styles for black friday 
+
+// styles to adapt vimeo box to the gallery
+
+  .ratio {
+    padding-bottom: 80%;
+    position: relative; 
+    display: block;
+    width: 100%;
+  }
+
+  .ratio iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+
+//@media screen and (max-width: 480px) 

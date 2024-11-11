@@ -106,7 +106,10 @@ export default {
     videoSrc () {
       const video = this.video || (this.product.videos && this.product.videos[0])
       if (video && video.url) {
-        return video.url.replace(/watch\?v=(V7XQvAde51w)/i, 'embed/$1?rel=0')
+        if (video.url.includes('vimeo')) {
+          return video.url.replace(/watch\?v=([\w\d]+)/i, 'embed/$1?rel=0') 
+        }
+        return video.url.replace(/watch\?v=([\w\d]+)/i, 'embed/$1?rel=0')
       }
       return null
     },
