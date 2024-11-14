@@ -17,6 +17,22 @@
         {
           "start": "",
           "end": "",
+          "img": "/img/uploads/customicbanner-deep_space-desktop.webp",
+          "mobile_img": "/img/uploads/customicbanner-deep_space-mobile.webp",
+          "link": "https://www.customic.com.br/capa-impactor-sp4ce",
+          "alt": "Banner Capas Impactor Sp4ce enfatizando a proteção avançada de até 4m"
+        },
+        {
+          "start": "",
+          "end": "",
+          "img": "/img/uploads/customic-banner-air-desktop.webp",
+          "link": "https://www.customic.com.br/capa-impactor-air",
+          "alt": "Banner lifestyle Capa Impactor Air enfatizando a proteção avançada de 4m de altura",
+          "mobile_img": "/img/uploads/customic-banner-air-mobile.webp"
+        },
+        {
+          "start": "",
+          "end": "",
           "img": "/img/uploads/banner-site-iphone16-desktop-2-.webp",
           "mobile_img": "/img/uploads/banner-site-iphone16-copiar.webp",
           "link": "https://www.customic.com.br/iphone-16",
