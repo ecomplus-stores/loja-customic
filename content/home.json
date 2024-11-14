@@ -17,10 +17,18 @@
         {
           "start": "",
           "end": "",
+          "img": "/img/uploads/customic-banner-space-desktop.webp",
+          "alt": "Banner Capas Impactor Sp4ce enfatizando a proteção avançada de até 4m",
+          "link": "https://www.customic.com.br/capa-impactor-sp4ce",
+          "mobile_img": "/img/uploads/customic-banner-space-mobile.webp"
+        },
+        {
+          "start": "",
+          "end": "",
           "img": "/img/uploads/customicbanner-deep_space-desktop.webp",
           "mobile_img": "/img/uploads/customicbanner-deep_space-mobile.webp",
-          "link": "https://www.customic.com.br/capa-impactor-sp4ce",
-          "alt": "Banner Capas Impactor Sp4ce enfatizando a proteção avançada de até 4m"
+          "link": "https://www.customic.com.br/capa-impactor-deep-sp4ce",
+          "alt": "Banner Capas Impactor Deep Sp4ce enfatizando a proteção avançada de até 4m"
         },
         {
           "start": "",
