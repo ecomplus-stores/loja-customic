@@ -145,6 +145,79 @@
       "page": 1,
       "collection_id": "6666fb57f4e6d85ab2a61642:collections:Encontre Sua Capa Ideal:/encontre-sua-capa-ideal",
       "headless": true
+    },
+    {
+      "type": "banners-grid",
+      "banners": [
+        {
+          "img": "/img/uploads/icon-1-.png",
+          "link": "https://www.customic.com.br/seed-eco-case-all"
+        },
+        {
+          "img": "/img/uploads/icon-4-.png",
+          "link": "https://www.customic.com.br/soft-touch-all"
+        },
+        {
+          "img": "/img/uploads/icon-5-.png",
+          "link": "https://www.customic.com.br/capa-spot-silicone-reciclado"
+        },
+        {
+          "img": "/img/uploads/icon-6-.png",
+          "link": "https://www.customic.com.br/capa-para-celular-customic-liquid-silicone"
+        },
+        {
+          "img": "/img/uploads/icon-8-.png",
+          "link": "https://www.customic.com.br/impactor-flex-all"
+        },
+        {
+          "img": "/img/uploads/icon-9-.png",
+          "link": "https://www.customic.com.br/impactor-ultra-fabric-all"
+        },
+        {
+          "img": "/img/uploads/icon-10-.png",
+          "link": "https://www.customic.com.br/impactor-ultra-all"
+        },
+        {
+          "img": "/img/uploads/icon-11-.png",
+          "link": "https://www.customic.com.br/impactor-ultra-clear"
+        },
+        {
+          "img": "/img/uploads/icon-12-.png",
+          "link": "https://www.customic.com.br/impactor-clear-holo"
+        },
+        {
+          "img": "/img/uploads/icon-13-.png",
+          "link": "https://www.customic.com.br/capa-impactor-ultra-glitter-gradiente"
+        },
+        {
+          "img": "/img/uploads/icon-14-.png",
+          "link": "https://www.customic.com.br/impactor-flex-antibacteria-all"
+        },
+        {
+          "img": "/img/uploads/icon-15-.png",
+          "link": "https://www.customic.com.br/impactor-clear-magsafe-all"
+        },
+        {
+          "img": "/img/uploads/icon-16-.png",
+          "link": "https://www.customic.com.br/impactor-ultra-clear-magsafe"
+        },
+        {
+          "img": "/img/uploads/icon-17-.png",
+          "link": "https://www.customic.com.br/capa-impactor-ultra-magsafe"
+        },
+        {
+          "img": "/img/uploads/icon-18-.png",
+          "link": "https://www.customic.com.br/capa-impactor-clear-holo-magsafe"
+        },
+        {
+          "img": "/img/uploads/icon-19-.png",
+          "link": "https://www.customic.com.br/capa-spot-silicone-reciclado"
+        },
+        {
+          "img": "/img/uploads/icon-20-.png",
+          "link": "https://www.customic.com.br/capa-liquid-silicone-magsafe"
+        }
+      ]
     }
   ],
   "imagem": "https://s1-customic.b-cdn.net/img/uploads/banner-desk-peliculas_2_11zon.webp"
