@@ -1129,7 +1129,6 @@ h1.product__name.h1__ssr {
 }
 
 .t4top-menu__lista-item {
-  font-size: calc(16px + (1vw - 16px)/ 2);
   padding: 0 1vw;
   white-space: nowrap;
   opacity: 1;
@@ -1137,7 +1136,7 @@ h1.product__name.h1__ssr {
   transition: .2s;
 }
 
-#page-encontre-sua-capa {
+#page--sua-capa {
   h2.block-copy__maintitle {
     font-size: calc(70px + (4.375vw - 70px)/ 2);
     line-height: 1.04;
@@ -1355,6 +1354,11 @@ h1.product__name.h1__ssr {
 }
 
 @media (max-width: 600px) {
+
+  a.ni-floating-link{
+    bottom: 125px;
+  }
+
   .box-input {
     background-size: 100%;
     width: 100%;
@@ -1489,3 +1493,7 @@ a.header__category, #personalize {
 }
 
 //@media screen and (max-width: 480px) 
+
+a.ni-floating-link{
+  bottom: 125px;
+}
