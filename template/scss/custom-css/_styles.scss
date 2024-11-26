@@ -1066,7 +1066,6 @@ h1.product__name.h1__ssr {
 // ENCONTRE SUA CAPA
 
 .t4top-menu {
-  padding: 1.3vw 3.125vw 1.9vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1125,6 +1124,8 @@ h1.product__name.h1__ssr {
 }
 
 .t4top-menu__lista {
+  margin-bottom: 0;
+  padding-left: 0;
   list-style: none !important;
 }
 
