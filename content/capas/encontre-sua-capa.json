@@ -131,13 +131,19 @@
       "type": "banners-grid",
       "banners": [
         {
-          "img": "/img/uploads/8-2-depoimento.webp"
+          "img": "/img/uploads/depoimentos-8.webp"
         },
         {
-          "img": "/img/uploads/8-3-depoimento.webp"
+          "img": "/img/uploads/depoimentos-7.webp"
         },
         {
-          "img": "/img/uploads/8-1-depoimento.webp"
+          "img": "/img/uploads/depoimentos-6.webp"
+        },
+        {
+          "img": "/img/uploads/depoimentos-4.webp"
+        },
+        {
+          "img": "/img/uploads/depoimentos-3.webp"
         }
       ]
     },
