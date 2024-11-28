@@ -20,28 +20,28 @@
     },
     {
       "type": "custom-content",
-      "markdown": "<span id=\"necessidade\"></span><h2><strong>O que você procurando?<h2><strong>"
+      "markdown": "<span id=\"necessidade\"></span><h2><strong>O que você esta procurando?<h2><strong>"
     },
     {
       "type": "banners-carousel",
       "banners": [
         {
-          "img": "/img/uploads/4-2-necessidade-impactor_ultra-desk.png",
+          "img": "/img/uploads/4-2-necessidade-impactor_ultra-desk.webp",
           "markdown": "<!--StartFragment-->\n\n#### **Máxima proteção**\n\nModelos reforçados, mas que não escondem o celular, oferecendo total segurança contra quedas e impactos\n\n<!--EndFragment-->",
           "link": "https://www.customic.com.br/impactor-ultra-all"
         },
         {
-          "img": "/img/uploads/4-4-necessidade-spot-desk.png",
+          "img": "/img/uploads/4-4-necessidade-spot-desk.webp",
           "markdown": "<!--StartFragment-->\n\n#### **Eco-Friendly**\n\nPara quem, assim como nós, quer um mundo com menos plástico. Capas recicladas e recicláveis, para proteger o nosso mundo.\n\n<!--EndFragment-->",
           "link": "https://www.customic.com.br/capa-spot-silicone-reciclado"
         },
         {
-          "img": "/img/uploads/4-1-necessidade-holo-desk.png",
+          "img": "/img/uploads/4-1-necessidade-holo-desk.webp",
           "markdown": "<!--StartFragment-->\n\n#### **Estilo e sofisticação**\n\nCapas que são verdadeiros acessórios de moda, combinando com seu estilo e personalidade.\n\n<!--EndFragment-->",
           "link": "https://www.customic.com.br/impactor-clear-holo"
         },
         {
-          "img": "/img/uploads/4-3-necessidade-antibac-desk.png",
+          "img": "/img/uploads/4-3-necessidade-antibac-desk.webp",
           "markdown": "<!--StartFragment-->\n\n#### **Praticidade no dia a dia**\n\nCapas funcionais, para facilitar a sua rotina, com recursos adicionais como a tecnologia AntiBactéria.\n\n<!--EndFragment-->",
           "link": "https://www.customic.com.br/impactor-flex-antibacteria-all"
         }
