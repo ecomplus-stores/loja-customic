@@ -20,28 +20,28 @@
     },
     {
       "type": "custom-content",
-      "markdown": "<span id=\"necessidade\"></span><h2><strong>O que você procurando?<h2><strong>"
+      "markdown": "<span id=\"necessidade\"></span><h2><strong>O que você esta procurando?<h2><strong>"
     },
     {
       "type": "banners-carousel",
       "banners": [
         {
-          "img": "/img/uploads/4-2-necessidade-impactor_ultra-desk.png",
+          "img": "/img/uploads/4-2-necessidade-impactor_ultra-desk.webp",
           "markdown": "<!--StartFragment-->\n\n#### **Máxima proteção**\n\nModelos reforçados, mas que não escondem o celular, oferecendo total segurança contra quedas e impactos\n\n<!--EndFragment-->",
           "link": "https://www.customic.com.br/impactor-ultra-all"
         },
         {
-          "img": "/img/uploads/4-4-necessidade-spot-desk.png",
-          "markdown": "<!--StartFragment-->\n\n#### **Eco-Friendly**\n\nPara quem, assim como nós, quer um mundo com menos plástico. Capas recicladas e recicláveis, para proteger o nosso mundo.\n\n<!--EndFragment-->",
+          "img": "/img/uploads/4-4-necessidade-spot-desk.webp",
+          "markdown": "<!--StartFragment-->\n\n#### **Eco-Friendly**\n\nCapas recicladas e sustentáveis, que protegem o planeta sem abrir mão do estilo.\n\n<!--EndFragment-->",
           "link": "https://www.customic.com.br/capa-spot-silicone-reciclado"
         },
         {
-          "img": "/img/uploads/4-1-necessidade-holo-desk.png",
+          "img": "/img/uploads/4-1-necessidade-holo-desk.webp",
           "markdown": "<!--StartFragment-->\n\n#### **Estilo e sofisticação**\n\nCapas que são verdadeiros acessórios de moda, combinando com seu estilo e personalidade.\n\n<!--EndFragment-->",
           "link": "https://www.customic.com.br/impactor-clear-holo"
         },
         {
-          "img": "/img/uploads/4-3-necessidade-antibac-desk.png",
+          "img": "/img/uploads/4-3-necessidade-antibac-desk.webp",
           "markdown": "<!--StartFragment-->\n\n#### **Praticidade no dia a dia**\n\nCapas funcionais, para facilitar a sua rotina, com recursos adicionais como a tecnologia AntiBactéria.\n\n<!--EndFragment-->",
           "link": "https://www.customic.com.br/impactor-flex-antibacteria-all"
         }
@@ -83,31 +83,43 @@
       "type": "banners-carousel",
       "banners": [
         {
-          "img": "/img/uploads/6-1-detalhes-ultra-desk.png",
-          "markdown": "<!--StartFragment-->\n\n#### **Impactor Ultra** \n\nA maior proteção, com design slim e moderno para o seu celular. Com certificação militar contra quedas.\n\n  ***  \n\n - Material: Policarbonato + TPU\n\n\\- Proteção: 3 metros\n\n\\- Borda para câmera: Sim\n\n\\- Traseira: Rígida\n\n\\- Acabamento: Liso\n\n\\- Tecnologia: Antiamarelamento\n\n\\- Compatível com MagSafe: Sim\n\n<!--EndFragment-->",
-          "link": "https://www.customic.com.br/capa-customic-impactor-ultra-magsafe",
+          "img": "/img/uploads/detalhes_tecnicos-spot.webp",
+          "markdown": "",
+          "link": "https://www.customic.com.br/capa-spot-silicone-reciclado",
           "background": "#44f06a",
           "color": "#000000"
         },
         {
-          "img": "/img/uploads/6-2-detalhes-flex-desk.png",
-          "markdown": "<!--StartFragment-->\n\n#### **Impactor Flex**\n\nProteção avançada e flexibilidade, garantindo um perfeito encaixe e resistência contra quedas.\n\n- - -\n\n\\- Material: Poliuretano + Policarbonato\n\n\\- Proteção: 2 metros\n\n\\- Borda para câmera: Sim\n\n\\- Traseira: Flexível\n\n\\- Acabamento: Liso\n\n\\- Tecnologia: Antiamarelamento\n\n\\- Compatível com MagSafe: Não\n\n<!--EndFragment-->",
+          "img": "/img/uploads/detalhes_tecnicos-ultra_clear.webp",
+          "markdown": "",
           "background": "#44f06a",
           "color": "#000000",
-          "link": "https://www.customic.com.br/impactor-flex-all"
+          "link": "https://www.customic.com.br/impactor-clear-all"
         },
         {
-          "img": "/img/uploads/6-3-detalhes-flex_antibac-desk.png",
-          "markdown": "<!--StartFragment-->\n\n#### **Impactor Flex AntiBactéria**\n\nProteção total com tecnologia antibacteriana, ideal para quem se preocupa com a higiene do celular.\n\n- - -\n\n\\- Material: Poliuretano + Policarbonato (tecnologia AntiBactéria)\n\n\\- Proteção: 2 metros\n\n\\- Borda para câmera: Sim\n\n\\- Traseira: Flexível\n\n\\- Acabamento: Liso\n\n\\- Tecnologia: Antibacteriana\n\n\\- Compatível com MagSafe: Não\n\n<!--EndFragment-->",
+          "img": "/img/uploads/detalhes_tecnicos-holo.webp",
+          "markdown": "",
           "background": "#8d73f2",
           "color": "#000000",
-          "link": "https://www.customic.com.br/impactor-flex-antibacteria-all"
+          "link": "https://www.customic.com.br/impactor-clear-holo"
         },
         {
-          "img": "/img/uploads/6-4-detalhes-seed-desk.png",
-          "markdown": "<!--StartFragment-->\n\n#### **Seed - Eco Case**\n\nProteção sustentável, feita de materiais biodegradáveis. Para quem quer um mundo com menos plástico.\n\n- - -\n\n\\- Material: Biodegradável\n\n\\- Proteção: 1,2 metros.\n\n\\- Borda para câmera: Sim\n\n\\- Traseira: Rígida\n\n\\- Acabamento: Texturizado natural\n\n\\- Tecnologia: -\n\n\\- Compatível com MagSafe: Não\n\n<!--EndFragment-->",
-          "link": "https://www.customic.com.br/seed-eco-case-all",
+          "img": "/img/uploads/detalhes_tecnicos-ultra_magsafe.webp",
+          "markdown": "",
+          "link": "https://www.customic.com.br/capa-impactor-ultra-magsafe",
           "background": "#8d73f2"
+        },
+        {
+          "img": "/img/uploads/detalhes_tecnicos-glitter_gradiente.webp",
+          "link": "https://www.customic.com.br/capa-impactor-ultra-glitter-gradiente"
+        },
+        {
+          "img": "/img/uploads/detalhes_tecnicos-air.webp",
+          "link": "https://www.customic.com.br/capa-impactor-air"
+        },
+        {
+          "img": "/img/uploads/detalhes_tecnicos-space.webp",
+          "link": "https://www.customic.com.br/capa-impactor-sp4ce"
         }
       ]
     },
@@ -119,13 +131,22 @@
       "type": "banners-grid",
       "banners": [
         {
-          "img": "/img/uploads/8-2-depoimento.webp"
+          "img": "/img/uploads/depoimentos-8.webp"
         },
         {
-          "img": "/img/uploads/8-3-depoimento.webp"
+          "img": "/img/uploads/depoimentos-7.webp"
         },
         {
-          "img": "/img/uploads/8-1-depoimento.webp"
+          "img": "/img/uploads/depoimentos-6.webp"
+        },
+        {
+          "img": "/img/uploads/depoimentos-5.webp"
+        },
+        {
+          "img": "/img/uploads/depoimentos-4.webp"
+        },
+        {
+          "img": "/img/uploads/depoimentos-3.webp"
         }
       ]
     },
@@ -145,6 +166,87 @@
       "page": 1,
       "collection_id": "6666fb57f4e6d85ab2a61642:collections:Encontre Sua Capa Ideal:/encontre-sua-capa-ideal",
       "headless": true
+    },
+    {
+      "type": "banners-grid",
+      "banners": [
+        {
+          "img": "/img/uploads/icon-1-.png",
+          "link": "https://www.customic.com.br/seed-eco-case-all"
+        },
+        {
+          "img": "/img/uploads/icon-2-.png",
+          "link": "https://www.customic.com.br/soft-all"
+        },
+        {
+          "img": "/img/uploads/icon-3-.png",
+          "link": "https://www.customic.com.br/marble"
+        },
+        {
+          "img": "/img/uploads/icon-4-.png",
+          "link": "https://www.customic.com.br/soft-touch-all"
+        },
+        {
+          "img": "/img/uploads/icon-5-.png",
+          "link": "https://www.customic.com.br/capa-spot-silicone-reciclado"
+        },
+        {
+          "img": "/img/uploads/icon-6-.png",
+          "link": "https://www.customic.com.br/capa-para-celular-customic-liquid-silicone"
+        },
+        {
+          "img": "/img/uploads/icon-8-.png",
+          "link": "https://www.customic.com.br/impactor-flex-all"
+        },
+        {
+          "img": "/img/uploads/icon-9-.png",
+          "link": "https://www.customic.com.br/impactor-ultra-fabric-all"
+        },
+        {
+          "img": "/img/uploads/icon-10-.png",
+          "link": "https://www.customic.com.br/impactor-ultra-all"
+        },
+        {
+          "img": "/img/uploads/icon-11-.png",
+          "link": "https://www.customic.com.br/impactor-ultra-clear"
+        },
+        {
+          "img": "/img/uploads/icon-12-.png",
+          "link": "https://www.customic.com.br/impactor-clear-holo"
+        },
+        {
+          "img": "/img/uploads/icon-13-.png",
+          "link": "https://www.customic.com.br/capa-impactor-ultra-glitter-gradiente"
+        },
+        {
+          "img": "/img/uploads/icon-14-.png",
+          "link": "https://www.customic.com.br/impactor-flex-antibacteria-all"
+        },
+        {
+          "img": "/img/uploads/icon-15-.png",
+          "link": "https://www.customic.com.br/impactor-clear-magsafe-all"
+        },
+        {
+          "img": "/img/uploads/icon-16-.png",
+          "link": "https://www.customic.com.br/impactor-ultra-clear-magsafe"
+        },
+        {
+          "img": "/img/uploads/icon-17-.png",
+          "link": "https://www.customic.com.br/capa-impactor-ultra-magsafe"
+        },
+        {
+          "img": "/img/uploads/icon-18-.png",
+          "link": "https://www.customic.com.br/capa-impactor-clear-holo-magsafe"
+        },
+        {
+          "img": "/img/uploads/icon-19-.png",
+          "link": "https://www.customic.com.br/capa-spot-silicone-reciclado"
+        },
+        {
+          "img": "/img/uploads/icon-20-.png",
+          "link": "https://www.customic.com.br/capa-liquid-silicone-magsafe"
+        }
+      ]
     }
   ],
   "imagem": "https://s1-customic.b-cdn.net/img/uploads/banner-desk-peliculas_2_11zon.webp"
