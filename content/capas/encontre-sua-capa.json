@@ -83,42 +83,42 @@
       "type": "banners-carousel",
       "banners": [
         {
-          "img": "/img/uploads/detalhes_tecnicos-spot.webp",
+          "img": "/img/uploads/prancheta-3.webp",
           "markdown": "",
           "link": "https://www.customic.com.br/capa-spot-silicone-reciclado",
           "background": "#44f06a",
           "color": "#000000"
         },
         {
-          "img": "/img/uploads/detalhes_tecnicos-ultra_clear.webp",
+          "img": "/img/uploads/prancheta-5.webp",
           "markdown": "",
           "background": "#44f06a",
           "color": "#000000",
           "link": "https://www.customic.com.br/impactor-clear-all"
         },
         {
-          "img": "/img/uploads/detalhes_tecnicos-holo.webp",
+          "img": "/img/uploads/prancheta-6.webp",
           "markdown": "",
           "background": "#8d73f2",
           "color": "#000000",
           "link": "https://www.customic.com.br/impactor-clear-holo"
         },
         {
-          "img": "/img/uploads/detalhes_tecnicos-ultra_magsafe.webp",
+          "img": "/img/uploads/prancheta-1.webp",
           "markdown": "",
           "link": "https://www.customic.com.br/capa-impactor-ultra-magsafe",
           "background": "#8d73f2"
         },
         {
-          "img": "/img/uploads/detalhes_tecnicos-glitter_gradiente.webp",
+          "img": "/img/uploads/prancheta-4.webp",
           "link": "https://www.customic.com.br/capa-impactor-ultra-glitter-gradiente"
         },
         {
-          "img": "/img/uploads/detalhes_tecnicos-air.webp",
+          "img": "/img/uploads/prancheta-7.webp",
           "link": "https://www.customic.com.br/capa-impactor-air"
         },
         {
-          "img": "/img/uploads/detalhes_tecnicos-space.webp",
+          "img": "/img/uploads/prancheta-8.webp",
           "link": "https://www.customic.com.br/capa-impactor-sp4ce"
         }
       ]
