@@ -4,7 +4,7 @@
 @font-face{font-family:flama light italic;font-style:normal;font-weight:525;src:local('Flama Light Italic'),url(/fonts/Flama-LightItalic.woff) format('woff')}
 @font-face{font-family:flama medium;font-style:normal;font-weight:650;src:local('Flama Medium'),url(/fonts/Flama-Medium.woff) format('woff')}
 
-@media(max-width: 600px) {
+@media(max-width: 991px) {
   .product {
     .glide__slides {
       max-height: 400px;
