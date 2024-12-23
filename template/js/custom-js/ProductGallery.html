@@ -7,14 +7,20 @@
         @click="activeIndex = localPictures.length"
       >
         <i id="video-play" class="i-play"></i>
-        <img v-if="imgVideo" :src="imgVideo" alt="Thumb video" style="max-width: 100%;">        
+        <img
+          v-if="imgVideo"
+          :src="imgVideo"
+          alt="Video thumb"
+          style="max-width: 100%; height: auto"
+          width="640"
+          height="360"
+        >
       </div>
-  
-      <div
-        v-for="(picture, i) in reducePictures"
+
+       <div
+        v-for="(picture, i) in localPictures"
         :key="'img-' + i"
         class="gallery__item"
-        v-if="!isSliderMoved ? i < 5 : i >= 0"
         :class="{ 'gallery__item--selected': i === activeIndex }"
         @click="activeIndex = i"
       >
@@ -23,17 +29,6 @@
           class="gallery__thumb"
           :src="getImg(picture, null, 'small')"
         />
-      </div>
-      <div
-        class="count-picture"
-        v-if="isMobileApp"
-      >
-        <span class="first">{{ activeIndex + 1 }}</span>
-        <span class="last">{{ localPictures.length }}</span>
-        <div v-if="videoSrc" 
-          @click="activeIndex = localPictures.length">
-          <i class="i-play"></i>
-        </div>
       </div>
   
       <button

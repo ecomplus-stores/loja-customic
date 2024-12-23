@@ -93,16 +93,6 @@ export default {
         : (this.product.pictures || [])
     },
 
-    reducePictures () {
-        return this.pictures && this.pictures.length && !this.isSliderMoved
-        ? this.pictures.slice(0, 6)
-        : (this.pictures || this.product.pictures || [])
-    },
-
-    isMobileApp () {
-      return isMobile
-    },
-
     videoSrc () {
       const video = this.video || (this.product.videos && this.product.videos[0])
       if (video && video.url) {
@@ -116,9 +106,9 @@ export default {
 
    imgVideo () {
       const video = this.video || (this.product.videos && this.product.videos[0])
-      if (video && video.url && !isMobile && video.url.includes('youtube')) {
+      if (video && video.url && video.url.includes('youtube')) {
         return video.url.replace(/.*embed/i, 'https://img.youtube.com/vi') + '/default.jpg?width=50&height=50&aspect=true' 
-      } else if (video && video.url && !isMobile && video.url.includes('vimeo')) {
+      } else if (video && video.url && video.url.includes('vimeo')) {
         return video.url.replace(/https:\/\/player\.vimeo\.com\/video\/([\w\d]+)/, 'https://vumbnail.com/$1.jpg')
       }
       return null
