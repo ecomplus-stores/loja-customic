@@ -10,12 +10,13 @@
       max-height: 400px;
     }
     .gallery {
+      margin-bottom: 50px;
       &__thumbs {
         display: flex;
         align-items: center;
         flex-wrap: nowrap;
         gap: 4px;
-        margin-bottom: 15px;
+        margin-top: -15px;
       }
       &__open {
         display: block;
@@ -53,6 +54,9 @@
             }
           }
         }
+      }
+      iframe {
+        max-height: 360px;
       }
     }
   }
