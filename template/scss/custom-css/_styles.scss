@@ -60,6 +60,28 @@
       }
     }
   }
+
+  .header {
+    padding-top: var(--spacer-1);
+    padding-bottom: var(--spacer-1);
+    &__logo {
+      max-height: 45px;
+      &-block {
+        text-align: center;
+        padding: 0 !important;
+        > a {
+          display: inline-block;
+        }
+      }
+    }
+    &__container {
+      margin: 0;
+    }
+    &__buttons-block,
+    &__toggler-block {
+      min-width: 83px;
+    }
+  }
 }
 
 #bot {
