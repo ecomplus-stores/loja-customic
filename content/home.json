@@ -142,33 +142,24 @@
       "type": "banners-grid",
       "banners": [
         {
-          "img": "/img/uploads/banners-colecoes_em_destaque-customic-site-1-3-.webp",
-          "link": "/todasascasesdeiphone/",
+          "img": "/img/uploads/banner_impactor_ultra-1-.webp",
+          "link": "/impactor-ultra-all",
           "alt": "Imagem de Capinha de celular transparente com tecnologia magsafe integrada",
           "mobile_img": "/img/uploads/banners-colecoes_em_destaque-customic-site-1-3-.webp"
         },
         {
-          "img": "/img/uploads/banners-colecoes_em_destaque-customic-site-3-2-.webp",
-          "link": "/todos-modelos-de-android/",
+          "img": "/img/uploads/banner_impactor_clearholo-1-.webp",
+          "link": "/impactor-clear-holo",
           "alt": "Imagem de Capinha de celular para android com tom azul marinho ",
           "mobile_img": "/img/uploads/banners-colecoes_em_destaque-customic-site-3-2-.webp"
-        }
-      ]
-    },
-    {
-      "type": "banners-grid",
-      "banners": [
-        {
-          "img": "/img/uploads/banners-colecoes_em_destaque-customic-site-2-2-.webp",
-          "link": "/peliculas",
-          "alt": "Imagem de Peliculas para celular das marcas Customic",
-          "mobile_img": "/img/uploads/banners-colecoes_em_destaque-customic-site-2-2-.webp"
         },
         {
-          "img": "/img/uploads/banners-colecoes_em_destaque-customic-site-4-2-.webp",
-          "link": "/popsockets",
-          "alt": "Imagem de Popsockets e suportes para celular",
-          "mobile_img": "/img/uploads/banners-colecoes_em_destaque-customic-site-4-2-.webp"
+          "img": "/img/uploads/banner_impactor_ultragradientemagsafe-1-.webp",
+          "link": "/capa-para-iphone-impactor-clear-magsafe-gradiente-customic"
+        },
+        {
+          "img": "/img/uploads/banner_impactor_ultraglittergradiente-1-.webp",
+          "link": "/capa-impactor-ultra-glitter-gradiente"
         }
       ]
     },
