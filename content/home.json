@@ -145,21 +145,23 @@
           "img": "/img/uploads/banner_impactor_ultra-1-.webp",
           "link": "/impactor-ultra-all",
           "alt": "Imagem de Capinha de celular transparente com tecnologia magsafe integrada",
-          "mobile_img": ""
+          "mobile_img": "/img/uploads/banner_impactor_ultra_mobile.webp"
         },
         {
           "img": "/img/uploads/banner_impactor_clearholo-1-.webp",
           "link": "/impactor-clear-holo",
           "alt": "Imagem de Capinha de celular para android com tom azul marinho ",
-          "mobile_img": ""
+          "mobile_img": "/img/uploads/banner_impactor_clearholo_mobile.png"
         },
         {
           "img": "/img/uploads/banner_impactor_ultragradientemagsafe-1-.webp",
-          "link": "/capa-customic-impactor-ultra-magsafe"
+          "link": "/capa-para-iphone-impactor-clear-magsafe-gradiente-customic",
+          "mobile_img": "/img/uploads/banner_impactor_ultragradientemagsafe_mobile.webp"
         },
         {
           "img": "/img/uploads/banner_impactor_ultraglittergradiente-1-.webp",
-          "link": "/capa-impactor-ultra-glitter-gradiente"
+          "link": "/capa-impactor-ultra-glitter-gradiente",
+          "mobile_img": "/img/uploads/banner_impactor_ultraglittergradiente_mobile.webp"
         }
       ]
     },
