@@ -175,24 +175,6 @@
       "title": "Popsockets, o Original!"
     },
     {
-      "type": "collection-shelf",
-      "shuffle": false,
-      "limit": 12,
-      "page": 1,
-      "sort": "sales",
-      "title": "Mais vendidos 🏆",
-      "collection_id": "5f1f3f3cf023684cdbd4a1b1:categories:Capinha de celular:/capas"
-    },
-    {
-      "type": "collection-shelf",
-      "shuffle": true,
-      "limit": 12,
-      "page": 1,
-      "collection_id": "5f1f3f59f023684cdbd4a1f0:categories:Capinha Militar para Celular:/protecao-militar",
-      "sort": "sales",
-      "title": "Linha Impactor® de Proteção Militar"
-    },
-    {
       "type": "custom-content",
       "markdown": "#### n﻿os acompanhe tb nas redes 🤳💜 @customic"
     },
