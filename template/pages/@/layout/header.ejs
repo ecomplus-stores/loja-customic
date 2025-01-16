@@ -314,7 +314,8 @@ const isCentralizedLogo = header.centralized_logo
                           <% subcategories.forEach((subcategory, index) => { %>
                             <div class="header__submenu-item <%= index === 0 ? 'active' : '' %>" 
                                  data-subcategory="<%= subcategory._id %>"
-                                 onmouseover="showThirdCategories('<%= subcategory._id %>', this)">
+                                 onmouseover="showThirdCategories('<%= subcategory._id %>', this)"
+                                 id="sub-<%= subcategory._id %>">
                               <a class="subcategory" id="cd-<%= subcategory._id %>" href="/<%= subcategory.slug %>">
                                 <%= subcategory.name %>
                                 <i class="fas fa-chevron-right submenu-arrow"></i>
