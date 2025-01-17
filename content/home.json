@@ -95,6 +95,10 @@
         {
           "img": "/img/uploads/img_categorias_limpatelas.webp",
           "link": "/limpa-tela"
+        },
+        {
+          "link": "/airpod-case",
+          "img": "/img/uploads/img_categorias_airpodcases.webp"
         }
       ]
     },
