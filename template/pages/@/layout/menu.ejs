@@ -166,55 +166,58 @@ if (mainCategories) {
           <div class="menu__list">
             <% 
             const listCategories = categoryParents[slug]
-            if (slug === 'apple') {
-              const arrayMenu = brandsModel['Apple']
-              listCategories.sort((a, b) => {
-                const modelNameA = arrayMenu.find(item => b.name && b.name.toLowerCase().includes(item.filter_option && item.filter_option.toLowerCase()))?.filter_option || '';
-                const modelNameB = arrayMenu.find(item => a.name && a.name.toLowerCase().includes(item.filter_option && item.filter_option.toLowerCase()))?.filter_option || '';
-
-                const indexA = arrayMenu.findIndex(item => item.filter_option && item.filter_option.toLowerCase() === modelNameA.toLowerCase());
-                const indexB = arrayMenu.findIndex(item => item.filter_option && item.filter_option.toLowerCase() === modelNameB.toLowerCase());
-
-                if (modelNameA === '' && modelNameB === '') {
-                  return 1; 
-                } else if (modelNameA === '' && modelNameB !== '') {
-                  return -1
-                } else if (modelNameA !== '' && modelNameB === '') {
-                  return 1
+            
+            // Find the submenu configuration for current category
+            const parentSubmenu = header.submenu_order.find(item => 
+              item.submenu_slug === `/${slug}`
+            )
+            
+            // Get ordered categories if they exist in submenu_order
+            let orderedListCategories = []
+            if (parentSubmenu && parentSubmenu.submenu) {
+              // First, add categories that are in submenu_order
+              parentSubmenu.submenu.forEach(({ subcategory_slug }) => {
+                const category = listCategories.find(cat => `/${cat.slug}` === subcategory_slug)
+                if (category) {
+                  orderedListCategories.push(category)
                 }
-
-                return indexB - indexA;
-              });
-            } else if (slug === 'samsung') {
-              const arrayMenu = brandsModel['Samsung']
-              listCategories.sort((a, b) => {
-                const modelNameA = arrayMenu.find(item => b.name && b.name.toLowerCase().includes(item.filter_option && item.filter_option.toLowerCase()))?.filter_option || '';
-                const modelNameB = arrayMenu.find(item => a.name && a.name.toLowerCase().includes(item.filter_option && item.filter_option.toLowerCase()))?.filter_option || '';
-
-                const indexA = arrayMenu.findIndex(item => item.filter_option && item.filter_option.toLowerCase() === modelNameA.toLowerCase());
-                const indexB = arrayMenu.findIndex(item => item.filter_option && item.filter_option.toLowerCase() === modelNameB.toLowerCase());
-
-                if (modelNameA === '' && modelNameB === '') {
-                  return 1; 
-                } else if (modelNameA === '' && modelNameB !== '') {
-                  return -1
-                } else if (modelNameA !== '' && modelNameB === '') {
-                  return 1
+              })
+              
+              // Then add any remaining categories that weren't in submenu_order
+              // except for the "see-all" category
+              listCategories.forEach(category => {
+                if (!orderedListCategories.some(orderedCat => orderedCat._id === category._id) && 
+                    !category.slug.includes('todos-modelos')) {
+                  orderedListCategories.push(category)
                 }
+              })
 
-                return indexB - indexA;
-              });
-            }  else if (slug === 'android') {
-            }
-            submenuOrder.forEach(({ submenu_menu_slug, submenu_menu }) => {
-              if (('/' + slug) === submenu_menu_slug) {
-                const mapSubmenu = submenu_menu.map(({subcategory_menu_slug}) => subcategory_menu_slug.replace('/', ''))
-                listCategories.sort((a, b) => {
-                  const modelNameA = mapSubmenu.find(item => b.slug && b.slug.toLowerCase().includes(item && item.toLowerCase())) || '';
-                  const modelNameB = mapSubmenu.find(item => a.slug && a.slug.toLowerCase().includes(item && item.toLowerCase())) || '';
+              // Add the "see-all" category at the end if it exists
+              const seeAllCategory = listCategories.find(category => 
+                category.slug.includes('todos-modelos')
+              )
+              if (seeAllCategory) {
+                orderedListCategories.push(seeAllCategory)
+              }
+            } else {
+              // If no order specified, handle original array
+              const seeAllCategory = listCategories.find(category => 
+                category.slug.includes('todos-modelos')
+              )
+              
+              // Filter out the see-all category and sort the rest
+              const regularCategories = listCategories.filter(category => 
+                !category.slug.includes('todos-modelos')
+              )
+              
+              if (slug === 'apple') {
+                const arrayMenu = brandsModel['Apple']
+                regularCategories.sort((a, b) => {
+                  const modelNameA = arrayMenu.find(item => b.name && b.name.toLowerCase().includes(item.filter_option && item.filter_option.toLowerCase()))?.filter_option || '';
+                  const modelNameB = arrayMenu.find(item => a.name && a.name.toLowerCase().includes(item.filter_option && item.filter_option.toLowerCase()))?.filter_option || '';
 
-                  const indexA = mapSubmenu.findIndex(item => item && item.toLowerCase() === modelNameA.toLowerCase());
-                  const indexB = mapSubmenu.findIndex(item => item && item.toLowerCase() === modelNameB.toLowerCase());
+                  const indexA = arrayMenu.findIndex(item => item.filter_option && item.filter_option.toLowerCase() === modelNameA.toLowerCase());
+                  const indexB = arrayMenu.findIndex(item => item.filter_option && item.filter_option.toLowerCase() === modelNameB.toLowerCase());
 
                   if (modelNameA === '' && modelNameB === '') {
                     return 1; 
@@ -225,10 +228,36 @@ if (mainCategories) {
                   }
 
                   return indexB - indexA;
-                })
+                });
+              } else if (slug === 'samsung') {
+                const arrayMenu = brandsModel['Samsung']
+                regularCategories.sort((a, b) => {
+                  const modelNameA = arrayMenu.find(item => b.name && b.name.toLowerCase().includes(item.filter_option && item.filter_option.toLowerCase()))?.filter_option || '';
+                  const modelNameB = arrayMenu.find(item => a.name && a.name.toLowerCase().includes(item.filter_option && item.filter_option.toLowerCase()))?.filter_option || '';
+
+                  const indexA = arrayMenu.findIndex(item => item.filter_option && item.filter_option.toLowerCase() === modelNameA.toLowerCase());
+                  const indexB = arrayMenu.findIndex(item => item.filter_option && item.filter_option.toLowerCase() === modelNameB.toLowerCase());
+
+                  if (modelNameA === '' && modelNameB === '') {
+                    return 1; 
+                  } else if (modelNameA === '' && modelNameB !== '') {
+                    return -1
+                  } else if (modelNameA !== '' && modelNameB === '') {
+                    return 1
+                  }
+
+                  return indexB - indexA;
+                });
               }
-            })
-            listCategories.forEach((subcategory, index) => { 
+              
+              // Combine regular categories with see-all at the end
+              orderedListCategories = [...regularCategories]
+              if (seeAllCategory) {
+                orderedListCategories.push(seeAllCategory)
+              }
+            }
+
+            orderedListCategories.forEach((subcategory, index) => { 
               const findCategorySub = filters.find(({ filter_option }) => {
                 return subcategory.name && subcategory.name.includes(filter_option)
               })
