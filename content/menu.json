@@ -19,6 +19,15 @@
       "submenu_menu_slug": "/samsung",
       "submenu_menu": [
         {
+          "subcategory_menu_slug": "/galaxy-s25"
+        },
+        {
+          "subcategory_menu_slug": "/galaxy-s25-plus"
+        },
+        {
+          "subcategory_menu_slug": "/galaxy-s25-ultra"
+        },
+        {
           "subcategory_menu_slug": "/galaxy-s24-ultra"
         },
         {
