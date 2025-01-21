@@ -331,7 +331,38 @@ const isCentralizedLogo = header.centralized_logo
                                  style="display: <%= index === 0 ? 'block' : 'none' %>;">
                               <% 
                               const thirdCategories = _.categories.filter(({ parent }) => parent && parent.slug === subcategory.slug)
-                              thirdCategories.forEach(thirdCategory => {
+                              
+                              // Find the submenu configuration for current subcategory
+                              const parentSubmenu = header.submenu_order.find(item => 
+                                item.submenu_slug === `/${subcategory.slug}`
+                              )
+                              
+                              // Get ordered subcategories if they exist in submenu_order
+                              let orderedThirdCategories = []
+                              if (parentSubmenu && parentSubmenu.submenu) {
+                                // First, add categories that are in submenu_order
+                                parentSubmenu.submenu.forEach(({ subcategory_slug }) => {
+                                  const category = thirdCategories.find(cat => `/${cat.slug}` === subcategory_slug)
+                                  if (category) {
+                                    orderedThirdCategories.push(category)
+                                  }
+                                })
+                                
+                                // Then add any remaining categories that weren't in submenu_order
+                                thirdCategories.forEach(category => {
+                                  if (!orderedThirdCategories.some(orderedCat => orderedCat._id === category._id)) {
+                                    orderedThirdCategories.push(category)
+                                  }
+                                })
+                              } else {
+                                orderedThirdCategories = thirdCategories
+                              }
+                              %>
+                              <!-- Debug: Current subcategory: <%= subcategory.slug %> -->
+                              <!-- Debug: Found config: <%= JSON.stringify(parentSubmenu) %> -->
+                              <!-- Debug: Ordered categories: <%= JSON.stringify(orderedThirdCategories.map(c => c.slug)) %> -->
+                              
+                              <% orderedThirdCategories.forEach(thirdCategory => {
                                 const findCategoryThird = filters.find(({ filter_option }) => {
                                   return thirdCategory.name && thirdCategory.name.includes(filter_option)
                                 })

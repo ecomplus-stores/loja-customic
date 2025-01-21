@@ -42,7 +42,7 @@
             </a>
 
             <div
-              class="search-engine__option custom-control custom-radio"
+              class="search-engine__option custom-control custom-radio test1"
               v-for="({ label, min, max }, index) in priceOptions"
               :key="`Price-${index}`"
             >
@@ -63,7 +63,7 @@
 
             <div
               v-if="priceRange.max - priceRange.min > 2"
-              class="search-engine__option-range input-group input-group-sm mt-2"
+              class="search-engine__option-range input-group input-group-sm mt-2 test2"
             >
               <input
                 ref="inputMinPrice"
@@ -120,7 +120,7 @@
                 :id="`collapse-${filter}`"
               >
                 <div
-                  class="search-engine__option custom-control custom-checkbox"
+                  class="search-engine__option custom-control custom-checkbox test3"
                   v-for="(opt, index) in options"
                   :key="`${filter}-${index}`"
                 >
