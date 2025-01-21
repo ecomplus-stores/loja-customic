@@ -607,6 +607,20 @@
           "subcategory_slug": "/magsafe"
         }
       ]
+    },
+    {
+      "submenu_slug": "/samsung",
+      "submenu": [
+        {
+          "subcategory_slug": "/galaxy-s25"
+        },
+        {
+          "subcategory_slug": "/galaxy-s25-plus"
+        },
+        {
+          "subcategory_slug": "/galaxy-s25-ultra"
+        }
+      ]
     }
   ]
 }
