@@ -229,15 +229,18 @@
       },
       {
         "filter_option": "Galaxy S25 Ultra",
-        "filter_grid_model": "Samsung"
+        "filter_grid_model": "Samsung",
+        "is_new": true
       },
       {
         "filter_option": "Galaxy S25 Plus",
-        "filter_grid_model": "Samsung"
+        "filter_grid_model": "Samsung",
+        "is_new": true
       },
       {
         "filter_option": "Galaxy S25",
-        "filter_grid_model": "Samsung"
+        "filter_grid_model": "Samsung",
+        "is_new": true
       },
       {
         "filter_option": "Galaxy S24 Ultra",
