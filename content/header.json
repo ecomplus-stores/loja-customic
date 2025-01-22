@@ -678,6 +678,110 @@
       ]
     },
     {
+      "submenu_slug": "/apple",
+      "submenu": [
+        {
+          "subcategory_slug": "/iphone-16-pro-max"
+        },
+        {
+          "subcategory_slug": "/iphone-16-pro"
+        },
+        {
+          "subcategory_slug": "/iphone-16-plus"
+        },
+        {
+          "subcategory_slug": "/iphone-16"
+        },
+        {
+          "subcategory_slug": "/iphone-15-pro-max"
+        },
+        {
+          "subcategory_slug": "/iphone-15-pro"
+        },
+        {
+          "subcategory_slug": "/iphone-15-plus"
+        },
+        {
+          "subcategory_slug": "/iphone-15"
+        },
+        {
+          "subcategory_slug": "/iphone-14-pro-max"
+        },
+        {
+          "subcategory_slug": "/iphone-14-pro"
+        },
+        {
+          "subcategory_slug": "/iphone-14-plus"
+        },
+        {
+          "subcategory_slug": "/iphone-14"
+        },
+        {
+          "subcategory_slug": "/iphone-13-pro-max"
+        },
+        {
+          "subcategory_slug": "/iphone-13-pro"
+        },
+        {
+          "subcategory_slug": "/iphone-13-mini"
+        },
+        {
+          "subcategory_slug": "/iphone-13"
+        },
+        {
+          "subcategory_slug": "/iphone-12-pro-max"
+        },
+        {
+          "subcategory_slug": "/iphone-12-pro"
+        },
+        {
+          "subcategory_slug": "/iphone-12"
+        },
+        {
+          "subcategory_slug": "/iphone-12-mini"
+        },
+        {
+          "subcategory_slug": "/iphone-11-pro-max"
+        },
+        {
+          "subcategory_slug": "/iphone-11-pro"
+        },
+        {
+          "subcategory_slug": "/capinha-iphone-11"
+        },
+        {
+          "subcategory_slug": "/iphone-xr"
+        },
+        {
+          "subcategory_slug": "/iphone-xs-max"
+        },
+        {
+          "subcategory_slug": "/iphone-x-xs"
+        },
+        {
+          "subcategory_slug": "/iphone-7"
+        },
+        {
+          "subcategory_slug": "/iphone-se-2020"
+        },
+        {
+          "subcategory_slug": "/iphone-7-plus"
+        },
+        {
+          "subcategory_slug": "/iphone-6"
+        },
+        {
+          "subcategory_slug": "/iphone-6-plus"
+        },
+        {
+          "subcategory_slug": "/iphone-6s"
+        },
+        {
+          "subcategory_slug": "/iphone-6s-plus"
+        }
+      ]
+    },
+    {
       "submenu_slug": "/popsockets",
       "submenu": [
         {
