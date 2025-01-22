@@ -9,6 +9,14 @@
         {
           "start": "",
           "end": "",
+          "img": "/img/uploads/customic-banner-s25-desktop.webp",
+          "mobile_img": "/img/uploads/customic-banner-s25-mobile.webp",
+          "link": "/galaxy-s25",
+          "alt": "Banner Lançamento Samsung Galaxy S25"
+        },
+        {
+          "start": "",
+          "end": "",
           "img": "/img/uploads/customic-banner-space-desktop.webp",
           "alt": "Banner Capas Impactor Sp4ce enfatizando a proteção avançada de até 4m",
           "link": "https://www.customic.com.br/capa-impactor-sp4ce",
