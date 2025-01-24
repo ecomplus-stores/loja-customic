@@ -782,6 +782,32 @@
       ]
     },
     {
+      "submenu_slug": "/android",
+      "submenu": [
+        {
+          "subcategory_slug": "/asus"
+        },
+        {
+          "subcategory_slug": "/modelos-motorola"
+        },
+        {
+          "subcategory_slug": "/lg"
+        },
+        {
+          "subcategory_slug": "/xiaomi"
+        },
+        {
+          "subcategory_slug": "/huawei"
+        },
+        {
+          "subcategory_slug": "/outros-android"
+        },
+        {
+          "subcategory_slug": "/todos-modelos-de-android"
+        }
+      ]
+    },
+    {
       "submenu_slug": "/popsockets",
       "submenu": [
         {
