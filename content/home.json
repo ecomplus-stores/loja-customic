@@ -9,6 +9,14 @@
         {
           "start": "",
           "end": "",
+          "img": "/img/uploads/banner_spaceglitter_desk.webp",
+          "link": "https://www.customic.com.br/capa-impactor-sp4ce-glitter-magsafe",
+          "alt": "Banner lifestyle Capa Sp4ce Glitter MagSafe enfatizando a proteção avançada de 4m de altura",
+          "mobile_img": "/img/uploads/banner_spaceglitter_mobile.webp"
+        },
+        {
+          "start": "",
+          "end": "",
           "img": "/img/uploads/customic-banner-s25-desktop.webp",
           "mobile_img": "/img/uploads/customic-banner-s25-mobile.webp",
           "link": "/galaxy-s25",
@@ -29,14 +37,6 @@
           "mobile_img": "/img/uploads/banner_air_space_deep_mobile.webp",
           "link": "https://www.customic.com.br/search?term=air+%2B+space",
           "alt": "Banner Capas Impactor Air + Sp4ce + Deep Sp4ce enfatizando a proteção avançada de até 4m"
-        },
-        {
-          "start": "",
-          "end": "",
-          "img": "/img/uploads/banner_spaceglitter_desk.webp",
-          "link": "https://www.customic.com.br/capa-impactor-sp4ce-glitter-magsafe",
-          "alt": "Banner lifestyle Capa Sp4ce Glitter MagSafe enfatizando a proteção avançada de 4m de altura",
-          "mobile_img": "/img/uploads/banner_spaceglitter_mobile.webp"
         },
         {
           "start": "",
