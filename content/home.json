@@ -25,26 +25,34 @@
         {
           "start": "",
           "end": "",
-          "img": "/img/uploads/customicbanner-deep_space-desktop.webp",
-          "mobile_img": "/img/uploads/customicbanner-deep_space-mobile.webp",
-          "link": "https://www.customic.com.br/capa-impactor-deep-sp4ce",
-          "alt": "Banner Capas Impactor Deep Sp4ce enfatizando a proteção avançada de até 4m"
+          "img": "/img/uploads/banner_air_space_deep_desk.webp",
+          "mobile_img": "/img/uploads/banner_air_space_deep_mobile.webp",
+          "link": "https://www.customic.com.br/search?term=air+%2B+space",
+          "alt": "Banner Capas Impactor Air + Sp4ce + Deep Sp4ce enfatizando a proteção avançada de até 4m"
         },
         {
           "start": "",
           "end": "",
-          "img": "/img/uploads/customic-banner-air-desktop-1-1-.webp",
-          "link": "https://www.customic.com.br/capa-impactor-air",
-          "alt": "Banner lifestyle Capa Impactor Air enfatizando a proteção avançada de 4m de altura",
-          "mobile_img": "/img/uploads/customic-banner-air-mobile-1-1-.webp"
+          "img": "/img/uploads/banner_spaceglitter_desk.webp",
+          "link": "https://www.customic.com.br/capa-impactor-sp4ce-glitter-magsafe",
+          "alt": "Banner lifestyle Capa Sp4ce Glitter MagSafe enfatizando a proteção avançada de 4m de altura",
+          "mobile_img": "/img/uploads/banner_spaceglitter_mobile.webp"
         },
         {
           "start": "",
           "end": "",
-          "img": "/img/uploads/banner-site-iphone16-desktop-2-.webp",
-          "mobile_img": "/img/uploads/banner-site-iphone16-copiar.webp",
+          "img": "/img/uploads/banner_ip16_desk.webp",
+          "mobile_img": "/img/uploads/banner_ip16_mobile.webp",
           "link": "https://www.customic.com.br/iphone-16",
           "alt": "Banner Lançamento novo iPhone 16"
+        },
+        {
+          "start": "",
+          "end": "",
+          "img": "/img/uploads/banner_magsafe_desk.webp",
+          "link": "https://www.customic.com.br/linha-magsafe",
+          "alt": "Banner com conjunto de capas compativeis com carregamento MagSafe - Customic",
+          "mobile_img": "/img/uploads/banner_magsafe_mobile.webp"
         },
         {
           "start": "",
@@ -77,14 +85,6 @@
           "mobile_img": "/img/uploads/banner_mobile_peliculas_3_11zon.webp",
           "alt": "Peliculas Customic Proteção apra seus Olhos e pele",
           "link": "/peliculas"
-        },
-        {
-          "start": "",
-          "end": "",
-          "img": "/img/uploads/banner-desk-pop_3_11zon.webp",
-          "link": "/popsockets",
-          "alt": "PopSockets Plant Eco Grip Mais Sustentável 2023",
-          "mobile_img": "/img/uploads/banner_mobile_pop_4_11zon.webp"
         }
       ],
       "full_width": false
