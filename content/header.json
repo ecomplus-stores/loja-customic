@@ -817,6 +817,32 @@
           "subcategory_slug": "/magsafe"
         }
       ]
+    },
+    {
+      "submenu_slug": "/colecoes",
+      "submenu": [
+        {
+          "subcategory_slug": "/soft-all"
+        },
+        {
+          "subcategory_slug": "/soft-touch-all"
+        },
+        {
+          "subcategory_slug": "/capa-para-celular-customic-liquid-silicone"
+        },
+        {
+          "subcategory_slug": "/capa-spot-silicone-reciclado"
+        },
+        {
+          "subcategory_slug": "/seed-eco-case-all"
+        },
+        {
+          "subcategory_slug": "/hardbox-all"
+        },
+        {
+          "subcategory_slug": "/marble"
+        }
+      ]
     }
   ]
 }
