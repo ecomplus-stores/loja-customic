@@ -1560,3 +1560,77 @@ a.ni-floating-link{
     }
   }
 }
+
+.sketchfab-embed-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  width: 100%;
+}
+.sketchfab-embed-wrapper iframe {
+  max-width: 100%;
+  width: 1000px;
+  height: 800px;
+  border: none;
+  background-color: transparent;
+  transform: scale(1); /* Escala inicial */
+  transform-origin: center center; /* Centraliza o ponto de escala */
+  transition: transform 0.3s ease; /* Suaviza a transição */
+}
+.zoom-controls {
+  text-align: center;
+  margin: 10px 0;
+}
+.zoom-controls button {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 5px;
+  color: white;
+  background-color: #1CAAD9;
+}
+.zoom-controls button:hover {
+  background-color: #0f87ad;
+}
+
+
+.sketchfab-embed-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  width: 100%;
+}
+.sketchfab-embed-wrapper iframe {
+  max-width: 100%;
+  width: 1000px;
+  height: 800px;
+  border: none;
+  background-color: transparent;
+  transform: scale(1); /* Escala inicial */
+  transform-origin: center center; /* Centraliza o ponto de escala */
+  transition: transform 0.3s ease; /* Suaviza a transição */
+}
+.zoom-controls {
+  text-align: center;
+  margin: 10px 0;
+}
+.zoom-controls button {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 5px;
+  color: white;
+  background-color: #1CAAD9;
+}
+.zoom-controls button:hover {
+  background-color: #0f87ad;
+}
+
