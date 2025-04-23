@@ -198,11 +198,14 @@ color: #fff !important;
 .header__nav a {
   padding-right: 1rem;
 }
-#product-description .container {
+#product-description:has(img) .container {
   max-width: 100%;
   width: 100%;
   padding-left: 0;
   padding-right: 0;
+  > .lead {
+    text-align: center;
+  }
 }
 
 .collection-shelf .product-card__name, .collection-shelf .product-card__prices, .category-retail .product-card__name, .category-retail .product-card__prices, .page--search .product-card__name, .page--search .product-card__prices {
