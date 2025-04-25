@@ -49,6 +49,21 @@
   "filter-list": {
     "filters": [
       {
+        "filter_option": "Alças Customic",
+        "filter_grid_model": "Acessórios",
+        "is_new": true
+      },
+      {
+        "filter_option": "Alças Customic 6MM",
+        "filter_grid_model": "Alças Customic",
+        "is_new": true
+      },
+      {
+        "filter_option": "Alças Customic 8MM",
+        "filter_grid_model": "Alças Customic",
+        "is_new": true
+      },
+      {
         "filter_option": "iPhone 16 Pro Max",
         "filter_grid_model": "Apple",
         "is_new": true
@@ -815,6 +830,14 @@
         },
         {
           "subcategory_slug": "/magsafe"
+        }
+      ]
+    },
+    {
+      "submenu_slug": "/acessorios",
+      "submenu": [
+        {
+          "subcategory_slug": "/alcas-customic"
         }
       ]
     },
