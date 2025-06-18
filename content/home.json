@@ -9,6 +9,11 @@
         {
           "start": "",
           "end": "",
+          "img": "/img/uploads/banner-eletrolar.jpg"
+        },
+        {
+          "start": "",
+          "end": "",
           "img": "/img/uploads/banner_site_alc-a.png",
           "mobile_img": "/img/uploads/banner_mobile_site_alc-a-1-1-.png",
           "link": "/alcas-customic"
@@ -92,11 +97,6 @@
           "link": "/popsockets",
           "alt": "PopSockets Plant Eco Grip Mais Sustentável 2023",
           "mobile_img": "/img/uploads/banner_mobile_pop_4_11zon.webp"
-        },
-        {
-          "start": "",
-          "end": "",
-          "img": "/img/uploads/banner-eletrolar.jpg"
         }
       ],
       "full_width": false
