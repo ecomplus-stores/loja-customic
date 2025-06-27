@@ -49,8 +49,11 @@
   "filter-list": {
     "filters": [
       {
-        "filter_option": "Alças Customic",
-        "filter_grid_model": "Acessórios",
+        "is_new": true
+      },
+      {
+        "filter_option": "Carteiras Customic",
+        "filter_grid_model": "",
         "is_new": true
       },
       {
@@ -610,8 +613,11 @@
   },
   "submenu_order": [
     {
-      "submenu_slug": "/samsung",
+      "submenu_slug": "/carteiras-customic",
       "submenu": [
+        {
+          "subcategory_slug": "/carteiras-customic"
+        },
         {
           "subcategory_slug": "/galaxy-s25"
         },
