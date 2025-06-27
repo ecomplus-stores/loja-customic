@@ -4,28 +4,14 @@
   "sections": [
     {
       "type": "banner-slider",
-      "autoplay": 4000,
+      "autoplay": 5000,
       "slides": [
-        {
-          "start": "2025-06-18T19:30:12.971Z",
-          "end": "2025-06-27T03:10:20.195Z",
-          "img": "/img/uploads/banner-eletrolar.jpg",
-          "mobile_img": "/img/uploads/artboard-2.png"
-        },
         {
           "start": "",
           "end": "",
           "img": "/img/uploads/banner_site_alc-a.png",
           "mobile_img": "/img/uploads/banner_mobile_site_alc-a-1-1-.png",
           "link": "/alcas-customic"
-        },
-        {
-          "start": "",
-          "end": "",
-          "img": "/img/uploads/customic-banner-s25-desktop.webp",
-          "mobile_img": "/img/uploads/customic-banner-s25-mobile.webp",
-          "link": "/galaxy-s25",
-          "alt": "Banner Lançamento Samsung Galaxy S25"
         },
         {
           "start": "",
@@ -50,46 +36,6 @@
           "link": "https://www.customic.com.br/capa-impactor-air",
           "alt": "Banner lifestyle Capa Impactor Air enfatizando a proteção avançada de 4m de altura",
           "mobile_img": "/img/uploads/customic-banner-air-mobile-1-1-.webp"
-        },
-        {
-          "start": "",
-          "end": "",
-          "img": "/img/uploads/banner-site-iphone16-desktop-2-.webp",
-          "mobile_img": "/img/uploads/banner-site-iphone16-copiar.webp",
-          "link": "https://www.customic.com.br/iphone-16",
-          "alt": "Banner Lançamento novo iPhone 16"
-        },
-        {
-          "start": "",
-          "end": "",
-          "img": "/img/uploads/banner-magsafe-gradiente-1-.webp",
-          "mobile_img": "/img/uploads/banner-magsafe-gradiente-mobile-1-.webp",
-          "alt": "Capa Impactor Clear MagSafe Gradiente para iPhone - Customic",
-          "link": "/capa-para-iphone-impactor-clear-magsafe-gradiente-customic"
-        },
-        {
-          "start": "",
-          "end": "",
-          "img": "/img/uploads/2-banner-impactor-ultra.webp",
-          "link": "/search?term=holo",
-          "alt": "A capa Clear que você já conhece agora com o efeito holográfico único que você vai querer conhecer. ",
-          "mobile_img": "/img/uploads/2-banner-holo-mobile.webp"
-        },
-        {
-          "start": "",
-          "end": "",
-          "img": "/img/uploads/banner-desk-peliculas_2_11zon.webp",
-          "mobile_img": "/img/uploads/banner_mobile_peliculas_3_11zon.webp",
-          "alt": "Peliculas Customic Proteção apra seus Olhos e pele",
-          "link": "/peliculas"
-        },
-        {
-          "start": "",
-          "end": "",
-          "img": "/img/uploads/banner-desk-pop_3_11zon.webp",
-          "link": "/popsockets",
-          "alt": "PopSockets Plant Eco Grip Mais Sustentável 2023",
-          "mobile_img": "/img/uploads/banner_mobile_pop_4_11zon.webp"
         }
       ],
       "full_width": false
