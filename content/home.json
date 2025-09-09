@@ -9,6 +9,13 @@
         {
           "start": "",
           "end": "",
+          "img": "/img/uploads/banner_iphone17_desk.png",
+          "link": "/search?term=iphone+17",
+          "mobile_img": "/img/uploads/banner_iphone17_mobile.png"
+        },
+        {
+          "start": "",
+          "end": "",
           "img": "/img/uploads/banner_site_alc-a.png",
           "mobile_img": "/img/uploads/banner_mobile_site_alc-a-1-1-.png",
           "link": "/alcas-customic"
@@ -36,13 +43,6 @@
           "link": "https://www.customic.com.br/capa-impactor-air",
           "alt": "Banner lifestyle Capa Impactor Air enfatizando a proteção avançada de 4m de altura",
           "mobile_img": "/img/uploads/customic-banner-air-mobile-1-1-.webp"
-        },
-        {
-          "start": "",
-          "end": "",
-          "img": "/img/uploads/banner_iphone17_desk.png",
-          "link": "/search?term=iphone+17",
-          "mobile_img": "/img/uploads/banner_iphone17_mobile.png"
         }
       ],
       "full_width": false
