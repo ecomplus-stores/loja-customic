@@ -701,6 +701,18 @@
       "submenu_slug": "/apple",
       "submenu": [
         {
+          "subcategory_slug": "/capas-para-iphone-17-pro-max"
+        },
+        {
+          "subcategory_slug": "/capas-para-iphone-17-pro"
+        },
+        {
+          "subcategory_slug": "/capas-para-iphone-17-air"
+        },
+        {
+          "subcategory_slug": "/capas-para-iphone-17"
+        },
+        {
           "subcategory_slug": "/iphone-16-pro-max"
         },
         {
