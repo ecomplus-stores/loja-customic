@@ -64,6 +64,11 @@
         "is_new": true
       },
       {
+        "filter_option": "iPhone 17",
+        "is_new": true,
+        "filter_grid_model": "Apple"
+      },
+      {
         "filter_option": "iPhone 16 Pro Max",
         "filter_grid_model": "Apple",
         "is_new": false
