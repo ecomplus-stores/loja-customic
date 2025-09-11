@@ -701,10 +701,10 @@
       "submenu_slug": "/apple",
       "submenu": [
         {
-          "subcategory_slug": "/iphone-16-pro"
+          "subcategory_slug": "/iphone-16-pro-max"
         },
         {
-          "subcategory_slug": "/iphone-16-pro-max"
+          "subcategory_slug": "/iphone-16-pro"
         },
         {
           "subcategory_slug": "/iphone-16-plus"
