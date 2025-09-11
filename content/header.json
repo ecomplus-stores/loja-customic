@@ -49,9 +49,6 @@
   "filter-list": {
     "filters": [
       {
-        "is_new": true
-      },
-      {
         "filter_option": "Carteiras Customic",
         "filter_grid_model": "",
         "is_new": true
