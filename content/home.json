@@ -9,6 +9,34 @@
         {
           "start": "",
           "end": "",
+          "img": "/img/uploads/iphone-17.png",
+          "link": "https://www.customic.com.br/capas-para-iphone-17",
+          "mobile_img": "/img/uploads/vertical-iphone17.png"
+        },
+        {
+          "start": "",
+          "end": "",
+          "img": "/img/uploads/iphone-17-air.png",
+          "link": "https://www.customic.com.br/capas-para-iphone-17-air",
+          "mobile_img": "/img/uploads/vertical-iphone17-air.png"
+        },
+        {
+          "start": "",
+          "end": "",
+          "img": "/img/uploads/iphone-17-pro.png",
+          "link": "https://www.customic.com.br/capas-para-iphone-17-pro",
+          "mobile_img": "/img/uploads/vertical-iphone17-pro.png"
+        },
+        {
+          "start": "",
+          "end": "",
+          "img": "/img/uploads/iphone-17-promax.png",
+          "link": "https://www.customic.com.br/capas-para-iphone-17-pro-max",
+          "mobile_img": "/img/uploads/vertical-iphone17-promax.png"
+        },
+        {
+          "start": "",
+          "end": "",
           "img": "/img/uploads/banner_iphone17_desk.png",
           "link": "/search?term=iphone+17",
           "mobile_img": "/img/uploads/banner_iphone17_mobile.png"
@@ -43,34 +71,6 @@
           "link": "https://www.customic.com.br/capa-impactor-air",
           "alt": "Banner lifestyle Capa Impactor Air enfatizando a proteção avançada de 4m de altura",
           "mobile_img": "/img/uploads/customic-banner-air-mobile-1-1-.webp"
-        },
-        {
-          "start": "",
-          "end": "",
-          "img": "/img/uploads/iphone-17.png",
-          "link": "https://www.customic.com.br/capas-para-iphone-17",
-          "mobile_img": "/img/uploads/vertical-iphone17.png"
-        },
-        {
-          "start": "",
-          "end": "",
-          "img": "/img/uploads/iphone-17-air.png",
-          "link": "https://www.customic.com.br/capas-para-iphone-17-air",
-          "mobile_img": "/img/uploads/vertical-iphone17-air.png"
-        },
-        {
-          "start": "",
-          "end": "",
-          "img": "/img/uploads/iphone-17-pro.png",
-          "link": "https://www.customic.com.br/capas-para-iphone-17-pro",
-          "mobile_img": "/img/uploads/vertical-iphone17-pro.png"
-        },
-        {
-          "start": "",
-          "end": "",
-          "img": "/img/uploads/iphone-17-promax.png",
-          "link": "https://www.customic.com.br/capas-para-iphone-17-pro-max",
-          "mobile_img": "/img/uploads/vertical-iphone17-promax.png"
         }
       ],
       "full_width": false
