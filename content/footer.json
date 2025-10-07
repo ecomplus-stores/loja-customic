@@ -55,7 +55,6 @@
         "text": "Contato",
         "url": "/pages/contato"
       }
-
     ]
   },
   "links_2": {
@@ -129,6 +128,7 @@
     "hiper": true,
     "diners": true,
     "mais": false,
+    "pix": true,
     "amex": true,
     "itau": false
   },
