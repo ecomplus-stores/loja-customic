@@ -125,14 +125,15 @@
       "title": "tudo para proteger seu iPhone 17 ✨📲"
     },
     {
-      "type": "collection-shelf",
-      "shuffle": false,
-      "limit": 12,
+      "autoplay": 2,
       "page": 1,
-      "sort": "news",
-      "collection_id": "5f1f3f37f023684cdbd4a1a6:categories:Películas para Celular:/peliculas",
-      "title": "Películas Especiais Customic 💜",
-      "link": "/peliculas"
+      "title": "🔌Conecte-se com Potência — Descubra os Novos Cabos Customic⚡",
+      "shuffle": false,
+      "type": "collection-shelf",
+      "link": "/cabos",
+      "limit": 12,
+      "collection_id": "68e8e65e578b5f7954ca7e65:collections:Conecte-se com Potência — Descubra os Novos Cabos Customic:/conecte-se-com-potencia--descubra-os-novos-cabos-customic",
+      "sort": "highest_price"
     },
     {
       "type": "banners-grid",
