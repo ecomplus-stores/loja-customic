@@ -9,6 +9,12 @@
         {
           "start": "",
           "end": "",
+          "link": "https://www.customic.com.br/cabos-e-energia",
+          "img": "https://i.ibb.co/vCF59Kdc/banner-site.png"
+        },
+        {
+          "start": "",
+          "end": "",
           "img": "/img/uploads/iphone-17.png",
           "link": "https://www.customic.com.br/capas-para-iphone-17",
           "mobile_img": "/img/uploads/vertical-iphone17.png"
@@ -115,6 +121,17 @@
       ]
     },
     {
+      "autoplay": 2,
+      "page": 1,
+      "title": "🔌Conecte-se com Potência — Descubra os Novos Cabos Customic⚡",
+      "shuffle": false,
+      "type": "collection-shelf",
+      "link": "/cabos",
+      "limit": 12,
+      "collection_id": "68e8e65e578b5f7954ca7e65:collections:Conecte-se com Potência — Descubra os Novos Cabos Customic:/conecte-se-com-potencia--descubra-os-novos-cabos-customic",
+      "sort": "highest_price"
+    },
+    {
       "type": "collection-shelf",
       "shuffle": false,
       "limit": 12,
@@ -131,17 +148,6 @@
       "sort": "news",
       "link": "/iphone-17",
       "title": "tudo para proteger seu iPhone 17 ✨📲"
-    },
-    {
-      "autoplay": 2,
-      "page": 1,
-      "title": "🔌Conecte-se com Potência — Descubra os Novos Cabos Customic⚡",
-      "shuffle": false,
-      "type": "collection-shelf",
-      "link": "/cabos",
-      "limit": 12,
-      "collection_id": "68e8e65e578b5f7954ca7e65:collections:Conecte-se com Potência — Descubra os Novos Cabos Customic:/conecte-se-com-potencia--descubra-os-novos-cabos-customic",
-      "sort": "highest_price"
     },
     {
       "type": "banners-grid",
